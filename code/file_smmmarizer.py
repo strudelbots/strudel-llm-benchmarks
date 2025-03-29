@@ -4,21 +4,23 @@ import json
 import os
 from random import randint
 
-import boto3
-
-from llm_factory import get_llm_accessor
-from llm_response import FileSummary
+from code import JSON_FILES_DIRECTORY
+from code.llm_factory import get_llm_accessor
+from code.llm_response import FileSummary
+from code.s3_accessor import upload_results_to_s3
+from code.utils import clean_tmp_dir
 
 
 class FileSummarizer:
     system_context = ("You are a senior developer and an expert in Python. "
                       "Your task is to analyze the given python file below and summarize in up to "
                       "three sentences what is the main functionality of the file. "
-                      "The user input is given in a form of the following json with two fields: "
+                      "The user input is given in a form of the following json with "
+                      "two fields: "
                       "{'file_name': 'example name', 'file_content': 'example content'}")
 
-    def __init__(self):
-        self.llm_accessor = get_llm_accessor('AZURE', self.system_context, 'gpt-4')
+    def __init__(self, provider_name, model_name):
+        self.llm_accessor = get_llm_accessor(provider_name, self.system_context, model_name)
 
     def summarize_file(self, full_path):
         file_name = os.path.basename(full_path)
@@ -41,33 +43,22 @@ class FileSummarizer:
         model_name = self.llm_accessor.model_name
         full_path = os.path.abspath(full_path).replace('/', '-')[1:]
         now = datetime.datetime.now()  # current date and time
-        output_file = '/tmp/'+ now.strftime("%m-%d-%Y__") + model_name+'__'+full_path.replace('.py', '.json')
+        output_file = f'{JSON_FILES_DIRECTORY}/'+ now.strftime("%m-%d-%Y__") + model_name+'__'+full_path.replace('.py', '.json')
         dict_data = llm_response.to_dict()
         with open(output_file, 'w') as outfile:
             json.dump(dict_data, outfile, indent=4)
 
-    def upload_results_to_s3(self):
-        model_name = self.llm_accessor.model_name
-        all_data = []
-        json_files = glob.glob('/tmp/*.json')
-        now = datetime.datetime.now()  # current date and time
-        for file in json_files:
-            if model_name in file and now.strftime("%m-%d-%Y__") in file:
-                with open(file, 'r') as infile:
-                    data = json.load(infile)
-                    all_data.append(data)
-        all_data = sorted(all_data, key=lambda x: x["file_name"])
-        boto3.setup_default_session(profile_name='s3_accessor')
-        s3 = boto3.client('s3')
-        object_name = now.strftime("%m-%d-%Y__") + model_name + '__'+ ROOT_DIR.replace('/', '-') + ".json"
-        s3.put_object(Body=json.dumps(all_data, indent=4), Bucket='ai-llm-experiments', Key=object_name)
 
-ROOT_DIR = '/home/shai/make-developers-brighter'
+REPO_DIR = os.getenv('REPO_DIR')
 if __name__ == "__main__":
+    clean_tmp_dir()
+    # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = ['pytorch', '__init__.py']
-    sample_factor = 1
-    summarizer = FileSummarizer()
-    python_files = glob.glob(f'{ROOT_DIR}/**/*.py', recursive=True)
+    # Controls of the percentage of files that would be summarized.
+    sample_factor = 20
+    model_name = 'gpt-4'
+    summarizer = FileSummarizer('AZURE', model_name)
+    python_files = glob.glob(f'{REPO_DIR}/**/*.py', recursive=True)
     index = 0
     for _, file in enumerate(python_files):
         for keyword in file_keywords_to_skip:
@@ -79,5 +70,5 @@ if __name__ == "__main__":
         index += 1
         print(f'file index: {index}')
         summarizer.summarize_file(file)
-    summarizer.upload_results_to_s3()
+    upload_results_to_s3(model_name, 'ai-llm-experiments')
     
