@@ -3,7 +3,7 @@ import os
 from benchmark_code import OUT_FILES_DIRECTORY
 
 
-def clean_outputs_dir(exclude_str):
+def clean_outputs_dir(exclude_str=None):
     for file in os.listdir(OUT_FILES_DIRECTORY):
         if exclude_str and exclude_str in  file:
             continue

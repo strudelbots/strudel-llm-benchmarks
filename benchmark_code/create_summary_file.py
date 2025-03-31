@@ -1,17 +1,14 @@
+import datetime
 import json
-import os
 
-from benchmark_code import REPO_DIRECTORY
-from benchmark_code.llm_response import ModelSummaries, FileSummary
-
-#REPO_DIR = os.getenv("REPO_DIR")
-#if not REPO_DIR:
-#    raise ValueError("REPO_DIR environment variable is not set")
+from benchmark_code import REPO_DIRECTORY, file_date_prefix
+from benchmark_code.llm_response import FileSummary
 
 class CollectFileSummaryData:
 
     def __init__(self, summary_files:list):
         self.summary_files = summary_files
+        self.file_prefix = file_date_prefix+"summary__"
 
 
     def _collect_all_summaries_into_a_single_file(self):
@@ -35,19 +32,10 @@ class CollectFileSummaryData:
                                                       "latency": summary.latency,}
             file_key = unique_file.replace(REPO_DIRECTORY, "")
             merged_results[file_key] = file_entry
-            assert len(file_entry) == 3
         return merged_results
 
-
-# if __name__ == "__main__":
-#     root_dir = '/home/shai/tmp'
-#     os.chdir(root_dir)
-#     all_data = CollectFileSummaryData(['03-31-2025__gpt-4o__-home-shai-make-developers-brighter.json',
-#                                        '03-31-2025__gpt-4__-home-shai-make-developers-brighter.json',
-#                                        '03-31-2025__gpt-35-turbo__-home-shai-make-developers-brighter.json'])
-#
-#     all_summaries_all_models  =  all_data._collect_all_summaries_into_a_single_file()
-#     comparable_summaries = all_data._merge_summaries_per_file(all_summaries_all_models)
-#     with open(OUT_FILES_DIRECTORY+'/comparable_summaries.json', 'w') as f:
-#         json.dump(comparable_summaries, f, indent=4)
+    def merged_summaries(self):
+        all_summaries_all_models = self._collect_all_summaries_into_a_single_file()
+        comparable_summaries = self._merge_summaries_per_file(all_summaries_all_models)
+        return comparable_summaries
     
