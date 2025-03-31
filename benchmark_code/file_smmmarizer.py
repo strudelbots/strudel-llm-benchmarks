@@ -4,11 +4,11 @@ import json
 import os
 from random import randint
 
-from code import JSON_FILES_DIRECTORY
-from code.llm_factory import get_llm_accessor
-from code.llm_response import FileSummary
-from code.s3_accessor import upload_results_to_s3
-from code.utils import clean_tmp_dir
+from benchmark_code import JSON_FILES_DIRECTORY
+from benchmark_code.llm_factory import get_llm_accessor
+from benchmark_code.llm_response import FileSummary
+from benchmark_code.s3_accessor import upload_results_to_s3
+from benchmark_code.utils import clean_tmp_dir
 
 
 class FileSummarizer:
@@ -41,34 +41,10 @@ class FileSummarizer:
 
     def _save_response_in_file(self, llm_response, full_path):
         model_name = self.llm_accessor.model_name
-        full_path = os.path.abspath(full_path).replace('/', '-')[1:]
+        full_path = os.path.abspath(full_path).replace('/', 'x**x')
         now = datetime.datetime.now()  # current date and time
         output_file = f'{JSON_FILES_DIRECTORY}/'+ now.strftime("%m-%d-%Y__") + model_name+'__'+full_path.replace('.py', '.json')
         dict_data = llm_response.to_dict()
         with open(output_file, 'w') as outfile:
             json.dump(dict_data, outfile, indent=4)
 
-
-REPO_DIR = os.getenv('REPO_DIR')
-if __name__ == "__main__":
-    clean_tmp_dir()
-    # Skip files that their full-path contains one of the following.
-    file_keywords_to_skip = ['pytorch', '__init__.py']
-    # Controls of the percentage of files that would be summarized.
-    sample_factor = 20
-    model_name = 'gpt-4'
-    summarizer = FileSummarizer('AZURE', model_name)
-    python_files = glob.glob(f'{REPO_DIR}/**/*.py', recursive=True)
-    index = 0
-    for _, file in enumerate(python_files):
-        for keyword in file_keywords_to_skip:
-            if keyword in file:
-                continue
-        i = randint(1, 100)
-        if i  > sample_factor or any(elem in file for elem in file_keywords_to_skip):
-            continue
-        index += 1
-        print(f'file index: {index}')
-        summarizer.summarize_file(file)
-    upload_results_to_s3(model_name, 'ai-llm-experiments')
-    

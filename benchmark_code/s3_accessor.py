@@ -5,7 +5,7 @@ import os
 
 import boto3
 
-from code import JSON_FILES_DIRECTORY
+from benchmark_code import JSON_FILES_DIRECTORY
 
 REPO_DIR = os.getenv('REPO_DIR')
 if REPO_DIR is None:

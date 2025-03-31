@@ -1,4 +1,4 @@
-from code.azure_llm_accessor import AzureLlmAccessor
+from benchmark_code.azure_llm_accessor import AzureLlmAccessor
 
 
 def get_llm_accessor(type: str, system_context, model_name):

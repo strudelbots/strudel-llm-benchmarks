@@ -4,8 +4,8 @@ from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 
-from code.llm_accessor import LlmAccessor
-from code.llm_response import LlmResponse
+from benchmark_code.llm_accessor import LlmAccessor
+from benchmark_code.llm_response import LlmResponse
 
 AZURE_LLM_KEY = os.getenv("AZURE_LLM_FOUNDRY_KEY")
 if not AZURE_LLM_KEY:

@@ -15,7 +15,7 @@ ability to understand code.
 
 ### `run_file_summarizer`
 
-The `run_file_summarizer` script aims to generate a concise summary of a 
+The `run_file_summarizer.py` script aims to generate a concise summary of a 
 Python file’s core functionality.
 
 #### Usage

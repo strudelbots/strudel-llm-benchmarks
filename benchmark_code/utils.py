@@ -1,6 +1,6 @@
 import os
 
-from code import JSON_FILES_DIRECTORY
+from benchmark_code import JSON_FILES_DIRECTORY
 
 
 def clean_tmp_dir():
