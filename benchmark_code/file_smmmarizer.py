@@ -1,14 +1,11 @@
 import datetime
-import glob
 import json
 import os
-from random import randint
 
-from benchmark_code import JSON_FILES_DIRECTORY
+from benchmark_code import OUT_FILES_DIRECTORY
 from benchmark_code.llm_factory import get_llm_accessor
 from benchmark_code.llm_response import FileSummary
-from benchmark_code.s3_accessor import upload_results_to_s3
-from benchmark_code.utils import clean_tmp_dir
+
 
 
 class FileSummarizer:
@@ -43,7 +40,7 @@ class FileSummarizer:
         model_name = self.llm_accessor.model_name
         full_path = os.path.abspath(full_path).replace('/', 'x**x')
         now = datetime.datetime.now()  # current date and time
-        output_file = f'{JSON_FILES_DIRECTORY}/'+ now.strftime("%m-%d-%Y__") + model_name+'__'+full_path.replace('.py', '.json')
+        output_file = f'{OUT_FILES_DIRECTORY}/'+ now.strftime("%m-%d-%Y__single__") + model_name+'__'+full_path.replace('.py', '.json')
         dict_data = llm_response.to_dict()
         with open(output_file, 'w') as outfile:
             json.dump(dict_data, outfile, indent=4)

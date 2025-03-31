@@ -1,9 +1,11 @@
 import os
 
-from benchmark_code import JSON_FILES_DIRECTORY
+from benchmark_code import OUT_FILES_DIRECTORY
 
 
-def clean_tmp_dir():
-    for file in os.listdir(JSON_FILES_DIRECTORY):
+def clean_outputs_dir(exclude_str):
+    for file in os.listdir(OUT_FILES_DIRECTORY):
+        if exclude_str and exclude_str in  file:
+            continue
         if file.endswith(".json"):
-            os.remove(os.path.join(JSON_FILES_DIRECTORY, file))
+            os.remove(os.path.join(OUT_FILES_DIRECTORY, file))
