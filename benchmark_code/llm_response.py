@@ -18,16 +18,21 @@ class FileSummary:
     llm_result: LlmResponse
     file_name: str
 
+    @property
+    def model_name(self):
+        return self.llm_result.model_name
+    @property
+    def summary(self):
+        return self.llm_result.message
+    @property
+    def total_tokens(self):
+        return self.llm_result.total_tokens
+    @property
+    def latency(self):
+        return self.llm_result.latency
 @dataclass_json
 @dataclass
-class FileSummeryDiff:
-    model1: LlmResponse
-    model2: LlmResponse
-    diff: str
-
-@dataclass_json
-@dataclass
-class RepoSummeryDiff:
-    diffs: List[FileSummeryDiff]=field(default_factory=list)
+class ModelSummaries:
+    diffs: List[FileSummary]=field(default_factory=list)
 
 

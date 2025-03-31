@@ -15,7 +15,7 @@ if __name__ == "__main__":
     file_keywords_to_skip = ['pytorch', '__init__.py']
     # Controls of the percentage of files that would be summarized.
     sample_factor = 80
-    model_name = 'gpt-35-turbo'
+    model_name = 'o3-mini'
     summarizer = FileSummarizer('AZURE', model_name)
     python_files = glob.glob(f'{REPO_DIR}/**/*.py', recursive=True)
     index = 0
