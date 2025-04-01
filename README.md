@@ -22,18 +22,15 @@ times more than GPT-3.5.
 But is its output truly 4 times better? Does it deliver 4 times more value? 
 This is the question we aim to answer through the experiments conducted in this repository.## How It Works
 
-### `run_file_summarizer`
 
-The `run_file_summarizer.py` script aims to generate a concise summary of a 
-Python file’s core functionality.
-
-#### How to Run it.  
+### How to Run it.  
 - See `__init__.py` in  `benchmark_code` directory and set the environment vars.
-- Set up initial parameters in `__main__ of` in `run_file_summarizer` 
-(e.g., the models you want to use) ans sample rte   
+- Set up initial parameters in `__main__` in `run_file_summarizer.py` 
+(e.g., the models you want to use and sample rate'   
 
 #### Output
 The main function generates JSON files, each containing a summary of a single file for each requested model.
 At the end of the process, the script produces a final 
-JSON file that consolidates all summaries from all models (e.g., see `04-01-2025__gpt-35-turbo_gpt-4_gpt-4o__pytorch2_summary.json`).
+JSON file that consolidates all summaries from all 
+models (e.g., see `04-01-2025__gpt-35-turbo_gpt-4_gpt-4o__pytorch2_summary.json`).
 
