@@ -38,7 +38,7 @@ if __name__ == "__main__":
     file_keywords_to_skip = [ '__init__.py']
     models = ['gpt-35-turbo', 'gpt-4', 'gpt-4o']
     # Controls of the percentage of files that would be summarized.
-    sample_factor = 1
+    sample_factor = 5
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     for model in models:
         random.seed(42)
@@ -50,6 +50,6 @@ if __name__ == "__main__":
     comparable_summaries = data_collector.merged_summaries()
 
 
-    with open(OUT_FILES_DIRECTORY + '/comparable_summaries.py', 'w') as f:
+    with open(OUT_FILES_DIRECTORY + '/gpt35_gpt4_gpt4o_pytorch.py', 'w') as f:
         json.dump(comparable_summaries, f, indent=4)
 
