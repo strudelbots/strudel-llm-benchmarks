@@ -1,0 +1,577 @@
+{
+    "/torch/fx/config.py": {
+        "gpt-4o": {
+            "file_summary": "The file `config.py` defines two configuration flags: `disable_progress` to control whether progress on compilation passes is shown, and `verbose_progress` to toggle the display of detailed node names during these passes. These settings can be used to customize the verbosity and debug output of a system, particularly for model compilation processes.",
+            "total_tokens": 225,
+            "latency": 1.550865
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file named 'config.py' includes two configuration variables: 'disable_progress' and 'verbose_progress'. The file allows the user to set whether to disable showing progress on compilation passes and whether to also show node names in each pass, with the option to adjust for small or larger models.",
+            "total_tokens": 221,
+            "latency": 0.819805
+        },
+        "gpt-4": {
+            "file_summary": "The file \"config.py\" primarily contains configuration settings for displaying progress during compilation passes. It includes settings to disable the progress display (`disable_progress = True`) and to control verbosity (`verbose_progress = False`), where verbosity affects the display of node names during passes. This setup helps manage the output during the compilation process, especially useful for handling the verbosity in larger models.",
+            "total_tokens": 235,
+            "latency": 2.977417
+        }
+    },
+    "/test/test_functional_autograd_benchmark.py": {
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"test_functional_autograd_benchmark.py\" file is to perform smoke tests for the functional autograd benchmarking script by running specific tasks/models using subprocesses and checking the output. The script includes methods to test fast tasks like \"resnet18\" and \"transformer\" as well as slow tasks like \"fcn_resnet\" and \"detr\", with the ability to disable GPU for slow tests. It also skips certain tests based on conditions like on Windows or when collecting coverage information.",
+            "total_tokens": 798,
+            "latency": 1.10762
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `test_functional_autograd_benchmark.py` is designed to test the functionality of a benchmarking script for autograd processes in PyTorch by running specific models in a controlled, minimal, and isolated way. It uses temporary files to capture outputs from subprocesses running the autograd benchmarking Python script with specified models, iterations, and tasks, and checks for successful completion based on return codes and non-empty output files. Additional functionality includes disabling tests on Windows due to file handling limitations, and skipping tests under certain conditions, such as environment-based skips for coverage data collection conflicts.",
+            "total_tokens": 813,
+            "latency": 2.828322
+        }
+    },
+    "/torch/testing/_internal/distributed/fake_pg.py": {
+        "gpt-4o": {
+            "file_summary": "The file `fake_pg.py` provides a fake process group implementation for PyTorch's distributed framework, primarily for simulating distributed environments without actual communication or multiple processes. It defines a `FakeStore` class and a `_create_fake_pg` function, which creates instances of `FakeProcessGroup` to enable testing or initialization of distributed setups while bypassing real communication. The backend named `\"fake\"` is registered with compatibility for both CPU and CUDA devices.",
+            "total_tokens": 419,
+            "latency": 1.937226
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"fake_pg.py\" file is to define a fake process group (FakeProcessGroup) and a fake store (FakeStore) for initialization usage in distributed computing with PyTorch. The file also includes a method (_create_fake_pg) to create a fake process group that simulates communication behavior without actually performing any communication. Additionally, a custom backend \"fake\" is registered for distributed computing with devices 'cpu' and 'cuda'.",
+            "total_tokens": 422,
+            "latency": 1.981392
+        },
+        "gpt-4": {
+            "file_summary": "The given Python file defines a simulated environment for distributed processing using PyTorch's distributed package, particularly focusing on creating a fake process group that does not perform actual communication. The script includes the definition of `FakeStore`, a simple Key-Value store used for initializing the fake process group, and a function `_create_fake_pg` which initializes and returns a `FakeProcessGroup` for the specified rank and world size. The file also registers this fake process group under the backend name \"fake\" for both CPU and CUDA devices, allowing users to simulate distributed computations without real inter-process communication.",
+            "total_tokens": 448,
+            "latency": 3.976542
+        }
+    },
+    "/tools/code_coverage/package/oss/init.py": {
+        "gpt-4o": {
+            "file_summary": "This Python file serves as an initialization utility for setting up and managing tests across C++ and Python environments. It defines functionalities for creating required directories, argument parsing, detecting compiler type, cleaning up previous test logs, and retrieving test lists based on specified criteria. Additionally, it supports filtering tests by type (C++ or Python) and provides logging of initialization details related to folders and configurations.",
+            "total_tokens": 1369,
+            "latency": 1.397059
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given `init.py` file appears to be a Python script that initializes settings and options for running tests, specifically related to test folders, command-line argument parsing, test list generation, clean-up operations, and printing initialization information. It involves importing modules, defining functions to handle argument parsing, creating test lists, identifying Python test scripts, and providing information about compilers and test directories.",
+            "total_tokens": 1351,
+            "latency": 2.149823
+        },
+        "gpt-4": {
+            "file_summary": "The `init.py` file primarily serves as a configuration and initialization module for testing environments, specifically focusing on both C++ and Python based test sets in development, possibly related to the PyTorch framework. The script sets up necessary directories, parses command line arguments to configure test runs, and performs cleanup tasks as needed. Additionally, it selectively runs tests based on command arguments and types of tests (C++ or Python), handling dependencies through utility functions and managing both local and CI environments efficiently.",
+            "total_tokens": 1373,
+            "latency": 2.353799
+        }
+    },
+    "/torch/fx/experimental/unification/match.py": {
+        "gpt-4o": {
+            "file_summary": "The `match.py` file provides a mechanism for dynamic function dispatching based on input signatures, enabling pattern-based selection and execution of functions. It includes the `Dispatcher` and `VarDispatcher` classes, which handle registering and resolving function calls based on arguments, and offers tools like `match` for simplified function registration and dispatch. The file also includes utility methods for determining precedence among signatures and ordering them using a topological sort, enhancing the flexibility of function matching logic.",
+            "total_tokens": 1076,
+            "latency": 2.519224
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"match.py\" file is to implement a dispatcher class that resolves and calls functions based on their signatures and arguments. The file also provides utility functions for matching and ordering functions based on their signatures, with support for variables and tie-breaking mechanisms. Additionally, the file includes a mechanism for defining a global namespace and registering functions within that namespace for efficient dispatching.",
+            "total_tokens": 1051,
+            "latency": 0.920528
+        },
+        "gpt-4": {
+            "file_summary": "The Python code provided defines a system for multiple dispatch, where specific functions are called based on the specific types (or conditions) of the arguments provided. A `Dispatcher` class is used for managing and invoking functions based on signatures that are dynamically matched to argument lists at runtime. It also includes a derived `VarDispatcher` class which allows argument-based dispatch where functions are resolved and called with variable-name specific arguments. Additionally, it includes mechanisms like `supercedes` and `ordering` for determining the priority of function calls when multiple signatures may match.",
+            "total_tokens": 1084,
+            "latency": 3.252939
+        }
+    },
+    "/benchmarks/operator_benchmark/pt/batchnorm_test.py": {
+        "gpt-4o": {
+            "file_summary": "The file `batchnorm_test.py` defines a set of microbenchmarks for evaluating the performance and gradient computation of the batch normalization operation in PyTorch (`F.batch_norm`) on both 1D and higher-dimensional inputs, across various configurations involving device type (CPU/CUDA), training mode, and cuDNN usage. It uses the `operator_benchmark` framework to create configurable test cases (`short` and `long` configurations) and runs these benchmarks, enabling analysis of both forward and backward passes under diverse conditions. The script ends by invoking the benchmark runner through a main method for execution.",
+            "total_tokens": 1126,
+            "latency": 4.006822
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file contains microbenchmarks for batchnorm operators using PyTorch, specifically for batch normalization (BatchNorm) and batch normalization 1D (BatchNorm1d) operations. The file defines benchmark configurations for different input sizes and devices, initializes benchmark classes with input data, and runs performance tests with PyTorch operator benchmarks and gradient tests for both BatchNorm and BatchNorm1d operations using various configurations.",
+            "total_tokens": 1090,
+            "latency": 1.036758
+        },
+        "gpt-4": {
+            "file_summary": "The Python file \"batchnorm_test.py\" is designed to perform benchmarks for the batch normalization operation using the PyTorch library. It supports testing with various configurations (short and long tests) on both CPU and CUDA devices and accounts for whether the CuDNN backend is available. The benchmarks are created for both 2D and 1D batch normalization, running tests for forward pass computation and gradient computation, aiming to measure performance across different settings and hardware.",
+            "total_tokens": 1097,
+            "latency": 3.06071
+        }
+    },
+    "/torch/_inductor/mock_cache.py": {
+        "gpt-4o": {
+            "file_summary": "The file `mock_cache.py` provides a mocked backend for different caching mechanisms used within PyTorch's Inductor runtime and includes utilities for managing cache statistics. It defines thread-local global statistics with methods for resetting and reporting cache-related data, and implements a mock caching back-end (`MockBackend`) that tracks cache hits, misses, and data inserts via thread-safe structures. Additionally, it offers a context manager (`PatchCaches`) to temporarily override cache-related configurations for testing purposes, ensuring isolated cache states during tests.",
+            "total_tokens": 2140,
+            "latency": 1.835267
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"mock_cache.py\" file is to define classes and utilities for creating and managing mock cache instances for different components such as autotune, fx graph, triton, aot autograd, and more. It also includes a context manager \"PatchCaches\" that allows for setting up and tearing down mock cache configurations for testing purposes, ensuring that caches are properly disabled and restored after testing. The file implements a \"MockBackend\" class that simulates cache operations and maintains statistics for cache hits, misses, and puts.",
+            "total_tokens": 2153,
+            "latency": 1.39328
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `mock_cache.py` primarily handles a mock implementation of various caching mechanisms for different components, aligning with torch._inductor functionality. It defines a `MockBackend` class that emulates remote caching behaviors for different cache configurations, allows handling and resetting of cache statistics, and facilitates context management through `PatchCaches` to manipulate cache behavior during tests. The script uses threading and context management to ensure that these mock caching functionalities do not interfere with each other when run concurrently in test environments.",
+            "total_tokens": 2144,
+            "latency": 3.896989
+        }
+    },
+    "/benchmarks/dynamo/microbenchmarks/inductor_bmm.py": {
+        "gpt-4o": {
+            "file_summary": "The file `inductor_bmm.py` benchmarks the performance of batched matrix multiplication (BMM) using PyTorch's standard implementation (`torch.bmm`) and two optimized versions leveraging the TorchDynamo and TorchInductor frameworks, namely `inductor_aten_bmm` and `inductor_triton_bmm`. It runs tests across various matrix shapes for GPU computations in `float16` precision and compares execution times between the standard and optimized implementations. The results are printed in a tabular format for performance analysis.",
+            "total_tokens": 749,
+            "latency": 2.148714
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file \"inductor_bmm.py\" includes functions for optimizing matrix multiplication using PyTorch with different configurations. It compares the performance of matrix multiplication operations between torch.bmm, inductor_aten_bmm, and inductor_triton_bmm functions for various tensor shapes, measuring the execution time in milliseconds. The main functionality of the file is to test and compare the speed of matrix multiplication operations under different settings and configurations provided by the torch and inductor modules.",
+            "total_tokens": 740,
+            "latency": 1.017096
+        },
+        "gpt-4": {
+            "file_summary": "The Python file named `inductor_bmm.py` provides functionality to compare the performance of batch matrix multiplication (BMM) in PyTorch with two optimization settings using Dynamo: `inductor_aten_bmm` and `inductor_triton_bmm`. It measures and prints the time taken to perform BMM using standard PyTorch (`torch_bmm`) and the two optimized versions across several predefined tensor shapes representing different configurations, storing the BMM results in CUDA with 'float16' precision. The script is structured to facilitate these timed tests when executed as the main module.",
+            "total_tokens": 762,
+            "latency": 3.091796
+        }
+    },
+    "/test/profiler/test_memory_profiler.py": {
+        "gpt-4o": {
+            "file_summary": "The `test_memory_profiler.py` file provides unit tests for validating the PyTorch memory and performance profiling tools, specifically focusing on the memory profiler within `torch.profiler`. The file defines several classes such as `TestMemoryProfiler`, `TestIdentifyGradients`, `TestDataFlow`, and `TestMemoryProfilerTimeline`, which include tests for memory profiling configurations, gradient detection, data flow analysis, category annotations (e.g., parameters, activations, gradients), and memory timeline visualization in profiling. Overall, the tests ensure accurate tracking and categorization of tensor lifecycle events and memory usages during model execution, training, and optimization.",
+            "total_tokens": 17731,
+            "latency": 5.604714
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `test_memory_profiler.py` is primarily dedicated to testing memory profiling-related functionalities within the PyTorch framework. It includes various classes for testing, such as `TestMemoryProfiler`, handling tasks like ensuring proper configuration and memory profiling is enabled. It also includes classes for defining layers like `ScaleLayer` and `LazyLinear`, and implements custom dispatch modes for tracking tensor functions (`RecordInputOutputDispatchMode`). Moreover, it incorporates extensive unit tests for checking gradient computations and optimizations during the forward and backward passes of custom models, using torch profiling tools. The tests also include verifying logging of tensor creation, deletion, and version increment actions in memory profiling.",
+            "total_tokens": 17766,
+            "latency": 4.230624
+        }
+    },
+    "/torch/cuda/comm.py": {
+        "gpt-4o": {
+            "file_summary": "The given Python file, `comm.py`, serves as a wrapper for importing and exposing communication-related functions from the `torch.nn.parallel.comm` module. It imports functions like `broadcast`, `scatter`, `gather` and others, which facilitate distributed and parallel computing with PyTorch. These functions are subsequently specified in the `__all__` list to define the public API of the module.",
+            "total_tokens": 259,
+            "latency": 1.120623
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given `comm.py` file imports communication functions from `torch.nn.parallel.comm` module such as `broadcast`, `broadcast_coalesced`, `gather`, `reduce_add`, `reduce_add_coalesced`, and `scatter`. It then lists these functions in the `__all__` list, which can be used to specify what should be imported when using `from comm import *` in another Python file.",
+            "total_tokens": 262,
+            "latency": 1.041315
+        },
+        "gpt-4": {
+            "file_summary": "The file \"comm.py\" has been refactored and now primarily serves as a module redirecting to `torch.nn.parallel.comm`, where specific communication functions for parallel processing are defined. It imports and exposes function such as `broadcast`, `broadcast_coalesced`, `reduce_add`, and others, which are generally utilized for data distribution tasks across different processes or devices in PyTorch. The functions that are explicitly made available for import by other modules are listed in the `__all__` list in the file.",
+            "total_tokens": 282,
+            "latency": 4.221888
+        }
+    },
+    "/test/test_jit_disabled.py": {
+        "gpt-4o": {
+            "file_summary": "The Python file `test_jit_disabled.py` is designed to test TorchScript functionality with PyTorch's JIT (Just-In-Time compilation) disabled and enabled, ensuring consistent behavior between both modes. It does so by running provided Python scripts in both modes, capturing their outputs, and comparing for equality. The tests include various scenarios such as attribute handling in `ScriptModule`, script module construction, and recursive torch script creation.",
+            "total_tokens": 690,
+            "latency": 1.945209
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"test_jit_disabled.py\" file is to define a class \"TestJitDisabled\" that contains methods to compare the output of running a script with PyTorch JIT enabled and disabled. The script creates temporary files and subprocesses to test the behavior of PyTorch JIT. It also includes test methods for script module construction, attributes, and recursive script functionality.",
+            "total_tokens": 679,
+            "latency": 1.020443
+        },
+        "gpt-4": {
+            "file_summary": "The Python file 'test_jit_disabled.py' is designed to test the behavior of PyTorch JIT (Just-In-Time) compilation when it is explicitly disabled versus when it is enabled. It includes a context manager '_jit_disabled()' to disable JIT, and a test class 'TestJitDisabled' with methods that compare program outputs with JIT enabled and disabled, ensuring consistent behavior in both states. The tests are run in separate subprocesses, and the output comparisons are facilitated by writing the test scripts to a temporary file and then executing them with different environment configurations.",
+            "total_tokens": 713,
+            "latency": 3.00769
+        }
+    },
+    "/torch/_subclasses/fake_utils.py": {
+        "gpt-4o": {
+            "file_summary": "The \"fake_utils.py\" file provides utilities for handling and cross-referencing fake tensors in PyTorch, focusing on validating metadata consistency (such as shapes, strides, storage offsets, and aliasing behaviors) between fake and real tensors. It includes methods to convert fake tensors to real tensors, check aliasing relationships, and ensure tensor outputs match expected metadata requirements. Additionally, it defines a `CrossRefFakeMode` class that overrides PyTorch's dispatch mechanism for verifying tensor metadata during operation execution.",
+            "total_tokens": 2382,
+            "latency": 1.542964
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `fake_utils.py` file is to provide utility functions for working with FakeTensors in PyTorch. The file includes functions for checking aliasing between real and fake tensors, converting fake tensors to real tensors, and comparing metadata and properties of fake and real tensors. Additionally, the file defines a custom `CrossRefFakeMode` class that extends `TorchDispatchMode` for handling operations with FakeTensors in a specific context.",
+            "total_tokens": 2370,
+            "latency": 1.21978
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `fake_utils.py` appears to be designed to integrate and compare functionality between fake tensors and real tensors in the PyTorch framework. The primary tasks include checking and converting between these tensor types, validating tensor properties like aliasing and metadata, and handling device-specific errors. Additionally, the file defines a `CrossRefFakeMode` class that conducts comprehensive comparison and validation for operations involving tensors, ensuring both consistent behavior and correct metadata matching between fake and real tensor operations.",
+            "total_tokens": 2373,
+            "latency": 2.922114
+        }
+    },
+    "/torch/distributed/elastic/utils/store.py": {
+        "gpt-4o": {
+            "file_summary": "The `store.py` file provides utility functions for synchronizing and coordinating processes in distributed systems using a PyTorch distributed store. It includes methods for setting timeouts, retrieving and synchronizing data across processes (`get_all` and `synchronize`), detecting missing ranks during barriers, and managing non-blocking barriers (`barrier`). These utilities ensure proper communication and synchronization among distributed nodes, making them useful in multi-node or parallel training and computation scenarios.",
+            "total_tokens": 1843,
+            "latency": 2.793123
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file \"store.py\" provides functions for storing and synchronizing data among distributed agents using a c10d store. It includes functionalities such as setting timeouts, fetching data based on prefixes, synchronizing data across agents, implementing barriers to pause all workers until a certain condition is met, and detecting missing ranks in case of timeouts. The file also supports tracing missing ranks and provides options for customizing rank tracing decoders and handling timeouts.",
+            "total_tokens": 1831,
+            "latency": 0.912316
+        },
+        "gpt-4": {
+            "file_summary": "The \"store.py\" file implements distributed synchronization utilities using a torch-based store, providing functionalities such as setting and restoring timeouts, synchronizing data among agents, detecting missing ranks, and creating barriers for agent synchronization. The functions leverage non-blocking operations and error handling to ensure all participating agents in a distributed system can synchronize their state or data robustly. Additionally, it includes mechanisms to trace and identify issues when agents fail to check in or synchronize within specified timeouts.",
+            "total_tokens": 1833,
+            "latency": 2.551152
+        }
+    },
+    "/torchgen/static_runtime/config.py": {
+        "gpt-4o": {
+            "file_summary": "The file `config.py` defines utility functions for handling and classifying operations related to PyTorch's native function groups and views, as well as managing test value overrides specific to certain operations based on their names and indices. It includes logic to determine if an operation is hand-written and generates randomized test cases for various operations. The primary functionality is to aid developers in configuring and testing PyTorch operations programmatically.",
+            "total_tokens": 4975,
+            "latency": 1.650272
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file `config.py` contains functions for mapping operation names to their corresponding input values, checking whether an operation is hand-written or not, and overriding test values for specific operations based on name and index in a dictionary format. The file also includes predefined operations and their specific test values for various operations such as 'add', 'clamp', 'linear', 'reshape_as', 'scatter', 'gelu_backward', 'masked_select', and many others with corresponding input values for different dimensions and types.",
+            "total_tokens": 4896,
+            "latency": 1.413181
+        },
+        "gpt-4": {
+            "file_summary": "The \"config.py\" script appears to be related to handling PyTorch tensor operations configured for testing purposes, specifically focused on manipulating test values for a variety of tensor operations in a neural network or AI-driven environment. The script includes functions to determine if a certain function is handwritten and modifies arguments to tensor operations dynamically based on pre-specified factors like the type of operation and value indices. This configuration is essential for creating dynamic test cases, ensuring the robustness of the tensor operations across varying conditions.",
+            "total_tokens": 4894,
+            "latency": 2.712452
+        }
+    },
+    "/benchmarks/operator_benchmark/pt/nan_to_num_test.py": {
+        "gpt-4o": {
+            "file_summary": "This file defines microbenchmarks for PyTorch's `nan_to_num` and `nan_to_num_` operations, which replace NaN and infinite values in tensors with specified values. It sets up configurations for testing these functions with varying tensor sizes, data types, and replacement options. The benchmarking process is organized using the `operator_benchmark` framework and includes both long and short test cases based on different parameter combinations.",
+            "total_tokens": 643,
+            "latency": 2.353613
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"nan_to_num_test.py\" file is to perform microbenchmarks for the torch.nan_to_num and torch.nan_to_num_ operators in PyTorch. It defines benchmark configurations, a benchmark class \"ReplaceNaNBenchmark\" to test the operators with different input parameters, and generates performance tests for the operators using the defined configurations. The file also includes the execution logic to run the benchmarks if the file is executed as a script.",
+            "total_tokens": 648,
+            "latency": 1.13147
+        },
+        "gpt-4": {
+            "file_summary": "The Python file \"nan_to_num_test.py\" is designed to benchmark the performance of the PyTorch functions `torch.nan_to_num` and its in-place variant `torch.nan_to_num_` using the `operator_benchmark` module. It sets up benchmark configurations for various inputs of different dimensions and data types and whether to replace infinity values. The benchmarks are run via a defined class `ReplaceNaNBenchmark`, which tests both the regular and in-place versions of `nan_to_num` on random tensors with specific configurations, replacing NaN, positive infinity, and negative infinity under controlled conditions.",
+            "total_tokens": 675,
+            "latency": 2.751948
+        }
+    },
+    "/tools/linter/adapters/test_has_main_linter.py": {
+        "gpt-4o": {
+            "file_summary": "The Python file implements a linter to verify that test files (those matching `test_*.py` or `*_test.py`) include a proper `if __name__ == \"__main__\"` block that either calls `run_tests` or raises an exception, ensuring tests are executed in an OSS CI pipeline. It does so by parsing and analyzing the content of files using the `libcst` library and reporting any violations as lint messages. The script supports multiprocessing for efficiency and produces lint results in a JSON format detailing the issue.",
+            "total_tokens": 1055,
+            "latency": 1.443649
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"test_has_main_linter.py\" file is to implement a linting tool that checks Python test files for the presence of a main block. The main block in the test file should either call \"run_tests\" or raise an exception to ensure the test is run in OSS CI. If the main block is missing, the tool generates lint messages indicating that the main block is required in test files. The lint messages include information such as the file path, severity, code, and description, and these messages are printed as JSON output.",
+            "total_tokens": 1050,
+            "latency": 1.228922
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python script is a linter that checks whether test files, identified by the filename pattern `test_*.py` or `*_test.py`, contain a main block that raises an exception or calls a function (`run_tests` or `run_rank`). If a test file is found without such a block, an error message is generated. The script supports multiprocessing to perform these checks simultaneously across multiple files and outputs the results in JSON format.",
+            "total_tokens": 1027,
+            "latency": 2.048997
+        }
+    },
+    "/torch/nn/modules/flatten.py": {
+        "gpt-4o": {
+            "file_summary": "The file defines two PyTorch classes, `Flatten` and `Unflatten`, that are used to manipulate tensor shapes within a neural network pipeline. The `Flatten` class flattens a contiguous range of dimensions into a single dimension, while the `Unflatten` class reverses this process by expanding a flattened dimension to a specified shape. Both are designed to be used seamlessly with PyTorch's `nn.Sequential`.",
+            "total_tokens": 1622,
+            "latency": 2.205437
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"flatten.py\" file is to define two modules: \"Flatten\" and \"Unflatten\" that are used for flattening and unflattening tensors in PyTorch, respectively. The \"Flatten\" module flattens a contiguous range of dimensions into a tensor, while the \"Unflatten\" module unflattens a tensor dimension expanding it to a desired shape, providing flexibility for reshaping tensors in neural network operations. The file includes detailed explanations, shape transformations, usage examples, and type-checking for the parameters to ensure correct usage of the modules.",
+            "total_tokens": 1677,
+            "latency": 1.410615
+        },
+        "gpt-4": {
+            "file_summary": "The file `flatten.py` defines two classes, `Flatten` and `Unflatten`, which are used to reshape tensors in PyTorch. The `Flatten` class flattens a specified range of dimensions of a tensor, converting it into a 2-dimensional tensor, while the `Unflatten` class expands a flattened tensor back into a tensor of specified shape. These classes are typically used within neural network pipelines to manipulate the shape of data for compatibility with different layers and operations.",
+            "total_tokens": 1655,
+            "latency": 2.753229
+        }
+    },
+    "/test/torch_np/test_ufuncs_basic.py": {
+        "gpt-4o": {
+            "file_summary": "The Python file `test_ufuncs_basic.py` provides a suite of unit tests for validating the behavior of unary and binary universal functions (ufuncs) and their interaction with broadcasting, data types, and casting rules, primarily comparing NumPy and `torch._numpy`. It includes tests for both scalar and array inputs, broadcasting scenarios, and in-place operations, focusing on dtype-related behavior such as precision loss, type casting, and output handling. The file employs the PyTest framework and Torch's internal testing utilities to run parameterized tests and handle edge-cases in ufunc computation.",
+            "total_tokens": 3899,
+            "latency": 1.706572
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the provided Python file, \"test_ufuncs_basic.py\", is to perform validation testing on numpy operations related to ufunc casting, broadcasting, dtype, and output behavior. It includes various test cases for unary and binary ufuncs, ndarray dunders vs. ufuncs, and ufunc dtype keyword argument behavior. The file also imports necessary modules and defines test classes and functions with parametrized tests to ensure the correctness of the operations and behaviors tested in the numpy library related to ufuncs.",
+            "total_tokens": 3837,
+            "latency": 1.593274
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python file defines a unit test suite primarily aimed at testing the functionality of unary and binary universal functions (ufuncs) using both numpy and a torch mimic of numpy (torch._numpy). The tests validate operations such as casting, broadcasting, dtype preservation, and behavior with scalars and arrays, offering compatibility checks between numpy's ufuncs and their correlative operations in Torch. It uses parameterization of tests and several numpy and torch utility functions and decorators to efficiently test multiple scenarios concerning data types, handling of complex numbers, and exceptions due to unsupported operations.",
+            "total_tokens": 3846,
+            "latency": 2.749706
+        }
+    },
+    "/test/distributed/test_c10d_logger.py": {
+        "gpt-4o": {
+            "file_summary": "The Python file `test_c10d_logger.py` contains unit tests to validate the functionality of distributed logging and exception handling mechanisms in PyTorch's `c10d_logger`. It tests scenarios involving initializing distributed processes, handling broadcast exceptions, and verifying the generated log outputs for correctness, primarily using the NCCL backend. The core functionality involves ensuring proper setup and teardown of distributed communication, validating logger behaviors, and checking exception attributes during distributed operations.",
+            "total_tokens": 1268,
+            "latency": 1.487494
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `test_c10d_logger.py` file is to define and run tests for logging errors and exceptions related to the torch distributed package. The file sets up a test class `C10dErrorLoggerTest` that includes test methods for getting or creating a logger, handling exceptions during broadcasts, and testing exception logging functionality. The tests include assertions and checks on error messages, backends, ranks, and other distributed settings.",
+            "total_tokens": 1236,
+            "latency": 1.028237
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `test_c10d_logger.py` is designed to run tests for distributed communication systems in PyTorch, specifically focusing on the logging and exception handling in communications operations like broadcasting. It defines a class `C10dErrorLoggerTest` that uses multiprocessing to simulate different ranks in a process group, and includes tests to check the functionality and robustness of the logger `_c10d_logger` under normal and exception conditions. The script has built-in capabilities to skip tests if specific backend requirements (like NCCL or a certain number of GPUs) are not met or if running under address sanitizer environments which are known to cause issues with PyTorch's multiprocessing capabilities.",
+            "total_tokens": 1283,
+            "latency": 4.395007
+        }
+    },
+    "/test/distributed/elastic/metrics/api_test.py": {
+        "gpt-4o": {
+            "file_summary": "The provided Python file defines unit tests for PyTorch's elastic metrics API, focusing on the `prof` decorator and associated metric handling functionality. It tests the registration and emitting of success, failure, and duration metrics for profiled functions and verifies behavior in both simple use cases and class inheritance scenarios. Additionally, it mocks necessary components to enable isolated testing without dependencies affecting the results.",
+            "total_tokens": 904,
+            "latency": 1.516949
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `api_test.py` file is to provide unit tests for metrics handling in Python using the PyTorch library. It includes defining classes for handling metrics, implementing metric functions for profiling, testing metric names and values, as well as verifying inheritance behavior for metrics in a testing environment. The file also uses mock objects to simulate metric streams and interactions for testing purposes.",
+            "total_tokens": 887,
+            "latency": 1.072387
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `api_test.py` defines tests for a metrics handling system within a PyTorch distributed context, using classes and decorators for profiling metric emissions. It includes a `TestMetricsHandler` class to store metric results, and `MetricsApiTest` class that tests metric name resolution, profiling decorations, and inheritance handling of metrics. Additionally, the file uses mock patching to simulate metric streaming during tests, ensuring that unit tests can run without interfering with one another.",
+            "total_tokens": 905,
+            "latency": 3.083615
+        }
+    },
+    "/test/test_mkldnn_fusion.py": {
+        "gpt-4o": {
+            "file_summary": "The Python file `test_mkldnn_fusion.py` contains unit tests to validate the fusion capabilities of the PyTorch JIT compiler for MKL-DNN (Intel's Math Kernel Library for Deep Neural Networks). These tests assess operations such as convolution, linear transformations, and their integration with unary and binary pointwise operations (e.g., ReLU, addition), ensuring they can be appropriately fused for optimized performance. It also includes test cases for handling unsupported configurations to maintain robustness.",
+            "total_tokens": 4186,
+            "latency": 1.994865
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the provided Python file \"test_mkldnn_fusion.py\" is to test the fusion of convolutional and linear operations with unary and binary operations using the MKL-DNN backend in PyTorch. It defines classes and methods to create models with different configurations of layers, perform model inference, and compare the results of the fusion against reference implementations. The file also includes test cases for various fusion scenarios involving convolution, linear, unary, and binary operations to ensure the correctness and performance of the fusion in the MKL-DNN backend for PyTorch.",
+            "total_tokens": 4177,
+            "latency": 1.3639
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `test_mkldnn_fusion.py` contains unit tests for MKL-DNN fusion operations in PyTorch, specifically focusing on checking the correctness of neural network model fusions like convolution and linear operations with pointwise and binary functions using JIT compilation and script tracing techniques. The fusion functionality is tested under various configurations and memory formats to ensure the integrity and performance improvements via MKL-DNN backends. These tests also involve settings and restoring certain JIT and CPU fusion configurations to maintain the original state post-tests.",
+            "total_tokens": 4167,
+            "latency": 3.165996
+        }
+    },
+    "/torch/_inductor/codegen/cuda/cuda_kernel.py": {
+        "gpt-4o": {
+            "file_summary": "The provided Python file defines a framework for generating and optimizing CUDA/Cutlass-based kernels for GPU computation, focusing on tensor layout and data access patterns, including strides and sizes. It introduces classes such as `CUDAKernel` and `CUDATemplateKernel` to manage kernel metadata, layout arguments, code generation for CUDA templates, and runtime parameter handling. Additionally, the `CUDATemplateCaller` class encapsulates benchmarking, precompilation, and execution of these kernels for efficient GPU-based computation.",
+            "total_tokens": 4807,
+            "latency": 3.018117
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file is a module that defines classes and functions related to CUDA kernels for performing computations on GPUs using CUTLASS and CUDA technology. The file contains classes such as `CUDAKernel` and `CUDATemplateKernel` which handle operations like finding layout arguments, initializing layout arguments, defining kernel functions, and calling kernels through wrapper code. The functionality includes generating code for checking node validity, getting node signatures, and handling data types, offsets, pointers, sizes, and strides necessary for CUDA kernel operations using Cutlass for matrix multiplications.",
+            "total_tokens": 4814,
+            "latency": 1.610468
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python file defines a CUDA kernel generation and execution framework, primarily focusing on managing layout arguments, invoking CUDA templates, processing data from IRNodes, and interfacing with CUDA via a template mechanism. The CUDAKernel class provides methods for adding and initializing layout arguments for tensor indices and dimensions, while the CUDATemplateKernel class is designed to initialize and invoke specific CUDA kernels defined in C++ with such features as workspace management. Further, classes like CUDATemplateCaller are used to manage benchmark requests and kernel calls within an adapted CUDA environment.",
+            "total_tokens": 4814,
+            "latency": 3.758397
+        }
+    },
+    "/torch/_export/db/examples/cond_predicate.py": {
+        "gpt-4o": {
+            "file_summary": "The file defines a `CondPredicate` class inheriting from `torch.nn.Module`, which uses the `cond` function from Functorch to apply different operations (`cos` or `sin`) to a tensor based on a conditional predicate (`pred`) involving its dimensions or shape. It demonstrates dynamic behavior handling in PyTorch based on tensor properties and provides example arguments and metadata tags tied to dynamic shape processing and conditional execution.",
+            "total_tokens": 356,
+            "latency": 1.667734
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `cond_predicate.py` file is to define a `CondPredicate` class that extends `torch.nn.Module` and implements a conditional statement using the `cond` function from `functorch.experimental.control_flow`. The `CondPredicate` class defines a `forward` method that checks a condition based on the input tensor `x` dimensions and shape, and then conditionally applies `cos()` or `sin()` functions on the input tensor `x`.",
+            "total_tokens": 363,
+            "latency": 0.849839
+        },
+        "gpt-4": {
+            "file_summary": "The file defines a PyTorch module `CondPredicate` which uses the `cond` function from `functorch.experimental.control_flow` to execute one of two lambda functions based on a predicate derived from the input tensor's dimensions. The predicate checks if the number of dimensions (`dim`) of the input tensor `x` is greater than 2 and if the size of the third dimension is greater than 10. Depending on the outcome of the predicate, either the cosine or sine function is applied to the tensor `x`.",
+            "total_tokens": 374,
+            "latency": 3.898741
+        }
+    },
+    "/torch/cuda/amp/grad_scaler.py": {
+        "gpt-4o": {
+            "file_summary": "This file defines a custom `GradScaler` class that extends PyTorch's `torch.amp.GradScaler` to provide gradient scaling functionality for mixed precision training on CUDA devices, while marking the `torch.cuda.amp.GradScaler` approach as deprecated. It introduces a modified initialization that enforces the use of the `\"cuda\"` device explicitly. Additionally, it maintains backward compatibility but advises users to transition to the updated API.",
+            "total_tokens": 448,
+            "latency": 1.913795
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"grad_scaler.py\" file is to define a custom GradScaler class that extends torch.amp.GradScaler, which is used for gradient scaling in PyTorch. The file also includes a deprecated annotation for backwards compatibility and provides guidance on the usage of GradScaler for CUDA operations.",
+            "total_tokens": 423,
+            "latency": 0.92452
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `grad_scaler.py` defines a class `GradScaler` that extends `torch.amp.GradScaler` from the PyTorch library, specifically adapted for CUDA operations. This updated class includes a deprecation message advising the correct usage of `torch.amp.GradScaler` with \"cuda\" as an argument instead of the older `torch.cuda.amp.GradScaler`. The implementation provides a constructor that initializes the parent class with specific default values relevant for gradient scaling operation, ensuring backward compatibility through the deprecated decorator for previous method calls.",
+            "total_tokens": 472,
+            "latency": 2.473122
+        }
+    },
+    "/torch/_dynamo/test_case.py": {
+        "gpt-4o": {
+            "file_summary": "This Python file, named \"test_case.py,\" provides enhanced testing utilities tailored for PyTorch Dynamo by extending PyTorch's testing framework. It defines a custom `TestCase` class for managing Dynamo-specific setup, teardown, and state resets between tests, including gradient mode handling. Additionally, the `run_tests` function incorporates dependency checks and environment-specific conditions to control the execution of tests.",
+            "total_tokens": 782,
+            "latency": 1.780907
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file named 'test_case.py' provides testing utilities for Dynamo by extending PyTorch's testing framework with Dynamo-specific capabilities. It includes a custom TestCase class for handling setup/teardown, test running utilities with dependency checking, automatic reset of Dynamo state between tests, and proper handling of gradient mode state. Additionally, it includes functionalities for checking and importing necessary dependencies before running tests.",
+            "total_tokens": 766,
+            "latency": 1.019309
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python file, presumably for a library named Dynamo that integrates with PyTorch, defines a custom `TestCase` class tailored to handle specific settings and states related to Dynamo during testing. It extends PyTorch's testing infrastructure by managing Dynamo's configuration, resetting its state before each test, and logging state-specific information. Additionally, the file includes a function `run_tests` which skips or runs tests based on system requirements and availability of required modules or functionalities like CUDA.",
+            "total_tokens": 782,
+            "latency": 2.236725
+        }
+    },
+    "/test/jit/fixtures_srcs/generate_models.py": {
+        "gpt-4o": {
+            "file_summary": "The file `generate_models.py` is designed to create test models for verifying compatibility with operator versioning changes in PyTorch, particularly for testing backward and forward compatibility of operators affected by breaking changes. It scans a set of predefined test modules, validates whether corresponding models already exist, and generates them if necessary, while also ensuring the models contain expected operators and match the required version criteria. This facilitates systematic testing workflows for operators undergoing updates, such as ensuring proper functionality of upgraders in the PyTorch JIT mobile interpreter.",
+            "total_tokens": 2337,
+            "latency": 2.087242
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `generate_models.py` file is to generate models for testing operator changes in PyTorch. The file includes functions to check existing models, create new models, get operator lists, and save models to a specified directory. It follows a systematic workflow for ensuring Backwards Compatibility (BC) and Forwards Compatibility (FC) for operator changes in PyTorch.",
+            "total_tokens": 2301,
+            "latency": 0.9209
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `generate_models.py` is responsible for generating and storing PyTorch models to ensure backward and forward compatibility of operators due to changes. It includes functionality to check if a module's operator list covers the necessary operator changes and verifies if the model version matches expectations. Moreover, it handles the modeling process by exporting models that are not present or need updating due to operator changes into a specified directory for testing purposes.",
+            "total_tokens": 2308,
+            "latency": 2.866529
+        }
+    },
+    "/test/test_unary_ufuncs.py": {
+        "gpt-4o": {
+            "file_summary": "This Python file, named `test_unary_ufuncs.py`, is part of the PyTorch testing suite and serves to validate various unary universal functions (ufuncs) such as elementwise functions (`abs`, `exp`, etc.) for tensors across multiple edge cases, including inputs with extreme values, non-contiguous tensors, and diverse data types. The testing ensures compliance with domain restrictions, accurate results compared to NumPy or SciPy references, and correct handling of special cases like `NaN`, `inf`, and broadcasting errors. Additionally, the file includes validation for memory overlap errors, gradient checks, and scalar inputs across both CPU and CUDA devices.",
+            "total_tokens": 19161,
+            "latency": 4.675059
+        },
+        "gpt-4": {
+            "file_summary": "The Python file \"test_unary_ufuncs.py\" primarily focuses on testing unary \"universal functions (ufuncs)\" using the PyTorch framework. It includes a variety of tests to ensure ufuncs behave as expected across different data types, devices, and boundary conditions. The comprehensive tests cover different aspects such as float domains, contiguity, broadcasting, and extremal values, complemented by comparisons against NumPy or SciPy reference implementations when possible. The identified ufuncs include operations like abs, acos, asin, and atan that typically support the `out=` parameter, and the test suite extensively handles different scenarios and edge cases to guarantee correct functionality within the PyTorch environment.",
+            "total_tokens": 18855,
+            "latency": 6.677915
+        }
+    },
+    "/tools/gen_vulkan_spv.py": {
+        "gpt-4o": {
+            "file_summary": "The file `gen_vulkan_spv.py` is a Python script designed to automate the generation of SPIR-V bytecode for Vulkan shaders and associated C++ files for shader registration. It reads GLSL shader files and YAML configuration templates to create variant shaders based on specified parameters, processes them using `glslc`, and compiles them into SPIR-V files. Additionally, it generates C++ source files for shader information and dispatch registration to integrate the generated shaders into a Vulkan-powered application.",
+            "total_tokens": 5851,
+            "latency": 1.758216
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `gen_vulkan_spv.py` file is to generate SPIR-V code from GLSL source files. It extracts information from the GLSL files and generates SPIR-V binary arrays, shader info strings, and shader dispatch strings. Finally, it creates C++ files that contain the SPIR-V binaries and shader information for shader registration.",
+            "total_tokens": 5777,
+            "latency": 1.300283
+        },
+        "gpt-4": {
+            "file_summary": "The Python script `gen_vulkan_spv.py` is designed to generate Vulkan Shader Program V (SPV) files from GLSL shader source files and corresponding YAML configurations specifying different shader variants. It employs pre-processing to inject correct values based on the environment settings and potential variant needs before compiling the GLSL into SPV using a specified shader compiler. Additional functionality includes generating corresponding C++ source files to register these compiled shaders along with their metadata in a Vulkan-based rendering or compute framework, further facilitating ease of integration and automation in a build system for Vulkan shader programs.",
+            "total_tokens": 5817,
+            "latency": 3.79912
+        }
+    },
+    "/test/jit/test_tensor_methods.py": {
+        "gpt-4o": {
+            "file_summary": "The file is a PyTorch test script that defines a `TestTensorMethods` class to verify the behavior of the `__getitem__` method for tensors in TorchScript. It includes tests for valid and invalid use cases of `__getitem__` and uses the JIT scripting and `FileCheck` utilities to validate the TorchScript graph and error handling. The script is not meant to be executed directly but instead should be run as part of a larger `test_jit.py` suite.",
+            "total_tokens": 488,
+            "latency": 3.130619
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"test_tensor_methods.py\" file is to test tensor methods in PyTorch using the Torch testing framework. The file contains test cases for the tensor method `__getitem__` and `__getitem__` with invalid arguments. The tests involve creating tensors, checking script representations, and asserting against specific error messages for invalid use cases.",
+            "total_tokens": 451,
+            "latency": 0.804411
+        },
+        "gpt-4": {
+            "file_summary": "The file `test_tensor_methods.py` is designed to test specific tensor operations in the PyTorch framework, particularly focusing on the `__getitem__` method. It contains tests implemented in a class `TestTensorMethods` derived from `JitTestCase` to verify the functionality and error handling of the indexing operation on tensors using scripted and non-scripted approaches. The script is not intended to be run directly; instead, it should be executed through an internal test runner script specific to testing JIT in PyTorch.",
+            "total_tokens": 483,
+            "latency": 3.773139
+        }
+    },
+    "/torch/_inductor/codegen/rocm/rocm_kernel.py": {
+        "gpt-4o": {
+            "file_summary": "The `rocm_kernel.py` file defines classes and functions to facilitate the integration, generation, and execution of ROCm-based template kernels for GPU computation. It provides mechanisms to define kernel signatures, manage input/output argument mapping, and execute ROCm kernel calls, including workspace allocation and argument preparation. Additionally, it supports benchmarking and precompilation of ROCm templates via the `ROCmTemplateCaller` class.",
+            "total_tokens": 2392,
+            "latency": 2.483668
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the `rocm_kernel.py` file is to define classes and methods for handling ROCm-based kernels in C++ using template kernels. It includes classes like `ROCmKernel` and `ROCmTemplateKernel` that handle the generation of function definitions, argument handling, and calling kernels through `V.graph.wrapper_code`. Additionally, it defines classes like `ROCmTemplateCaller` that represent callers for ROCm template kernels, provide benchmarking functionality, and generate information dictionaries for autotuning purposes.",
+            "total_tokens": 2406,
+            "latency": 1.279381
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python file defines functionality related to ROCmTemplateKernel which is built atop ROCmKernel used for handling and generating ROCm-based kernel operations in computing environments utilizing hipStream. It establishes various classes and methods for initializing kernels, defining kernel function signatures, handling input-output buffer mapping, and generating code to call the kernel. Specific template kernels are addressed via the ROCmTemplateCaller class, which handles the execution and benchmarking of these kernels based on predefined ROCm templates and additional benchmarking requests. The interface interacts substantially with IRNodes and tensors to manage machine operations, and employs wrappers for integrating with C++ code modules that handle lower-level device operations.",
+            "total_tokens": 2433,
+            "latency": 2.972361
+        }
+    },
+    "/torch/fx/_graph_pickler.py": {
+        "gpt-4o": {
+            "file_summary": "The `_graph_pickler.py` file defines utilities to serialize (pickle) and deserialize FX Graphs from the PyTorch framework, particularly `GraphModule` objects, along with specialized PyTorch entities such as `FakeTensor`, `SymInt`, and `TracingContext`. It provides custom handling for complex object types to ensure compatibility during the pickling and unpickling processes, leveraging classes like `GraphPickler` and `_GraphUnpickler` to manage state and specialized logic. The file emphasizes shared state handling, efficient tensor serialization, and support for symbolic and tracing features critical in graph-based computations.",
+            "total_tokens": 5123,
+            "latency": 2.86366
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file is named \"_graph_pickler.py\" and contains a class called GraphPickler that extends pickle.Pickler. The main functionality of this file is to provide custom pickling behavior for pickling fx graph objects, specifically GraphModule instances, in order to properly handle special types like FakeTensor, SymNode, ShapeEnv, and others. The file includes helper classes and methods to override default pickling behavior and ensure proper serialization and deserialization of these custom types when pickling and unpickling objects.",
+            "total_tokens": 5092,
+            "latency": 1.54122
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `_graph_pickler.py` implements a specialized pickling mechanism for PyTorch's FX graphs and related components. It defines classes such as `GraphPickler` and `GraphUnpickler` for serializing and deserializing FX graphs and associated objects like `FakeTensor`, graph nodes, and operations. Additionally, the file includes multiple helper classes for handling specific data structures during the pickling process, ensuring that custom objects and states like tensor metadata and symbolic shapes are correctly managed across serialization boundaries.",
+            "total_tokens": 5091,
+            "latency": 3.89115
+        }
+    },
+    "/test/fx/test_dynamism.py": {
+        "gpt-4o": {
+            "file_summary": "The file `test_dynamism.py` is a Python test suite designed to validate the functionality of the `track_dynamism_across_examples` function, part of PyTorch's experimental FX module. It tests the ability of this function to analyze dynamic properties across examples of tensors, deeply nested structures, and neural network modules, including cases with mixed dynamism and non-implemented properties. By comparing the output of the function with expected results, the tests aim to ensure consistent and accurate tracking of dynamic behavior in various contexts.",
+            "total_tokens": 1720,
+            "latency": 1.624095
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The main functionality of the \"test_dynamism.py\" file is to define test cases for tracking dynamism across examples using the `track_dynamism_across_examples` function from torch. The file contains multiple test functions that create examples with dynamic tensors, deeply nested tensors, mixed dynamism, and neural network modules, and then compares the tracked dynamism against the expected values using assertions. The tests cover scenarios such as dynamic tensor shapes, nested tensors, and dynamic properties of neural network modules.",
+            "total_tokens": 1704,
+            "latency": 1.336971
+        },
+        "gpt-4": {
+            "file_summary": "The Python file `test_dynamism.py` is centered around testing the dynamism in data structures handled by neural network models, using the PyTorch framework. It defines and utilizes various examples to detect changes in tensor shapes and data across different test cases using a function `track_dynamism_across_examples`. Additionally, the script structures these tests into methods that are designed to check different scenarios - like handling dynamic tensor sizes, mixed dynamism, and model-specific properties not being implemented.",
+            "total_tokens": 1702,
+            "latency": 2.689112
+        }
+    },
+    "/test/onnx/model_defs/squeezenet.py": {
+        "gpt-4o": {
+            "file_summary": "The file defines a PyTorch implementation of the SqueezeNet deep learning architecture, a lightweight convolutional neural network designed for efficient image classification. It includes a custom `Fire` module that performs a squeeze-and-expand operation to reduce parameters and computational cost, as well as optional configurations for different SqueezeNet versions (1.0 and 1.1). The network outputs predictions for a specified number of classes using a combination of features extraction and classification layers.",
+            "total_tokens": 1122,
+            "latency": 1.759033
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file defines a SqueezeNet neural network architecture and its components using PyTorch. The file contains the implementation of the Fire module, which consists of convolutional layers and activations, as well as the SqueezeNet model with different versions (1.0 and 1.1), featuring specific convolutional layers, activation functions, and pooling operations for image classification tasks. The SqueezeNet model includes a custom forward method to pass input data through the defined layers and return class predictions after passing through the final classifier.",
+            "total_tokens": 1128,
+            "latency": 1.4096
+        },
+        "gpt-4": {
+            "file_summary": "The provided Python file `squeezenet.py` defines a neural network based on the SqueezeNet architecture using the PyTorch library. It includes two main classes, `Fire` and `SqueezeNet`. The `Fire` class is a building block consisting of a series of convolutions and activations, while the `SqueezeNet` class constructs the entire network by arranging multiple `Fire` blocks and other layers into a total architecture, which can adapt between two versions (1.0 and 1.1) and handles a specified number of output classes. Additionally, the initializations for convolution weights and biases are set specifically for different scenarios in the network build.",
+            "total_tokens": 1158,
+            "latency": 3.277416
+        }
+    },
+    "/torch/_decomp/decompositions.py": {
+        "gpt-4o": {
+            "file_summary": "The `decompositions.py` file provides a set of custom decomposition rules for various PyTorch operations. These decompositions transform complex operations into simpler or equivalent PyTorch primitives, enhancing compatibility with tracing, export, and performance optimization tools like TorchDynamo and TorchInductor. It extensively handles operations related to tensor manipulations, mathematical computations, neural network operations (e.g., RNNs, LSTMs, MHA), and interpolation methods (e.g., upsampling).",
+            "total_tokens": 46509,
+            "latency": 2.3562
+        },
+        "gpt-4": {
+            "file_summary": "The file `decompositions.py` contains Python code that defines various decomposition functions primarily for tensor operations in PyTorch. The main functionality of this file includes decomposing complex tensor functions into simpler or more fundamental operations, which are easier to manage and optimize. It involves handling tensor reshaping, element-wise operations, matrix multiplications, reductions, and applying specific transformations like padding, upscaling, and applying activation functions. The decompositions are registered with PyTorch's extension mechanisms, allowing them to override or supplement the library's internal implementations for increased flexibility and performance in tensor operations.",
+            "total_tokens": 46073,
+            "latency": 5.67858
+        }
+    },
+    "/torch/cuda/_sanitizer.py": {
+        "gpt-4o": {
+            "file_summary": "The `_sanitizer.py` file implements a CUDA Sanitizer tool for detecting synchronization errors between kernels running on different streams in CUDA code executed via PyTorch. It tracks tensor accesses and stream synchronizations to identify potential data races, providing detailed error reporting including stack traces when such issues occur. The sanitizer can be enabled programmatically or through an environment variable (`TORCH_CUDA_SANITIZER`) and integrates with PyTorch's GPU tracing functionality to monitor CUDA operations.",
+            "total_tokens": 5218,
+            "latency": 1.777841
+        },
+        "gpt-35-turbo": {
+            "file_summary": "The given Python file is a module that introduces CUDA Sanitizer, a tool for detecting synchronization errors between kernels run on different streams in a Python program utilizing PyTorch and CUDA. It stores information on accesses to tensors to determine if they are synchronized or not, and if a possible data race is detected, detailed warnings are printed, and the program exits. The functionality includes tracking tensor accesses, stream synchronization, event handling, memory allocation, GPU trace callbacks, and enabling and disabling the CUDA Sanitizer.",
+            "total_tokens": 5181,
+            "latency": 3.0409
+        },
+        "gpt-4": {
+            "file_summary": "The Python file defines a module that provides CUDA Sanitizer functionality, which detects synchronization errors and potential data race conditions when running Torch kernels on different streams within a CUDA environment. It achieves this by tracking tensor accesses and analyzing the kernel's launch events to ensure that the appropriate synchronization between streams is maintained and manages tensor memory allocations and deallocations. Various classes and methods help in monitoring, reporting errors, and handling events, making it possible to track discrepancies and report detailed information, including stack traces, when unsynchronized accesses occur.",
+            "total_tokens": 5184,
+            "latency": 3.783008
+        }
+    }
+}
