@@ -22,6 +22,8 @@ times more than GPT-3.5.
 But is its output truly 4 times better? Does it deliver 4 times more value? 
 Especially when the [file](https://raw.githubusercontent.com/pytorch/pytorch/refs/heads/main/torch/distributed/checkpoint/logging_handlers.py) 
 is shorter than the GPT-40 answer ! 
+
+
 This is the question we aim to answer through the experiments conducted in this repository.
 
 
