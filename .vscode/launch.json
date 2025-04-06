@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: File Summarizer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_file_smmmarizer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
+            "env": {
+                "REPO_DIR": "/home/shai/pytorch",
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+} 

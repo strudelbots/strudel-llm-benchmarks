@@ -12,15 +12,15 @@ from benchmark_code.s3_accessor import store_results_for_model
 from benchmark_code.utils import clean_outputs_dir
 
 
-def _generate_file_summaries_for_model():
+def _generate_file_summaries_for_model(model):
     index =0
-    summarizer = FileSummarizer('AZURE', model)
+    summarizer = FileSummarizer(model[1], model[0])
     for _, file in enumerate(python_files):
         for keyword in file_keywords_to_skip:
             if keyword in file:
                 continue
-        i = randint(1, 100)
-        if i > sample_factor or any(elem in file for elem in file_keywords_to_skip):
+        i = randint(1, 1000)
+        if i > sample_factor*10 or any(elem in file for elem in file_keywords_to_skip):
             continue
         index += 1
         print(f'{index}. Generate summary for {file=}, {model=}, ')
@@ -29,7 +29,7 @@ def _generate_file_summaries_for_model():
         except Exception as e:
             print(f'Failed to summarize file: {file}')
             print(e)
-    store_results_for_model(model, 'ai-llm-experiments')
+    store_results_for_model(model[0], 'ai-llm-experiments')
 
 
 def _combine_summaries_into_single_json(file_name):
@@ -46,12 +46,12 @@ if __name__ == "__main__":
     clean_outputs_dir()
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py']
-    models = ['gpt-35-turbo', 'gpt-4', 'gpt-4o'] # only Azure supported now (see Issue #1)
-    sample_factor = 5 # Controls of the percentage of files that would be summarized.
+    models = [('gpt-35-turbo', 'AZURE'), ('gpt-4', 'AZURE'), ('gpt-4o', 'AZURE')] # only Azure supported now (see Issue #1)
+    sample_factor = 0.5 # Controls of the percentage of files that would be summarized.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     for model in models:
         random.seed(25) # This ensures we will get the same files to analyze for each model.
-        _generate_file_summaries_for_model()
-    summary_file_name = file_date_prefix+ '_'.join(models)+'__summary.json'
+        _generate_file_summaries_for_model(model)
+    summary_file_name = file_date_prefix+ '_'.join([x[0] for x in models])+'__summary.json'
     _combine_summaries_into_single_json(summary_file_name)
 

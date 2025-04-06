@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+*secret*
+
 # C extensions
 *.so
 
@@ -172,3 +175,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# VS Code specific files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+# Local History for Visual Studio Code
+.history/
