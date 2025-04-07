@@ -46,7 +46,7 @@ if __name__ == "__main__":
     clean_outputs_dir()
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py']
-    models = [('gpt-35-turbo', 'AZURE'), ('gpt-4', 'AZURE'), ('gpt-4o', 'AZURE')] # only Azure supported now (see Issue #1)
+    models = [('amazon.titan-text-express-v1', 'AWS'), ('gpt-35-turbo', 'AZURE'), ('gpt-4', 'AZURE'), ('gpt-4o', 'AZURE')] # only Azure supported now (see Issue #1)
     sample_factor = 0.5 # Controls of the percentage of files that would be summarized.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     for model in models:
