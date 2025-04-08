@@ -15,7 +15,7 @@ class FileSummarizer:
                       "The user input is given in a form of the following json with "
                       "two fields: "
                       "{'file_name': 'example name', 'file_content': 'example content'}")
-    def __init__(self, provider_name, model_name):
+    def __init__(self, provider_name, model_name,):
         self.llm_accessor = get_llm_accessor(provider_name, self.system_context, model_name)
         self.file_prefix = file_date_prefix+"single__"
 

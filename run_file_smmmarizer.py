@@ -24,15 +24,10 @@ def _generate_file_summaries_for_model(model,python_files):
         index += 1
         print(f'{index}. Generate summary for {file=}, {model=}, ')
         try:
-            # if file.endswith('verify.py'):
-            #     pass
-            # else:
-            #     continue
-            sleep(2)
             summarizer.summarize_file(file)
         except Exception as e:
             print(f'Failed to summarize file: {file}')
-            print(e)
+            raise e
     store_results_for_model(model[0], 'ai-llm-experiments')
 
 
@@ -51,14 +46,14 @@ if __name__ == "__main__":
     clean_outputs_dir()
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py']
-    models = [('eu.amazon.nova-lite-v1:0', 'AWS-BOTO3'), 
-              ('eu.anthropic.claude-3-5-sonnet-20241022-v2:0','AWS-BOTO3'),
+    models = [#('eu.amazon.nova-lite-v1:0', 'AWS-BOTO3'), 
+              #('eu.anthropic.claude-3-5-sonnet-20240620-v1:0','AWS-LANGCHAIN'),
               #('gpt-35-turbo', 'AZURE'), 
               #('gpt-4', 'AZURE'), 
               ('gpt-4o', 'AZURE')
               ] 
-    sample_factor = 3 # Controls of the percentage of files that would be summarized.
-    random.seed(25) # This ensures we will get the same files to analyze for each model.
+    sample_factor = 1 # Controls of the percentage of files that would be summarized.
+    random.seed(24) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
     for model in models:

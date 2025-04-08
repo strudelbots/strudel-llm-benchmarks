@@ -13,13 +13,16 @@ if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
 
 class AzureLlmAccessor(LlmAccessor):
-    def __init__(self, system_content, model_name="gpt-4"):
-        super().__init__(system_content, model_name)
+    def __init__(self, system_content, model_name, sleep_time):
+        super().__init__(system_content, model_name, sleep_time)
         self.endpoint = f"https://strudel-azure-opnai.openai.azure.com/openai/deployments/{model_name}"
         self.azure_llm_client = ChatCompletionsClient(
                                     endpoint=self.endpoint,
                                     credential=AzureKeyCredential(AZURE_LLM_KEY),
-                                    max_tokens=DEFAULT_MAX_TOKENS
+                                    max_tokens=DEFAULT_MAX_TOKENS,
+                                    temperature=DEFAULT_TEMPERATURE,
+                                    top_p=DEFAULT_TOP_P,
+                                    top_k=DEFAULT_TOP_K
                                     )
 
 
@@ -32,10 +35,8 @@ class AzureLlmAccessor(LlmAccessor):
                     UserMessage(content=user_input),
                 ],
                 temperature=DEFAULT_TEMPERATURE,
-                top_p=DEFAULT_TOP_P,
                 model=self.model_name,
                 timeout=30,
-                top_k=DEFAULT_TOP_K
             )
         except Exception as e:
             raise e
