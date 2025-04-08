@@ -2,7 +2,7 @@ import glob
 import os
 import json
 from collections import defaultdict
-
+from pprint import pprint
 def pos_for_file(file_data:dict) -> dict:
     for file_entry, summaries in file_data.items():
         file_path = file_entry
@@ -28,8 +28,10 @@ def pos_for_text(text:str) -> dict:
     pos_counts = defaultdict(lambda: set())
     for word, pos in pos_tags:
         pos_counts[pos].add(word)
-
-    return pos_counts
+    result = {}
+    for pos, words in pos_counts.items():
+        result[pos] = list(words)
+    return result
 
 if __name__ == "__main__":
     cwd = os.getcwd()
