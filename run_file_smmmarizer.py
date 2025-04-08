@@ -16,9 +16,6 @@ def _generate_file_summaries_for_model(model,python_files):
     index =0
     summarizer = FileSummarizer(model[1], model[0])
     for _, file in enumerate(python_files):
-        for keyword in file_keywords_to_skip:
-            if keyword in file:
-                continue
         if any(elem in file for elem in file_keywords_to_skip):
             continue
         index += 1
@@ -45,9 +42,9 @@ def _combine_summaries_into_single_json(file_name):
 if __name__ == "__main__":
     clean_outputs_dir()
     # Skip files that their full-path contains one of the following.
-    file_keywords_to_skip = [ '__init__.py']
-    models = [#('eu.amazon.nova-lite-v1:0', 'AWS-BOTO3'), 
-              #('eu.anthropic.claude-3-5-sonnet-20240620-v1:0','AWS-LANGCHAIN'),
+    file_keywords_to_skip = [ '__init__.py', 'test']
+    models = [('eu.amazon.nova-lite-v1:0', 'AWS-BOTO3'), 
+              ('eu.anthropic.claude-3-5-sonnet-20240620-v1:0','AWS-LANGCHAIN'),
               #('gpt-35-turbo', 'AZURE'), 
               #('gpt-4', 'AZURE'), 
               ('gpt-4o', 'AZURE')

@@ -8,6 +8,6 @@ def get_llm_accessor(type: str, system_context, model_name):
     elif type == "AWS-BOTO3":
         return AWSBoto3Accessor(system_context, model_name, sleep_time=3)
     elif type == "AWS-LANGCHAIN":
-        return AWSLangchainLlmAccessor(system_context, model_name, sleep_time=10)
+        return AWSLangchainLlmAccessor(system_context, model_name, sleep_time=20)
     else:
         raise Exception("Unknown accessor type {}".format(type))

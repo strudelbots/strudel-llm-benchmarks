@@ -6,8 +6,8 @@ class AWSBoto3Accessor(LlmAccessor):
     """
     This class is used to access the AWS Bedrock LLM.
     """
-    def __init__(self, system_context, model_name):
-        super().__init__(system_context, model_name)
+    def __init__(self, system_context, model_name, sleep_time):
+        super().__init__(system_context, model_name, sleep_time)
         boto3.setup_default_session(profile_name="bedrock_admin", region_name="eu-central-1")
         self.llm = boto3.client("bedrock-runtime" )
             
