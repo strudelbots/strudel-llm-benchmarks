@@ -1,5 +1,5 @@
 from langchain_aws import ChatBedrock
-
+from benchmark_code.llm_response import LlmResponse
 from benchmark_code.llm_accessor import LlmAccessor
 
 
@@ -15,13 +15,13 @@ class AWSLangchainLlmAccessor(LlmAccessor):
 
     def _invoke_llm(self, user_input):
         messages = [
-        (
-           "system",
-           "You are a helpful assistant",
-        ),
-            ("human", "Tell me what to see in Paris"),
+            ("system",self.system_content),
+            ("human", user_input),
         ]
         response = self.chat.invoke(messages)
         print(response.content)
-        return response.content
+        llm_response = LlmResponse(message=response.content, 
+                                   total_tokens=response.usage_metadata["total_tokens"], 
+                                   model_name=self.model_name)
+        return llm_response
     

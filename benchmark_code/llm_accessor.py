@@ -10,9 +10,9 @@ if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
 
 class LlmAccessor:
-    def __init__(self, system_content, model_name="gpt-4"):
+    def __init__(self, system_context, model_name="gpt-4"):
         self.model_name = model_name
-        self.system_content = system_content
+        self.system_context = system_context
 
 
     def _get_llm_response(self, user_input:str):

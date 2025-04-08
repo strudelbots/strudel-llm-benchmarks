@@ -12,6 +12,9 @@
             "env": {
                 "REPO_DIR": "/home/shai/pytorch",
                 "PYTHONPATH": "${workspaceFolder}"
+            },
+            "presentation": {
+                "clear": true
             }
         }
     ]
