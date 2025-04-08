@@ -6,18 +6,23 @@ from azure.core.credentials import AzureKeyCredential
 
 from benchmark_code.llm_accessor import LlmAccessor
 from benchmark_code.llm_response import LlmResponse
+from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_TOP_P, DEFAULT_TOP_K, DEFAULT_MAX_TOKENS
 
 AZURE_LLM_KEY = os.getenv("AZURE_LLM_FOUNDRY_KEY")
 if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
 
 class AzureLlmAccessor(LlmAccessor):
-    def __init__(self, system_content, model_name="gpt-4"):
-        super().__init__(system_content, model_name)
+    def __init__(self, system_content, model_name, sleep_time):
+        super().__init__(system_content, model_name, sleep_time)
         self.endpoint = f"https://strudel-azure-opnai.openai.azure.com/openai/deployments/{model_name}"
         self.azure_llm_client = ChatCompletionsClient(
                                     endpoint=self.endpoint,
                                     credential=AzureKeyCredential(AZURE_LLM_KEY),
+                                    max_tokens=DEFAULT_MAX_TOKENS,
+                                    temperature=DEFAULT_TEMPERATURE,
+                                    top_p=DEFAULT_TOP_P,
+                                    top_k=DEFAULT_TOP_K
                                     )
 
 
@@ -26,13 +31,12 @@ class AzureLlmAccessor(LlmAccessor):
         try:
             response = self.azure_llm_client.complete(
                 messages=[
-                    SystemMessage(content=self.system_content),
+                    SystemMessage(content=self.system_context),
                     UserMessage(content=user_input),
                 ],
-                temperature=1.0,
-                top_p=1.0,
+                temperature=DEFAULT_TEMPERATURE,
                 model=self.model_name,
-                timeout=3,
+                timeout=30,
             )
         except Exception as e:
             raise e
