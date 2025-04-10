@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: File Summarizer",
+            "name": "File Summarizer",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/run_file_smmmarizer.py",
@@ -18,10 +18,10 @@
             }
         },
         {
-            "name": "Python: Part of Speach Analyzer",
+            "name": "Generate Embeddings",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/part_of_speach_analyzer.py",
+            "program": "${workspaceFolder}/generate_embedding.py",
             "console": "integratedTerminal",
             "justMyCode": true,
             "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
