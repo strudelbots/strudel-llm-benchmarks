@@ -16,6 +16,21 @@
             "presentation": {
                 "clear": true
             }
+        },
+        {
+            "name": "Python: Part of Speach Analyzer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/part_of_speach_analyzer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "presentation": {
+                "clear": true
+            }
         }
     ]
 } 
