@@ -11,6 +11,7 @@ boto3 = "^1.37"
 langchain = "^0.3"
 langchain_aws = "^0.2"
 langchain_azure_ai = "^0.1"
+langchain-huggingface = "^0.1.2"
 
 
 [build-system]
