@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "strudel-llm-benchmarks"
+version = "0.1.0"
+description = "LLM benchmarks for code summarization"
+authors = ["Shai Rubin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.37"
+langchain = "^0.3"
+langchain_aws = "^0.2"
+langchain_azure_ai = "^0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
