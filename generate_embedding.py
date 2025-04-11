@@ -16,12 +16,11 @@ def embedding_for_files(json_files, embedding_accessor, embedding_model_name):
 def embedding_for_single_file(embedding_accessor, file_data, embedding_model_name, generate_files):
     for input_file, summaries in file_data.items():
         file_name = input_file.split('/')[-1]
-        print(f'Generating embeddings for {file_name}')
         results_for_file_name = defaultdict(dict, {})
-        results_for_file_name['input_file_name'] = input_file
-        results_for_file_name['embedding_model_name'] = embedding_model_name
-        results_for_file_name['generation_date'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        results_for_file_name['file_type'] = 'embedding'
+        results_for_file_name['metadata']['input_file_name'] = input_file
+        results_for_file_name['metadata']['embedding_model_name'] = embedding_model_name
+        results_for_file_name['metadata']['generation_date'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        results_for_file_name['metadata']['file_type'] = 'embedding'
         for model, summary in summaries.items():
             summary_text = summary['file_summary']
             embeddings = embedding_accessor.get_embeddings(summary_text)
