@@ -31,6 +31,21 @@
             "presentation": {
                 "clear": true
             }
+        },
+        {
+            "name": "Generate Similarity Matrix",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/generate_similary_mtx_from_embedding.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "presentation": {
+                "clear": true
+            }
         }
     ]
 } 
