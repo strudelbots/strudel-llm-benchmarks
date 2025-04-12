@@ -10,22 +10,22 @@ from benchmark_code.create_summary_file import CollectFileSummaryData
 from benchmark_code.file_smmmarizer import FileSummarizer
 from benchmark_code.s3_accessor import store_results_for_model
 from benchmark_code.utils import clean_outputs_dir
+from benchmark_code.llm_model import AVAILABLE_MODELS, LlmModel
 
-
-def _generate_file_summaries_for_model(model,python_files):
+def _generate_file_summaries_for_model(model: LlmModel,python_files):
     index =0
-    summarizer = FileSummarizer(model[1], model[0])
+    summarizer = FileSummarizer(model)
     for _, file in enumerate(python_files):
         if any(elem in file for elem in file_keywords_to_skip):
             continue
         index += 1
-        print(f'{index}. Generate summary for {file=}, {model=}, ')
+        print(f'{index}. Generate summary for {file=}, {model.known_name=}, ')
         try:
             summarizer.summarize_file(file)
         except Exception as e:
             print(f'Failed to summarize file: {file}')
             raise e
-    store_results_for_model(model[0], 'ai-llm-experiments')
+    store_results_for_model(model.known_name, 'ai-llm-experiments')
 
 
 def _combine_summaries_into_single_json(file_name):
@@ -43,18 +43,13 @@ if __name__ == "__main__":
     clean_outputs_dir()
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
-    models = [('eu.amazon.nova-lite-v1:0', 'AWS-BOTO3'), 
-              ('eu.anthropic.claude-3-5-sonnet-20240620-v1:0','AWS-LANGCHAIN'),
-              #('gpt-35-turbo', 'AZURE'), 
-              #('gpt-4', 'AZURE'), 
-              ('gpt-4o', 'AZURE')
-              ] 
-    sample_factor = 1 # Controls of the percentage of files that would be summarized.
+    models = AVAILABLE_MODELS
+    sample_factor = 0.15 # Controls of the percentage of files that would be summarized.
     random.seed(24) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
     for model in models:
         _generate_file_summaries_for_model(model,python_files)
-    summary_file_name = file_date_prefix+ '_'.join([x[0] for x in models])+'__summary.json'
+    summary_file_name = file_date_prefix+ '_'.join([x.known_name for x in models])+'__summary.json'
     _combine_summaries_into_single_json(summary_file_name)
 

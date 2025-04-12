@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from typing import List
-
+from benchmark_code.llm_model import LlmModel
 from dataclasses_json import dataclass_json
 
 
@@ -9,7 +9,7 @@ from dataclasses_json import dataclass_json
 class LlmResponse():
     message: str
     total_tokens: int
-    model_name: str
+    model: LlmModel
     latency: float = -1.0
 
 @dataclass_json
@@ -20,7 +20,7 @@ class FileSummary:
 
     @property
     def model_name(self):
-        return self.llm_result.model_name
+        return self.llm_result.model.known_name
     @property
     def summary(self):
         return self.llm_result.message
