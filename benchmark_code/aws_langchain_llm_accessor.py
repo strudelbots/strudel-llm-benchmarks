@@ -5,7 +5,7 @@ from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_
 
 class AWSLangchainLlmAccessor(LlmAccessor):
     # titan express is not supported for langchain
-    supported_models = ['Claude3.5', 'nova-lite-v1', 'Llama3.3', 'nova-pro-v1']
+    supported_models = ['Claude3.5', 'nova-lite-v1', 'Llama3.3', 'nova-pro-v1', 'Llama3.1']
     """
     This class is used to access the AWS Bedrock LLM.
     """
@@ -16,7 +16,7 @@ class AWSLangchainLlmAccessor(LlmAccessor):
         if model.aws_model_id == "eu.anthropic.claude-3-5-sonnet-20240620-v1:0":
             model.delay_time = 20
         kwargs = {"top_p": DEFAULT_TOP_P, "top_k": DEFAULT_TOP_K}
-        if model.known_name == "Llama3.3":
+        if model.known_name in [ "Llama3.3", "Llama3.1"]:
             kwargs = {"top_p": DEFAULT_TOP_P}
 
         self.chat = ChatBedrock(

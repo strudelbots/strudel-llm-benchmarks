@@ -17,7 +17,9 @@ class LlmResponse():
 class FileSummary:
     llm_result: LlmResponse
     file_name: str
-    file_length: int = -1 
+    number_of_lines: int = -1 
+    project_name: str = 'pytorch'
+    
     @property
     def model_name(self):
         return self.llm_result.model.known_name

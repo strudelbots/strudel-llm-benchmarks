@@ -33,6 +33,9 @@ def _is_fatal_error(e, model):
     if model.known_name == 'titan_premier':
         if 'expected maxLength: 150000' in str(e):
             return False
+    if model.known_name == 'Llama3.1':
+        if 'Too many tokens,' in str(e):
+            return False
     return True
 
 
@@ -51,7 +54,8 @@ def get_models():
               'Claude3.5',
               'Llama3.3',
               'titan_premier',
-              'nova-pro-v1'
+              'nova-pro-v1',
+              'Llama3.1'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
     models = AVAILABLE_MODELS
