@@ -27,15 +27,16 @@ class CollectFileSummaryData:
             file_entry = {}
             for summary in all_summaries_all_models:
                 if summary.file_name == unique_file:
-                    if summary.file_length == -1 :
+                    if summary.number_of_lines == -1 :
                         file_text = open(summary.file_name).read()
                         line_count = len(file_text.split('\n'))
-                        summary.file_length = line_count
+                        summary.number_of_lines = line_count
                     file_entry[summary.model_name] = {"file_summary": summary.summary,
                                                       "total_tokens": summary.total_tokens,
                                                       "latency": summary.latency,
                                                       'model': summary.llm_result.model.to_dict(),
-                                                      'file_length': summary.file_length}
+                                                      'number_of_lines': summary.number_of_lines,
+                                                      'project_name': summary.project_name}
             file_key = unique_file.replace(REPO_DIRECTORY, "")
             merged_results[file_key] = file_entry
         return merged_results
