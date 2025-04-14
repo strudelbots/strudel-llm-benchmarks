@@ -23,7 +23,7 @@ def _generate_file_summaries_for_model(model: LlmModel,python_files):
         try:
             summarizer.summarize_file(file)
         except Exception as e:
-            print(f'Failed to summarize file: {file}')
+            print(f'Failed to summarize file: {file}, {model.known_name=}')
             raise e
     store_results_for_model(model.known_name, 'ai-llm-experiments')
 
@@ -39,11 +39,11 @@ def _combine_summaries_into_single_json(file_name):
         json.dump(comparable_summaries, f, indent=4)
 
 def get_models():
-    run_on = [#'nova-lite-v1',
-              #'Claude3.5',
-              #'Llama3.3',
+    run_on = ['nova-lite-v1',
+              'Claude3.5',
+              'Llama3.3',
               'titan_premier',
-              #'nova-pro-v1'
+              'nova-pro-v1'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
     models = AVAILABLE_MODELS
@@ -55,8 +55,8 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 0.2 # Controls of the percentage of files that would be summarized.
-    random.seed(24) # This ensures we will get the same files to analyze for each model.
+    sample_factor = 0.5 # Controls of the percentage of files that would be summarized.
+    random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
     for model in models:
