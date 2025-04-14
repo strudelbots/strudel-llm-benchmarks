@@ -10,13 +10,12 @@ if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
 
 class LlmAccessor:
-    def __init__(self, system_context, model_name, sleep_time):
-        self.model_name = model_name
+    def __init__(self, system_context, model):
+        self.model = model
         self.system_context = system_context
-        self.sleep_time = sleep_time
 
     def _get_llm_response(self, user_input:str):
-            time.sleep(self.sleep_time)
+            time.sleep(self.model.delay_time)
             start_time = datetime.datetime.now()
             response = self._invoke_llm(user_input)
             end_time = datetime.datetime.now()
