@@ -28,14 +28,9 @@ class FileSummarizer:
         file_text = self._get_file_text(filename=full_path)
         llm_input = '{' + f'"file_name": "{file_name}", "file_content": "{file_text}"' + '}'
         llm_response = self.llm_accessor._get_llm_response(llm_input)
-        file_summary = FileSummary(llm_response, full_path)
+        file_summary = FileSummary(llm_response, full_path, len(file_text.split('\n')))
         self._save_response_in_file(file_summary, output_file_name, hased_name)
 
-    # def get_cache_file_name(self, output_file_name):
-    #     cached_file = output_file_name.replace(OUT_FILES_DIRECTORY, OUT_FILES_DIRECTORY_CACHE)
-    #     cached_file = cached_file.replace(self.file_prefix, '')
-    #     cached_file = hashlib.sha256(cached_file.encode()).hexdigest()+ '.json'
-    #     return cached_file
 
 
     def _get_file_text(self, filename):

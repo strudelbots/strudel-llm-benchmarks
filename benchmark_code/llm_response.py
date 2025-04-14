@@ -17,7 +17,7 @@ class LlmResponse():
 class FileSummary:
     llm_result: LlmResponse
     file_name: str
-
+    file_length: int = -1 
     @property
     def model_name(self):
         return self.llm_result.model.known_name

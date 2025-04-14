@@ -29,7 +29,7 @@ AVAILABLE_MODELS = [
              aws_region="us-east-1", langchain_ready=False, 
              price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, delay_time=10),
     LlmModel(known_name="Llama3.3", aws_model_id="us.meta.llama3-3-70b-instruct-v1:0", 
-             aws_region="us-east-1", langchain_ready=True,
+             aws_region="us-east-1", langchain_ready=True, delay_time=10,
              price_per_1000_input_tokens=0.00072, price_per_1000_output_tokens=0.00072),
     
 ]
