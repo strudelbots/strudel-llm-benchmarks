@@ -15,8 +15,8 @@ class FileSummarizer:
                       "The user input is given in a form of the following json with "
                       "two fields: "
                       "{'file_name': 'example name', 'file_content': 'example content'}")
-    def __init__(self, model: LlmModel,provider_name= 'AWS'):
-        self.llm_accessor = get_llm_accessor(self.system_context, model,provider_name)
+    def __init__(self, model: LlmModel):
+        self.llm_accessor = get_llm_accessor(self.system_context, model)
         self.file_prefix = file_date_prefix+"single__"
 
     def summarize_file(self, full_path):

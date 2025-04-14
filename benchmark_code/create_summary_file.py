@@ -36,7 +36,8 @@ class CollectFileSummaryData:
                                                       "latency": summary.latency,
                                                       'model': summary.llm_result.model.to_dict(),
                                                       'number_of_lines': summary.number_of_lines,
-                                                      'project_name': summary.project_name}
+                                                      'project_name': summary.project_name,
+                                                      'provider_name': summary.llm_result.model.provider_name}
             file_key = unique_file.replace(REPO_DIRECTORY, "")
             merged_results[file_key] = file_entry
         return merged_results

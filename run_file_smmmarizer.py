@@ -36,6 +36,9 @@ def _is_fatal_error(e, model):
     if model.known_name == 'Llama3.1':
         if 'Too many tokens,' in str(e):
             return False
+    if model.known_name == 'gpt-3.5-turbo':
+        if "This model's maximum context length is 16385" in str(e):
+            return False
     return True
 
 
@@ -55,7 +58,8 @@ def get_models():
               'Llama3.3',
               'titan_premier',
               'nova-pro-v1',
-              'Llama3.1'
+              'Llama3.1',
+              'gpt-3.5-turbo'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
     models = AVAILABLE_MODELS
