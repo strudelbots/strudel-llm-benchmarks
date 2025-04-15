@@ -38,4 +38,16 @@ AVAILABLE_MODELS = [
     LlmModel(known_name="gpt-3.5-turbo", azure_deployment_name="gpt-35-turbo",
              azure_region="eastus", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=0.5/1000.0, price_per_1000_output_tokens=1.5/1000.0),
+    LlmModel(known_name="gpt-4o", azure_deployment_name="gpt-4o",
+             azure_region="eastus", langchain_ready=True, provider_name="AZURE",
+             price_per_1000_input_tokens=2.5/1000.0, price_per_1000_output_tokens=10/1000.0),
+    LlmModel(known_name="gpt-4", azure_deployment_name="gpt-4",
+             azure_region="eastus", langchain_ready=True, provider_name="AZURE",
+             price_per_1000_input_tokens=10/1000.0, price_per_1000_output_tokens=30/1000.0),
+    LlmModel(known_name="gpt-4.5", azure_deployment_name="gpt-4.5-preview",
+             azure_region="eastus2", langchain_ready=True, provider_name="AZURE",
+             price_per_1000_input_tokens=75/1000.0, price_per_1000_output_tokens=150/1000.0),
+
 ]
+
+
