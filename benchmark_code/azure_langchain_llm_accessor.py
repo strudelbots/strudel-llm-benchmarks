@@ -9,7 +9,7 @@ if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
 
 class AzureLangchainLlmAccessor(LlmAccessor):
-    supported_models = ['gpt-3.5-turbo', 'gpt-4o', 'gpt-4', 'gpt-4.5']
+    supported_models = ['gpt-3.5-turbo', 'gpt-4o', 'gpt-4', 'gpt-4.5', 'gpt-4.1']
     def __init__(self, system_context, model):
         assert model.known_name in self.supported_models, f"Model {model.known_name} is not supported for Azure Langchain."
         super().__init__(system_context, model)

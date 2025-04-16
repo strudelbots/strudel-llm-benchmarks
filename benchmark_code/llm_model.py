@@ -47,6 +47,9 @@ AVAILABLE_MODELS = [
     LlmModel(known_name="gpt-4.5", azure_deployment_name="gpt-4.5-preview",
              azure_region="eastus2", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=75/1000.0, price_per_1000_output_tokens=150/1000.0),
+    LlmModel(known_name="gpt-4.1", azure_deployment_name="gpt-4.1",
+             azure_region="eastus2", langchain_ready=True, provider_name="AZURE",
+             price_per_1000_input_tokens=2/1000.0, price_per_1000_output_tokens=8/1000.0),
 
 ]
 

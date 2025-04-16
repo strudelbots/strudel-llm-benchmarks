@@ -62,7 +62,8 @@ def get_models():
               'gpt-3.5-turbo',
               'gpt-4o',
               'gpt-4',
-              'gpt-4.5'
+              'gpt-4.5',
+              'gpt-4.1'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
     models = AVAILABLE_MODELS
