@@ -1,6 +1,6 @@
 import boto3
 from benchmark_code.llm_response import LlmResponse
-from benchmark_code.aws_boto3_llm_accessor import AWSBoto3Accessor
+from benchmark_code.accessors.aws_boto3_llm_accessor import AWSBoto3Accessor
 from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_TOP_P, DEFAULT_TOP_K, DEFAULT_MAX_TOKENS
 import json
 class AWSBoto3TitanLlmAccessor(AWSBoto3Accessor):

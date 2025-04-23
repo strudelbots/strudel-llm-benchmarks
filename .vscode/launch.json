@@ -1,8 +1,9 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
-            "name": "File Summarizer",
+            "name": "Run Summarizer",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/run_file_smmmarizer.py",
@@ -46,6 +47,18 @@
             "presentation": {
                 "clear": true
             }
+        },
+        {
+            "name": "Cache Manager",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/benchmark_code/cache_manager.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
         }
-    ]
+    ]   
 } 

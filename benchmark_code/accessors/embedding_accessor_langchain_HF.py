@@ -1,5 +1,5 @@
 from langchain_huggingface import HuggingFaceEmbeddings
-from benchmark_code.embedding_accessor import EmbeddingAccessor
+from benchmark_code.accessors.embedding_accessor import EmbeddingAccessor
 
 class EmbeddingAccessorLangchainHF(EmbeddingAccessor):
     def __init__(self, model_name="all-mpnet-base-v2"):
