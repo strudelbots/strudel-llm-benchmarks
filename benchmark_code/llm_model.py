@@ -28,7 +28,7 @@ AVAILABLE_MODELS = [
              price_per_1000_input_tokens=0.00105, price_per_1000_output_tokens=0.0042),
     LlmModel(known_name="titan_premier", aws_model_id="amazon.titan-text-premier-v1:0", 
              aws_region="us-east-1", langchain_ready=False, provider_name="AWS",
-             price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, delay_time=10),
+             price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, delay_time=20),
     LlmModel(known_name="Llama3.3", aws_model_id="us.meta.llama3-3-70b-instruct-v1:0", 
              aws_region="us-east-1", langchain_ready=True, provider_name="AWS", delay_time=10,
              price_per_1000_input_tokens=0.00072, price_per_1000_output_tokens=0.00072),

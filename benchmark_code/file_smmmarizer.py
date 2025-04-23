@@ -15,14 +15,17 @@ class FileSummarizer:
                       "The user input is given in a form of the following json with "
                       "two fields: "
                       "{'file_name': 'example name', 'file_content': 'example content'}")
+    with open('./results/pytorch_DB.json', 'r') as file:
+        file_data = json.load(file)
+    print(file_data)
     def __init__(self, model: LlmModel):
+        self.model = model
         self.llm_accessor = get_llm_accessor(self.system_context, model)
         self.file_prefix = file_date_prefix+"single__"
 
     def summarize_file(self, full_path):
         output_file_name, hased_name = self._get_out_file_name(full_path, self.llm_accessor.model.known_name)
-        if os.path.exists(f'{OUT_FILES_DIRECTORY_CACHE}/{hased_name}'):
-            shutil.copy(f'{OUT_FILES_DIRECTORY_CACHE}/{hased_name}', output_file_name)
+        if self._sumarization_exists(output_file_name, hased_name, full_path):
             return
         file_name = os.path.basename(full_path)
         file_text = self._get_file_text(filename=full_path)
@@ -53,3 +56,13 @@ class FileSummarizer:
         hash_file_name = hashlib.sha256(output_file.encode()).hexdigest()+ '.json'
         return output_file, hash_file_name
 
+    def _sumarization_exists(self, output_file_name, hased_name, full_path):
+        relative_path = full_path.removeprefix(REPO_DIRECTORY)
+        summary_data = self.file_data.get(relative_path, None)
+        if summary_data:
+            if self.model.known_name in summary_data:
+                return True
+        if os.path.exists(f'{OUT_FILES_DIRECTORY_CACHE}/{hased_name}'):
+            shutil.copy(f'{OUT_FILES_DIRECTORY_CACHE}/{hased_name}', output_file_name)
+            return True
+        return False

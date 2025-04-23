@@ -49,8 +49,9 @@ def _combine_summaries_into_single_json(file_name):
     summary_files = glob.glob(glob_pattern)
     data_collector = CollectFileSummaryData(summary_files)
     comparable_summaries = data_collector.merged_summaries()
-    with open(OUT_FILES_DIRECTORY +'/' + file_name, 'w') as f:
-        json.dump(comparable_summaries, f, indent=4)
+    if comparable_summaries:
+        with open(OUT_FILES_DIRECTORY +'/' + file_name, 'w') as f:
+            json.dump(comparable_summaries, f, indent=4)
 
 def get_models():
     run_on = ['nova-lite-v1',
@@ -75,7 +76,7 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 2.4 # Controls of the percentage of files that would be summarized.
+    sample_factor = 2.6 # Controls of the percentage of files that would be summarized.
     random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
