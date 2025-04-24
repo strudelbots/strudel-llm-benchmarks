@@ -2,7 +2,7 @@ from benchmark_code.accessors.azure_llm_accessor import AzureLlmAccessor
 from benchmark_code.accessors.aws_langchain_llm_accessor import AWSLangchainLlmAccessor
 from benchmark_code.accessors.aws_boto3_titan_llm_accessor import AWSBoto3TitanLlmAccessor
 from benchmark_code.accessors.azure_langchain_llm_accessor import AzureLangchainLlmAccessor
-
+from benchmark_code.accessors.aws_boto3_llm_accessor import AWSBoto3Accessor
 
 def get_llm_accessor(system_context, model):
 #    if type == "AZURE":

@@ -10494,5 +10494,611 @@
             },
             "latency": 1.909914
         }
+    },
+    "/torch/_export/db/examples/class_method.py": {
+        "Llama3.1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a PyTorch neural network module `ClassMethod` that contains a class method `method` and an instance method `forward`. The `forward` method applies a linear transformation to the input and then calls the class method `method` in three different ways to perform some computation. The file also creates an instance of the `ClassMethod` model and defines some example input arguments.",
+            "total_tokens": 318,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.773656
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `class_method.py` defines a custom PyTorch neural network module named `ClassMethod` that includes a class method `method` which increments its input by 1. The `forward` method of the module applies a linear transformation to the input, then multiplies the result by three versions of the class method applied to the input. Finally, the file creates an instance of the `ClassMethod` module and prepares example arguments for its execution.",
+            "total_tokens": 341,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.491621
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"class_method.py\" file is to define a PyTorch neural network module called ClassMethod. This module demonstrates the use of a class method within a neural network, showing how it can be inlined during tracing. The forward method of the module applies a linear transformation to the input and then uses the class method in three different ways to process the result.",
+            "total_tokens": 354,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 3.834355
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a PyTorch neural network module called `ClassMethod` that demonstrates the use of class methods within a model's computation. In the `forward` method, the module applies a linear transformation to the input and then calls a class method (`method`) in three different ways, multiplying the results. This file serves as an example of how class methods can be invoked and used in the forward pass of a PyTorch model, particularly in contexts where tracing or scripting might be involved.",
+            "total_tokens": 324,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 2.152192
+        },
+        "gpt-4": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `class_method.py` defines a Python class `ClassMethod` that inherits from `torch.nn.Module`. The class encapsulates neural network operations and includes a class method `method`, which simply increments its input by one. The `forward` function processes an input tensor through a linear transformation and then multiplies the result by three instances of the output from the `method` (applied different ways to demonstrate class method access). This hints at potential experimentation with class-level method invocations within a PyTorch model computation graph.",
+            "total_tokens": 333,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.86058
+        },
+        "Llama3.3": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file is to define a PyTorch neural network module `ClassMethod` that inherits from `torch.nn.Module`. This module contains a class method `method` that increments the input by 1, and an instance method `forward` that applies a linear transformation to the input and then applies the class method in three different ways. The file also creates an instance of the `ClassMethod` model and defines example input arguments for it using PyTorch's `torch.randn` function.",
+            "total_tokens": 337,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.989565
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file defines a neural network class `ClassMethod` using PyTorch's `torch.nn.Module`, which includes a custom forward method that applies a linear transformation, followed by computations involving a class method `method`. The `method` function increments the input tensor by 1 and is statically referenced multiple times during the forward pass. Overall, the file integrates PyTorch's tracing capabilities to demonstrate the inline usage of class methods within a model's computation graph.",
+            "total_tokens": 319,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.169305
+        },
+        "titan_premier": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file \"class_method.py\" is to define a class called \"ClassMethod\" that inherits from the \"torch.nn.Module\" class. This class has a class method called \"method\" that takes an input \"x\" and returns \"x + 1\". The class also has an instance method called \"forward\" that takes an input \"x\", applies a linear transformation using the \"linear\" attribute, and then applies the \"method\" class method to the transformed input. The file also includes an example usage of the class, where an instance of the class is created and passed a random input tensor.",
+            "total_tokens": 132,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.229346
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file is to define a PyTorch neural network class `ClassMethod` that includes a class method `method`, an initialization method, and a forward pass method. The forward method utilizes the class method to perform operations on the input tensor, combining it with the class method in various ways. The file also includes an example of instantiating the class and preparing sample input data.",
+            "total_tokens": 328,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.938332
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given 'class_method.py' file defines a class 'ClassMethod' that inherits from torch.nn.Module. It includes a class method 'method' that performs a simple operation on the input, an initialization method '__init__' that sets up a linear layer, and a 'forward' method that uses the linear layer and calls the class method 'method'. An example argument is provided, and an instance of the 'ClassMethod' class is created.",
+            "total_tokens": 317,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 0.979658
+        }
+    },
+    "/scripts/export/update_schema.py": {
+        "gpt-4o": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `update_schema.py` is a script designed to update and validate schema files used in PyTorch while ensuring version compatibility for the schema and treespec definitions. It provides functionality to generate updated schema and associated files, with options for dry-run and forced unsafe updates. The script checks for compatibility, generates headers, and writes YAML, C++ header, and Thrift schema files to specified paths.",
+            "total_tokens": 994,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 3.083895
+        },
+        "gpt-4.1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of update_schema.py is to update, validate, and optionally write new versions of PyTorch export schema files (in YAML, C++, and Thrift formats), ensuring that schema and treespec versions do not regress and that changes maintain compatibility unless explicitly overridden. The script uses command-line arguments to control its behavior (e.g., dry-run, force-unsafe), performs version checks, and integrates with a schema_check module to coordinate the schema update process. If not in dry-run mode, it writes the resulting schema files with appropriate headers and checksums to the specified directory.",
+            "total_tokens": 1030,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 5.209708
+        },
+        "Llama3.3": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `update_schema.py` file is to update the schema of a PyTorch project by checking and validating the schema version and treespec version, and then writing the updated schema to YAML, C++ header, and Thrift schema files. The script takes several command-line arguments, including the root directory of the PyTorch project, a dry-run option, and a force-unsafe option to override schema validation. The script ensures that the schema version and treespec version are not downgraded and that the schema is properly formatted and written to the correct files.",
+            "total_tokens": 1039,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.722528
+        },
+        "gpt-4": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python script `update_schema.py` acts as a tool to update serialization schema for the PyTorch project using command-line arguments provided by the user. It ensures schema version compatibility by checking against predetermined base versions and allows users to conditionally force updates even when schema validations fail through an explicit command-line flag. If not being run in dry-run mode (where updates are just printed), the script writes the updated schema in YAML format, as well as the associated header file for C++ integration and a Thrift schema to their respective files within a specified directory tree in the PyTorch repository.",
+            "total_tokens": 1034,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.622999
+        },
+        "titan_premier": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"update_schema.py\" file is to update the schema version and generate the corresponding YAML, C++ header, and Thrift schema files. It takes command-line arguments for the root directory of the PyTorch project, whether to perform a dry run, and whether to force an update even if schema validation fails. The script checks the current schema version, compares it with the base version, and updates the schema version if necessary. It then generates the required files with the updated schema version and checksum. If a dry run is specified, the script prints the updated schema instead of writing it to files.",
+            "total_tokens": 130,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.580286
+        },
+        "nova-lite-v1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The script `update_schema.py` is designed to update and validate the schema for a PyTorch project. It takes a root directory as input and checks the schema version, ensuring it does not downgrade. If the schema is valid, it updates the schema files and writes them to the specified directory, or it can print the schema without writing if the `--dry-run` option is used. The script also allows forcing the update even if the schema validation fails, using the `--force-unsafe` option.",
+            "total_tokens": 1167,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.882524
+        },
+        "Claude3.5": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"update_schema.py\" file is to update and validate schema files for a PyTorch project. It checks for version compatibility, generates new schema content in YAML, C++, and Thrift formats, and either prints the updated schema (in dry-run mode) or writes the new content to the respective files. The script also includes safety checks and options for forcing updates, making it a tool for managing schema versioning and compatibility in the PyTorch codebase.",
+            "total_tokens": 1264,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.367885
+        },
+        "nova-pro-v1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `update_schema.py` script updates the schema files for a PyTorch project by generating YAML, C++, and Thrift schema files. It validates the schema versions and writes the updated schema to the specified directory unless a dry-run is requested. Various checks and assertions ensure the integrity and versioning of the schema.",
+            "total_tokens": 1131,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.038294
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given \"update_schema.py\" file is a script that updates the schema in a PyTorch directory based on certain conditions and user-provided arguments. It checks for schema versions, validates schema changes, generates YAML and C++ headers, and writes them to their respective files in the PyTorch directory. The script handles scenarios where the schema version is not updated correctly and provides options to resolve the issue, including using a force-unsafe flag and detailed error messages.",
+            "total_tokens": 1009,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.045443
+        },
+        "Llama3.1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file, `update_schema.py`, is to update the schema of a PyTorch project by generating new schema files (YAML, C++, and Thrift) based on the current project state. It checks for schema version compatibility and validates the schema before writing the new files, with options for dry-run and force-unsafe modes. The script is designed to be run from the root of the PyTorch directory, and it uses the `torch._export.serde.schema_check` module for schema checking and generation.",
+            "total_tokens": 1031,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 4.075416
+        }
+    },
+    "/torch/profiler/_pattern_matcher.py": {
+        "Llama3.1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a set of patterns for identifying performance anti-patterns in PyTorch code, and to provide a function `report_all_anti_patterns` that can be used to report all matched anti-patterns in a given PyTorch profiler. The patterns include things like extra CUDA copies, for loop indexing, FP32 matrix multiplication, and more. The function can also benchmark the matched events and provide a summary of the results.",
+            "total_tokens": 5714,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 5.090148
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define a set of patterns implemented as classes to identify anti-patterns in PyTorch code related to performance optimization. These patterns include identifying issues such as unnecessary operations, inefficient data loading, incorrect settings in optimizers, and more. The file uses event profiling data to match against these patterns and generate reports with recommendations on how to resolve the identified anti-patterns.",
+            "total_tokens": 5700,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.487047
+        },
+        "gpt-4": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file implements a system designed to identify and report various anti-patterns in PyTorch profiling events, which could potentially hinder performance. These patterns include unnecessary copying of data to the GPU, redundant bias settings in combination with BatchNorm2d layers, improper optimizer configurations, synchronized DataLoader operations, and the use of suboptimal tensor operations like element-wise setting in loops. This process involves defining different classes for each pattern where each class contains methods to match specific events, report problems, and suggest improvements or benchmarks. The system allows overall compilation and output of these reports and even writes to JSON if necessary.",
+            "total_tokens": 5735,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 4.984866
+        },
+        "Llama3.3": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file is to identify and report anti-patterns in PyTorch code, specifically performance-related issues such as unnecessary CUDA copies, inefficient data loading, and suboptimal tensor operations. The file defines a set of patterns to match these anti-patterns and provides a reporting mechanism to output the findings, including source code locations and recommendations for improvement. The report can also be saved to a JSON file for further analysis.",
+            "total_tokens": 5710,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 2.24138
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define a base `Pattern` class and several subclasses that identify specific anti-patterns in PyTorch code, providing detailed reports and optional performance benchmarks for matched events. The file also includes a function to generate and print a comprehensive report of all detected anti-patterns.",
+            "total_tokens": 6653,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 2.113673
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define and implement various patterns for detecting anti-patterns in PyTorch code, providing detailed reports and recommendations for optimization. The file includes a base `Pattern` class and several subclasses that identify specific anti-patterns, such as inefficient tensor operations, suboptimal data loading, and improper optimizer configurations. It also includes a function to generate a comprehensive report of detected issues, which can be printed or saved as a JSON file.",
+            "total_tokens": 6683,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.303635
+        },
+        "Claude3.5": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"_pattern_matcher.py\" file is to define and implement various anti-patterns in PyTorch code. It includes a base Pattern class and several specific pattern classes that inherit from it, such as ExtraCUDACopyPattern, FP32MatMulPattern, and OptimizerSingleTensorPattern. The file also provides a function called \"report_all_anti_patterns\" that analyzes a PyTorch profile, identifies matching anti-patterns, and generates a report with suggestions for code optimization.",
+            "total_tokens": 7230,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.574387
+        },
+        "titan_premier": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file named \"_pattern_matcher.py\" is a part of the TorchTidy tool, which is used to analyze PyTorch profiling results and identify anti-patterns. The file contains several classes that inherit from the base class \"Pattern\". Each class represents a specific anti-pattern and implements methods to match the pattern and generate a report.\n\nThe main functionality of the file is to define various anti-patterns and provide methods to match these patterns in the profiling results. The anti-patterns include:\n\n1. Extra CUDA Copy Pattern: This pattern identifies if a constant tensor is created on the CPU and immediately moved to the GPU.\n2. For Loop Indexing Pattern: This pattern identifies if a for loop is used to index a tensor that can be vectorized.\n3. FP32 MatMul Pattern: This pattern identifies if the FP32 version of the MatMul operation is used instead of the TF32 version on GPUs that support TF32.\n4. Optimizer Single Tensor Pattern: This pattern identifies if the single-tensor version of an optimizer is used instead of the multi-tensor version.\n5. Synchronized DataLoader Pattern: This pattern identifies if the DataLoader is running with a synchronized implementation instead of an asynchronous implementation.\n6. Grad Not Set To None Pattern: This pattern identifies if the gradient is set to zero instead of None in the zero_grad method.\n7. Conv2d Bias Followed By BatchNorm2d Pattern: This pattern identifies if bias is enabled in Conv2d that is followed by BatchNorm2d.\n8. MatMul Dim In FP16 Pattern: This pattern identifies if the dimension of the input tensors for the matmul operation is not aligned when using FP16.\n\nThe file also includes helper functions to extract information from the profiling results, such as the source code location and input shapes and types.\n\nThe main function \"report\\_all\\_anti\\_patterns\" takes a profiling object, a boolean flag to enable benchmarking, a boolean flag to enable printing the report, and an optional directory to save the report in JSON format. It iterates through all the anti-patterns, matches them in the profiling results, generates a report for each pattern, and",
+            "total_tokens": 500,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 11.372683
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"_pattern_matcher.py\" defines a set of pattern-matching classes that analyze PyTorch profiler traces to identify inefficient or suboptimal code patterns (anti-patterns) in deep learning workflows. Each pattern targets specific inefficiencies\u2014such as unnecessary CPU-to-GPU tensor copies, lack of vectorization, suboptimal optimizer usage, inefficient data loading, or misaligned matrix multiplication\u2014and provides recommendations and optional benchmark-based speedup estimates for remedying these issues. The main functionality is to scan profiler data, detect these anti-patterns, report findings with actionable advice, and optionally generate a JSON report summarizing the results.",
+            "total_tokens": 5731,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.53415
+        },
+        "gpt-4o": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `_pattern_matcher.py` file provides a framework for identifying and reporting anti-patterns in PyTorch code by analyzing profiling data. It defines a base `Pattern` class and specific subclasses for detecting inefficiencies, such as unnecessary data copying between CPU and GPU, non-vectorized tensor indexing, suboptimal tensor operations, or improper configuration of PyTorch modules. Additionally, it includes functionality for detailed event traversal, benchmarking, and generating reports to help developers optimize their code.",
+            "total_tokens": 5701,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 2.117479
+        }
     }
 }

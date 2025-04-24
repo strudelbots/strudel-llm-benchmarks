@@ -83,12 +83,18 @@ class CacheManager:
                         single_file_entries.data[key] = {**current_file_data, model_key: file_summary}
         return single_file_entries
 
-    def update_db(self, db_dict_format):
+    def update_db(self, input_db_dict):
         db = self._load_db()
-        for file, db_entry in db_dict_format.items():
+        for file, db_entry in input_db_dict.items():
             if file in db.keys():
-                raise NotImplementedError(f"File {file} already exists in the database")
-            db[file] = db_entry
+                file_data_in_db = db[file]
+                if db_entry.keys() != file_data_in_db.keys():
+                    raise NotImplementedError(f"File {file} already exists in the database")
+                if db_entry != file_data_in_db:
+                    raise NotImplementedError(f"File {file} already exists in the database")
+                continue
+            else:
+                db[file] = db_entry
         self._save_db(db)
 
 if __name__ == "__main__":
