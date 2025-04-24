@@ -17,7 +17,6 @@ class FileSummarizer:
                       "{'file_name': 'example name', 'file_content': 'example content'}")
     with open('./results/pytorch_DB.json', 'r') as file:
         file_data = json.load(file)
-    print(file_data)
     def __init__(self, model: LlmModel):
         self.model = model
         self.llm_accessor = get_llm_accessor(self.system_context, model)
@@ -26,7 +25,10 @@ class FileSummarizer:
     def summarize_file(self, full_path):
         output_file_name, hased_name = self._get_out_file_name(full_path, self.llm_accessor.model.known_name)
         if self._sumarization_exists(output_file_name, hased_name, full_path):
+            #print(f'{full_path} already exists in the database')
             return
+        #print(f'{full_path} does not exist in the database')
+        print(f'{full_path} is being summarized by model: {self.llm_accessor.model.known_name}')
         file_name = os.path.basename(full_path)
         file_text = self._get_file_text(filename=full_path)
         llm_input = '{' + f'"file_name": "{file_name}", "file_content": "{file_text}"' + '}'

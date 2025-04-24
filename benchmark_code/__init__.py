@@ -7,6 +7,9 @@ OUT_FILES_DIRECTORY=f'{Path.home()}/tmp' # where all files will be writen, feel 
 OUT_FILES_DIRECTORY_CACHE=f'{Path.home()}/cache'
 
 file_date_prefix=datetime.datetime.now().strftime("%m-%Y__") # do not change unless you are a developer
+project_name = 'pytorch'
+file_date_prefix=f'{project_name}__{file_date_prefix}'
+
 DEFAULT_TEMPERATURE=0.3
 DEFAULT_TOP_P=0.2
 DEFAULT_TOP_K=10
