@@ -41,50 +41,9 @@ class CacheManager:
                 file = cache_data['file_name']
                 summaries_per_file[file].append(cache_data['llm_result'])
         return summaries_per_file
-        
-    
-    def process_cache_files(self):
-        raise NotImplementedError("This method is not implemented")
-        """Process all JSON files in the cache directory and update the database"""
-        all_summaries_all_models = self._collect_all_summaries_into_a_single_file()
-        comparable_summaries = self._merge_summaries_per_file(all_summaries_all_models)
-
-        cache_files = [f for f in os.listdir(self.cache_dir) if f.endswith('.json')]
-        if not cache_files:
-            return
-
-        db_data = self._load_db()
-        
-        for cache_file in cache_files:
-            cache_path = os.path.join(self.cache_dir, cache_file)
-            try:
-                with open(cache_path, 'r') as f:
-                    cache_data = json.load(f)
-                
-                # Update database with cache data
-                # Assuming cache data is a dictionary that should be merged into the database
-                if isinstance(cache_data, dict):
-                    file = cache_data['file_name'].removeprefix('/home/shai/pytorch')
-                    if file not in db_data:
-                        print(f"File {file} not found in database")
-                    else:
-                        print(f"File {file} found in database")
-                else:
-                    raise ValueError(f"Cache file {cache_file} is not a dictionary")
-                
-                # Delete the processed cache file
-                if self.force_lear_cache:
-                    os.remove(cache_path)
-                
-            except Exception as e:
-                print(f"Error processing cache file {cache_file}: {str(e)}")
-                raise e
-
-        # Save the updated database
-        self._save_db(db_data)
-
+ 
     def force_clear_cache(self):
-        if not self.force_lear_cache:
+        if not self.force_clear_cache:
             return
         """Clear all files from the cache directory"""
         for file in os.listdir(self.cache_dir):
@@ -122,9 +81,16 @@ class CacheManager:
                         single_file_entries.data[key] = {model_key: file_summary}
                     else:
                         single_file_entries.data[key] = {**current_file_data, model_key: file_summary}
-                
-                
         return single_file_entries
+
+    def update_db(self, db_dict_format):
+        db = self._load_db()
+        for file, db_entry in db_dict_format.items():
+            if file in db.keys():
+                raise NotImplementedError(f"File {file} already exists in the database")
+            db[file] = db_entry
+        self._save_db(db)
+
 if __name__ == "__main__":
     cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')
     summaries_per_file = cache_manager._collect_summaries_per_target_file()
@@ -136,5 +102,6 @@ if __name__ == "__main__":
         f.write(str_json)
     for key, value in single_file_entries.data.items():
         print(key)
+    cache_manager.update_db(db_dict_format)
     #cache_manager.process_cache_files()
     #cache_manager.force_lear_cache()

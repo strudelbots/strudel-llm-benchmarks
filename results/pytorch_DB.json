@@ -9686,5 +9686,813 @@
             "project_name": "pytorch",
             "provider_name": "AZURE"
         }
+    },
+    "/torch/_lazy/device_context.py": {
+        "Llama3.3": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `device_context.py` file is to manage device contexts for PyTorch, a popular deep learning framework, using a thread-safe approach. The `DeviceContext` class represents a device context, and the `get_device_context` function retrieves or creates a device context for a given device, with a default device type used if none is specified. The device contexts are stored in a dictionary, `_CONTEXTS`, which is protected by a lock to ensure thread safety.",
+            "total_tokens": 363,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.365493
+        },
+        "titan_premier": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"device_context.py\" is a Python file that defines a class called \"DeviceContext\" and a function called \"get_device_context\". The \"DeviceContext\" class is used to manage device contexts, and the \"get_device_context\" function is used to retrieve the device context for a given device or the default device. The file also imports the necessary modules for threading and typing, as well as the \"torch._C._lazy\" module for accessing device-related functionality.\n\nHere are the key takeaways from the file:\n\n* The \"DeviceContext\" class is used to manage device contexts, with a dictionary to store the contexts and a lock to ensure thread safety.\n* The \"get_device_context\" function retrieves the device context for a given device or the default device, creating a new context if necessary.\n* The file imports the necessary modules for threading, typing, and device-related functionality.\n\nOverall, the main functionality of the file is to provide a way to manage device contexts in a thread-safe manner.",
+            "total_tokens": 229,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 6.145046
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `device_context.py` file defines a `DeviceContext` class and a `get_device_context` function to manage and retrieve device contexts for PyTorch operations, ensuring thread-safe access and reuse of context instances.",
+            "total_tokens": 329,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 0.811631
+        },
+        "gpt-4": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `device_context.py` defines a class `DeviceContext` and a function `get_device_context`. This function retrieves or creates a `DeviceContext` instance for a specified device, storing each instance in a dictionary with threading locks to handle concurrency. The `DeviceContext` class manages a context related to a specific device (for example, hardware or simulation devices), facilitating the management of device-specific states or configurations.",
+            "total_tokens": 343,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.127384
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to manage device contexts in a multi-threaded environment. It provides a DeviceContext class and a get_device_context function that creates or retrieves a DeviceContext object for a given device, using a thread-safe mechanism to ensure proper handling of shared resources across different threads.",
+            "total_tokens": 382,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 2.221844
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"device_context.py\" provides functionality to manage and retrieve a thread-safe singleton instance of `DeviceContext`, which represents the context associated with a specific device (e.g., CPU, GPU). It ensures that a single context instance is created per device using a lock and maintains these instances in a shared dictionary. Additionally, it leverages a default device type from PyTorch\u2019s lazy module when no device is explicitly specified.",
+            "total_tokens": 349,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.810665
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `device_context.py` file is to manage a thread-safe cache of device contexts, where each context is associated with a specific device (e.g. a GPU or CPU). The `get_device_context` function retrieves or creates a device context for a given device, using a default device if none is specified. The device context is stored in a dictionary, which is protected by a lock to ensure thread safety.",
+            "total_tokens": 351,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.526815
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a thread-safe mechanism for managing and retrieving singleton device context objects associated with computation devices (such as CPU or GPU), using Python threading locks. It provides a DeviceContext class to represent a computational device and a get_device_context() function to retrieve or create (if needed) a DeviceContext for a specified or default device. The implementation ensures only one context per device exists throughout the application's lifetime.",
+            "total_tokens": 345,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 1.807766
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to manage and provide access to device-specific contexts in a thread-safe manner. It utilizes a dictionary to store instances of `DeviceContext` associated with different devices, ensuring that each device context is created only once. The `get_device_context` function retrieves or creates a `DeviceContext` instance for a specified device, defaulting to the default device type if no device is provided.",
+            "total_tokens": 376,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.904497
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to define a class DeviceContext that manages the context of different devices. It provides a method get_device_context() to retrieve or create a DeviceContext object based on the specified device type. The class uses a dictionary to store and reuse DeviceContext objects for each device type, ensuring a single context per device.",
+            "total_tokens": 331,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 0.984957
+        }
+    },
+    "/torch/utils/benchmark/op_fuzzers/spectral.py": {
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given 'spectral.py' file contains a class called 'SpectralOpFuzzer' that extends the 'benchmark.Fuzzer' class. This class is used to generate benchmark parameters for spectral operations, specifically for testing Fast Fourier Transform (FFT) implementations in PyTorch. The parameters include dimensionality of data, shapes for input tensors (including regular sizes for FFT testing), steps for strided memory access, and other tensor properties like data type and memory allocation.",
+            "total_tokens": 1008,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.213898
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of spectral.py is to define a fuzz testing utility, SpectralOpFuzzer, for benchmarking spectral (e.g., FFT) operations in PyTorch. It generates varied tensor shapes\u2014including those optimized for fast FFT performance\u2014using parameterized fuzzing, allowing systematic exploration of dimensionality, individual axis sizes, strides, and memory layouts. The generated tensors and parameters are particularly tailored to test and evaluate the efficiency and robustness of PyTorch's spectral operators, emphasizing sizes (\"regular numbers\") that are typically performant for FFT algorithms.",
+            "total_tokens": 1023,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 2.596718
+        },
+        "Llama3.1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a class `SpectralOpFuzzer` that inherits from `torch.utils.benchmark.Fuzzer`. This class is designed to generate random inputs for benchmarking spectral operations, such as Fast Fourier Transform (FFT), in PyTorch. The fuzzer generates random tensor shapes, sizes, and strides, with a focus on regular sizes that are optimized for FFT implementations.",
+            "total_tokens": 1003,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.236405
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `spectral.py` file defines a `SpectralOpFuzzer` class for fuzz testing spectral operations (like FFT) in PyTorch. It generates various input tensor shapes and strides to benchmark the performance, with a focus on \"regular\" sizes that are multiples of 2, 3, and 5. The fuzzer utilizes PyTorch's benchmarking utilities to create and test these configurations.",
+            "total_tokens": 1083,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.158452
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `spectral.py` file defines a class `SpectralOpFuzzer` for fuzz testing spectral operations in PyTorch, focusing on generating tensors with specific shapes and strides to test the efficiency and robustness of FFT implementations. It uses a combination of regular and random sizes for tensor dimensions, and includes parameters for controlling the distribution of these sizes, the data type, and whether to use CUDA. The file also includes utility functions for generating power ranges and regular sizes.",
+            "total_tokens": 1095,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.880591
+        },
+        "gpt-4o": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `SpectralOpFuzzer`, a utility for creating and benchmarking fuzzed tensors and parameters targeted specifically for spectral operations such as FFT (Fast Fourier Transform). It generates test cases with configurable dimensions, tensor shapes, strides, and probabilities emphasizing \"regular sizes\" that are computationally efficient for FFT. The fuzzer leverages PyTorch's benchmarking utilities to evaluate performance under diverse conditions, focusing on varied tensor configurations and memory access patterns.",
+            "total_tokens": 1007,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.609978
+        },
+        "titan_premier": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file \"spectral.py\" contains a class named \"SpectralOpFuzzer\" that inherits from the \"Fuzzer\" class in the \"torch.utils\" module. This class generates random inputs for benchmarking spectral operations in PyTorch. The class initializes various parameters and tensors, including the dimensionality, shape, and steps of the input tensor, as well as the data type and device (CPU or GPU) for the tensor. The class also includes a list of regular sizes that are commonly used in FFT implementations and are generated using prime factors 2, 3, and 5. The probability of generating a regular size can be controlled by the \"probability_regular\" parameter. Overall, the main functionality of the file is to provide a framework for fuzz testing of spectral operations in PyTorch.",
+            "total_tokens": 175,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 4.042059
+        },
+        "gpt-4": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `spectral.py` defines a class `SpectralOpFuzzer` for fuzz testing spectral operations (like FFT). It utilizes `torch` and `benchmark` from PyTorch to set up a fuzzing environment where tensor dimensions and shapes can be randomly generated according to specific parameters, including both regular and irregular distribution sizes optimized for FFT performance. Different data types, memory strides, and contingencies for tensor creation on both CPU and GPU are supported by configuring detailed fuzzer parameters.",
+            "total_tokens": 1013,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.831055
+        },
+        "Llama3.3": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file, `spectral.py`, is to define a class `SpectralOpFuzzer` that inherits from `torch.utils.benchmark.Fuzzer` and is designed to generate random inputs for benchmarking spectral operations, particularly those involving Fast Fourier Transforms (FFTs). The fuzzer generates random tensor shapes, sizes, and strides, with a focus on \"regular\" sizes that are optimized for FFT performance. The class allows for customization of parameters such as data type, CUDA usage, and probability of selecting regular sizes, making it a versatile tool for benchmarking and testing spectral operations in PyTorch.",
+            "total_tokens": 1049,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.880654
+        },
+        "Claude3.5": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"spectral.py\" file is to define a SpectralOpFuzzer class, which is a custom fuzzer for spectral operations in PyTorch. This fuzzer generates random input parameters and tensors for testing spectral operations, with a focus on creating various shapes and sizes, including regular sizes that are optimal for FFT implementations. The file also includes utility functions and constants to support the fuzzer's operation, particularly in generating and handling dimension sizes for the input tensors.",
+            "total_tokens": 1261,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.148508
+        }
+    },
+    "/torch/distributed/tensor/_sharding_prop.py": {
+        "gpt-4": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file \"_sharding_prop.py\" implements and manages sharding strategies and propagation rules for distributed tensor operations in PyTorch. It includes classes and methods for caching strategies locally, registering sharding rules for different tensor operations, propagating tensor metadata dynamically based on operations' sharding strategies, and managing output specifications in a distributed environment. The automation within the file aims to enhance computation by effectively distributing data and computations in a multi-node setup, adapting strategies for tensor operation, and minimizing data redistribution overhead during execution.",
+            "total_tokens": 4395,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 3.403851
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_sharding_prop.py` file is to define and manage the propagation of sharding strategies for distributed tensor operations in PyTorch, utilizing caching mechanisms and strategy selection based on cost.",
+            "total_tokens": 5352,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.345853
+        },
+        "Llama3.1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to define a class `ShardingPropagator` that is responsible for propagating sharding information through PyTorch operators. It uses a set of predefined rules and strategies to determine the output sharding of an operator based on its input sharding. The class also provides methods for registering custom sharding propagation rules and strategies for specific operators.",
+            "total_tokens": 4373,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 6.225286
+        },
+        "Llama3.3": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file `_sharding_prop.py` is to propagate sharding for PyTorch operators, which involves determining how to split and distribute tensors across multiple devices. The `ShardingPropagator` class is responsible for this task, using a combination of predefined rules and strategies to determine the optimal sharding for a given operator. The propagator takes into account factors such as tensor shapes, strides, and device placements to make its decisions.",
+            "total_tokens": 4392,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 2.689875
+        },
+        "gpt-4o": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `_sharding_prop.py` file implements functionality for propagating and managing tensor sharding in distributed systems using PyTorch's distributed tensor framework. It provides mechanisms for registering sharding rules and strategies for various operators, optimizing tensor reshaping and redistribution, and maintaining metadata such as tensor shape and stride during sharding operations. The main component, `ShardingPropagator`, handles sharding propagation by dynamically adjusting tensor placements and metadata based on defined rules, caching mechanisms, and efficient strategy selection.",
+            "total_tokens": 4430,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.456099
+        },
+        "titan_premier": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file is to propagate the sharding for an operator given the op schema. It also has methods to register sharding propagation rule for an operator and register a sharding strategy generator for an operator. It also has methods to propagate the tensor metadata and wrap the output spec with the tensor metadata.",
+            "total_tokens": 63,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 2.47016
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a `ShardingPropagator` class that manages the propagation of tensor sharding strategies in distributed tensor operations. It registers rules and strategies for specific operations to determine how tensors should be sharded across different devices in a distributed computing environment. The class provides methods to propagate sharding information for given operation schemas and associate the resulting sharding with tensor metadata.",
+            "total_tokens": 5383,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.55044
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file \"_sharding_prop.py\" is to define classes and methods related to sharding propagation for operators in PyTorch. It includes functionality to register sharding rules and strategies for operators, propagate sharding information for operators based on rules/strategies, adjust shape and stride arguments for certain operations, and handle tensor metadata propagation. The file also contains classes such as `ShardingPropagator` for managing sharding information, `LocalLRUCache` for caching user functions locally, and methods for wrapping output specifications with tensor metadata.",
+            "total_tokens": 4406,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.711209
+        },
+        "Claude3.5": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"_sharding_prop.py\" file is to implement a sharding propagation system for distributed tensor operations in PyTorch. It defines a ShardingPropagator class that handles the registration and execution of sharding propagation rules and strategies for various PyTorch operators, allowing for efficient distribution of tensor computations across multiple devices or machines.",
+            "total_tokens": 5859,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 5.596799
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The primary functionality of this file is to define the ShardingPropagator class and its associated logic, which is responsible for propagating sharding strategies and tensor metadata for distributed tensor operations in PyTorch. It provides mechanisms to register sharding propagation rules and operator strategies, automatically select optimal sharding placements, and handle redistributions for a wide variety of tensor operations. The file ensures seamless and efficient manipulation, suggestion, and validation of sharded tensor layouts during distributed execution by supporting both rule-based and strategy-based propagation.",
+            "total_tokens": 4434,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.204338
+        }
+    },
+    "/torch/nn/quantizable/modules/activation.py": {
+        "nova-pro-v1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `activation.py` file serves as a compatibility layer during the migration of quantizable modules to the `torch/ao/nn/quantizable` package. It imports the `MultiheadAttention` module from the new location to ensure continued functionality during the transition.",
+            "total_tokens": 257,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 0.899444
+        },
+        "Llama3.1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file \"activation.py\" is to provide a module for quantizable activation functions, specifically importing the MultiheadAttention class from another module. The file is currently being migrated to a new location and is being kept for compatibility purposes. It does not contain any original functionality, but rather serves as a redirect to the new location.",
+            "total_tokens": 271,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 2.843743
+        },
+        "Llama3.3": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `activation.py` file is to provide a compatibility layer for quantizable modules, specifically importing the `MultiheadAttention` module from `torch.ao.nn.quantizable.modules.activation`. This file is currently being migrated to `torch/ao/nn/quantizable` and is being kept for backwards compatibility. The file does not contain any new functionality and instead serves as a redirect to the new location of the quantizable modules.",
+            "total_tokens": 293,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.36056
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"activation.py\" file is to provide compatibility for quantizable modules during the migration process to a new location in the PyTorch library. It imports the `MultiheadAttention` class from the new module location, `torch.ao.nn.quantizable.modules.activation`, and serves as a transitional file until the migration is complete. New functionalities should be added to the new module location instead of this file.",
+            "total_tokens": 292,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.691123
+        },
+        "gpt-4o": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `activation.py` serves as a compatibility layer during the migration of quantizable modules to the `torch/ao/nn/quantizable` namespace. It re-exports the `MultiheadAttention` module from the new location to ensure backward compatibility. The file also advises developers to add new functionality directly to the updated namespace while maintaining import statements here.",
+            "total_tokens": 269,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.09162
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file activation.py serves as a transitional compatibility module for quantizable neural network components, specifically re-exporting the MultiheadAttention class from torch.ao.nn.quantizable.modules.activation. It includes documentation stating that its contents are being migrated to a new location and advises contributors to add new features to the updated directory while importing them here for backward compatibility. Thus, its main function is to maintain compatibility during the refactoring of quantizable PyTorch modules.",
+            "total_tokens": 286,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.457431
+        },
+        "Claude3.5": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"activation.py\" serves as a compatibility layer during the migration process of quantizable modules from their current location to \"torch/ao/nn/quantizable\". It imports the MultiheadAttention module from the new location while maintaining backward compatibility for existing code. The file also includes a note advising developers to add new functionalities directly to the appropriate files under the new directory structure.",
+            "total_tokens": 301,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 3.042503
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"activation.py\" file is to provide information about Quantizable Modules being migrated to a specific directory in the torch library. It serves as a placeholder for compatibility during the migration process and instructs users to add new entries or functionalities to the appropriate file under the designated directory while ensuring import statements are added to this file. Specifically, it imports the MultiheadAttention module from torch.ao.nn.quantizable.modules.activation.",
+            "total_tokens": 283,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.086942
+        },
+        "titan_premier": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"activation.py\" is a Python file that contains the import statement for the MultiheadAttention class from the torch.ao.nn.quantizable.modules.activation module. This file is currently in the process of being migrated to the torch/ao/nn/quantizable directory and is kept here for compatibility purposes. The file also contains a docstring that provides information about the ongoing migration process and instructions for adding new entries or functionalities.",
+            "total_tokens": 92,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.846073
+        },
+        "gpt-4": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file \"activation.py\" is involved in the migration of quantizable modules to the new directory `torch/ao/nn/quantizable`. It currently primarily handles legacy support for compatibility during this migration by importing the `MultiheadAttention` module from the new location `torch.ao.nn.quantizable.modules.activation`. Thus, this file acts as a transitional linker to the new modular structure while maintaining backward compatibility.",
+            "total_tokens": 279,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 1.909914
+        }
     }
 }
