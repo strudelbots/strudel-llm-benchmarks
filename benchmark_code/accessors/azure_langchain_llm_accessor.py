@@ -1,6 +1,6 @@
 import os
 from benchmark_code.llm_response import LlmResponse
-from benchmark_code.llm_accessor import LlmAccessor
+from benchmark_code.accessors.llm_accessor import LlmAccessor
 from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_P, DEFAULT_TOP_K
 from langchain_azure_ai.chat_models import AzureAIChatCompletionsModel
 

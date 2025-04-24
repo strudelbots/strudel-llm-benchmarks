@@ -9686,5 +9686,1419 @@
             "project_name": "pytorch",
             "provider_name": "AZURE"
         }
+    },
+    "/torch/_lazy/device_context.py": {
+        "Llama3.3": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `device_context.py` file is to manage device contexts for PyTorch, a popular deep learning framework, using a thread-safe approach. The `DeviceContext` class represents a device context, and the `get_device_context` function retrieves or creates a device context for a given device, with a default device type used if none is specified. The device contexts are stored in a dictionary, `_CONTEXTS`, which is protected by a lock to ensure thread safety.",
+            "total_tokens": 363,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.365493
+        },
+        "titan_premier": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"device_context.py\" is a Python file that defines a class called \"DeviceContext\" and a function called \"get_device_context\". The \"DeviceContext\" class is used to manage device contexts, and the \"get_device_context\" function is used to retrieve the device context for a given device or the default device. The file also imports the necessary modules for threading and typing, as well as the \"torch._C._lazy\" module for accessing device-related functionality.\n\nHere are the key takeaways from the file:\n\n* The \"DeviceContext\" class is used to manage device contexts, with a dictionary to store the contexts and a lock to ensure thread safety.\n* The \"get_device_context\" function retrieves the device context for a given device or the default device, creating a new context if necessary.\n* The file imports the necessary modules for threading, typing, and device-related functionality.\n\nOverall, the main functionality of the file is to provide a way to manage device contexts in a thread-safe manner.",
+            "total_tokens": 229,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 6.145046
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `device_context.py` file defines a `DeviceContext` class and a `get_device_context` function to manage and retrieve device contexts for PyTorch operations, ensuring thread-safe access and reuse of context instances.",
+            "total_tokens": 329,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 0.811631
+        },
+        "gpt-4": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `device_context.py` defines a class `DeviceContext` and a function `get_device_context`. This function retrieves or creates a `DeviceContext` instance for a specified device, storing each instance in a dictionary with threading locks to handle concurrency. The `DeviceContext` class manages a context related to a specific device (for example, hardware or simulation devices), facilitating the management of device-specific states or configurations.",
+            "total_tokens": 343,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.127384
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to manage device contexts in a multi-threaded environment. It provides a DeviceContext class and a get_device_context function that creates or retrieves a DeviceContext object for a given device, using a thread-safe mechanism to ensure proper handling of shared resources across different threads.",
+            "total_tokens": 382,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 2.221844
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"device_context.py\" provides functionality to manage and retrieve a thread-safe singleton instance of `DeviceContext`, which represents the context associated with a specific device (e.g., CPU, GPU). It ensures that a single context instance is created per device using a lock and maintains these instances in a shared dictionary. Additionally, it leverages a default device type from PyTorch\u2019s lazy module when no device is explicitly specified.",
+            "total_tokens": 349,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.810665
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `device_context.py` file is to manage a thread-safe cache of device contexts, where each context is associated with a specific device (e.g. a GPU or CPU). The `get_device_context` function retrieves or creates a device context for a given device, using a default device if none is specified. The device context is stored in a dictionary, which is protected by a lock to ensure thread safety.",
+            "total_tokens": 351,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.526815
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a thread-safe mechanism for managing and retrieving singleton device context objects associated with computation devices (such as CPU or GPU), using Python threading locks. It provides a DeviceContext class to represent a computational device and a get_device_context() function to retrieve or create (if needed) a DeviceContext for a specified or default device. The implementation ensures only one context per device exists throughout the application's lifetime.",
+            "total_tokens": 345,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 1.807766
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to manage and provide access to device-specific contexts in a thread-safe manner. It utilizes a dictionary to store instances of `DeviceContext` associated with different devices, ensuring that each device context is created only once. The `get_device_context` function retrieves or creates a `DeviceContext` instance for a specified device, defaulting to the default device type if no device is provided.",
+            "total_tokens": 376,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.904497
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"device_context.py\" file is to define a class DeviceContext that manages the context of different devices. It provides a method get_device_context() to retrieve or create a DeviceContext object based on the specified device type. The class uses a dictionary to store and reuse DeviceContext objects for each device type, ensuring a single context per device.",
+            "total_tokens": 331,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 0.984957
+        }
+    },
+    "/torch/utils/benchmark/op_fuzzers/spectral.py": {
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given 'spectral.py' file contains a class called 'SpectralOpFuzzer' that extends the 'benchmark.Fuzzer' class. This class is used to generate benchmark parameters for spectral operations, specifically for testing Fast Fourier Transform (FFT) implementations in PyTorch. The parameters include dimensionality of data, shapes for input tensors (including regular sizes for FFT testing), steps for strided memory access, and other tensor properties like data type and memory allocation.",
+            "total_tokens": 1008,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.213898
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of spectral.py is to define a fuzz testing utility, SpectralOpFuzzer, for benchmarking spectral (e.g., FFT) operations in PyTorch. It generates varied tensor shapes\u2014including those optimized for fast FFT performance\u2014using parameterized fuzzing, allowing systematic exploration of dimensionality, individual axis sizes, strides, and memory layouts. The generated tensors and parameters are particularly tailored to test and evaluate the efficiency and robustness of PyTorch's spectral operators, emphasizing sizes (\"regular numbers\") that are typically performant for FFT algorithms.",
+            "total_tokens": 1023,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 2.596718
+        },
+        "Llama3.1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a class `SpectralOpFuzzer` that inherits from `torch.utils.benchmark.Fuzzer`. This class is designed to generate random inputs for benchmarking spectral operations, such as Fast Fourier Transform (FFT), in PyTorch. The fuzzer generates random tensor shapes, sizes, and strides, with a focus on regular sizes that are optimized for FFT implementations.",
+            "total_tokens": 1003,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.236405
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `spectral.py` file defines a `SpectralOpFuzzer` class for fuzz testing spectral operations (like FFT) in PyTorch. It generates various input tensor shapes and strides to benchmark the performance, with a focus on \"regular\" sizes that are multiples of 2, 3, and 5. The fuzzer utilizes PyTorch's benchmarking utilities to create and test these configurations.",
+            "total_tokens": 1083,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.158452
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `spectral.py` file defines a class `SpectralOpFuzzer` for fuzz testing spectral operations in PyTorch, focusing on generating tensors with specific shapes and strides to test the efficiency and robustness of FFT implementations. It uses a combination of regular and random sizes for tensor dimensions, and includes parameters for controlling the distribution of these sizes, the data type, and whether to use CUDA. The file also includes utility functions for generating power ranges and regular sizes.",
+            "total_tokens": 1095,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.880591
+        },
+        "gpt-4o": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `SpectralOpFuzzer`, a utility for creating and benchmarking fuzzed tensors and parameters targeted specifically for spectral operations such as FFT (Fast Fourier Transform). It generates test cases with configurable dimensions, tensor shapes, strides, and probabilities emphasizing \"regular sizes\" that are computationally efficient for FFT. The fuzzer leverages PyTorch's benchmarking utilities to evaluate performance under diverse conditions, focusing on varied tensor configurations and memory access patterns.",
+            "total_tokens": 1007,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.609978
+        },
+        "titan_premier": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file \"spectral.py\" contains a class named \"SpectralOpFuzzer\" that inherits from the \"Fuzzer\" class in the \"torch.utils\" module. This class generates random inputs for benchmarking spectral operations in PyTorch. The class initializes various parameters and tensors, including the dimensionality, shape, and steps of the input tensor, as well as the data type and device (CPU or GPU) for the tensor. The class also includes a list of regular sizes that are commonly used in FFT implementations and are generated using prime factors 2, 3, and 5. The probability of generating a regular size can be controlled by the \"probability_regular\" parameter. Overall, the main functionality of the file is to provide a framework for fuzz testing of spectral operations in PyTorch.",
+            "total_tokens": 175,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 4.042059
+        },
+        "gpt-4": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `spectral.py` defines a class `SpectralOpFuzzer` for fuzz testing spectral operations (like FFT). It utilizes `torch` and `benchmark` from PyTorch to set up a fuzzing environment where tensor dimensions and shapes can be randomly generated according to specific parameters, including both regular and irregular distribution sizes optimized for FFT performance. Different data types, memory strides, and contingencies for tensor creation on both CPU and GPU are supported by configuring detailed fuzzer parameters.",
+            "total_tokens": 1013,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.831055
+        },
+        "Llama3.3": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file, `spectral.py`, is to define a class `SpectralOpFuzzer` that inherits from `torch.utils.benchmark.Fuzzer` and is designed to generate random inputs for benchmarking spectral operations, particularly those involving Fast Fourier Transforms (FFTs). The fuzzer generates random tensor shapes, sizes, and strides, with a focus on \"regular\" sizes that are optimized for FFT performance. The class allows for customization of parameters such as data type, CUDA usage, and probability of selecting regular sizes, making it a versatile tool for benchmarking and testing spectral operations in PyTorch.",
+            "total_tokens": 1049,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.880654
+        },
+        "Claude3.5": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"spectral.py\" file is to define a SpectralOpFuzzer class, which is a custom fuzzer for spectral operations in PyTorch. This fuzzer generates random input parameters and tensors for testing spectral operations, with a focus on creating various shapes and sizes, including regular sizes that are optimal for FFT implementations. The file also includes utility functions and constants to support the fuzzer's operation, particularly in generating and handling dimension sizes for the input tensors.",
+            "total_tokens": 1261,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.148508
+        }
+    },
+    "/torch/distributed/tensor/_sharding_prop.py": {
+        "gpt-4": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file \"_sharding_prop.py\" implements and manages sharding strategies and propagation rules for distributed tensor operations in PyTorch. It includes classes and methods for caching strategies locally, registering sharding rules for different tensor operations, propagating tensor metadata dynamically based on operations' sharding strategies, and managing output specifications in a distributed environment. The automation within the file aims to enhance computation by effectively distributing data and computations in a multi-node setup, adapting strategies for tensor operation, and minimizing data redistribution overhead during execution.",
+            "total_tokens": 4395,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 3.403851
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_sharding_prop.py` file is to define and manage the propagation of sharding strategies for distributed tensor operations in PyTorch, utilizing caching mechanisms and strategy selection based on cost.",
+            "total_tokens": 5352,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.345853
+        },
+        "Llama3.1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to define a class `ShardingPropagator` that is responsible for propagating sharding information through PyTorch operators. It uses a set of predefined rules and strategies to determine the output sharding of an operator based on its input sharding. The class also provides methods for registering custom sharding propagation rules and strategies for specific operators.",
+            "total_tokens": 4373,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 6.225286
+        },
+        "Llama3.3": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file `_sharding_prop.py` is to propagate sharding for PyTorch operators, which involves determining how to split and distribute tensors across multiple devices. The `ShardingPropagator` class is responsible for this task, using a combination of predefined rules and strategies to determine the optimal sharding for a given operator. The propagator takes into account factors such as tensor shapes, strides, and device placements to make its decisions.",
+            "total_tokens": 4392,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 2.689875
+        },
+        "gpt-4o": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `_sharding_prop.py` file implements functionality for propagating and managing tensor sharding in distributed systems using PyTorch's distributed tensor framework. It provides mechanisms for registering sharding rules and strategies for various operators, optimizing tensor reshaping and redistribution, and maintaining metadata such as tensor shape and stride during sharding operations. The main component, `ShardingPropagator`, handles sharding propagation by dynamically adjusting tensor placements and metadata based on defined rules, caching mechanisms, and efficient strategy selection.",
+            "total_tokens": 4430,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.456099
+        },
+        "titan_premier": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file is to propagate the sharding for an operator given the op schema. It also has methods to register sharding propagation rule for an operator and register a sharding strategy generator for an operator. It also has methods to propagate the tensor metadata and wrap the output spec with the tensor metadata.",
+            "total_tokens": 63,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 2.47016
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a `ShardingPropagator` class that manages the propagation of tensor sharding strategies in distributed tensor operations. It registers rules and strategies for specific operations to determine how tensors should be sharded across different devices in a distributed computing environment. The class provides methods to propagate sharding information for given operation schemas and associate the resulting sharding with tensor metadata.",
+            "total_tokens": 5383,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.55044
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file \"_sharding_prop.py\" is to define classes and methods related to sharding propagation for operators in PyTorch. It includes functionality to register sharding rules and strategies for operators, propagate sharding information for operators based on rules/strategies, adjust shape and stride arguments for certain operations, and handle tensor metadata propagation. The file also contains classes such as `ShardingPropagator` for managing sharding information, `LocalLRUCache` for caching user functions locally, and methods for wrapping output specifications with tensor metadata.",
+            "total_tokens": 4406,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.711209
+        },
+        "Claude3.5": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"_sharding_prop.py\" file is to implement a sharding propagation system for distributed tensor operations in PyTorch. It defines a ShardingPropagator class that handles the registration and execution of sharding propagation rules and strategies for various PyTorch operators, allowing for efficient distribution of tensor computations across multiple devices or machines.",
+            "total_tokens": 5859,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 5.596799
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The primary functionality of this file is to define the ShardingPropagator class and its associated logic, which is responsible for propagating sharding strategies and tensor metadata for distributed tensor operations in PyTorch. It provides mechanisms to register sharding propagation rules and operator strategies, automatically select optimal sharding placements, and handle redistributions for a wide variety of tensor operations. The file ensures seamless and efficient manipulation, suggestion, and validation of sharded tensor layouts during distributed execution by supporting both rule-based and strategy-based propagation.",
+            "total_tokens": 4434,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.204338
+        }
+    },
+    "/torch/nn/quantizable/modules/activation.py": {
+        "nova-pro-v1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `activation.py` file serves as a compatibility layer during the migration of quantizable modules to the `torch/ao/nn/quantizable` package. It imports the `MultiheadAttention` module from the new location to ensure continued functionality during the transition.",
+            "total_tokens": 257,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 0.899444
+        },
+        "Llama3.1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file \"activation.py\" is to provide a module for quantizable activation functions, specifically importing the MultiheadAttention class from another module. The file is currently being migrated to a new location and is being kept for compatibility purposes. It does not contain any original functionality, but rather serves as a redirect to the new location.",
+            "total_tokens": 271,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 2.843743
+        },
+        "Llama3.3": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `activation.py` file is to provide a compatibility layer for quantizable modules, specifically importing the `MultiheadAttention` module from `torch.ao.nn.quantizable.modules.activation`. This file is currently being migrated to `torch/ao/nn/quantizable` and is being kept for backwards compatibility. The file does not contain any new functionality and instead serves as a redirect to the new location of the quantizable modules.",
+            "total_tokens": 293,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.36056
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"activation.py\" file is to provide compatibility for quantizable modules during the migration process to a new location in the PyTorch library. It imports the `MultiheadAttention` class from the new module location, `torch.ao.nn.quantizable.modules.activation`, and serves as a transitional file until the migration is complete. New functionalities should be added to the new module location instead of this file.",
+            "total_tokens": 292,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.691123
+        },
+        "gpt-4o": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `activation.py` serves as a compatibility layer during the migration of quantizable modules to the `torch/ao/nn/quantizable` namespace. It re-exports the `MultiheadAttention` module from the new location to ensure backward compatibility. The file also advises developers to add new functionality directly to the updated namespace while maintaining import statements here.",
+            "total_tokens": 269,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.09162
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file activation.py serves as a transitional compatibility module for quantizable neural network components, specifically re-exporting the MultiheadAttention class from torch.ao.nn.quantizable.modules.activation. It includes documentation stating that its contents are being migrated to a new location and advises contributors to add new features to the updated directory while importing them here for backward compatibility. Thus, its main function is to maintain compatibility during the refactoring of quantizable PyTorch modules.",
+            "total_tokens": 286,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.457431
+        },
+        "Claude3.5": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"activation.py\" serves as a compatibility layer during the migration process of quantizable modules from their current location to \"torch/ao/nn/quantizable\". It imports the MultiheadAttention module from the new location while maintaining backward compatibility for existing code. The file also includes a note advising developers to add new functionalities directly to the appropriate files under the new directory structure.",
+            "total_tokens": 301,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 3.042503
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"activation.py\" file is to provide information about Quantizable Modules being migrated to a specific directory in the torch library. It serves as a placeholder for compatibility during the migration process and instructs users to add new entries or functionalities to the appropriate file under the designated directory while ensuring import statements are added to this file. Specifically, it imports the MultiheadAttention module from torch.ao.nn.quantizable.modules.activation.",
+            "total_tokens": 283,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.086942
+        },
+        "titan_premier": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"activation.py\" is a Python file that contains the import statement for the MultiheadAttention class from the torch.ao.nn.quantizable.modules.activation module. This file is currently in the process of being migrated to the torch/ao/nn/quantizable directory and is kept here for compatibility purposes. The file also contains a docstring that provides information about the ongoing migration process and instructions for adding new entries or functionalities.",
+            "total_tokens": 92,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.846073
+        },
+        "gpt-4": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file \"activation.py\" is involved in the migration of quantizable modules to the new directory `torch/ao/nn/quantizable`. It currently primarily handles legacy support for compatibility during this migration by importing the `MultiheadAttention` module from the new location `torch.ao.nn.quantizable.modules.activation`. Thus, this file acts as a transitional linker to the new modular structure while maintaining backward compatibility.",
+            "total_tokens": 279,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 1.909914
+        }
+    },
+    "/torch/_export/db/examples/class_method.py": {
+        "Llama3.1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a PyTorch neural network module `ClassMethod` that contains a class method `method` and an instance method `forward`. The `forward` method applies a linear transformation to the input and then calls the class method `method` in three different ways to perform some computation. The file also creates an instance of the `ClassMethod` model and defines some example input arguments.",
+            "total_tokens": 318,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 3.773656
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `class_method.py` defines a custom PyTorch neural network module named `ClassMethod` that includes a class method `method` which increments its input by 1. The `forward` method of the module applies a linear transformation to the input, then multiplies the result by three versions of the class method applied to the input. Finally, the file creates an instance of the `ClassMethod` module and prepares example arguments for its execution.",
+            "total_tokens": 341,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.491621
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"class_method.py\" file is to define a PyTorch neural network module called ClassMethod. This module demonstrates the use of a class method within a neural network, showing how it can be inlined during tracing. The forward method of the module applies a linear transformation to the input and then uses the class method in three different ways to process the result.",
+            "total_tokens": 354,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 3.834355
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a PyTorch neural network module called `ClassMethod` that demonstrates the use of class methods within a model's computation. In the `forward` method, the module applies a linear transformation to the input and then calls a class method (`method`) in three different ways, multiplying the results. This file serves as an example of how class methods can be invoked and used in the forward pass of a PyTorch model, particularly in contexts where tracing or scripting might be involved.",
+            "total_tokens": 324,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 2.152192
+        },
+        "gpt-4": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `class_method.py` defines a Python class `ClassMethod` that inherits from `torch.nn.Module`. The class encapsulates neural network operations and includes a class method `method`, which simply increments its input by one. The `forward` function processes an input tensor through a linear transformation and then multiplies the result by three instances of the output from the `method` (applied different ways to demonstrate class method access). This hints at potential experimentation with class-level method invocations within a PyTorch model computation graph.",
+            "total_tokens": 333,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.86058
+        },
+        "Llama3.3": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file is to define a PyTorch neural network module `ClassMethod` that inherits from `torch.nn.Module`. This module contains a class method `method` that increments the input by 1, and an instance method `forward` that applies a linear transformation to the input and then applies the class method in three different ways. The file also creates an instance of the `ClassMethod` model and defines example input arguments for it using PyTorch's `torch.randn` function.",
+            "total_tokens": 337,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.989565
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file defines a neural network class `ClassMethod` using PyTorch's `torch.nn.Module`, which includes a custom forward method that applies a linear transformation, followed by computations involving a class method `method`. The `method` function increments the input tensor by 1 and is statically referenced multiple times during the forward pass. Overall, the file integrates PyTorch's tracing capabilities to demonstrate the inline usage of class methods within a model's computation graph.",
+            "total_tokens": 319,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 1.169305
+        },
+        "titan_premier": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file \"class_method.py\" is to define a class called \"ClassMethod\" that inherits from the \"torch.nn.Module\" class. This class has a class method called \"method\" that takes an input \"x\" and returns \"x + 1\". The class also has an instance method called \"forward\" that takes an input \"x\", applies a linear transformation using the \"linear\" attribute, and then applies the \"method\" class method to the transformed input. The file also includes an example usage of the class, where an instance of the class is created and passed a random input tensor.",
+            "total_tokens": 132,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.229346
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file is to define a PyTorch neural network class `ClassMethod` that includes a class method `method`, an initialization method, and a forward pass method. The forward method utilizes the class method to perform operations on the input tensor, combining it with the class method in various ways. The file also includes an example of instantiating the class and preparing sample input data.",
+            "total_tokens": 328,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.938332
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given 'class_method.py' file defines a class 'ClassMethod' that inherits from torch.nn.Module. It includes a class method 'method' that performs a simple operation on the input, an initialization method '__init__' that sets up a linear layer, and a 'forward' method that uses the linear layer and calls the class method 'method'. An example argument is provided, and an instance of the 'ClassMethod' class is created.",
+            "total_tokens": 317,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 0.979658
+        }
+    },
+    "/scripts/export/update_schema.py": {
+        "gpt-4o": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `update_schema.py` is a script designed to update and validate schema files used in PyTorch while ensuring version compatibility for the schema and treespec definitions. It provides functionality to generate updated schema and associated files, with options for dry-run and forced unsafe updates. The script checks for compatibility, generates headers, and writes YAML, C++ header, and Thrift schema files to specified paths.",
+            "total_tokens": 994,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 3.083895
+        },
+        "gpt-4.1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of update_schema.py is to update, validate, and optionally write new versions of PyTorch export schema files (in YAML, C++, and Thrift formats), ensuring that schema and treespec versions do not regress and that changes maintain compatibility unless explicitly overridden. The script uses command-line arguments to control its behavior (e.g., dry-run, force-unsafe), performs version checks, and integrates with a schema_check module to coordinate the schema update process. If not in dry-run mode, it writes the resulting schema files with appropriate headers and checksums to the specified directory.",
+            "total_tokens": 1030,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 5.209708
+        },
+        "Llama3.3": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `update_schema.py` file is to update the schema of a PyTorch project by checking and validating the schema version and treespec version, and then writing the updated schema to YAML, C++ header, and Thrift schema files. The script takes several command-line arguments, including the root directory of the PyTorch project, a dry-run option, and a force-unsafe option to override schema validation. The script ensures that the schema version and treespec version are not downgraded and that the schema is properly formatted and written to the correct files.",
+            "total_tokens": 1039,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 1.722528
+        },
+        "gpt-4": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python script `update_schema.py` acts as a tool to update serialization schema for the PyTorch project using command-line arguments provided by the user. It ensures schema version compatibility by checking against predetermined base versions and allows users to conditionally force updates even when schema validations fail through an explicit command-line flag. If not being run in dry-run mode (where updates are just printed), the script writes the updated schema in YAML format, as well as the associated header file for C++ integration and a Thrift schema to their respective files within a specified directory tree in the PyTorch repository.",
+            "total_tokens": 1034,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 2.622999
+        },
+        "titan_premier": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"update_schema.py\" file is to update the schema version and generate the corresponding YAML, C++ header, and Thrift schema files. It takes command-line arguments for the root directory of the PyTorch project, whether to perform a dry run, and whether to force an update even if schema validation fails. The script checks the current schema version, compares it with the base version, and updates the schema version if necessary. It then generates the required files with the updated schema version and checksum. If a dry run is specified, the script prints the updated schema instead of writing it to files.",
+            "total_tokens": 130,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 3.580286
+        },
+        "nova-lite-v1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The script `update_schema.py` is designed to update and validate the schema for a PyTorch project. It takes a root directory as input and checks the schema version, ensuring it does not downgrade. If the schema is valid, it updates the schema files and writes them to the specified directory, or it can print the schema without writing if the `--dry-run` option is used. The script also allows forcing the update even if the schema validation fails, using the `--force-unsafe` option.",
+            "total_tokens": 1167,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 0.882524
+        },
+        "Claude3.5": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"update_schema.py\" file is to update and validate schema files for a PyTorch project. It checks for version compatibility, generates new schema content in YAML, C++, and Thrift formats, and either prints the updated schema (in dry-run mode) or writes the new content to the respective files. The script also includes safety checks and options for forcing updates, making it a tool for managing schema versioning and compatibility in the PyTorch codebase.",
+            "total_tokens": 1264,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.367885
+        },
+        "nova-pro-v1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `update_schema.py` script updates the schema files for a PyTorch project by generating YAML, C++, and Thrift schema files. It validates the schema versions and writes the updated schema to the specified directory unless a dry-run is requested. Various checks and assertions ensure the integrity and versioning of the schema.",
+            "total_tokens": 1131,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 1.038294
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given \"update_schema.py\" file is a script that updates the schema in a PyTorch directory based on certain conditions and user-provided arguments. It checks for schema versions, validates schema changes, generates YAML and C++ headers, and writes them to their respective files in the PyTorch directory. The script handles scenarios where the schema version is not updated correctly and provides options to resolve the issue, including using a force-unsafe flag and detailed error messages.",
+            "total_tokens": 1009,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.045443
+        },
+        "Llama3.1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file, `update_schema.py`, is to update the schema of a PyTorch project by generating new schema files (YAML, C++, and Thrift) based on the current project state. It checks for schema version compatibility and validates the schema before writing the new files, with options for dry-run and force-unsafe modes. The script is designed to be run from the root of the PyTorch directory, and it uses the `torch._export.serde.schema_check` module for schema checking and generation.",
+            "total_tokens": 1031,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 4.075416
+        }
+    },
+    "/torch/profiler/_pattern_matcher.py": {
+        "Llama3.1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to define a set of patterns for identifying performance anti-patterns in PyTorch code, and to provide a function `report_all_anti_patterns` that can be used to report all matched anti-patterns in a given PyTorch profiler. The patterns include things like extra CUDA copies, for loop indexing, FP32 matrix multiplication, and more. The function can also benchmark the matched events and provide a summary of the results.",
+            "total_tokens": 5714,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009
+            },
+            "latency": 5.090148
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define a set of patterns implemented as classes to identify anti-patterns in PyTorch code related to performance optimization. These patterns include identifying issues such as unnecessary operations, inefficient data loading, incorrect settings in optimizers, and more. The file uses event profiling data to match against these patterns and generate reports with recommendations on how to resolve the identified anti-patterns.",
+            "total_tokens": 5700,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 1.487047
+        },
+        "gpt-4": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file implements a system designed to identify and report various anti-patterns in PyTorch profiling events, which could potentially hinder performance. These patterns include unnecessary copying of data to the GPU, redundant bias settings in combination with BatchNorm2d layers, improper optimizer configurations, synchronized DataLoader operations, and the use of suboptimal tensor operations like element-wise setting in loops. This process involves defining different classes for each pattern where each class contains methods to match specific events, report problems, and suggest improvements or benchmarks. The system allows overall compilation and output of these reports and even writes to JSON if necessary.",
+            "total_tokens": 5735,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03
+            },
+            "latency": 4.984866
+        },
+        "Llama3.3": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file is to identify and report anti-patterns in PyTorch code, specifically performance-related issues such as unnecessary CUDA copies, inefficient data loading, and suboptimal tensor operations. The file defines a set of patterns to match these anti-patterns and provides a reporting mechanism to output the findings, including source code locations and recommendations for improvement. The report can also be saved to a JSON file for further analysis.",
+            "total_tokens": 5710,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072
+            },
+            "latency": 2.24138
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define a base `Pattern` class and several subclasses that identify specific anti-patterns in PyTorch code, providing detailed reports and optional performance benchmarks for matched events. The file also includes a function to generate and print a comprehensive report of all detected anti-patterns.",
+            "total_tokens": 6653,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042
+            },
+            "latency": 2.113673
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `_pattern_matcher.py` file is to define and implement various patterns for detecting anti-patterns in PyTorch code, providing detailed reports and recommendations for optimization. The file includes a base `Pattern` class and several subclasses that identify specific anti-patterns, such as inefficient tensor operations, suboptimal data loading, and improper optimizer configurations. It also includes a function to generate a comprehensive report of detected issues, which can be printed or saved as a JSON file.",
+            "total_tokens": 6683,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312
+            },
+            "latency": 1.303635
+        },
+        "Claude3.5": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"_pattern_matcher.py\" file is to define and implement various anti-patterns in PyTorch code. It includes a base Pattern class and several specific pattern classes that inherit from it, such as ExtraCUDACopyPattern, FP32MatMulPattern, and OptimizerSingleTensorPattern. The file also provides a function called \"report_all_anti_patterns\" that analyzes a PyTorch profile, identifies matching anti-patterns, and generates a report with suggestions for code optimization.",
+            "total_tokens": 7230,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015
+            },
+            "latency": 4.574387
+        },
+        "titan_premier": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file named \"_pattern_matcher.py\" is a part of the TorchTidy tool, which is used to analyze PyTorch profiling results and identify anti-patterns. The file contains several classes that inherit from the base class \"Pattern\". Each class represents a specific anti-pattern and implements methods to match the pattern and generate a report.\n\nThe main functionality of the file is to define various anti-patterns and provide methods to match these patterns in the profiling results. The anti-patterns include:\n\n1. Extra CUDA Copy Pattern: This pattern identifies if a constant tensor is created on the CPU and immediately moved to the GPU.\n2. For Loop Indexing Pattern: This pattern identifies if a for loop is used to index a tensor that can be vectorized.\n3. FP32 MatMul Pattern: This pattern identifies if the FP32 version of the MatMul operation is used instead of the TF32 version on GPUs that support TF32.\n4. Optimizer Single Tensor Pattern: This pattern identifies if the single-tensor version of an optimizer is used instead of the multi-tensor version.\n5. Synchronized DataLoader Pattern: This pattern identifies if the DataLoader is running with a synchronized implementation instead of an asynchronous implementation.\n6. Grad Not Set To None Pattern: This pattern identifies if the gradient is set to zero instead of None in the zero_grad method.\n7. Conv2d Bias Followed By BatchNorm2d Pattern: This pattern identifies if bias is enabled in Conv2d that is followed by BatchNorm2d.\n8. MatMul Dim In FP16 Pattern: This pattern identifies if the dimension of the input tensors for the matmul operation is not aligned when using FP16.\n\nThe file also includes helper functions to extract information from the profiling results, such as the source code location and input shapes and types.\n\nThe main function \"report\\_all\\_anti\\_patterns\" takes a profiling object, a boolean flag to enable benchmarking, a boolean flag to enable printing the report, and an optional directory to save the report in JSON format. It iterates through all the anti-patterns, matches them in the profiling results, generates a report for each pattern, and",
+            "total_tokens": 500,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
+            },
+            "latency": 11.372683
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"_pattern_matcher.py\" defines a set of pattern-matching classes that analyze PyTorch profiler traces to identify inefficient or suboptimal code patterns (anti-patterns) in deep learning workflows. Each pattern targets specific inefficiencies\u2014such as unnecessary CPU-to-GPU tensor copies, lack of vectorization, suboptimal optimizer usage, inefficient data loading, or misaligned matrix multiplication\u2014and provides recommendations and optional benchmark-based speedup estimates for remedying these issues. The main functionality is to scan profiler data, detect these anti-patterns, report findings with actionable advice, and optionally generate a JSON report summarizing the results.",
+            "total_tokens": 5731,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008
+            },
+            "latency": 3.53415
+        },
+        "gpt-4o": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `_pattern_matcher.py` file provides a framework for identifying and reporting anti-patterns in PyTorch code by analyzing profiling data. It defines a base `Pattern` class and specific subclasses for detecting inefficiencies, such as unnecessary data copying between CPU and GPU, non-vectorized tensor indexing, suboptimal tensor operations, or improper configuration of PyTorch modules. Additionally, it includes functionality for detailed event traversal, benchmarking, and generating reports to help developers optimize their code.",
+            "total_tokens": 5701,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 2.117479
+        }
     }
 }

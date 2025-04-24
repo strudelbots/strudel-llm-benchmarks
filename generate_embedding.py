@@ -2,7 +2,7 @@ import glob
 from math import floor
 from benchmark_code import REPO_DIRECTORY, OUT_FILES_DIRECTORY, file_date_prefix
 from benchmark_code.utils import clean_outputs_dir
-from benchmark_code.embedding_accessor_langchain_HF import EmbeddingAccessorLangchainHF
+from benchmark_code.accessors.embedding_accessor_langchain_HF import EmbeddingAccessorLangchainHF
 import json
 from collections import defaultdict
 from datetime import datetime
