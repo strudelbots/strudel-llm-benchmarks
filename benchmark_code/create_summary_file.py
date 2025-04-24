@@ -12,6 +12,7 @@ class CollectFileSummaryData:
 
 
     def _collect_all_summaries_into_a_single_file(self):
+        raise NotImplementedError("This method is depricated")
         all_summaries = []
         for file in self.summary_files:
             with open(file) as f:
@@ -21,6 +22,7 @@ class CollectFileSummaryData:
         return all_summaries
 
     def _merge_summaries_per_file(self, all_summaries_all_models):
+        #raise NotImplementedError("This method is depricated")
         unique_files = {x.file_name for x in all_summaries_all_models}
         merged_results = {}
         for unique_file in unique_files:

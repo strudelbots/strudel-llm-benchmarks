@@ -43,6 +43,7 @@ def _is_fatal_error(e, model):
 
 
 def _combine_summaries_into_single_json(file_name):
+    #raise NotImplementedError("This method is depricated")
     file_name = file_name.replace(':', '_')
     os.chdir(OUT_FILES_DIRECTORY)
     glob_pattern = f'{OUT_FILES_DIRECTORY}/{file_date_prefix}summary__*.json'
@@ -63,7 +64,7 @@ def get_models():
               'gpt-3.5-turbo',
               'gpt-4o',
               'gpt-4',
-              'gpt-4.5',
+              #'gpt-4.5',
               'gpt-4.1'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
@@ -76,12 +77,12 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 2.6 # Controls of the percentage of files that would be summarized.
+    sample_factor = 2.2 # Controls of the percentage of files that would be summarized.
     random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
     for model in models:
         _generate_file_summaries_for_model(model,python_files)
-    summary_file_name = file_date_prefix+ '_'.join([x.known_name for x in models])+'__summary.json'
-    _combine_summaries_into_single_json(summary_file_name)
+    #summary_file_name = file_date_prefix+ '_'.join([x.known_name for x in models])+'__summary.json'
+    #_combine_summaries_into_single_json(summary_file_name)
 

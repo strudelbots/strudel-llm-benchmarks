@@ -2,13 +2,19 @@ import json
 import os
 import shutil
 from pathlib import Path
-from benchmark_code import OUT_FILES_DIRECTORY_CACHE
-
+from benchmark_code import OUT_FILES_DIRECTORY_CACHE, REPO_DIRECTORY
+from collections import defaultdict
+from db_entry import SingleModelDBEntry
+from llm_response import LlmResponse
+from llm_model import LlmModel
+from db_entry import SingleFileDBEntry
 class CacheManager:
-    def __init__(self, db_file_path):
+    def __init__(self, db_file_path, clear_cache=False):
         self.db_file_path = db_file_path
         self.cache_dir = OUT_FILES_DIRECTORY_CACHE
         self._ensure_db_exists()
+        self.force_clear_cache = clear_cache
+
 
     def _ensure_db_exists(self):
         """Ensure the database file exists, create it if it doesn't"""
@@ -25,8 +31,24 @@ class CacheManager:
         with open(self.db_file_path, 'w') as f:
             json.dump(data, f, indent=4)
 
+    def _collect_summaries_per_target_file(self):
+        """Collect all summaries into a single file"""
+        summaries_per_file = defaultdict(list)
+        cache_files = [f for f in os.listdir(self.cache_dir) if f.endswith('.json')]
+        for cache_file in cache_files:
+            with open(os.path.join(self.cache_dir, cache_file), 'r') as f:
+                cache_data = json.load(f)
+                file = cache_data['file_name']
+                summaries_per_file[file].append(cache_data['llm_result'])
+        return summaries_per_file
+        
+    
     def process_cache_files(self):
+        raise NotImplementedError("This method is not implemented")
         """Process all JSON files in the cache directory and update the database"""
+        all_summaries_all_models = self._collect_all_summaries_into_a_single_file()
+        comparable_summaries = self._merge_summaries_per_file(all_summaries_all_models)
+
         cache_files = [f for f in os.listdir(self.cache_dir) if f.endswith('.json')]
         if not cache_files:
             return
@@ -42,19 +64,28 @@ class CacheManager:
                 # Update database with cache data
                 # Assuming cache data is a dictionary that should be merged into the database
                 if isinstance(cache_data, dict):
-                    db_data.update(cache_data)
+                    file = cache_data['file_name'].removeprefix('/home/shai/pytorch')
+                    if file not in db_data:
+                        print(f"File {file} not found in database")
+                    else:
+                        print(f"File {file} found in database")
+                else:
+                    raise ValueError(f"Cache file {cache_file} is not a dictionary")
                 
                 # Delete the processed cache file
-                os.remove(cache_path)
+                if self.force_lear_cache:
+                    os.remove(cache_path)
                 
             except Exception as e:
                 print(f"Error processing cache file {cache_file}: {str(e)}")
-                continue
+                raise e
 
         # Save the updated database
         self._save_db(db_data)
 
-    def clear_cache(self):
+    def force_clear_cache(self):
+        if not self.force_lear_cache:
+            return
         """Clear all files from the cache directory"""
         for file in os.listdir(self.cache_dir):
             file_path = os.path.join(self.cache_dir, file)
@@ -64,7 +95,46 @@ class CacheManager:
             except Exception as e:
                 print(f"Error removing file {file}: {str(e)}") 
 
+    def _collect_single_file_entries(self, summaries_per_file):
+        """Collect all summaries into a single file"""
+        single_file_entries = SingleFileDBEntry()
+        for file, summaries in summaries_per_file.items():
+            key = file.removeprefix('/home/shai/pytorch')
+
+            for summary in summaries:
+                llm_model = LlmModel(summary['model']['known_name'], summary['model']['provider_name'], 
+                                     summary['model']['aws_model_id'], summary['model']['aws_region'], 
+                                     summary['model']['azure_deployment_name'], summary['model']['azure_region'], 
+                                     summary['model']['delay_time'], summary['model']['langchain_ready'], 
+                                     summary['model']['price_per_1000_input_tokens'], 
+                                     summary['model']['price_per_1000_output_tokens'])
+                llm_result = LlmResponse(summary['message'], summary['total_tokens'], llm_model, summary['latency'])
+                number_of_lines = -1
+                project_name = 'pytorch'
+                model_key = llm_model.known_name
+                if model_key in single_file_entries.data.get(key, {}):
+                    raise ValueError(f"Model {model_key} already exists in {key}")
+                else:
+                    file_summary = SingleModelDBEntry(llm_result,key,number_of_lines,project_name)
+                    current_file_data = single_file_entries.data.get(key, {})
+
+                    if not current_file_data:
+                        single_file_entries.data[key] = {model_key: file_summary}
+                    else:
+                        single_file_entries.data[key] = {**current_file_data, model_key: file_summary}
+                
+                
+        return single_file_entries
 if __name__ == "__main__":
     cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')
-    cache_manager.process_cache_files()
-    cache_manager.clear_cache()
+    summaries_per_file = cache_manager._collect_summaries_per_target_file()
+    single_file_entries = cache_manager._collect_single_file_entries(summaries_per_file)
+    #data_dict = single_file_entries.to_dict()
+    db_dict_format = single_file_entries.to_db_dict()
+    str_json = json.dumps(db_dict_format, indent=4)
+    with open('/tmp/single_file_entries.json', 'w') as f:
+        f.write(str_json)
+    for key, value in single_file_entries.data.items():
+        print(key)
+    #cache_manager.process_cache_files()
+    #cache_manager.force_lear_cache()
