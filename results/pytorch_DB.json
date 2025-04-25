@@ -73,8 +73,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 1703,
             "project_name": "pytorch",
@@ -497,8 +497,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 134,
             "project_name": "pytorch",
@@ -1143,8 +1143,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 629,
             "project_name": "pytorch",
@@ -1365,8 +1365,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 161,
             "project_name": "pytorch",
@@ -1587,8 +1587,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 1209,
             "project_name": "pytorch",
@@ -1809,8 +1809,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 391,
             "project_name": "pytorch",
@@ -2031,8 +2031,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 444,
             "project_name": "pytorch",
@@ -2253,8 +2253,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 1752,
             "project_name": "pytorch",
@@ -2475,8 +2475,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 44,
             "project_name": "pytorch",
@@ -2697,8 +2697,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 121,
             "project_name": "pytorch",
@@ -2919,8 +2919,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 170,
             "project_name": "pytorch",
@@ -3363,8 +3363,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 121,
             "project_name": "pytorch",
@@ -3585,8 +3585,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 111,
             "project_name": "pytorch",
@@ -3807,8 +3807,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 390,
             "project_name": "pytorch",
@@ -4211,8 +4211,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 1546,
             "project_name": "pytorch",
@@ -4433,8 +4433,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 296,
             "project_name": "pytorch",
@@ -4877,8 +4877,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 124,
             "project_name": "pytorch",
@@ -5099,8 +5099,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 122,
             "project_name": "pytorch",
@@ -5321,8 +5321,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 24,
             "project_name": "pytorch",
@@ -5543,8 +5543,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 66,
             "project_name": "pytorch",
@@ -5765,8 +5765,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 94,
             "project_name": "pytorch",
@@ -5987,8 +5987,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 896,
             "project_name": "pytorch",
@@ -6209,8 +6209,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 147,
             "project_name": "pytorch",
@@ -6431,8 +6431,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 354,
             "project_name": "pytorch",
@@ -6875,8 +6875,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 399,
             "project_name": "pytorch",
@@ -7097,8 +7097,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 33,
             "project_name": "pytorch",
@@ -7319,8 +7319,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 130,
             "project_name": "pytorch",
@@ -7541,8 +7541,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 27,
             "project_name": "pytorch",
@@ -7985,8 +7985,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 31,
             "project_name": "pytorch",
@@ -8207,8 +8207,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 316,
             "project_name": "pytorch",
@@ -8429,8 +8429,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 472,
             "project_name": "pytorch",
@@ -8651,8 +8651,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 372,
             "project_name": "pytorch",
@@ -8873,8 +8873,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 232,
             "project_name": "pytorch",
@@ -9095,8 +9095,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 40,
             "project_name": "pytorch",
@@ -9317,8 +9317,8 @@
                 "azure_region": "eastus",
                 "delay_time": 3,
                 "langchain_ready": true,
-                "price_per_1000_input_tokens": 0.0,
-                "price_per_1000_output_tokens": 0.0
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015
             },
             "number_of_lines": 152,
             "project_name": "pytorch",
