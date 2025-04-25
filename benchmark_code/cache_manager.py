@@ -1,6 +1,5 @@
 import json
 import os
-import shutil
 from pathlib import Path
 from benchmark_code import OUT_FILES_DIRECTORY_CACHE, REPO_DIRECTORY
 from collections import defaultdict
@@ -8,6 +7,7 @@ from db_entry import SingleModelDBEntry
 from llm_response import LlmResponse
 from llm_model import LlmModel
 from db_entry import SingleFileDBEntry
+
 class CacheManager:
     def __init__(self, db_file_path, clear_cache=False):
         self.db_file_path = db_file_path
@@ -83,7 +83,7 @@ class CacheManager:
                         single_file_entries.data[key] = {**current_file_data, model_key: file_summary}
         return single_file_entries
 
-    def update_db(self, input_db_dict):
+    def _update_db(self, input_db_dict):
         db = self._load_db()
         for file, db_entry in input_db_dict.items():
             if file in db.keys():
@@ -97,17 +97,13 @@ class CacheManager:
                 db[file] = db_entry
         self._save_db(db)
 
-if __name__ == "__main__":
-    cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')
-    summaries_per_file = cache_manager._collect_summaries_per_target_file()
-    single_file_entries = cache_manager._collect_single_file_entries(summaries_per_file)
-    #data_dict = single_file_entries.to_dict()
-    db_dict_format = single_file_entries.to_db_dict()
-    str_json = json.dumps(db_dict_format, indent=4)
-    with open('/tmp/single_file_entries.json', 'w') as f:
-        f.write(str_json)
-    for key, value in single_file_entries.data.items():
-        print(key)
-    cache_manager.update_db(db_dict_format)
-    #cache_manager.process_cache_files()
-    #cache_manager.force_lear_cache()
+    def from_cache_to_db(self):
+        summaries_per_file = self._collect_summaries_per_target_file()
+        single_file_entries = self._collect_single_file_entries(summaries_per_file)
+        db_dict_format = single_file_entries.to_db_dict()
+        str_json = json.dumps(db_dict_format, indent=4)
+        with open('/tmp/single_file_entries.json', 'w') as f:
+            f.write(str_json)
+        self._update_db(db_dict_format)
+#if __name__ == "__main__":
+#    cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')

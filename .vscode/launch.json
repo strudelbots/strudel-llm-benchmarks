@@ -1,7 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "name": "Run Summarizer",
             "type": "python",
@@ -59,6 +58,18 @@
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
             }
+        },
+        {
+            "name": "Compare Costs Chart",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/benchmark_code/charting/compare_costs_chart.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "/home/shai/make-developers-brighter/DevOps/envs/secrets_dev.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
         }
-    ]   
-} 
+    ]
+}
