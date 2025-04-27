@@ -45,16 +45,16 @@ def _is_fatal_error(e, model):
 def get_models():
     run_on = ['nova-lite-v1',
               'Claude3.5',
-              #'Llama3.3',
-              #'titan_premier',
-              #'nova-pro-v1',
-              #'Llama3.1',
-              #'gpt-3.5-turbo',
-              #'gpt-4o',
-              #'gpt-4',
+              'Llama3.3',
+              'titan_premier',
+              'nova-pro-v1',
+              'Llama3.1',
+              'gpt-3.5-turbo',
+              'gpt-4o',
+              'gpt-4',
               #'gpt-4.5',
-              #'gpt-4.1',
-              #'gemini-2.5-',
+              'gpt-4.1',
+              'gemini-2.5',
               'gemini-2.5-flash'
               ]
     assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)

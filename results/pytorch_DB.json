@@ -239,6 +239,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.887094
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_functorch/aot_autograd.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements the core logic for PyTorch's AOT Autograd mechanism. It traces user-defined functions or `nn.Module`s, functionalizes the computation graph to handle side effects like mutations and aliasing, and partitions the graph into forward and backward passes if needed. Finally, it provides hooks (`aot_function`, `aot_module`, `aot_export_module`) to compile these graphs using user-specified backend compilers or prepare them for export.",
+            "total_tokens": 19465,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.432005
         }
     },
     "/torch/fx/graph.py": {
@@ -723,6 +743,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.039555
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/linter/adapters/workflow_consistency_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script acts as a linter for GitHub Actions workflow YAML files. It checks that jobs across different workflow files which share the same `sync-tag` value in their `with` section have identical configurations, ignoring specific fields like `if` conditions and `test-matrix`. If inconsistencies are detected between jobs with the same tag, it prints JSON-formatted error messages indicating the file and job causing the discrepancy.",
+            "total_tokens": 1613,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.387007
         }
     },
     "/torch/fx/experimental/migrate_gradual_types/constraint.py": {
@@ -1187,6 +1227,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.311906
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/nn/modules/rnn.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines core PyTorch modules for Recurrent Neural Networks (RNNs), including base classes (`RNNBase`, `RNNCellBase`) and specific implementations like `RNN`, `LSTM`, and `GRU`. It also provides the corresponding single-step cell versions (`RNNCell`, `LSTMCell`, `GRUCell`) for more granular control. These modules handle sequence processing, hidden/cell state management, parameter initialization, and support features like multi-layer stacking, bidirectionality, dropout, and batching options.",
+            "total_tokens": 21543,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 5.83553
         }
     },
     "/torch/nn/utils/parametrizations.py": {
@@ -1691,6 +1751,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.006164
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/fx_passes/decompose_mem_bound_mm.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines `torch.fx` graph patterns to identify specific memory-bound matrix multiplication operations (`aten.bmm`, `aten.addmm`, `aten.mm`). Based on configurable tensor shape and device criteria (primarily large first dimension and small other dimensions on CUDA, or specific small shapes on CPU), it decomposes these operations into element-wise multiplications followed by sums. This decomposition aims to potentially improve performance in specific scenarios by replacing the original matrix multiplication call within the graph.",
+            "total_tokens": 2525,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.668705
         }
     },
     "/torch/autograd/profiler.py": {
@@ -2195,6 +2275,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 5.476781
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/tensor/parallel/fsdp.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file defines extensions to PyTorch's Fully Sharded Data Parallel (FSDP) framework to enable compatibility with `DTensor`s, which are used for tensor parallelism across a `DeviceMesh`. It provides helper functions and the `DTensorExtensions` class to manage the specific sharding, flattening/unflattening, and state dictionary handling required when using `DTensor`s within an FSDP context. This integration allows combining FSDP data parallelism with tensor parallelism for training large models.",
+            "total_tokens": 4690,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.143324
         }
     },
     "/tools/stats/upload_utilization_stats/upload_utilization_stats.py": {
@@ -2437,6 +2537,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.412693
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/stats/upload_utilization_stats/upload_utilization_stats.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This script downloads CI job usage logs from S3 artifacts, specifically looking for a `usage_log.txt` file. It then parses these logs, identifies continuous segments of Python command execution, and converts the raw log data and segments into structured metadata and time-series database models. Finally, the script uploads these processed utilization statistics back to a designated S3 bucket, organized by workflow and job identifiers.",
+            "total_tokens": 4767,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.440765
         }
     },
     "/torch/_inductor/cpp_builder.py": {
@@ -3465,6 +3585,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 1.799999
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/rpc/functions.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `async_execution` decorator for use with PyTorch's distributed RPC framework. This decorator marks a function to indicate that it returns a `torch.futures.Future` and can be executed asynchronously on the remote worker (callee). The RPC system leverages this decorator to properly handle the Future's completion on the callee side and send the final result back to the caller, facilitating non-blocking remote procedure calls.",
+            "total_tokens": 2757,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.093892
         }
     },
     "/torch/jit/_dataclass_impls.py": {
@@ -3949,6 +4089,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.178118
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/linter/adapters/shellcheck_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script serves as a wrapper for the `shellcheck` command-line tool to lint shell script files. It takes a list of filenames as input, executes `shellcheck` with JSON output enabled, and parses the results. Finally, it formats each lint finding into a structured `LintMessage` object and prints it as a JSON string to standard output.",
+            "total_tokens": 1350,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 5.337724
         }
     },
     "/torch/distributed/optim/post_localSGD_optimizer.py": {
@@ -4433,6 +4593,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.141936
+        },
+        "gemini-2.5": {
+            "file_name": "/torchgen/operator_versions/gen_mobile_upgraders.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script generates a C++ source file (`upgrader_mobile.cpp`) for the PyTorch mobile runtime. It retrieves operator versioning information and bytecode for model upgraders using internal PyTorch functions. The script then formats this data into C++ structures and maps using predefined code templates, enabling the mobile runtime to handle compatibility for older TorchScript models.",
+            "total_tokens": 5112,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 13.395299
         }
     },
     "/torch/nn/functional.py": {
@@ -4635,6 +4815,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.012917
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/nn/functional.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a functional interface for many standard PyTorch neural network operations, acting as the stateless counterpart to layers found in `torch.nn`. It includes a wide range of functions covering convolutions, pooling, activation functions, normalization techniques, loss functions, embeddings, and attention mechanisms. These functions operate directly on tensors, providing building blocks for constructing neural networks without necessarily using the stateful `nn.Module` classes.",
+            "total_tokens": 70999,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.004219
         }
     },
     "/benchmarks/dynamo/runner.py": {
@@ -4877,6 +5077,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.500387
+        },
+        "gemini-2.5": {
+            "file_name": "/benchmarks/dynamo/runner.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script serves as a wrapper for running and analyzing PyTorch benchmarks across various configurations (suites, devices, dtypes, compilers). It can generate benchmark execution commands, run them, parse the resulting log files, and visualize performance metrics like speedup and compilation time as tables and graphs. The script also includes functionality to update a performance dashboard, track metrics over time, and detect regressions compared to previous runs.",
+            "total_tokens": 15584,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.317932
         }
     },
     "/benchmarks/transformer/sdpa.py": {
@@ -5119,6 +5339,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.236465
+        },
+        "gemini-2.5": {
+            "file_name": "/benchmarks/transformer/sdpa.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script benchmarks the performance of PyTorch's `scaled_dot_product_attention` function under various configurations (like batch size, sequence length, dtype, causality). It measures the forward and backward pass execution times in microseconds and calculates the corresponding TFLOPS for each configuration using specified or default SDPA backends. Finally, the script prints the collected benchmark results in a formatted table and saves them to a timestamped CSV file.",
+            "total_tokens": 3239,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.661991
         }
     },
     "/tools/code_coverage/package/oss/init.py": {
@@ -5865,6 +6105,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.727352
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_functorch/_activation_checkpointing/knapsack.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file provides three different algorithms (greedy, integer linear programming, and dynamic programming) for solving the 0/1 knapsack problem. Given lists representing memory costs and runtimes for a set of items, along with a maximum memory budget, the functions aim to select a subset of items that maximizes the total runtime without exceeding the memory limit. Each function returns the maximum achievable runtime, the indices of the selected items (\"saved\"), and the indices of the items not selected (\"recomputed\").",
+            "total_tokens": 2017,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.274803
         }
     },
     "/torch/_functorch/pytree_hacks.py": {
@@ -6107,6 +6367,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.702606
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_functorch/pytree_hacks.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file re-exports the `tree_map_` and `treespec_pprint` functions from PyTorch's internal `_pytree` utility module. Its primary function is to serve as a temporary alias while issuing a `DeprecationWarning` upon import. The warning advises users to switch to importing these functions directly from `torch.utils._pytree` as this compatibility layer will be removed in the future.",
+            "total_tokens": 985,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.358605
         }
     },
     "/torch/distributed/elastic/agent/server/health_check_server.py": {
@@ -6349,6 +6629,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.313971
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/elastic/agent/server/health_check_server.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a `HealthCheckServer` class intended as an interface for a health monitoring server, using a callback to check agent liveness based on a specified timeout. However, the provided implementation is a no-op, as the `start` method explicitly states it doesn't actually initiate any server process. A factory function `create_healthcheck_server` is also included to instantiate this placeholder server class.",
+            "total_tokens": 1104,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.231409
         }
     },
     "/torch/distributed/algorithms/model_averaging/utils.py": {
@@ -6591,6 +6891,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.717206
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/algorithms/model_averaging/utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file provides utility functions for PyTorch distributed training, specifically focusing on averaging parameters across multiple processes. It defines functions to select parameters (optionally filtering for those with gradients) and then performs an efficient `all_reduce` operation to compute and apply the average values to the parameters within a given process group. The main entry point handles both direct model parameters and optimizer parameter groups.",
+            "total_tokens": 1626,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 7.828636
         }
     },
     "/torch/_inductor/autotune_process.py": {
@@ -6833,6 +7153,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 5.256646
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/autotune_process.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines infrastructure for benchmarking PyTorch kernels (Triton, CUDA, C++) by running them in isolated subprocesses to prevent crashes and ensure accurate timing. It manages a pool of these subprocesses, often one per available device, allowing for parallel benchmarking across multiple GPUs or CPU cores. The code handles serializing benchmark requests (including kernel details and tensor metadata), sending them to worker processes, and retrieving the timing results.",
+            "total_tokens": 8824,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.370931
         }
     },
     "/torch/_inductor/codegen/rocm/rocm_benchmark_request.py": {
@@ -7841,6 +8181,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.699115
+        },
+        "gemini-2.5": {
+            "file_name": "/benchmarks/inference/server.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script implements a multi-process benchmarking system for a PyTorch ResNet model, separating tasks into a `FrontendWorker` and a `BackendWorker`. The `FrontendWorker` sends batches of inference requests, measures performance metrics like latency, throughput, and GPU utilization. The `BackendWorker` receives these requests, performs model inference asynchronously on a GPU using multiple threads and CUDA streams for efficiency, and sends results back.",
+            "total_tokens": 4356,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.522589
         }
     },
     "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py": {
@@ -8083,6 +8443,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.403948
+        },
+        "gemini-2.5": {
+            "file_name": "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script benchmarks the performance of generating debug information for a large PyTorch FX graph. It specifically measures the time taken by the `debug_lines()` method of the `FxGraphHashDetails` class, which is part of PyTorch Inductor's code caching system. The script uses `timeit` to repeatedly execute this method on a synthetically generated large graph and reports the execution speed in nodes per second.",
+            "total_tokens": 994,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 8.038948
         }
     },
     "/torch/distributions/independent.py": {
@@ -8587,6 +8967,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.111158
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_export/db/examples/specialized_attribute.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a simple PyTorch module `SpecializedAttribute` with two attributes, `a` (string) and `b` (integer). The module's `forward` method performs a calculation (`x*x + b`) only if the attribute `a` matches the value of an `Animal` enum member (`COW`), otherwise raising an error. An example instantiation is also provided.",
+            "total_tokens": 658,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 4.595114
         }
     },
     "/torch/fx/passes/backends/cudagraphs.py": {
@@ -9333,6 +9733,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.626552
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/autoheuristic/autoheuristic.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file defines the `AutoHeuristic` framework within PyTorch Inductor, designed to automate decision-making processes like kernel selection. It enables the collection of performance data associated with different computational choices and their context. This collected data can then be used to learn and apply heuristics, allowing the system to make optimized, data-driven choices instead of relying solely on default fallbacks.",
+            "total_tokens": 3527,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.232708
         }
     },
     "/torch/nn/modules/instancenorm.py": {
@@ -9575,6 +9995,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.480252
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/nn/modules/instancenorm.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines PyTorch modules for applying Instance Normalization to 1D, 2D, and 3D input tensors. It includes a base class `_InstanceNorm` containing the core normalization logic and specific implementations (`InstanceNorm1d`, `InstanceNorm2d`, `InstanceNorm3d`) for different input dimensions. Additionally, it provides \"lazy\" versions (`LazyInstanceNorm1d`, `LazyInstanceNorm2d`, `LazyInstanceNorm3d`) that automatically infer the number of features from the input data during the first forward pass.",
+            "total_tokens": 5977,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 4.308857
         }
     },
     "/tools/linter/adapters/flake8_linter.py": {
@@ -9817,6 +10257,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.034994
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/linter/adapters/flake8_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script serves as a wrapper around the `flake8` linter, executing it on specified Python files with support for custom plugin paths and retries on timeouts. It parses the raw output from `flake8` using regular expressions, classifying each reported issue into severity levels like error, warning, or advice based on the issue code. Finally, the script formats each lint message into a structured JSON object and prints it to standard output.",
+            "total_tokens": 4370,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.425343
         }
     },
     "/torch/_functorch/benchmark_utils.py": {
@@ -10059,6 +10519,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.232077
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_functorch/benchmark_utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file provides utilities for benchmarking PyTorch functions, focusing on GPU performance analysis. It uses the PyTorch profiler to generate Chrome trace files detailing the execution timeline of operations. The core functionality involves running a given function, capturing its performance trace, and then analyzing this trace to calculate metrics like overall GPU utilization and the percentage of time spent specifically on matrix multiplication and convolution kernels.",
+            "total_tokens": 2236,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 4.107243
         }
     },
     "/torch/xpu/_utils.py": {
@@ -10301,6 +10781,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.082826
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/xpu/_utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a utility function `_get_device_index` designed to extract the numerical device index from various input types like integers, strings, or `torch.device` objects. It specifically handles logic for XPU devices, optionally allows CPU devices (returning -1), and falls back to an internal PyTorch function for general device index retrieval. The function ensures the input represents a valid device and returns its corresponding integer index.",
+            "total_tokens": 909,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 4.8692
         }
     },
     "/functorch/examples/ensembling/parallel_train.py": {
@@ -10543,6 +11043,26 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 1.570158
+        },
+        "gemini-2.5": {
+            "file_name": "/functorch/examples/ensembling/parallel_train.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script demonstrates how to train an ensemble of MLP classifiers in parallel on a single device using PyTorch's functional programming features. It utilizes `vmap` to vectorize the training step across multiple model instances, applying the same logic simultaneously to different sets of model parameters. The example trains the models on a synthetic spiral dataset and showcases how PyTorch can achieve parallel model training similar to frameworks like JAX.",
+            "total_tokens": 2034,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01
+            },
+            "latency": 6.187229
         }
     },
     "/tools/gen_vulkan_spv.py": {
