@@ -83,27 +83,37 @@ class CacheManager:
                         single_file_entries.data[key] = {**current_file_data, model_key: file_summary}
         return single_file_entries
 
-    def _update_db(self, input_db_dict):
+    def _update_db(self, new_db_entries, dry_run=True):
         db = self._load_db()
-        for file, db_entry in input_db_dict.items():
+        for file, new_db_entry in new_db_entries.items():
             if file in db.keys():
-                file_data_in_db = db[file]
-                if db_entry.keys() != file_data_in_db.keys():
-                    raise NotImplementedError(f"File {file} already exists in the database")
-                if db_entry != file_data_in_db:
-                    raise NotImplementedError(f"File {file} already exists in the database")
-                continue
+                self._merge_file_entries(db, file, new_db_entry)
             else:
-                db[file] = db_entry
-        self._save_db(db)
+                db[file] = new_db_entry
+        if not dry_run:
+            self._save_db(db)
 
-    def from_cache_to_db(self):
+    def _merge_file_entries(self, db, file, new_db_entry):
+        file_data_in_db = db[file]
+        db_entry_keys = set(file_data_in_db.keys())
+        new_db_entry_keys = set(new_db_entry.keys())
+        if db_entry_keys != new_db_entry_keys:
+            keys_to_update = new_db_entry_keys - db_entry_keys
+            if len(keys_to_update) >= 1:
+                for key in keys_to_update:
+                    file_data_in_db[key] = new_db_entry[key]
+            else:
+                print(f"Keys from new db entry {new_db_entry_keys} are already in the database for file {file}")
+        return
+
+    def from_cache_to_db(self, dry_run=True):
         summaries_per_file = self._collect_summaries_per_target_file()
         single_file_entries = self._collect_single_file_entries(summaries_per_file)
         db_dict_format = single_file_entries.to_db_dict()
         str_json = json.dumps(db_dict_format, indent=4)
         with open('/tmp/single_file_entries.json', 'w') as f:
             f.write(str_json)
-        self._update_db(db_dict_format)
-#if __name__ == "__main__":
-#    cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')
+        self._update_db(db_dict_format, dry_run)
+if __name__ == "__main__":
+    cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')
+    cache_manager.from_cache_to_db(dry_run=False)

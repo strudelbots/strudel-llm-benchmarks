@@ -50,6 +50,14 @@ AVAILABLE_MODELS = [
     LlmModel(known_name="gpt-4.1", azure_deployment_name="gpt-4.1",
              azure_region="eastus2", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=2/1000.0, price_per_1000_output_tokens=8/1000.0),
+    LlmModel(known_name="gemini-2.5", azure_deployment_name="",
+             azure_region="", langchain_ready=True, provider_name="GOOGLE",
+             price_per_1000_input_tokens=1.25/1000.0, price_per_1000_output_tokens=10/1000.0,
+             delay_time=20),
+    LlmModel(known_name="gemini-2.5-flash", azure_deployment_name="",
+             azure_region="", langchain_ready=True, provider_name="GOOGLE",
+             price_per_1000_input_tokens=0.15/1000.0, price_per_1000_output_tokens=0.6/1000.0,
+             delay_time=15),
 
 ]
 
