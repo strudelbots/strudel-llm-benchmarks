@@ -3,7 +3,7 @@ from benchmark_code.accessors.aws_langchain_llm_accessor import AWSLangchainLlmA
 from benchmark_code.accessors.aws_boto3_titan_llm_accessor import AWSBoto3TitanLlmAccessor
 from benchmark_code.accessors.azure_langchain_llm_accessor import AzureLangchainLlmAccessor
 from benchmark_code.accessors.aws_boto3_llm_accessor import AWSBoto3Accessor
-
+from benchmark_code.accessors.google_langchain_llm_accessor import GoogleLangchainLlmAccessor
 def get_llm_accessor(system_context, model):
 #    if type == "AZURE":
 #        return AzureLlmAccessor(system_context, model, sleep_time=1)
@@ -17,5 +17,7 @@ def get_llm_accessor(system_context, model):
             return AWSBoto3Accessor(system_context, model)
     elif model.provider_name == "AZURE":
         return AzureLangchainLlmAccessor(system_context, model)
+    elif model.provider_name == "GOOGLE":
+        return GoogleLangchainLlmAccessor(system_context, model)
     else:
         raise Exception("Unknown accessor type {}".format(model.provider_name))
