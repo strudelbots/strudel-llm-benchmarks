@@ -2,7 +2,7 @@ import datetime
 import os
 from pathlib import Path
 
-REPO_DIRECTORY=os.getenv('REPO_DIR') # points to the root directory of repository you want to analyze
+REPO_DIRECTORY=os.getenv('REPO_DIRECTORY') # points to the root directory of repository you want to analyze
 OUT_FILES_DIRECTORY=f'{Path.home()}/tmp' # where all files will be writen, feel free to change
 OUT_FILES_DIRECTORY_CACHE=f'{Path.home()}/cache'
 
