@@ -3,7 +3,7 @@ With all the hype around LLMs promising 10x productivity, I wanted to take a mor
 ROI (Return on Investment) is a straightforward concept: what you gain compared to what you spend. This repository provides a set of benchmarks to evaluate the ROI of large language models.
 
 ### What We Do
-We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository (link)[https://raw.githubusercontent.com/strudelbots/strudel-llm-benchmarks/refs/heads/shorten-readme/results/pytorch_DB.json].
+We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository [Code Comprehension Summaries](https://raw.githubusercontent.com/strudelbots/strudel-llm-benchmarks/refs/heads/shorten-readme/results/pytorch_DB.json]).
 
 Using these summaries (and their metadat) we can now start to compare ROI in particl practical metrics like verbosity, latency, cost, accuracy (from a human perspective), and information gain. We can assess how these models actually perform and what that says about their ROI
 
