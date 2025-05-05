@@ -41,7 +41,7 @@ allowing for customization of logging behavior in the application."*
 
 3. **Claude 3.5**: *"The file `logging_handlers.py` is primarily focused on setting up logging configurations for a distributed computing environment. It imports the necessary logging modules, defines a constant for a specific logger name (`DCP_LOGGER_NAME`), and updates the _log_handlers dictionary with a NullHandler for the defined logger. This file appears to be part of a larger system for managing logging in a distributed computing context, possibly related to PyTorch's distributed computing functionality."*
 
-4. **GPT-4**: *""The file `logging_handlers.py` is primarily involved in configuring and managing logging handlers for distributed computing processes, specifically within a Python environment using the `logging` module. It imports and updates logging handlers from `torch.distributed.logging_handlers` to specify a `NullHandler` for a logger named 'dcp_logger'. This configuration indicates that the logger for distributed computing processes will intentionally avoid processing log messages by default, until further configuration is potentially applied."
+4. **GPT-4**: *"The file `logging_handlers.py` is primarily involved in configuring and managing logging handlers for distributed computing processes, specifically within a Python environment using the `logging` module. It imports and updates logging handlers from `torch.distributed.logging_handlers` to specify a `NullHandler` for a logger named 'dcp_logger'. This configuration indicates that the logger for distributed computing processes will intentionally avoid processing log messages by default, until further configuration is potentially applied."*
 
 
 ### A Few Insights
