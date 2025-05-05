@@ -3,16 +3,19 @@ With all the hype around LLMs promising 10x productivity, I wanted to take a mor
 ROI (Return on Investment) is a straightforward concept: what you gain compared to what you spend. This repository provides a set of benchmarks to evaluate the ROI of large language models.
 
 ### What We Do
-We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository.
+We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository (link)[https://raw.githubusercontent.com/strudelbots/strudel-llm-benchmarks/refs/heads/shorten-readme/results/pytorch_DB.json].
+
+Using these summaries (and their metadat) we can now start to compare ROI in particl practical metrics like verbosity, latency, cost, accuracy (from a human perspective), and information gain. We can assess how these models actually perform and what that says about their ROI
+
+### How to Contribute
+1. Don’t buy me a coffee.
+2. Instead, use that $5 to contribute new file summaries to the results [How It Works](/How It Works/).
+3. Remember this repo is always under construction. f you find an issue please fix it. 
 
 ### How It Works
 The main script (`run_file_summarizer.py`) selects files from a repository and submits them to your chosen LLM(s) for analysis.
 
 To run the script, ensure all required environment variables are set (refer to `__init__.py` in the `benchmark_code` directory for details). You may also need to update some hardcoded access points to integrate your models. Additionally, a caching mechanism is implemented to avoid redundant LLM calls.
-
-### How to Contribute
-1. Don’t buy me a coffee.
-2. Instead, use that $5 to contribute new file summaries to the results.
 
 #### Example: *Core Functionality* Summarized by Three Models for a Single PyTorch File
 
