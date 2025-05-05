@@ -46,4 +46,4 @@ allowing for customization of logging behavior in the application."*
 
 ### A Few Insights
 1. Claude 3.5 is 8× more expensive than LLaMA 3.3—but does it deliver 8× more value?
-2 GPT-4 is 4× more expensive than Gemini 2.5. However, Gemini’s summaries appear slightly more specific and deterministic.
+2. GPT-4 is 4× more expensive than Gemini 2.5. However, Gemini’s summaries appear slightly more specific and deterministic.
