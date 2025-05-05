@@ -1,40 +1,49 @@
+## Strudel's LLM Benchmarking for Code Comprehension
+With all the hype around LLMs promising 10x productivity, I wanted to take a more grounded look at what’s actually being delivered. Benchmarks are everywhere, but like electric vehicle mileage stats, they rarely reflect real-world outcomes.
+
+ROI (Return on Investment) is a straightforward concept: what you gain compared to what you spend. This repository provides a set of benchmarks to evaluate the ROI of large language models.
+
+### What We Do
+We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository [Code Comprehension Summaries](https://raw.githubusercontent.com/strudelbots/strudel-llm-benchmarks/refs/heads/shorten-readme/results/pytorch_DB.json).
+
+Using these summaries (and their associated metadata), we can now begin comparing ROI for code comprehension using practical metrics such as verbosity, latency, cost, perceived accuracy, and information gain. This allows us to assess how these models actually perform—and what that says about their return on investment.
+
+Here's a proofread and polished version of your contribution guidelines, with corrected grammar, improved clarity, and consistent tone:
+
+## How to Contribute
+
+1. Don’t buy me a coffee.
+2. Instead, use that \$5-worth of energy to contribute new file summaries to the results. See [How It Works](#how-it-works) for details.
+3. Once you've analyzed your selected files (with your selected models), run the `from_cache_to_db.py` script to update the main JSON results file.
+4. This repo is always a work in progress. If you spot an issue, please fix it!
 
 
-# strudel-llm-benchmarks
 
-This repository offers a set of benchmarks to assess large language models' (LLMs) 
-ability to understand code. 
-The experiments aim to evaluate the return on investment (ROI) for each model—specifically, 
-whether the higher cost of more sophisticated models is justified for code comprehension tasks.
-### How it Works 
-The main function (in `run_file_smmmarizer.py`) selects files from a repository and 
-submits them to your preferred LLM(s) for analysis. 
-The model then examines each file and summarizes its **core functionality** in up to three sentences.
-##### Example of *Core Functionality* Reported by Three Models for a Single PyTorch File:
+### How It Works
+The main script (`run_file_summarizer.py`) selects files from a repository and submits them to your chosen LLM(s) for analysis.
 
-File: `/torch/distributed/checkpoint/logging_handlers.py`: 
-1. **GPT-4o**: *"The provided Python file initializes and configures a logging system by integrating a custom logger named \"dcp_logger\" into PyTorch's distributed logging handlers. It assigns a `NullHandler` to \"dcp_logger\" to ensure log messages with this logger are ignored unless explicitly handled elsewhere. The file appears to set up a placeholder logger for distributed computing purposes without introducing any additional functionality."*,
-2. **GPT-3.5**: *"The provided Python file defines a module for handling logging in a distributed environment with the torch library. It initializes a logging handler for a specific logger named \"dcp_logger\" using a NullHandler to discard all log messages. The file also updates the existing log handlers with the newly defined handler."*
-3. **GPT-4**: *"The Python file named \"logging_handlers.py\" primarily configures logging handlers for a specific logger named \"dcp_logger\". It imports the logging module and a specific function or module named _log_handlers from the torch.distributed.logging_handlers package. The main functionality is updating the _log_handlers dictionary to set a 'NullHandler' for the 'dcp_logger', effectively ensuring that any logs sent to this logger will be ignored or not outputted anywhere by default.".*
+To run the script, ensure all required environment variables are set (refer to `__init__.py` in the `benchmark_code` directory for details). You may also need to update some hardcoded access points to integrate your models. Additionally, a caching mechanism is implemented to avoid redundant LLM calls. When you run the script again on the same files, no LLM calls are made. 
 
-GPT-4 is by far the most expensive model in this comparison—costing 4 times more than GPT-4o and 6 
-times more than GPT-3.5. 
-But is its output truly 4 times better? Does it deliver 4 times more value? 
-Especially when the [file](https://raw.githubusercontent.com/pytorch/pytorch/refs/heads/main/torch/distributed/checkpoint/logging_handlers.py) 
-is shorter than the GPT-40 answer ! 
+### Example: *Core Functionality* Summarized by Three Models for a Single PyTorch File
+
+File: `/torch/distributed/checkpoint/logging_handlers.py`:  
+1. **Gemini-2.5**: *"This Python script configures logging by defining a specific logger named 
+'dcp_logger'. It then updates a central dictionary (`_log_handlers`), likely used within the 
+`torch.distributed` library, to associate this logger name with a `logging.NullHandler`. 
+This effectively ensures that log messages from 'dcp_logger' are discarded by default 
+unless another handler is explicitly configured elsewhere."*
+
+2. **LLaMA 3.3**: *"The main functionality of the `logging_handlers.py` file is to configure logging handlers for a distributed computing framework, specifically by adding a custom logger named 
+\"dcp_logger\" to the existing `_log_handlers` dictionary. This logger is initialized with a 
+`NullHandler`, which means that it will not output any log messages by default. 
+The file updates the `_log_handlers` dictionary from the `torch.distributed.logging_handlers` module, 
+allowing for customization of logging behavior in the application."*
+
+3. **Claude 3.5**: *"The file `logging_handlers.py` is primarily focused on setting up logging configurations for a distributed computing environment. It imports the necessary logging modules, defines a constant for a specific logger name (`DCP_LOGGER_NAME`), and updates the _log_handlers dictionary with a NullHandler for the defined logger. This file appears to be part of a larger system for managing logging in a distributed computing context, possibly related to PyTorch's distributed computing functionality."*
+
+4. **GPT-4**: *"The file `logging_handlers.py` is primarily involved in configuring and managing logging handlers for distributed computing processes, specifically within a Python environment using the `logging` module. It imports and updates logging handlers from `torch.distributed.logging_handlers` to specify a `NullHandler` for a logger named 'dcp_logger'. This configuration indicates that the logger for distributed computing processes will intentionally avoid processing log messages by default, until further configuration is potentially applied."*
 
 
-This is the question we aim to answer through the experiments conducted in this repository.
-
-
-### How to Run it.  
-- See `__init__.py` in  `benchmark_code` directory and set the environment vars.
-- Set up initial parameters in `__main__` in `run_file_summarizer.py` 
-(e.g., the models you want to use and sample rate'   
-
-#### Output
-The main function generates JSON files, each containing a summary of a single file for each requested model.
-At the end of the process, the script produces a final 
-JSON file that consolidates all summaries from all 
-models (e.g., see `04-01-2025__gpt-35-turbo_gpt-4_gpt-4o__pytorch2_summary.json`).
-
+### A Few Insights
+1. Claude 3.5 is 8× more expensive than LLaMA 3.3—but does it deliver 8× more value?
+2. GPT-4 is 4× more expensive than Gemini 2.5. However, Gemini’s summaries appear slightly more specific and deterministic.

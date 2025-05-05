@@ -72,14 +72,14 @@ def _avg_tokens_per_file(model_stats):
     chart_data.sort(key=lambda x: x[0])
     chart_generator = ChartGenerator()
     chart_generator.generate_bar_chart(chart_data,f"/tmp/{project_name}_tokens_per_file_chart.png", 
-                                       "Avg Tokens Per File", "Model Name", "Tokens", annotation=0)
+                                       "Avg. Tokens Per File", "Model Name", "Tokens", annotation=0)
 
 def _avg_cost_per_file(model_stats):
     chart_data = [(x[0], x[1]["avg_file_cost"]) for x in model_stats.items()]
     chart_data.sort(key=lambda x: x[0])
     chart_generator = ChartGenerator()
     chart_generator.generate_bar_chart(chart_data,f"/tmp/{project_name}_costs_chart.png", 
-                                       "Avg Analysis Cost for File", "Model Name", "Cost $")
+                            "Average Summarization Cost per File", "Model Name", "Cost $")
 
 
 

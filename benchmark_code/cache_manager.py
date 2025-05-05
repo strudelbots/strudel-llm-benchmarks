@@ -17,6 +17,8 @@ class CacheManager:
         self.cache_dir = OUT_FILES_DIRECTORY_CACHE
         self._ensure_db_exists()
         self.force_clear_cache = clear_cache
+        if REPO_DIRECTORY is None:
+            raise ValueError("REPO_DIRECTORY is not set")
         self.analyzed_repo_dir = REPO_DIRECTORY
 
     def _ensure_db_exists(self):
