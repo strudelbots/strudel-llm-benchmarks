@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from dataclasses_json import dataclass_json
-from llm_response import LlmResponse
+from benchmark_code.llm_response import LlmResponse
 from typing import Dict
 from dataclasses import field
 @dataclass_json

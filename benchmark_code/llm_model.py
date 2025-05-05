@@ -15,6 +15,7 @@ class LlmModel():
     langchain_ready: bool = False
     price_per_1000_input_tokens: float = 0.0
     price_per_1000_output_tokens: float = 0.0
+    exclude_files: List[str] = field(default_factory=list)
 
 AVAILABLE_MODELS = [
     LlmModel(known_name="Claude3.5", aws_model_id="eu.anthropic.claude-3-5-sonnet-20240620-v1:0", 
@@ -28,7 +29,8 @@ AVAILABLE_MODELS = [
              price_per_1000_input_tokens=0.00105, price_per_1000_output_tokens=0.0042),
     LlmModel(known_name="titan_premier", aws_model_id="amazon.titan-text-premier-v1:0", 
              aws_region="us-east-1", langchain_ready=False, provider_name="AWS",
-             price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, delay_time=20),
+             price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, 
+             delay_time=20, exclude_files=["torch/nn/functional.py"]),
     LlmModel(known_name="Llama3.3", aws_model_id="us.meta.llama3-3-70b-instruct-v1:0", 
              aws_region="us-east-1", langchain_ready=True, provider_name="AWS", delay_time=10,
              price_per_1000_input_tokens=0.00072, price_per_1000_output_tokens=0.00072),
@@ -37,7 +39,9 @@ AVAILABLE_MODELS = [
              price_per_1000_input_tokens=0.0009, price_per_1000_output_tokens=0.0009),
     LlmModel(known_name="gpt-3.5-turbo", azure_deployment_name="gpt-35-turbo",
              azure_region="eastus", langchain_ready=True, provider_name="AZURE",
-             price_per_1000_input_tokens=0.5/1000.0, price_per_1000_output_tokens=1.5/1000.0),
+             price_per_1000_input_tokens=0.5/1000.0, 
+             price_per_1000_output_tokens=1.5/1000.0,
+             exclude_files=["torch/nn/functional.py", "/torch/nn/modules/rnn.py", "pytorch/torch/fx/graph.py"]),
     LlmModel(known_name="gpt-4o", azure_deployment_name="gpt-4o",
              azure_region="eastus", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=2.5/1000.0, price_per_1000_output_tokens=10/1000.0),
