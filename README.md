@@ -1,3 +1,4 @@
+# Strudel's LLM Benchmarking for Code Comprehension
 With all the hype around LLMs promising 10x productivity, I wanted to take a more grounded look at what’s actually being delivered. Benchmarks are everywhere, but like electric vehicle mileage stats, they rarely reflect real-world outcomes.
 
 ROI (Return on Investment) is a straightforward concept: what you gain compared to what you spend. This repository provides a set of benchmarks to evaluate the ROI of large language models.
@@ -5,12 +6,18 @@ ROI (Return on Investment) is a straightforward concept: what you gain compared 
 ### What We Do
 We randomly selected 100 Python files from the PyTorch repository and tasked approximately 10 different LLMs with summarizing each file in under three sentences. The resulting summaries are publicly available in this repository [Code Comprehension Summaries](https://raw.githubusercontent.com/strudelbots/strudel-llm-benchmarks/refs/heads/shorten-readme/results/pytorch_DB.json).
 
-Using these summaries (and their metadata) we can now start to compare ROI for code comprehension in  practical metrics like verbosity, latency, cost, accuracy (from a human perspective), and information gain. We can assess how these models actually perform and what that says about their ROI. 
+Using these summaries (and their associated metadata), we can now begin comparing ROI for code comprehension using practical metrics such as verbosity, latency, cost, perceived accuracy, and information gain. This allows us to assess how these models actually perform—and what that says about their return on investment.
 
-### How to Contribute
+Here's a proofread and polished version of your contribution guidelines, with corrected grammar, improved clarity, and consistent tone:
+
+## How to Contribute
+
 1. Don’t buy me a coffee.
-2. Instead, use that $5 to contribute new file summaries to the results [How It Works](#how-it-works).
-3. Remember this repo is always under construction. f you find an issue please fix it. 
+2. Instead, use that \$5-worth of energy to contribute new file summaries to the results. See [How It Works](#how-it-works) for details.
+3. Once you've analyzed your selected files (with your selected models), run the `from_cache_to_db.py` script to update the main JSON results file.
+4. This repo is always a work in progress. If you spot an issue, please fix it!
+
+
 
 ### How It Works
 The main script (`run_file_summarizer.py`) selects files from a repository and submits them to your chosen LLM(s) for analysis.
