@@ -1,4 +1,4 @@
-# Strudel's LLM Benchmarking for Code Comprehension
+## Strudel's LLM Benchmarking for Code Comprehension
 With all the hype around LLMs promising 10x productivity, I wanted to take a more grounded look at what’s actually being delivered. Benchmarks are everywhere, but like electric vehicle mileage stats, they rarely reflect real-world outcomes.
 
 ROI (Return on Investment) is a straightforward concept: what you gain compared to what you spend. This repository provides a set of benchmarks to evaluate the ROI of large language models.
