@@ -1,6 +1,23 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+        {
+                "name": "Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}", // this runs the currently open file
+                "console": "integratedTerminal",
+                "env": {
+                    "REPO_DIR": "/home/shai/pytorch",
+                    "PYTHONPATH": "${workspaceFolder}"
+                    },
+                "justMyCode": false,
+                "presentation": {
+                    "clear": true
+                }      
+        },
+    
         {
             "name": "Run Summarizer",
             "type": "python",
@@ -70,6 +87,7 @@
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
             }
-        }
+        },
+
     ]
 }

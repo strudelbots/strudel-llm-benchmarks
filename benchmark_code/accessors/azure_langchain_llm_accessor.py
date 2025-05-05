@@ -19,6 +19,7 @@ class AzureLangchainLlmAccessor(LlmAccessor):
             endpoint=self.endpoint,
             credential=AZURE_LLM_KEY,
             api_version="2024-05-01-preview",
+            model_name=model.known_name,
         )
             
 

@@ -15,8 +15,11 @@ from benchmark_code.llm_model import AVAILABLE_MODELS, LlmModel
 def _generate_file_summaries_for_model(model: LlmModel,python_files):
     index =0
     summarizer = FileSummarizer(model)
+    
     for _, file in enumerate(python_files):
         if any(elem in file for elem in file_keywords_to_skip):
+            continue
+        if any(elem in file for elem in model.exclude_files):
             continue
         index += 1
         #print(f'{index}. Generate summary for {file=}, {model.known_name=}, ')
@@ -52,7 +55,7 @@ def get_models():
               'gpt-3.5-turbo',
               'gpt-4o',
               'gpt-4',
-              #'gpt-4.5',
+              'gpt-4.5',
               'gpt-4.1',
               'gemini-2.5',
               'gemini-2.5-flash'

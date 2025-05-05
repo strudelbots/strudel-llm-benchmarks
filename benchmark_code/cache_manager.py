@@ -1,20 +1,23 @@
 import json
 import os
+import re
 from pathlib import Path
-from benchmark_code import OUT_FILES_DIRECTORY_CACHE, REPO_DIRECTORY
+from benchmark_code import OUT_FILES_DIRECTORY_CACHE, REPO_DIRECTORY, project_name
 from collections import defaultdict
-from db_entry import SingleModelDBEntry
-from llm_response import LlmResponse
-from llm_model import LlmModel
-from db_entry import SingleFileDBEntry
+from benchmark_code.db_entry import SingleModelDBEntry, SingleFileDBEntry
+from benchmark_code.llm_response import LlmResponse
+from benchmark_code.llm_model import LlmModel
+
 
 class CacheManager:
+    hash_pattern = re.compile(r'^[a-f0-9]{64}\.json$')
+    
     def __init__(self, db_file_path, clear_cache=False):
         self.db_file_path = db_file_path
         self.cache_dir = OUT_FILES_DIRECTORY_CACHE
         self._ensure_db_exists()
         self.force_clear_cache = clear_cache
-
+        self.analyzed_repo_dir = REPO_DIRECTORY
 
     def _ensure_db_exists(self):
         """Ensure the database file exists, create it if it doesn't"""
@@ -26,21 +29,29 @@ class CacheManager:
         with open(self.db_file_path, 'r') as f:
             return json.load(f)
 
-    def _save_db(self, data):
+    def _save_db(self, data, target_file):
         """Save data to the database file"""
-        with open(self.db_file_path, 'w') as f:
+        with open(target_file, 'w') as f:
             json.dump(data, f, indent=4)
 
     def _collect_summaries_per_target_file(self):
         """Collect all summaries into a single file"""
         summaries_per_file = defaultdict(list)
-        cache_files = [f for f in os.listdir(self.cache_dir) if f.endswith('.json')]
+        cache_files = self._get_cached_summary_files()
         for cache_file in cache_files:
             with open(os.path.join(self.cache_dir, cache_file), 'r') as f:
                 cache_data = json.load(f)
                 file = cache_data['file_name']
                 summaries_per_file[file].append(cache_data['llm_result'])
         return summaries_per_file
+
+    def _get_cached_summary_files(self):
+        hash_files = []
+        for filename in os.listdir(self.cache_dir):
+            if filename.endswith('.json'):
+                if self.hash_pattern.match(filename):
+                    hash_files.append(filename)
+        return hash_files
  
     def force_clear_cache(self):
         if not self.force_clear_cache:
@@ -58,7 +69,7 @@ class CacheManager:
         """Collect all summaries into a single file"""
         single_file_entries = SingleFileDBEntry()
         for file, summaries in summaries_per_file.items():
-            key = file.removeprefix('/home/shai/pytorch')
+            key = file.removeprefix(self.analyzed_repo_dir)
 
             for summary in summaries:
                 llm_model = LlmModel(summary['model']['known_name'], summary['model']['provider_name'], 
@@ -69,7 +80,6 @@ class CacheManager:
                                      summary['model']['price_per_1000_output_tokens'])
                 llm_result = LlmResponse(summary['message'], summary['total_tokens'], llm_model, summary['latency'])
                 number_of_lines = -1
-                project_name = 'pytorch'
                 model_key = llm_model.known_name
                 if model_key in single_file_entries.data.get(key, {}):
                     raise ValueError(f"Model {model_key} already exists in {key}")
@@ -90,8 +100,8 @@ class CacheManager:
                 self._merge_file_entries(db, file, new_db_entry)
             else:
                 db[file] = new_db_entry
-        if not dry_run:
-            self._save_db(db)
+        target_file = self.db_file_path if not dry_run else os.path.join('/tmp', 'pytorch_DB.json')
+        self._save_db(db, target_file)
 
     def _merge_file_entries(self, db, file, new_db_entry):
         file_data_in_db = db[file]
@@ -110,9 +120,9 @@ class CacheManager:
         summaries_per_file = self._collect_summaries_per_target_file()
         single_file_entries = self._collect_single_file_entries(summaries_per_file)
         db_dict_format = single_file_entries.to_db_dict()
-        str_json = json.dumps(db_dict_format, indent=4)
-        with open('/tmp/single_file_entries.json', 'w') as f:
-            f.write(str_json)
+        #str_json = json.dumps(db_dict_format, indent=4)
+        #with open('/tmp/single_file_entries.json', 'w') as f:
+        #    f.write(str_json)
         self._update_db(db_dict_format, dry_run)
 if __name__ == "__main__":
     cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')

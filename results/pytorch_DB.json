@@ -1005,6 +1005,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.905499
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/fx/experimental/migrate_gradual_types/constraint.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a system for representing type constraints, primarily for tensors and their dimensions within the PyTorch FX framework. It establishes a base `Constraint` class and numerous subclasses to model logical combinations (And/Or), binary operations, tensor-specific operations (like convolution, broadcasting, indexing), and dimension calculations. The file also defines variable types (TVar, DVar, BVar) to represent unknown tensors, dimensions, and booleans within these constraints.",
+            "total_tokens": 5151,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 5.645665
         }
     },
     "/torch/nn/modules/rnn.py": {
@@ -3847,6 +3868,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.240058
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/jit/_dataclass_impls.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file provides functionality to automatically synthesize the source code for standard magic methods (like `__init__`, `__repr__`, `__eq__`, etc.) for dataclasses. These generated methods are specifically designed to be compatible with PyTorch's TorchScript JIT compiler. The code inspects the dataclass fields and attributes to construct the method bodies as strings, which are then parsed into Abstract Syntax Trees (ASTs) for TorchScript consumption.",
+            "total_tokens": 2678,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 8.757888
         }
     },
     "/tools/linter/adapters/shellcheck_linter.py": {
@@ -4351,6 +4393,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.087074
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/optim/post_localSGD_optimizer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `PostLocalSGDOptimizer` class, which wraps a standard PyTorch optimizer to implement the Post-Local SGD algorithm for distributed training. It executes the underlying local optimizer at each step. After an optional warm-up phase, it periodically averages the model parameters across distributed processes using a provided model averager.",
+            "total_tokens": 1606,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 4.535956
         }
     },
     "/torchgen/operator_versions/gen_mobile_upgraders.py": {
@@ -5601,6 +5664,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.879911
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/code_coverage/package/oss/init.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script initializes a testing environment by parsing command-line arguments to configure options like which tests to run and whether to clean up previous results. It identifies C++ and Python test files within specified directories, potentially filtering them based on user input or compiler type (GCC/Clang). Finally, it prepares the environment by creating necessary folders, cleaning old artifacts, logging setup information, and returning the configuration options, the list of tests to execute, and folders of interest.",
+            "total_tokens": 2029,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 5.181991
         }
     },
     "/functorch/notebooks/_src/plot_ensembling.py": {
@@ -7939,6 +8023,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.293384
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/code_coverage/package/oss/utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file provides utility functions primarily for supporting the PyTorch build and testing environment, particularly related to code coverage analysis. It includes functions to locate PyTorch source/build directories, test binaries (C++ and Python), shared libraries, and LLVM tools, as well as detecting the compiler type (Clang/GCC). Additionally, the file offers helpers for finding and cleaning up code coverage data files (`.gcda`) and executing Python tests using subprocess.",
+            "total_tokens": 1595,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 6.609058
         }
     },
     "/benchmarks/inference/server.py": {
@@ -9229,6 +9334,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.034867
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/fx/passes/backends/cudagraphs.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines logic to partition a PyTorch FX graph based on CUDA compatibility. It introduces a `CudaGraphsSupport` class to check if individual graph nodes operate exclusively on CUDA tensors. The `partition_cudagraphs` function then uses this check with FX's `CapabilityBasedPartitioner` to group consecutive CUDA-compatible operations into subgraphs, preparing the model for potential acceleration with CUDA graphs.",
+            "total_tokens": 1523,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 10.302643
         }
     },
     "/torch/distributed/elastic/multiprocessing/subprocess_handler/handlers.py": {
@@ -11305,6 +11431,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.414766
+        },
+        "gemini-2.5": {
+            "file_name": "/tools/gen_vulkan_spv.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script processes GLSL shader templates and YAML configuration files to generate multiple Vulkan SPIR-V (SPV) shader variants based on defined parameters. It compiles the resulting GLSL code into SPV binaries using an external compiler (`glslc`) and extracts metadata like descriptor layouts and tile sizes from comments in the source files. Finally, it generates C++ header and source files that embed these SPV binaries as byte arrays and register them along with their metadata for runtime access within a C++ application.",
+            "total_tokens": 7925,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 7.26646
         }
     },
     "/torch/_lazy/device_context.py": {
@@ -11527,6 +11674,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.41509
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a `DeviceContext` class, which manages and caches device contexts in a thread-safe manner. It provides a global function `get_device_context()` that retrieves or creates a context instance for a specific device (e.g., CPU, GPU), storing it in a shared dictionary to avoid redundant instantiations. The default device type is obtained from `torch._C._lazy` if not explicitly specified.",
+            "total_tokens": 348,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 9.055873
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a thread-safe mechanism for managing and retrieving device-specific context objects (`DeviceContext`). It uses a global dictionary protected by a lock to ensure that only one `DeviceContext` instance is created per unique device string. The `get_device_context` function acts as a factory, returning the existing context for a device or creating a new one, defaulting to the PyTorch lazy tensor default device if none is specified.",
+            "total_tokens": 836,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 5.895201
         }
     },
     "/torch/utils/benchmark/op_fuzzers/spectral.py": {
@@ -11749,6 +11938,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.294311
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file defines a \"SpectralOpFuzzer,\" a benchmarking utility built using PyTorch's benchmarking framework to fuzz-test spectral operations (such as FFTs). This fuzzer generates randomized tensor shapes and strides targeting particularly fast (regular) sizes that factorize into powers of primes 2, 3, and 5, as well as various memory layouts to test strided access effectively. Its primary purpose is to systematically stress-test and benchmark the spectral operations' performance in various realistic tensor configurations.",
+            "total_tokens": 1017,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 4.359109
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a `SpectralOpFuzzer` class used for benchmarking PyTorch spectral operations like FFT. It generates randomized input tensors with varying dimensions, sizes, and memory layouts (strides) to test performance under diverse conditions. The fuzzer specifically prioritizes generating tensor sizes known as \"regular numbers\" (factors of 2, 3, 5), which are often optimized in FFT implementations.",
+            "total_tokens": 1387,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 4.369911
         }
     },
     "/torch/distributed/tensor/_sharding_prop.py": {
@@ -11971,6 +12202,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.292712
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file implements a system for sharding propagation in PyTorch distributed tensors, primarily through the class `ShardingPropagator` responsible for registering and applying sharding rules and strategies to different torch operators (`OpOverload` instances). It provides methods for handling tensor metadata propagation (`TensorMeta`), managing caching for efficiency, and automatically adjusting tensor shapes and strides when performing distributed operations. Overall, this module enables efficient, strategy-driven automatic sharding for distributed tensor operations in PyTorch.",
+            "total_tokens": 4429,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 10.363015
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `ShardingPropagator` class, responsible for determining how sharding (distribution across devices) should be applied to the outputs of PyTorch operations involving distributed tensors (DTensors). It uses registered rules or strategies specific to each operator to calculate the output sharding based on the input tensors' distributed layout and the operation itself. The propagator also handles tensor metadata propagation and can suggest input tensor redistributions if the current sharding is incompatible with the chosen execution strategy.",
+            "total_tokens": 6055,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 7.437133
         }
     },
     "/torch/nn/quantizable/modules/activation.py": {
@@ -12193,6 +12466,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.396711
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file acts as a backward compatibility layer for quantizable modules in PyTorch, specifically for activation modules undergoing migration to a new location (`torch/ao/nn/quantizable`). It imports the `MultiheadAttention` module from its new location, enabling a seamless transition for codebases relying on the previous structure. The file also includes instructions for developers to contribute new functionality directly to the target module location.",
+            "total_tokens": 280,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 3.207523
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file acts as a compatibility shim within the PyTorch library, specifically for quantizable modules. It facilitates the migration of modules like `MultiheadAttention` to the newer `torch.ao.nn.quantizable` namespace. Its main function is to re-export these migrated modules to maintain backward compatibility for users during the transition period.",
+            "total_tokens": 881,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 8.095404
         }
     },
     "/torch/_export/db/examples/class_method.py": {
@@ -12415,6 +12730,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.08725
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file defines a PyTorch neural network module named \"ClassMethod,\" which contains a linear layer and a class method \"method\" performing a simple addition operation. In its forward method, the module processes input through the linear transformation, then applies the class method multiple times before returning the combined outcome. Additionally, a model instance and example input tensors are created to demonstrate usage of the defined module.",
+            "total_tokens": 306,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 3.563017
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a PyTorch neural network module named `ClassMethod`. The module includes a `@classmethod` called `method` that performs a simple addition. The main functionality demonstrated in the `forward` method is applying a linear layer to the input and then calling this class method multiple times using different access patterns (`self.method`, `self.__class__.method`, `type(self).method`).",
+            "total_tokens": 961,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 7.812061
         }
     },
     "/scripts/export/update_schema.py": {
@@ -12637,6 +12994,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.235741
+        },
+        "gpt-4.5": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python script updates and validates schema-related files within a PyTorch repository by generating YAML, C++, and Thrift schema files based on the results from schema checking. It ensures compatibility by validating versions and checksums, providing options like `--dry-run` (to preview without applying changes) and `--force-unsafe` (to force updates despite potential incompatibilities). If conditions are not met, such as non-existent paths or unexpected schema version downgrades, the script raises appropriate errors.",
+            "total_tokens": 1013,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 4.498155
+        },
+        "gemini-2.5": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This script updates the serialization schema definitions used within the PyTorch project. It generates new schema versions based on the current codebase, performs validation checks for compatibility and version increments, and then writes the updated schema to YAML, C++, and Thrift files. The script allows for dry runs to preview changes and an option to force updates even if validation checks fail.",
+            "total_tokens": 1371,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 3.960782
         }
     },
     "/torch/profiler/_pattern_matcher.py": {
@@ -12859,6 +13258,48 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.553372
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file defines a framework that analyzes performance profiles from PyTorch models by matching them against various predefined anti-patterns, such as wasteful CUDA tensor transfers, inefficient optimizer implementations, or lack of vectorization. It includes logic to identify problematic code patterns within PyTorch execution (e.g., unnecessary tensor copy from CPU to GPU or using single-tensor optimizers) and to generate human-readable performance improvement recommendations. Additionally, it can produce summarized reports and JSON output detailing matched anti-patterns along with suggestions for optimization.",
+            "total_tokens": 5711,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 7.605196
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a framework for analyzing PyTorch profiler output to detect common performance anti-patterns. It includes a base `Pattern` class and several specific subclasses that identify issues like unnecessary CUDA copies, inefficient data loading, or suboptimal operator usage. The main function `report_all_anti_patterns` uses these patterns to scan a given profile, generate a report summarizing findings with source code locations, and optionally benchmark potential speedups.",
+            "total_tokens": 7580,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 9.746848
         }
     }
 }
