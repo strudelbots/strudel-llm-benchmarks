@@ -13301,5 +13301,259 @@
             },
             "latency": 9.746848
         }
+    },
+    "/torch/distributed/checkpoint/logging_handlers.py": {
+        "nova-lite-v1": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"logging_handlers.py\" file is to configure a custom logger named \"dcp_logger\" by associating it with a `NullHandler` from the `torch.distributed.logging_handlers` module. This setup ensures that any logging events for \"dcp_logger\" are effectively ignored. The file imports necessary modules and updates the logging handlers to include the custom logger.",
+            "total_tokens": 248,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 1.111085
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `logging_handlers.py` file configures logging for a specific logger named \"dcp_logger\" by associating it with a `NullHandler`, which effectively silences all log messages for this logger, preventing them from being output unless further handlers are added. It imports necessary modules and updates a global registry of log handlers (`_log_handlers`) to include this configuration.",
+            "total_tokens": 243,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 1.390854
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script configures logging by defining a specific logger named \"dcp_logger\". It then updates a central dictionary (`_log_handlers`), likely used within the `torch.distributed` library, to associate this logger name with a `logging.NullHandler`. This effectively ensures that log messages from \"dcp_logger\" are discarded by default unless another handler is explicitly configured elsewhere.",
+            "total_tokens": 798,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 7.929991
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file configures a default logging handler within PyTorch's distributed logging system. It registers a `logging.NullHandler` under the name \"dcp_logger\". This setup ensures that logs directed to \"dcp_logger\" are discarded by default unless explicitly handled elsewhere.",
+            "total_tokens": 628,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 3.769734
+        },
+        "Llama3.3": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `logging_handlers.py` file is to configure logging handlers for a distributed computing framework, specifically by adding a custom logger named \"dcp_logger\" to the existing `_log_handlers` dictionary. This logger is initialized with a `NullHandler`, which means that it will not output any log messages by default. The file updates the `_log_handlers` dictionary from the `torch.distributed.logging_handlers` module, allowing for customization of logging behavior in the application.",
+            "total_tokens": 249,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 2.583167
+        },
+        "titan_premier": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"logging_handlers.py\" is a Python script that imports the logging module and defines a constant DCP_LOGGER_NAME. It also updates the _log_handlers dictionary with a new entry for DCP_LOGGER_NAME, which is set to a NullHandler instance. The file does not define any functions or classes, and the __all__ list is empty. This file is likely used to configure logging for a specific component or module in a larger software system.",
+            "total_tokens": 104,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 3.876885
+        },
+        "Claude3.5": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"logging_handlers.py\" is primarily focused on setting up logging configurations for a distributed computing environment. It imports the necessary logging modules, defines a constant for a specific logger name (DCP_LOGGER_NAME), and updates the _log_handlers dictionary with a NullHandler for the defined logger. This file appears to be part of a larger system for managing logging in a distributed computing context, possibly related to PyTorch's distributed computing functionality.",
+            "total_tokens": 274,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.612529
+        },
+        "gpt-4o": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines and configures a custom logger named \"dcp_logger\" by associating it with a `NullHandler`, ensuring that no log messages are output by default unless explicitly configured. It modifies the `_log_handlers` dictionary from the `torch.distributed.logging_handlers` module to include this logger. Additionally, it initializes the `__all__` list as empty, possibly indicating no public API exports.",
+            "total_tokens": 231,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 1.714818
+        },
+        "Llama3.1": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to configure logging handlers for a distributed computing platform (DCP) using the PyTorch library. It updates the `_log_handlers` dictionary with a new handler named \"dcp_logger\" that uses a `NullHandler`, which discards all logging messages. This file is likely used to set up logging for a distributed computing application.",
+            "total_tokens": 227,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 3.287956
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `logging_handlers.py` file is to import the necessary modules for logging, specifically from `torch.distributed.logging_handlers`, and define a logger with the name `DCP_LOGGER_NAME`. It then updates the `_log_handlers` dictionary with the `DCP_LOGGER_NAME` and assigns a `logging.NullHandler()` to it.",
+            "total_tokens": 216,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 1.924148
+        },
+        "gpt-4": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `logging_handlers.py` is primarily involved in configuring and managing logging handlers for distributed computing processes, specifically within a Python environment using the `logging` module. It imports and updates logging handlers from `torch.distributed.logging_handlers` to specify a `NullHandler` for a logger named \"dcp_logger\". This configuration indicates that the logger for distributed computing processes will intentionally avoid processing log messages by default, until further configuration is potentially applied.",
+            "total_tokens": 235,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 2.94605
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/distributed/checkpoint/logging_handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to set up a logging handler for a custom logger named \"dcp_logger\" by registering a logging.NullHandler() under this name within the torch.distributed.logging_handlers._log_handlers dictionary. This prevents warnings for unhandled logs from \"dcp_logger\" if no other handlers are configured. The file also defines an empty __all__ list, specifying no public API from this module.",
+            "total_tokens": 233,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 2.629417
+        }
     }
 }

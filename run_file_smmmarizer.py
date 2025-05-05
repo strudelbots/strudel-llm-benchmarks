@@ -55,7 +55,7 @@ def get_models():
               'gpt-3.5-turbo',
               'gpt-4o',
               'gpt-4',
-              'gpt-4.5',
+              #'gpt-4.5',
               'gpt-4.1',
               'gemini-2.5',
               'gemini-2.5-flash'
@@ -74,6 +74,7 @@ if __name__ == "__main__":
     random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
+    python_files.append('/home/shai/pytorch/torch/distributed/checkpoint/logging_handlers.py')
     for model in models:
         _generate_file_summaries_for_model(model,python_files)
 
