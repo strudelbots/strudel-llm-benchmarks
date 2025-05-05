@@ -51,7 +51,7 @@ class ChartGenerator():
             annotation_str = f'{height:.{annotation}f}'
             ax.annotate(annotation_str,
                         xy=(bar.get_x() + bar.get_width() / 2, height),
-                        xytext=(0, 3),  # 3 points vertical offset
+                        xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
                         fontsize=self.default_ticks_font_size-3)
