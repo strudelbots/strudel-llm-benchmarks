@@ -45,7 +45,7 @@ AVAILABLE_MODELS = [
              azure_region="eastus", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=0.5/1000.0, 
              price_per_1000_output_tokens=1.5/1000.0,
-             exclude_files=["torch/nn/functional.py", "/torch/nn/modules/rnn.py", "pytorch/torch/fx/graph.py"]),
+             exclude_files=["torch/export/_trace.py", "torch/nn/functional.py", "/torch/nn/modules/rnn.py", "pytorch/torch/fx/graph.py"]),
     LlmModel(known_name="gpt-4o", azure_deployment_name="gpt-4o",
              azure_region="eastus", langchain_ready=True, provider_name="AZURE",
              price_per_1000_input_tokens=2.5/1000.0, price_per_1000_output_tokens=10/1000.0),
