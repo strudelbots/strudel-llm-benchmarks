@@ -55,14 +55,18 @@ def get_models():
               'gpt-3.5-turbo',
               'gpt-4o',
               'gpt-4',
-              'gpt-4.5',
+              #'gpt-4.5',
               'gpt-4.1',
               'gemini-2.5',
-              'gemini-2.5-flash'
+              'gemini-2.5-flash',
+              'Claude3.7',
               ]
-    assert all(elem in [model.known_name for model in AVAILABLE_MODELS] for elem in run_on)
-    models = AVAILABLE_MODELS
-    models = [model for model in models if model.known_name in run_on]    
+    avaliable_models = [model.known_name for model in AVAILABLE_MODELS]
+    for model in run_on:
+        if model not in avaliable_models:
+            raise ValueError(f'{model} is not available in the models list.' 
+                             f'Please check the model name.')
+    models = [model for model in AVAILABLE_MODELS if model.known_name in run_on]
     return models
 
 if __name__ == "__main__":
@@ -70,7 +74,7 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 2.8 # Controls of the percentage of files that would be summarized.
+    sample_factor = 3.0 # Controls of the percentage of files that would be summarized.
     random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))

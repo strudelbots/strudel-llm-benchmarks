@@ -3,6 +3,9 @@ import os
 from pathlib import Path
 
 REPO_DIRECTORY=os.getenv('REPO_DIRECTORY') # points to the root directory of repository you want to analyze
+if REPO_DIRECTORY is None:
+    raise ValueError('you need to set the REPO_DIRECTORY environment ' \
+    'variable to point to the root directory of the repository you want to analyze')
 OUT_FILES_DIRECTORY=f'{Path.home()}/tmp' # where all files will be writen, feel free to change
 OUT_FILES_DIRECTORY_CACHE=f'{Path.home()}/cache'
 

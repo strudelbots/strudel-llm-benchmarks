@@ -259,6 +259,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.432005
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_functorch/aot_autograd.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `aot_autograd.py` file implements AOT (Ahead-Of-Time) Autograd functionality for PyTorch, providing mechanisms to trace forward and backward computation graphs ahead of time and compile them for optimized execution. It contains extensive functionality for handling edge cases around tensor aliasing, mutations, and subclasses, along with various compilation strategies for both training and inference scenarios.",
+            "total_tokens": 19792,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.181041
         }
     },
     "/torch/fx/graph.py": {
@@ -501,6 +522,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.411046
+        },
+        "Claude3.7": {
+            "file_name": "/torch/fx/graph.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to define the Graph class, which is the core data structure in PyTorch's FX intermediate representation. It represents a computational graph consisting of nodes that represent operations like function calls, method calls, attribute access, and module calls, allowing for code generation, manipulation, and analysis of PyTorch models through a graph-based representation.",
+            "total_tokens": 20857,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.670365
         }
     },
     "/tools/linter/adapters/workflow_consistency_linter.py": {
@@ -763,6 +805,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.387007
+        },
+        "Claude3.7": {
+            "file_name": "/tools/linter/adapters/workflow_consistency_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements a linter that checks for consistency between GitHub workflow jobs that share the same \"sync-tag\". It analyzes YAML workflow files, identifies jobs with matching sync tags, and reports errors when these jobs have inconsistent configurations (with exceptions for certain fields like \"if\" and \"test-matrix\" which are allowed to differ). The linter outputs standardized JSON error messages when inconsistencies are found.",
+            "total_tokens": 1279,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.964448
         }
     },
     "/torch/fx/experimental/migrate_gradual_types/constraint.py": {
@@ -1026,6 +1089,27 @@
                 "exclude_files": []
             },
             "latency": 5.645665
+        },
+        "Claude3.7": {
+            "file_name": "/torch/fx/experimental/migrate_gradual_types/constraint.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file defines a constraint system for tensor operations in PyTorch, implementing various constraint classes that represent relationships between tensors and their dimensions. The constraint hierarchy includes basic logical constraints (Conjunction, Disjunction), tensor-specific constraints (broadcasting, convolution, max pooling), and variable types for tensors, dimensions, and boolean values. The system appears to be part of a type checking or static analysis framework for PyTorch, likely used to verify tensor shape compatibility during operations.",
+            "total_tokens": 5101,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.358502
         }
     },
     "/torch/nn/modules/rnn.py": {
@@ -1268,6 +1352,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 5.83553
+        },
+        "Claude3.7": {
+            "file_name": "/torch/nn/modules/rnn.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"rnn.py\" implements various Recurrent Neural Network (RNN) architectures in PyTorch, including standard RNN, LSTM (Long Short-Term Memory), and GRU (Gated Recurrent Unit) models, along with their cell variants for single-step operations. It provides both full sequence processing modules and individual cell implementations with comprehensive parameter management, forward pass logic, and utilities for handling batched and packed sequence inputs.",
+            "total_tokens": 22491,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 6.031665
         }
     },
     "/torch/nn/utils/parametrizations.py": {
@@ -1530,6 +1635,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.764533
+        },
+        "Claude3.7": {
+            "file_name": "/torch/nn/utils/parametrizations.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"parametrizations.py\" implements various weight parametrization techniques for neural networks in PyTorch, specifically orthogonal parametrization, weight normalization, and spectral normalization. These parametrizations constrain network weights to have specific mathematical properties (orthogonality, normalized weight vectors, or bounded spectral norm) which can improve training stability and model performance by enforcing desirable constraints on the parameter space.",
+            "total_tokens": 7827,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 17.869411
         }
     },
     "/torch/_inductor/fx_passes/decompose_mem_bound_mm.py": {
@@ -1792,6 +1918,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.668705
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/fx_passes/decompose_mem_bound_mm.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"decompose_mem_bound_mm.py\" implements a pattern matching system to decompose memory-bound matrix multiplication operations in PyTorch. It defines functions to identify and transform specific matrix multiplication patterns (mm, bmm, addmm) into more memory-efficient operations when certain dimensional conditions are met, particularly for large first dimensions and small other dimensions. The transformations are applied selectively based on device type (CUDA or CPU) and tensor shape characteristics to optimize performance.",
+            "total_tokens": 2079,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.34115
         }
     },
     "/torch/autograd/profiler.py": {
@@ -2054,6 +2201,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.413076
+        },
+        "Claude3.7": {
+            "file_name": "/torch/autograd/profiler.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The profiler.py file provides a comprehensive profiling system for PyTorch operations. It defines classes and functions for tracking and analyzing the performance of PyTorch code, including CPU and GPU operations. The main functionality includes the `profile` context manager for collecting execution statistics, `record_function` for labeling code blocks during profiling, and utilities for exporting profiling data to formats like Chrome tracing. It also includes specialized profilers like `emit_nvtx` and `emit_itt` for NVIDIA and Intel profiling tools respectively.",
+            "total_tokens": 13383,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.777179
         }
     },
     "/torch/distributed/tensor/parallel/fsdp.py": {
@@ -2316,6 +2484,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.143324
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/tensor/parallel/fsdp.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file implements DTensorExtensions, a class that extends FSDPExtensions to support Fully Sharded Data Parallel (FSDP) with Tensor Parallelism (TP) in PyTorch distributed training. It provides functionality for handling DTensor operations including flattening/unflattening tensors, chunking tensors across devices, and gathering distributed tensors, which enables efficient 2D parallelism for large-scale deep learning models.",
+            "total_tokens": 4420,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 6.476309
         }
     },
     "/tools/stats/upload_utilization_stats/upload_utilization_stats.py": {
@@ -2578,6 +2767,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.440765
+        },
+        "Claude3.7": {
+            "file_name": "/tools/stats/upload_utilization_stats/upload_utilization_stats.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script is designed to upload utilization statistics from CI workflows to S3 storage. It processes raw utilization logs from workflow artifacts, converts them into structured data models, identifies Python command segments, and uploads the processed metadata and time series data to S3 buckets for further analysis. The script includes functionality for downloading artifacts, parsing utilization records, generating continuous time segments, and handling both normal and debug upload modes.",
+            "total_tokens": 4538,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.810793
         }
     },
     "/torch/_inductor/cpp_builder.py": {
@@ -2840,6 +3050,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 4.147013
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/cpp_builder.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The cpp_builder.py file is a comprehensive C++ builder designed to support both Windows and Linux operating systems for PyTorch's inductor compilation system. It provides functionality to compile C++ code with appropriate compiler flags, handle platform-specific differences, manage dependencies (including PyTorch, Python, OpenMP), and support various compilation modes (AOT, preprocessing, etc.) across different toolchains (GCC, Clang, MSVC, Intel).",
+            "total_tokens": 19328,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 7.508032
         }
     },
     "/torch/distributed/fsdp/_dynamo_utils.py": {
@@ -3102,6 +3333,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.799161
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/fsdp/_dynamo_utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides utility functions for PyTorch's Dynamo compiler to work with Fully Sharded Data Parallel (FSDP) modules. Specifically, it contains a function `_annotate_modules_for_dynamo` that marks modules as FSDP-managed by adding special attributes, allowing Dynamo to treat them as \"UnspecializedNNModule\" during tracing. The extensive comments explain how this annotation helps Dynamo properly handle FSDP modules during compilation, particularly regarding parameter views and backward pass execution order.",
+            "total_tokens": 890,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.226943
         }
     },
     "/torch/distributions/studentT.py": {
@@ -3364,6 +3616,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 1.722131
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributions/studentT.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The StudentT.py file implements a PyTorch distribution class for Student's t-distribution, providing functionality for sampling, computing log probabilities, and calculating statistical properties like mean, mode, variance, and entropy. The class supports parameterization by degrees of freedom, location (mean), and scale, and includes methods for random sampling (rsample) and expanding batch dimensions. It integrates with PyTorch's distribution framework, allowing it to be used in probabilistic modeling and statistical computations.",
+            "total_tokens": 1511,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.138598
         }
     },
     "/torch/distributed/rpc/functions.py": {
@@ -3626,6 +3899,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.093892
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/rpc/functions.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a decorator function `async_execution` that marks Python functions which return a Future object and can run asynchronously in RPC (Remote Procedure Call) operations within PyTorch's distributed computing framework. This decorator allows the callee to extract the Future returned by the wrapped function, install processing steps as callbacks, and send the result back as an RPC response when completed, enabling functions to pause and resume execution when waiting for remote operations or other signals.",
+            "total_tokens": 2346,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.264492
         }
     },
     "/torch/jit/_dataclass_impls.py": {
@@ -3889,6 +4183,27 @@
                 "exclude_files": []
             },
             "latency": 8.757888
+        },
+        "Claude3.7": {
+            "file_name": "/torch/jit/_dataclass_impls.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides functionality for synthesizing magic methods for JIT-compiled dataclasses in PyTorch, enabling dataclasses to work properly within TorchScript. It contains functions that generate code for common dataclass methods like `__init__`, `__repr__`, comparison operators, and `__hash__`, handling special cases like optional fields and InitVars while ensuring type compatibility with the TorchScript interpreter.",
+            "total_tokens": 2132,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.977442
         }
     },
     "/tools/linter/adapters/shellcheck_linter.py": {
@@ -4151,6 +4466,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 5.337724
+        },
+        "Claude3.7": {
+            "file_name": "/tools/linter/adapters/shellcheck_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements a linter that uses shellcheck to analyze shell scripts for errors and issues. It parses shell script files, runs the shellcheck command on them, and formats the results as structured LintMessage objects that include details like file path, line number, error code, and description. The script can be run as a standalone tool that accepts file paths as arguments and outputs the lint results in JSON format.",
+            "total_tokens": 1051,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.274366
         }
     },
     "/torch/distributed/optim/post_localSGD_optimizer.py": {
@@ -4414,6 +4750,27 @@
                 "exclude_files": []
             },
             "latency": 4.535956
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/optim/post_localSGD_optimizer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `post_localSGD_optimizer.py` file implements a PyTorch optimizer wrapper called `PostLocalSGDOptimizer` that enhances distributed training by implementing the post-local SGD algorithm. It wraps any standard PyTorch optimizer and periodically averages model parameters across workers after applying local optimization steps, following a configurable warm-up period. This implementation helps reduce communication overhead in distributed training while maintaining model accuracy by combining local optimization with periodic global parameter averaging.",
+            "total_tokens": 1522,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.164492
         }
     },
     "/torchgen/operator_versions/gen_mobile_upgraders.py": {
@@ -4676,6 +5033,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 13.395299
+        },
+        "Claude3.7": {
+            "file_name": "/torchgen/operator_versions/gen_mobile_upgraders.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script generates mobile upgraders for PyTorch by creating C++ code that handles version compatibility in mobile deployments. It processes bytecode information from PyTorch operators, constructs various code components (instructions, constants, types, operators), and outputs an \"upgrader_mobile.cpp\" file containing the necessary functions and data structures to support version upgrades for mobile PyTorch models.",
+            "total_tokens": 4013,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.744716
         }
     },
     "/torch/nn/functional.py": {
@@ -4898,6 +5276,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.004219
+        },
+        "Claude3.7": {
+            "file_name": "/torch/nn/functional.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"functional.py\" is a core component of PyTorch's neural network functionality, providing implementations of various neural network operations as functional interfaces. It contains implementations for convolution operations, pooling functions, activation functions, loss functions, attention mechanisms, and other essential neural network building blocks. The file serves as the backbone for PyTorch's nn.functional module, allowing users to apply neural network operations directly to tensors without instantiating module objects.",
+            "total_tokens": 74064,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 14.365204
         }
     },
     "/benchmarks/dynamo/runner.py": {
@@ -5160,6 +5559,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.317932
+        },
+        "Claude3.7": {
+            "file_name": "/benchmarks/dynamo/runner.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of \"runner.py\" is to serve as a wrapper over benchmark infrastructure for PyTorch's dynamic compilation systems (like TorchDynamo), allowing users to generate benchmark commands, run benchmarks for various compilers and models, parse results, and visualize performance metrics through CSV files and graphs. The script supports both inference and training benchmarks across different model suites (torchbench, huggingface, timm_models) and can automatically generate performance reports with metrics like speedup, accuracy, compilation latency, and memory usage, with optional dashboard integration for tracking performance over time.",
+            "total_tokens": 15947,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 7.963751
         }
     },
     "/benchmarks/transformer/sdpa.py": {
@@ -5422,6 +5842,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.661991
+        },
+        "Claude3.7": {
+            "file_name": "/benchmarks/transformer/sdpa.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"sdpa.py\" is a benchmarking tool for measuring the performance of PyTorch's scaled dot product attention (SDPA) operations, calculating both execution time and computational throughput (TFLOPS) for forward and backward passes across various configurations. It defines a comprehensive framework for running experiments with different batch sizes, sequence lengths, attention mechanisms (causal vs non-causal), and data types, then outputs the results in tabular format and saves them to CSV files for analysis.",
+            "total_tokens": 2915,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.789777
         }
     },
     "/tools/code_coverage/package/oss/init.py": {
@@ -5685,6 +6126,27 @@
                 "exclude_files": []
             },
             "latency": 5.181991
+        },
+        "Claude3.7": {
+            "file_name": "/tools/code_coverage/package/oss/init.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides initialization functionality for a test coverage tool in a PyTorch project, handling command-line arguments, test discovery, and environment setup. It identifies and organizes tests (both C++ and Python) to run, manages folder creation, and configures compiler-specific settings for test coverage analysis. The file serves as the entry point for the coverage tool, preparing the environment before actual test execution and coverage collection begins.",
+            "total_tokens": 1793,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.902564
         }
     },
     "/functorch/notebooks/_src/plot_ensembling.py": {
@@ -5947,6 +6409,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 1.467103
+        },
+        "Claude3.7": {
+            "file_name": "/functorch/notebooks/_src/plot_ensembling.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file demonstrates how to use PyTorch's vmap functionality to vectorize model ensembling, which combines predictions from multiple models. It shows two approaches for generating predictions with an ensemble of CNN models: using different minibatches for each model or using the same minibatch across all models, and then demonstrates how to speed up these approaches by using vmap to eliminate for-loops through vectorization. The example includes code for combining model states and comparing the vectorized implementation against the traditional loop-based approach.",
+            "total_tokens": 1610,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.854244
         }
     },
     "/torch/_functorch/_activation_checkpointing/knapsack.py": {
@@ -6209,6 +6692,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.274803
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_functorch/_activation_checkpointing/knapsack.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file implements three different algorithms (greedy, integer linear programming, and dynamic programming) for solving the knapsack problem, specifically in the context of memory optimization. Each function takes memory requirements, runtimes, and a maximum memory constraint as inputs, and returns the total runtime along with lists of items to save in memory and items to allow recomputing, effectively optimizing which computational items to keep in memory versus recompute when needed.",
+            "total_tokens": 1486,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.193997
         }
     },
     "/torch/_functorch/pytree_hacks.py": {
@@ -6471,6 +6975,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.358605
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_functorch/pytree_hacks.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides a deprecated interface for PyTree utility functions, specifically re-exporting `tree_map_` and `treespec_pprint` from `torch.utils._pytree`. It issues a deprecation warning to users, instructing them to use `torch.utils._pytree` directly instead of the `torch._functorch.pytree_hacks` module.",
+            "total_tokens": 384,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.151368
         }
     },
     "/torch/distributed/elastic/agent/server/health_check_server.py": {
@@ -6733,6 +7258,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.231409
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/elastic/agent/server/health_check_server.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a `HealthCheckServer` class that serves as an interface for health check monitoring but doesn't actually implement server functionality (it's a no-operation implementation). It provides a structure for health monitoring with callbacks to check if an agent is alive, but explicitly warns that no actual health check server is started when the `start()` method is called, making this essentially a placeholder implementation.",
+            "total_tokens": 625,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.397902
         }
     },
     "/torch/distributed/algorithms/model_averaging/utils.py": {
@@ -6995,6 +7541,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 7.828636
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/algorithms/model_averaging/utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The utils.py file provides functionality for averaging parameters across distributed processes in PyTorch, primarily through three main functions: average_parameters, get_params_to_average, and average_parameters_or_parameter_groups. It handles the efficient averaging of model parameters or optimizer parameter groups by flattening parameters into a contiguous buffer for allreduce operations, filtering out parameters without gradients, and supporting different process groups for distributed training scenarios.",
+            "total_tokens": 1064,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.420518
         }
     },
     "/torch/_inductor/autotune_process.py": {
@@ -7257,6 +7824,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.370931
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/autotune_process.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"autotune_process.py\" implements a framework for autotuning GPU and CPU kernels by benchmarking different implementations in separate subprocesses. It defines classes for managing tuning processes, handling benchmark requests for different backends (Triton, CUDA, C++), and safely executing potentially unstable code in isolated environments to prevent crashes in the main process.",
+            "total_tokens": 8779,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.406539
         }
     },
     "/torch/_inductor/codegen/rocm/rocm_benchmark_request.py": {
@@ -7519,6 +8107,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.603211
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_benchmark_request.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The ROCmBenchmarkRequest class in rocm_benchmark_request.py implements functionality for benchmarking ROCm GPU kernels in PyTorch's inductor framework. It handles compiling GPU kernel source code, loading the compiled code as a DLL, managing workspace memory, and creating callable functions that execute the kernels with specified input and output tensors. The class extends BenchmarkRequest with ROCm-specific functionality, including methods to precompile kernels, update workspace sizes, and clean up resources after benchmarking.",
+            "total_tokens": 1799,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.613813
         }
     },
     "/torch/_higher_order_ops/invoke_subgraph.py": {
@@ -7781,6 +8390,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.547777
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_higher_order_ops/invoke_subgraph.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"invoke_subgraph.py\" implements a higher-order operator called \"invoke_subgraph\" that enables the compilation and reuse of subgraphs within PyTorch's computation framework. It provides functionality for tracing, caching, and executing subgraphs with proper handling of autograd, allowing for efficient reuse of compiled code regions through the \"mark_compile_region\" decorator and supporting PyTorch's various dispatch modes including functionalization and autograd.",
+            "total_tokens": 4043,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.332254
         }
     },
     "/tools/code_coverage/package/oss/utils.py": {
@@ -8044,6 +8674,27 @@
                 "exclude_files": []
             },
             "latency": 6.609058
+        },
+        "Claude3.7": {
+            "file_name": "/tools/code_coverage/package/oss/utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This utility file provides functions for managing PyTorch testing and code coverage, particularly for locating binary files, detecting compiler types, and handling code coverage data files (.gcda). It contains helper functions to find PyTorch directories, run Python tests, and clean up coverage data, supporting both C++ and Python test environments.",
+            "total_tokens": 1201,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.749934
         }
     },
     "/benchmarks/inference/server.py": {
@@ -8306,6 +8957,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.522589
+        },
+        "Claude3.7": {
+            "file_name": "/benchmarks/inference/server.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements a server for benchmarking deep learning model inference, featuring a frontend-backend architecture where FrontendWorker sends requests to BackendWorker which processes them using a ResNet18 model. The system measures performance metrics including latency, throughput, and GPU utilization while supporting features like model compilation, multi-threading, and CUDA stream management for optimized data transfer and computation.",
+            "total_tokens": 3826,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.573136
         }
     },
     "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py": {
@@ -8568,6 +9240,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 8.038948
+        },
+        "Claude3.7": {
+            "file_name": "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file contains a microbenchmark for measuring the performance of debug line generation in PyTorch's FX graph hashing functionality. It creates a large FX graph with 10,000 nodes, then times how quickly the `debug_lines()` method of `FxGraphHashDetails` can process these nodes, reporting the throughput in nodes per second.",
+            "total_tokens": 385,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.7934
         }
     },
     "/torch/distributions/independent.py": {
@@ -8830,6 +9523,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 2.391357
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributions/independent.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `independent.py` file defines the `Independent` distribution class in PyTorch that reinterprets some batch dimensions of a base distribution as event dimensions. This class is primarily useful for changing the shape of probability distributions, allowing distributions with different shapes to be used interchangeably. It wraps another distribution and modifies its batch and event shapes by moving specified dimensions from batch to event, which affects operations like log probability calculations.",
+            "total_tokens": 1572,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.025642
         }
     },
     "/torch/_export/db/examples/specialized_attribute.py": {
@@ -9092,6 +9806,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 4.595114
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_export/db/examples/specialized_attribute.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a PyTorch neural network module called `SpecializedAttribute` that performs a conditional operation in its forward pass, multiplying the input by itself and adding a constant value if a specific attribute matches the value of an enum. The module demonstrates specialization through attribute values, with a simple example of creating the model and preparing example arguments at the end of the file.",
+            "total_tokens": 354,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.787917
         }
     },
     "/torch/fx/passes/backends/cudagraphs.py": {
@@ -9355,6 +10090,27 @@
                 "exclude_files": []
             },
             "latency": 10.302643
+        },
+        "Claude3.7": {
+            "file_name": "/torch/fx/passes/backends/cudagraphs.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"cudagraphs.py\" implements functionality for partitioning PyTorch FX graphs into sub-GraphModules that can be executed under CUDA graphs, with the main `partition_cudagraphs` function analyzing and splitting graphs based on CUDA tensor compatibility. It defines a `CudaGraphsSupport` class that determines whether nodes in the graph can be supported in CUDA graphs by checking if all tensors involved are CUDA tensors. The partitioning process uses FakeTensorProp for tensor metadata propagation and CapabilityBasedPartitioner to create valid CUDA-compatible subgraphs.",
+            "total_tokens": 869,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.792677
         }
     },
     "/torch/distributed/elastic/multiprocessing/subprocess_handler/handlers.py": {
@@ -9617,6 +10373,27 @@
                 "price_per_1000_output_tokens": 0.0006
             },
             "latency": 3.509651
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/elastic/multiprocessing/subprocess_handler/handlers.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides a utility function `get_subprocess_handler` that creates and returns a `SubprocessHandler` instance from PyTorch's distributed elastic multiprocessing module. The function serves as a wrapper around the `SubprocessHandler` constructor, making it easier to create handlers for managing subprocesses in a distributed computing environment.",
+            "total_tokens": 382,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.246432
         }
     },
     "/torch/_inductor/autoheuristic/autoheuristic.py": {
@@ -9879,6 +10656,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.232708
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/autoheuristic/autoheuristic.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file implements the AutoHeuristic framework for PyTorch's inductor compiler, which collects data about different algorithm choices, learns heuristics (regression trees) to make optimal selections, and applies these learned decisions during compilation. The framework includes mechanisms for feedback collection, choice selection based on context, and persistence of collected data for training heuristics across different GPU models. Additionally, it provides specialized functionality for algorithm selection through the AutoHeuristicSelectAlgorithm subclass that integrates with PyTorch's kernel selection system.",
+            "total_tokens": 3432,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.173636
         }
     },
     "/torch/nn/modules/instancenorm.py": {
@@ -10141,6 +10939,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 4.308857
+        },
+        "Claude3.7": {
+            "file_name": "/torch/nn/modules/instancenorm.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"instancenorm.py\" implements Instance Normalization layers for PyTorch, which normalize features across spatial dimensions independently for each channel and each sample in a batch. It defines classes for 1D, 2D, and 3D instance normalization (InstanceNorm1d, InstanceNorm2d, InstanceNorm3d) along with their lazy initialization counterparts, all inheriting from a base _InstanceNorm class that contains the core normalization functionality.",
+            "total_tokens": 6026,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.680685
         }
     },
     "/tools/linter/adapters/flake8_linter.py": {
@@ -10403,6 +11222,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.425343
+        },
+        "Claude3.7": {
+            "file_name": "/tools/linter/adapters/flake8_linter.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements a wrapper for the Flake8 linter that analyzes Python code for style and error issues. It parses Flake8 output, categorizes issues by severity (error, warning, advice), provides documentation links for error codes, and outputs results in a structured JSON format. The script includes retry logic for timed-out linting operations and allows customization of severity levels for different error codes.",
+            "total_tokens": 3805,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.893136
         }
     },
     "/torch/_functorch/benchmark_utils.py": {
@@ -10665,6 +11505,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 4.107243
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_functorch/benchmark_utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The benchmark_utils.py file provides utilities for profiling and benchmarking Python functions that use PyTorch, particularly focusing on GPU utilization. It contains functions to generate Chrome trace files of PyTorch operations, analyze GPU compute events, and calculate metrics such as overall GPU utilization and time spent on matrix multiplication and convolution operations.",
+            "total_tokens": 2070,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.668329
         }
     },
     "/torch/xpu/_utils.py": {
@@ -10927,6 +11788,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 4.8692
+        },
+        "Claude3.7": {
+            "file_name": "/torch/xpu/_utils.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file provides a utility function `_get_device_index` that extracts the device index from various input types (integers, strings, torch.device objects) specifically handling XPU devices in PyTorch. The function validates device types, allowing CPU devices when specified, and returns the appropriate device index, extending PyTorch's existing device index functionality to support XPU devices.",
+            "total_tokens": 643,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.199599
         }
     },
     "/functorch/examples/ensembling/parallel_train.py": {
@@ -11189,6 +12071,27 @@
                 "price_per_1000_output_tokens": 0.01
             },
             "latency": 6.187229
+        },
+        "Claude3.7": {
+            "file_name": "/functorch/examples/ensembling/parallel_train.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file demonstrates how to use PyTorch's functional API and vmap to parallelize the training of multiple neural network models (ensemble learning) on a single GPU. It implements a spiral classification problem using a simple MLP classifier, first showing traditional training of a single model, then extending to parallel training of multiple models simultaneously using vmap. The code is adapted from a JAX tutorial by Will Whitney and highlights the functional programming capabilities in PyTorch that enable efficient model ensembling.",
+            "total_tokens": 1746,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.602573
         }
     },
     "/tools/gen_vulkan_spv.py": {
@@ -11452,6 +12355,27 @@
                 "exclude_files": []
             },
             "latency": 7.26646
+        },
+        "Claude3.7": {
+            "file_name": "/tools/gen_vulkan_spv.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python script generates SPIR-V shader code for Vulkan from GLSL templates, processing shader variants based on YAML configuration files and creating C++ code that registers these shaders with a shader registry. It handles template substitution, compiles GLSL to SPIR-V using glslc, and extracts shader metadata like tile sizes and descriptor layouts to produce optimized shader implementations for different data types and configurations.",
+            "total_tokens": 7796,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.497928
         }
     },
     "/torch/_lazy/device_context.py": {
@@ -11716,6 +12640,27 @@
                 "exclude_files": []
             },
             "latency": 5.895201
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"device_context.py\" implements a device context management system for PyTorch's lazy execution, providing a thread-safe singleton pattern to create and retrieve DeviceContext objects based on specified device types. It maintains a dictionary of device contexts and ensures that only one context exists per device type through a locking mechanism, with a fallback to the default device type when none is specified.",
+            "total_tokens": 390,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.499983
         }
     },
     "/torch/utils/benchmark/op_fuzzers/spectral.py": {
@@ -11980,6 +12925,27 @@
                 "exclude_files": []
             },
             "latency": 4.369911
+        },
+        "Claude3.7": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The SpectralOpFuzzer class is a specialized fuzzer for benchmarking spectral operations (like FFT) in PyTorch, generating test tensors with carefully controlled dimensionality, shapes, and memory strides. It particularly emphasizes \"regular\" sizes (numbers factorizable by 2, 3, and 5) which are typically optimized in FFT implementations, while allowing configuration of tensor properties like dtype, CUDA support, and the probability of using regular sizes versus arbitrary ones.",
+            "total_tokens": 1262,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.206839
         }
     },
     "/torch/distributed/tensor/_sharding_prop.py": {
@@ -12244,6 +13210,27 @@
                 "exclude_files": []
             },
             "latency": 7.437133
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file defines a `ShardingPropagator` class that handles the propagation of tensor sharding information across PyTorch operations in a distributed tensor environment. The class maintains rules and strategies for different PyTorch operators, determining how tensor sharding should be handled when operations are performed, and includes caching mechanisms to improve performance. It's a core component of PyTorch's distributed tensor system that enables efficient distributed computation by analyzing operations and determining optimal sharding strategies.",
+            "total_tokens": 5879,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.884429
         }
     },
     "/torch/nn/quantizable/modules/activation.py": {
@@ -12508,6 +13495,27 @@
                 "exclude_files": []
             },
             "latency": 8.095404
+        },
+        "Claude3.7": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"activation.py\" serves as a compatibility layer during the migration of quantizable modules from its current location to \"torch/ao/nn/quantizable\". It specifically imports the MultiheadAttention class from the new location while maintaining backward compatibility for existing code that may still reference this file.",
+            "total_tokens": 282,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 1.975742
         }
     },
     "/torch/_export/db/examples/class_method.py": {
@@ -12772,6 +13780,27 @@
                 "exclude_files": []
             },
             "latency": 7.812061
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"class_method.py\" defines a PyTorch neural network module called ClassMethod that demonstrates how class methods are inlined during tracing. The module contains a simple linear layer and a forward method that applies the linear transformation to the input and then multiplies the result by three applications of the same class method (accessed through different syntax forms), which simply adds 1 to its input.",
+            "total_tokens": 356,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.483146
         }
     },
     "/scripts/export/update_schema.py": {
@@ -13036,6 +14065,27 @@
                 "exclude_files": []
             },
             "latency": 3.960782
+        },
+        "Claude3.7": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This script updates schema files for PyTorch's export functionality by validating schema versions, ensuring compatibility, and writing updated schema content to YAML, CPP header, and Thrift files. It performs version checks to prevent downgrades and requires explicit confirmation via the --force-unsafe flag for potentially breaking changes, with options for dry runs to preview changes before committing them.",
+            "total_tokens": 1237,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.965696
         }
     },
     "/torch/profiler/_pattern_matcher.py": {
@@ -13300,6 +14350,27 @@
                 "exclude_files": []
             },
             "latency": 9.746848
+        },
+        "Claude3.7": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"_pattern_matcher.py\" implements a pattern matching system for PyTorch code optimization, detecting anti-patterns in profiled PyTorch code. It defines a base Pattern class and several specific pattern detectors (like ExtraCUDACopyPattern, FP32MatMulPattern, etc.) that identify common inefficient coding practices in PyTorch applications and provide optimization recommendations. The file also includes a reporting mechanism that summarizes detected issues and can output them in both human-readable format and JSON.",
+            "total_tokens": 7223,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.044003
         }
     },
     "/torch/distributed/checkpoint/logging_handlers.py": {
@@ -13554,6 +14625,1360 @@
                 "exclude_files": []
             },
             "latency": 2.629417
+        }
+    },
+    "/torch/_inductor/codegen/rocm/rocm_template_buffer.py": {
+        "gpt-4": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file \"rocm_template_buffer.py\" defines a class called ROCmTemplateBuffer that specializes a TemplateBuffer for ROCm (a platform for GPU computing). This class manages buffers and kernels in memory while computing. It has features like workspace size handling and kernel rendering through callable parameters, encapsulating the attributes and functionality necessary for managing templates in the ROCm ecosystem.",
+            "total_tokens": 359,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 2.289771
+        },
+        "titan_premier": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file \"rocm_template_buffer.py\" is to define a class called \"ROCmTemplateBuffer\" that inherits from the \"TemplateBuffer\" class. This class takes in a layout, a sequence of buffers, a callable function for rendering the kernel, a workspace size, and a template object. It also includes a method called \"get_workspace_size\" that returns the workspace size if it is not None, otherwise it returns 0. The file imports necessary modules such as \"collections.abc\", \"typing\", and \"typing_extensions\" to support the class definition.",
+            "total_tokens": 130,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 4.215424
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `rocm_template_buffer.py` file defines a `ROCmTemplateBuffer` class that extends the `TemplateBuffer` class. It initializes with a layout, input buffers, a kernel rendering function, workspace size, and a template. It also provides a method to retrieve the workspace size associated with the buffer.",
+            "total_tokens": 385,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 0.791812
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a class `ROCmTemplateBuffer` that extends `TemplateBuffer` to represent a buffer associated with a ROCm (Radeon Open Compute platform) template. It stores information about the buffer's layout, input buffers, a function to render the kernel, and the required workspace size in global memory. The class also provides a method to access this workspace size, defaulting to zero if not specified.",
+            "total_tokens": 487,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 2.551296
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `rocm_template_buffer.py` file is to define a class `ROCmTemplateBuffer` that inherits from `TemplateBuffer` and represents a buffer for ROCm (Radeon Open Compute) templates. The class takes in a layout, inputs, a kernel render function, workspace size, and a template, and provides a method to get the workspace size. This class is likely used in a larger system for managing and rendering ROCm templates.",
+            "total_tokens": 385,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 3.630215
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"rocm_template_buffer.py\" file is to define a class called ROCmTemplateBuffer that extends the TemplateBuffer class. This class represents a buffer template specific to ROCm (Radeon Open Compute) platform, with attributes such as layout, inputs, kernel rendering function, workspace size, and template. It also includes a method to retrieve the workspace size required by the template.",
+            "total_tokens": 366,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 0.931209
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines a class `ROCmTemplateBuffer`, which extends `TemplateBuffer` and provides functionality for managing a template buffer specific to ROCm (a platform for GPU-accelerated computing). It initializes the buffer with a layout, input buffers, a kernel rendering function, a workspace size, and a linked template, while also exposing a method to retrieve the allocated global memory size for the template. This class serves as an abstraction layer for working with ROCm-related buffer templates in the context of GPU programming.",
+            "total_tokens": 388,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 1.095772
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"rocm_template_buffer.py\" defines a class called ROCmTemplateBuffer, which is a subclass of TemplateBuffer. This class is designed to represent a template buffer specifically for ROCm (Radeon Open Compute) operations, including functionality to manage workspace size and store a reference to a ROCm template. The class provides a method to retrieve the workspace size, which is useful for memory management in ROCm-based computations.",
+            "total_tokens": 448,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.718822
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines the ROCmTemplateBuffer class, which extends the TemplateBuffer class to represent a buffer template specific to AMD ROCm GPU kernels. It manages attributes such as memory layout, input buffers, a kernel rendering function, associated workspace size requirements, and a template reference for ROCm-specific operations. The class also provides a method to retrieve the allocated workspace size in bytes for kernel execution.",
+            "total_tokens": 364,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 1.340808
+        },
+        "Llama3.3": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `rocm_template_buffer.py` file is to define a class `ROCmTemplateBuffer` that inherits from `TemplateBuffer` and provides additional functionality for managing a template buffer on a ROCm (Radeon Open Compute) platform. This class takes in a layout, input buffers, a kernel render function, workspace size, and a template, and provides a method to retrieve the workspace size. The class is designed to work with a specific template and buffer layout, and is likely part of a larger system for managing compute kernels on ROCm devices.",
+            "total_tokens": 407,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 1.44217
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `rocm_template_buffer.py` file is to define a class `ROCmTemplateBuffer` that extends `TemplateBuffer` for managing buffer layouts and inputs in the context of ROCm (Radeon Open Compute) templates. This class initializes with a layout, input buffers, a kernel rendering function, and a workspace size, and it provides a method to retrieve the workspace size needed for the template.",
+            "total_tokens": 407,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 0.736836
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the `ROCmTemplateBuffer` class, which extends `TemplateBuffer` to represent a buffer specifically associated with a ROCm template. It stores information such as the buffer layout, input dependencies, a kernel rendering function, and the required workspace memory size. The class provides a method to retrieve this workspace size, aiding in memory allocation for ROCm operations.",
+            "total_tokens": 646,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 2.186842
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `rocm_template_buffer.py` file defines a `ROCmTemplateBuffer` class that extends `TemplateBuffer` to represent a buffer specifically for ROCm (AMD GPU) templates, adding functionality to track workspace memory requirements. It maintains a reference to its parent template and provides a method to retrieve the workspace size needed for GPU execution.",
+            "total_tokens": 423,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.697838
+        }
+    },
+    "/torch/_inductor/runtime/triton_compat.py": {
+        "gpt-4o": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `triton_compat.py` file is a compatibility layer for handling differences between versions of the `triton` library and ensuring fallback options when the library is unavailable or certain features are missing. It defines alternative implementations or placeholders for essential `triton` components like `Config`, `CompiledKernel`, `GPUTarget`, `libdevice`, and `math`, while also addressing GPU-specific configurations like warp size. Additionally, it exposes a unified interface for functionality across `triton` versions and integrates gracefully with PyTorch features like `autograd.profiler`.",
+            "total_tokens": 1068,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 1.228866
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"triton_compat.py\" file is to provide compatibility and fallback mechanisms for the Triton library in Python. It attempts to import Triton and its components, and if Triton is not available, it creates mock objects and functions to prevent errors. The file also includes version-specific imports and adaptations to handle different Triton versions and GPU architectures.",
+            "total_tokens": 1262,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.915387
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file, `triton_compat.py`, provides compatibility functions and classes for working with the Triton library, a Python-based programming language for writing high-performance GPU code. The file checks if Triton is installed and imports its modules, providing fallback implementations if it's not available. It also defines utility functions, such as `cc_warp_size`, and exports various Triton-related classes and functions for use in other parts of the codebase.",
+            "total_tokens": 1036,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 3.44362
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file triton_compat.py serves as a compatibility layer between PyTorch and Triton, providing fallbacks and alternative implementations for key Triton classes, functions, and modules if the Triton package (or certain parts of it) is not installed or has breaking API differences. It conditionally imports or defines objects such as Config, CompiledKernel, GPUTarget, mathematical utilities, and error classes to ensure seamless usage regardless of the Triton version or presence. The file also defines helper functionality (e.g., cc_warp_size) and exposes a consistent interface via its __all__ list for downstream modules.",
+            "total_tokens": 1079,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 1.736733
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `triton_compat.py` file provides compatibility and fallback mechanisms for the Triton library, ensuring that the code can run even if Triton is not installed. It includes conditional imports and fallback definitions for Triton-specific classes and functions, allowing the script to work with or without Triton. The file also includes utility functions like `cc_warp_size` to determine the warp size based on the compute capability.",
+            "total_tokens": 1141,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 1.025441
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file acts as a compatibility layer for the Triton library. It attempts to import necessary components from Triton if available, providing fallback definitions or raising errors if Triton is not installed or specific features are missing. This allows code depending on Triton to handle its absence gracefully and potentially support variations across Triton versions.",
+            "total_tokens": 1667,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 3.692577
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file acts as a compatibility layer for the Triton library, a language and compiler for writing highly efficient GPU code. It attempts to import various Triton components and, if they are unavailable (e.g., Triton not installed or an older version is used), it defines fallback stubs, mock objects, or error-raising functions. This ensures that code relying on Triton can still run or provide informative errors, and it helps manage API differences across Triton versions.",
+            "total_tokens": 1350,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 4.487859
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `triton_compat.py` file provides compatibility and fallback mechanisms for using the Triton library with PyTorch, handling imports, defining fallback classes and functions if Triton is not installed, and offering utility functions like `cc_warp_size` to determine warp sizes based on compute capability.",
+            "total_tokens": 1117,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 0.919004
+        },
+        "gpt-4": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The python file \"triton_compat.py\" is designed to serve as a compatibility layer for the Triton programming language, primarily used for writing high-performance GPU code. The file handles imports and attempts to maintain compatibility if certain modules or features are missing, such as different GPU targets, explicit autotuning errors, and access to specific mathematical libraries or functions like `libdevice`. Additionally, it provides fallback definitions and raises errors if the Triton package itself is not installed, ensuring that the user is aware of missing dependencies or library versions.",
+            "total_tokens": 1047,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 2.36509
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"triton_compat.py\" provides compatibility layers for working with the Triton library in Python, handling cases where Triton may or may not be installed. It imports Triton-related components when available and creates mock objects with appropriate error handling when Triton is not installed, ensuring code that depends on Triton can gracefully handle its absence. Additionally, it includes utility functions like determining warp size based on compute capability and handles differences between various versions of Triton by adapting to API changes.",
+            "total_tokens": 1288,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 6.527169
+        },
+        "titan_premier": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"triton_compat.py\" file is to provide compatibility with the Triton package for Python. It imports necessary modules and defines functions to handle different versions of Triton. The file also includes a function to determine the warp size based on the compute capability and defines a mock version of the torch.autograd.profiler for compatibility. The file exports several classes and functions, including Config, CompiledKernel, OutOfResources, KernelInterface, ASTSource, GPUTarget, tl, _log2, libdevice, math, triton, and cc_warp_size.",
+            "total_tokens": 133,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 25,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 3.536732
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `triton_compat.py` file is to handle compatibility issues and imports based on the availability of the `triton` package. It imports various modules and classes from `triton` if it is available, otherwise, it defines placeholder classes and functions to prevent import errors. Additionally, it provides a function `cc_warp_size` to calculate the warp size based on the compute capability of the GPU.",
+            "total_tokens": 1026,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 1.034338
+        },
+        "Llama3.3": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the provided Python file, `triton_compat.py`, is to provide compatibility and utility functions for working with the Triton library, a Python-based programming language and compiler for writing high-performance GPU code. The file defines various classes, functions, and variables that either wrap or mock Triton's functionality, allowing for smoother integration and fallbacks when Triton is not installed or when dealing with different versions of the library. This compatibility layer ensures that code using these utilities can run with or without Triton installed, making it easier to develop and test applications that optionally utilize Triton for GPU acceleration.",
+            "total_tokens": 1069,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 1.758462
+        }
+    },
+    "/torch/export/_trace.py": {
+        "nova-pro-v1": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the file is to provide a set of functions and utilities for exporting PyTorch models or functions into an intermediate representation (IR) suitable for further optimizations or deployment. It includes functionalities for tracing models, handling dynamic shapes, producing guards and constraints, and verifying the exported IR. The file supports both strict and non-strict tracing modes and provides utilities for managing fake tensors and constants during the export process.",
+            "total_tokens": 22966,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 3.646177
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines the core logic for tracing PyTorch `nn.Module` instances or callables into an `ExportedProgram`, which is a serialized representation of a PyTorch model. It orchestrates the tracing process using TorchDynamo, converts the model to an ATen Intermediate Representation (IR), and handles various configurations such as dynamic shapes, module call signatures, and preservation of model state. The file also includes utilities for managing export artifacts, verifying the integrity of the exported graph, and logging the export process for debugging and analytics.",
+            "total_tokens": 23760,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 5.518425
+        },
+        "Llama3.3": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file is to implement the PyTorch export functionality, which involves tracing a PyTorch module's forward function or a callable with PyTorch operations and producing an `ExportedProgram` containing the traced method. The file provides two main functions, `_export_for_training` and `_export`, which handle tracing for training and export purposes, respectively. The tracing process involves creating a graph module, generating a graph signature, and producing runtime asserts. The file also includes various utility functions for tasks such as verifying the graph module, processing export inputs, and logging export usage.",
+            "total_tokens": 18573,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 3.864814
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements the core tracing logic for `torch.export`, converting a PyTorch module or callable into an `ExportedProgram`. It leverages `torch._dynamo` and `aot_autograd` to capture the model's computation graph, handling dynamic shapes, constraints, and metadata like graph signatures and state dictionaries. The process involves fakifying inputs, tracing the model, converting the graph to ATen IR, and collecting necessary information for the final `ExportedProgram` representation.",
+            "total_tokens": 23658,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 2.484585
+        },
+        "Claude3.5": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file contains the implementation of the `_export` function and related helper functions for exporting PyTorch modules to an intermediate representation (IR) suitable for further optimization or deployment. Here's a summary of its main functionality:\n\n1. The file defines various utility functions and classes for handling different aspects of the export process, such as creating fake inputs, managing dynamic shapes, and handling module hierarchies.\n\n2. The core `_export` function takes a PyTorch module, input arguments, and optional parameters to trace the module's forward function and produce an `ExportedProgram`.\n\n3. It supports both strict and non-strict export modes, as well as pre-dispatch and AOT (Ahead-of-Time) dispatch options.\n\n4. The export process involves creating fake inputs, tracing the module's execution, and generating a graph representation of the computations.\n\n5. The resulting `ExportedProgram` includes the traced graph, graph signature, state dictionary, range constraints, and other metadata useful for further processing or deployment.",
+            "total_tokens": 24993,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 9.003405
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file implements the core logic for exporting PyTorch nn.Module computations into an intermediate representation (IR), specifically for the `torch.export` API. It provides functions and context managers to trace modules and functions, handle dynamic/static shapes, manage parameters, buffers, and constants, and process metadata to ensure fidelity of module state and input/output signatures. The file also includes mechanisms to verify the correctness of the exported graph, supports both strict and non-strict modes, and records detailed logging and error handling during the export process.",
+            "total_tokens": 18579,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 3.452867
+        },
+        "Llama3.1": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file is to export PyTorch models to a format that can be used for inference. The file contains various functions and classes that work together to achieve this goal, including tracing the model's forward pass, converting the traced graph to a format suitable for export, and verifying the exported model. The file also includes various utility functions for tasks such as handling dynamic shapes, processing input and output specifications, and logging export-related events.",
+            "total_tokens": 18543,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 49.329288
+        },
+        "gpt-4o": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file, `_trace.py`, primarily provides a suite of tools and functions for tracing and exporting PyTorch modules or functions into a serialized representation in Torch FX or a custom intermediate representation (IR). It includes extensive utilities for managing metadata, handling dynamic shapes, lifting constants, and verifying constraints during tracing operations. Additionally, it provides support for strict and non-strict modes of export, enabling both training and inference-specific IR generation while preserving module call signatures and handling dynamic tensor behaviors.",
+            "total_tokens": 18572,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 2.016711
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file is part of a system for exporting PyTorch models to a format that can be used for high-performance inference. The main functionality includes tracing PyTorch models or callables, converting them into an intermediate representation (IR), and producing an exported program that can be optimized and verified. Key features involve handling dynamic shapes, managing tensor constants and buffers, and ensuring the exported model maintains the original model's behavior and structure. The file also includes utilities for logging, debugging, and verifying the exported models to ensure correctness and performance.",
+            "total_tokens": 22989,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 2.415586
+        },
+        "titan_premier": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The given Python file, `_trace.py`, is a part of the PyTorch library and contains functions for exporting a PyTorch model to an Intermediate Representation (IR) format. This IR format is used for various purposes, such as optimizing the model for inference, generating code for different backends, and analyzing the model's structure and behavior.\n\nThe main function in this file is `_export`, which takes a PyTorch model, input arguments, and various options as input and returns an `ExportedProgram` object. This object contains the exported model in the IR format, along with metadata such as input and output specifications, constraints, and the original state dictionary of the model.\n\nThe `_export` function uses several helper functions and classes to perform the export process. These include:\n\n* `_export_to_torch_ir`: This function traces the input function or module and produces a `torch.fx.GraphModule` object in the Torch IR format.\n* `_export_to_aten_ir`: This function takes the `torch.fx.GraphModule` object produced by `_export_to_torch_ir` and converts it to the ATen IR format, which is a lower-level representation used by PyTorch's backend.\n* `_export_to_aten_ir_make_fx`: This function is an alternative to `_export_to_aten_ir` that uses the `torch.fx` framework to produce the ATen IR format.\n* `_non_strict_export`: This function is used when exporting a model for training purposes. It wraps the input model with a `torch.nn.Module` wrapper to handle non-strict mode, where the model may contain tensor attributes that are not parameters or buffers.\n* `_strict_export`: This function is used when exporting a model for inference purposes. It performs additional checks and transformations to ensure that the exported model is in a strict, well-defined format.\n* `_get_module_hierarchy`: This function generates a dictionary that maps module names to their fully qualified names, which is used for verifying the structure of the exported model.\n* `_get_original_state_dict`: This function retrieves the original state dictionary of the input model, which",
+            "total_tokens": 500,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 14.538379
+        },
+        "gpt-4": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python code appears to be a module that dynamically exports PyTorch models to a format suitable for various execution environments, possibly for inference or further processing. It consists of several important parts: enabling specific logging and tracing functionalities, faking and handling of module inputs for simulation, providing a structured framework to modify and reconfigure internal states during the tracing/exporting phase, and more. Furthermore, the module might be used to facilitate the transformation of PyTorch computational graphs into a format that can be analyzed or optimized outside of the standard PyTorch execution pipeline, possibly by replacing certain operations with equivalent but more efficient ones. Lastly, it uses decorators and context managers extensively to manage the complexity arising from these transformations.",
+            "total_tokens": 18600,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 6.538655
+        },
+        "Claude3.7": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"_trace.py\" is a core component of PyTorch's export functionality, providing mechanisms to trace PyTorch modules and functions into exportable graph representations. It implements the infrastructure for converting PyTorch code into serializable computational graphs, handling dynamic shapes, preserving module call signatures, and managing fake tensor modes for symbolic tracing. The file contains utilities for processing inputs, extracting metadata, verifying graph properties, and producing ExportedProgram objects that can be used for deployment or further optimization.",
+            "total_tokens": 24878,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 6.851206
+        }
+    },
+    "/torch/_inductor/virtualized.py": {
+        "titan_premier": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"virtualized.py\" is a part of the Inductor library and provides a number of \"global\" variables/handlers that are actually thread local and dynamically scoped. These handlers are interacted with in a stylized way, typically by importing V from this module and accessing various handlers as attributes on this module. The file defines a class called Virtualized that implements a global variable that redirects via thread local variable. It also defines a class called OpsValue that allows for overloading magic methods for writing mathematical expressions fluently. The file also defines a number of virtualized global variables such as ops, graph, real_inputs, fake_mode, kernel, debug, interpreter, aot_compilation, current_node, and local_buffer_context. The file also defines a number of functions and classes related to these virtualized global variables.",
+            "total_tokens": 181,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 4.418756
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of virtualized.py is to implement a framework for managing dynamic, thread-local global \"handlers\" or variables\u2014such as operator handlers, graph state, and compilation settings\u2014in a way that allows them to be safely and conveniently patched or accessed during code generation and compilation (primarily for TorchInductor). It achieves this by providing the Virtualized class, which wraps these handlers and dispatches their usage via thread-local storage, exposing them through an object V, and includes special support for mathematical operation overloads via the ops/global operator handler. This design enables flexible, context-specific behavior in a multi-threaded environment without explicitly passing state throughout the call stack.",
+            "total_tokens": 3531,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 2.383706
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"virtualized.py\" file is to provide a set of thread-local, dynamically scoped global variables that can be patched to various implementations by Inductor depending on the situation. These variables are used for implicit argument passing, per-compilation global state, and alternate define-by-run interpretations. The file also includes a mechanism to overload arithmetic operations for a more fluent syntax when working with operations.",
+            "total_tokens": 4000,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 1.228121
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file \"virtualized.py\" implements a thread-local dynamic scoping system for PyTorch's Inductor compiler, providing global variables that can be patched with different implementations depending on the context. It defines a `Virtualized` class that manages thread-local variables with handlers for operations, graph lowering, and kernel generation, allowing code to access these context-dependent implementations through a central `V` object without explicitly passing them as arguments.",
+            "total_tokens": 4236,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.913563
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines a system for managing thread-local, dynamically scoped \"global\" variables or handlers, primarily used within PyTorch Inductor. It provides a `Virtualized` class to wrap thread-local storage, allowing different implementations or values to be swapped in based on the current execution context. This mechanism facilitates implicit argument passing, managing per-compilation state, and providing alternate interpretations for define-by-run operations via the `V` object and the top-level `ops` variable.",
+            "total_tokens": 4127,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 1.726659
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `virtualized.py` file provides a mechanism for managing thread-local, dynamically scoped global variables and handlers in a Python application, allowing different implementations to be patched in depending on the context. It facilitates implicit argument passing, maintains per-compilation global state, and supports alternate define-by-run interpretations for operations.",
+            "total_tokens": 3980,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 1.242706
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file implements a system for \"virtualized\" global variables within the PyTorch Inductor. These variables are thread-local and dynamically scoped, allowing different handlers or implementations to be swapped in depending on the context, such as different compilation stages or define-by-run interpretations. This mechanism is used for implicit argument passing, managing per-compilation state, and providing alternate semantics for operations by patching handlers like `V.ops`.",
+            "total_tokens": 4107,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 3.101324
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The provided Python file primarily defines a framework for managing virtualized global variables that are thread-local and dynamically scoped. It facilitates the redirection of these variables to different handlers during operations such as code generation, implicit argument passing, and alternate define-by-run interpretations commonly used in PyTorch Inductor. This infrastructure enables flexible and dynamic execution by allowing global state and operator handling to be patched and queried seamlessly across diverse execution contexts, avoiding manual parameter threading.",
+            "total_tokens": 3486,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 1.128246
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to provide a set of virtualized global variables and handlers that can be dynamically scoped and patched to different implementations depending on the situation. These variables and handlers are used to manage various aspects of code generation, such as operator handling, graph generation, and debugging. The file also defines a set of classes and functions that wrap and unwrap IR values to enable fluent mathematical expressions.",
+            "total_tokens": 3477,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 3.944485
+        },
+        "Llama3.3": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the given Python file is to provide a set of virtualized global variables and handlers that can be used to manage and switch between different implementations of operators and graphs in a thread-local and dynamic scoping context. These variables and handlers are designed to be used in a stylized way, allowing for implicit argument passing, per-compilation global state, and alternate define-by-run interpretations. The file defines a class `Virtualized` that implements this functionality, and creates several instances of it to manage various global variables, such as `ops`, `graph`, and `kernel`.",
+            "total_tokens": 3515,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 1.86642
+        },
+        "gpt-4": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `virtualized.py` facilitates dynamic scoping and thread-local storage of various global variables (handlers) for thread-safe operations within code execution contexts, particularly when working with computational graphs and operations in a multi-threaded or asynchronous environment like in the case of PyTorch\u2019s Inductor system. It defines a `Virtualized` class to manage thread-local instances and provides multiple specific handler implementations for operations and graph handling, allowing for dynamic switching of computational behaviors, and implementation details based on the execution context. Different handlers can be installed and accessed through a module-level instance `V`, providing an easy way to change the behavior of code segments during runtime without passing numerous arguments or maintaining global state modifications.",
+            "total_tokens": 3532,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 3.623527
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"virtualized.py\" file is to provide a system for managing thread-local and dynamically scoped \"global\" variables and handlers in the Inductor framework. It defines a `Virtualized` class that implements these virtualized globals, which can be used for implicit argument passing, per-compilation global state, and alternate define-by-run interpretations. The file also includes an `OpsWrapper` class to enable more fluent mathematical expressions in the code.",
+            "total_tokens": 4245,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.471122
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The `virtualized.py` file contains definitions for virtualized global variables/handlers that are dynamically scoped using thread-local storage. These virtualized variables allow for different implementations to be patched depending on the situation and are accessed in a stylized way using the `V` module. The file also includes specific usage patterns for these virtualized global variables and provides a mechanism for overriding default implementations.",
+            "total_tokens": 3469,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 1.186609
+        }
+    },
+    "/torch/_prims/rng_prims.py": {
+        "Llama3.3": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this Python file is to register and implement various random number generator (RNG) primitives and higher-order operators for PyTorch, including `run_and_save_rng_state`, `run_with_rng_state`, and `graphsafe_run_with_rng_state`, which enable functional random number generation and state management across different devices. These primitives and operators aim to provide a way to capture and restore the state of the random number generator, allowing for reproducibility and deterministic behavior in PyTorch computations. The file also includes implementations for different backends, such as CUDA, CPU, HPU, and XPU, and supports fake tensor modes and proxy tensor dispatching.",
+            "total_tokens": 3708,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 10,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 2.512669
+        },
+        "Llama3.1": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of this file is to register and implement various random number generator (RNG) primitives for PyTorch, including Philox-based stateless rand operators and higher-order operators for running and saving RNG states. The file also defines functions for registering these primitives and implementing their behavior for different devices (CPU, CUDA, HPU, XPU) and modes (autograd, fake tensor, proxy tensor).",
+            "total_tokens": 3655,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 4.546837
+        },
+        "gpt-4": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The Python file `rng_prims.py` primarily defines custom PyTorch primitives for random number generation using the Philox algorithm on CUDA devices, and provides functions to modify, save, and utilize random number generator (RNG) state across different devices and operation executions. It includes definitions and registrations of primitives like `philox_rand`, which stands out as a stateless random number generator based on the Philox algorithm, and higher-order operations such as `run_and_save_rng_state_op` and `run_with_rng_state_op` that ensure the correct RNG state is used and preserved during function calls. Additionally, the file sets up utilities to manage and trace RNG states within PyTorch's advanced tensor operation contexts, employing proxy and dispatch mechanisms to handle backend-specific executions and support graph-execution compatibilities, particularly within CUDA environments.",
+            "total_tokens": 3732,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 4.48982
+        },
+        "titan_premier": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `rng_prims.py` is a Python file that contains functions for registering RNG (Random Number Generator) prims. The main functionalities of the file include:\n\n1. Registering the Philox-based stateless rand operator using the `register_philox_rand` function.\n2. Registering the `run_and_save_rng_state` and `run_with_rng_state` operators using the `register_run_and_save_rng_state_op` and `register_run_with_rng_state_op` functions, respectively.\n3. Registering the `graphsafe_run_with_rng_state` operator using the `register_graphsafe_run_with_rng_state_op` function.\n\nThe file also contains helper functions such as `philox_rand_offset_meta`, `philox_rand_offset`, and `get_device` to support the main functionalities.\n\nOverall, the file is responsible for registering various RNG operators and providing helper functions for working with RNG states.",
+            "total_tokens": 244,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 6.582741
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"rng_prims.py\" file is to define and register custom random number generator (RNG) operations for PyTorch, specifically focusing on Philox-based stateless random operations. The file includes functions to register RNG primitives, handle different backend devices (CUDA, CPU, XPU, HPU), and manage RNG states for various operations, ensuring compatibility and functionality across different hardware accelerators.",
+            "total_tokens": 4563,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 2.982121
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"rng_prims.py\" file is to define and register Philox-based random number generation (RNG) operators using custom operators in PyTorch. The file contains functions for generating random values based on the Philox algorithm, handling RNG states for different devices, and registering higher-order RNG operators for running and saving RNG states. Additionally, it includes functionality for graph-safe RNG operations on CUDA devices and registration of the RNG primitives.",
+            "total_tokens": 3657,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 2.747162
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the `rng_prims.py` file is to register custom primitives for random number generation (RNG) operations in PyTorch, specifically focusing on Philox-based stateless RNG and operations to run and save RNG states across different devices.",
+            "total_tokens": 4531,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 1.335866
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file defines and registers a set of PyTorch \"random number generator primitives\" (RNG prims) focused on stateless and functionalized random number generation for various backends (especially CUDA). It introduces higher-order operators for running functions with controlled RNG states (saving, restoring, and graph-safe execution), supporting use cases like functional programming, distributed computation, and deterministic behavior. The main functionality is to create abstractions and operators for reproducible and backend-agnostic RNG handling in PyTorch, particularly for advanced features like graph tracing and functionalization.",
+            "total_tokens": 3699,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 2.461093
+        },
+        "Claude3.5": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The main functionality of the \"rng_prims.py\" file is to register and implement random number generation (RNG) primitives and operations for PyTorch, particularly focusing on Philox-based random number generation for CUDA devices. It defines several higher-order operators and their implementations for different dispatch keys, including functions to run operations with specific RNG states and to save RNG states during execution.",
+            "total_tokens": 5087,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.010065
+        },
+        "gemini-2.5": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines and registers custom PyTorch operations for random number generation (RNG), including a Philox-based stateless random number generator (`philox_rand`). It also introduces higher-order operators like `run_and_save_rng_state` and `run_with_rng_state` to manage RNG states across different devices (CPU, CUDA, HPU, XPU) during operations. Furthermore, a graph-safe version of the RNG state management operator, `graphsafe_run_with_rng_state`, is provided specifically for CUDA to ensure compatibility with graph-based execution.",
+            "total_tokens": 5025,
+            "model": {
+                "known_name": "gemini-2.5",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00125,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 5.946648
+        },
+        "Claude3.7": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This file implements random number generation (RNG) primitives for PyTorch, focusing on stateless and device-specific RNG operations. It registers several higher-order operators for managing RNG state, including functions to run operations while saving or restoring RNG state, with special handling for different device backends (CUDA, CPU, HPU, XPU). The file also implements Philox-based random number generation specifically for CUDA devices, providing functionality for deterministic random number generation in PyTorch.",
+            "total_tokens": 5108,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.92188
+        },
+        "gpt-4o": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "The file `rng_prims.py` implements randomized operations designed to work with the PyTorch framework, focusing on the registration and functionalization of Philox-based random number generation (RNG) primitives across different hardware backends. It provides utilities for saving, restoring, and managing RNG states in CUDA, CPU, XPU, and HPU platforms, enabling deterministic and stateless randomization compatible with distributed environments and higher-order operator frameworks. Additionally, the file includes support for graph-safe RNG state manipulation specific to CUDA.",
+            "total_tokens": 3691,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 2.509754
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": -1,
+            "project_name": "pytorch",
+            "message": "This Python file defines and registers custom PyTorch operators related to random number generation (RNG). It includes a stateless Philox-based random number primitive and higher-order operators to execute code blocks while saving or temporarily setting the RNG state. These operators support various devices and provide graph-safe state management for CUDA.",
+            "total_tokens": 5299,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 4.667284
         }
     }
 }
