@@ -5,7 +5,7 @@ from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_
 
 class AWSLangchainLlmAccessor(LlmAccessor):
     # titan express is not supported for langchain
-    supported_models = ['Claude3.5', 'nova-lite-v1', 'Llama3.3', 'nova-pro-v1', 'Llama3.1']
+    supported_models = ['Claude3.5', 'Claude3.7', 'nova-lite-v1', 'Llama3.3', 'nova-pro-v1', 'Llama3.1']
     """
     This class is used to access the AWS Bedrock LLM.
     """

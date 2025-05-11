@@ -18,6 +18,10 @@ class LlmModel():
     exclude_files: List[str] = field(default_factory=list)
 
 AVAILABLE_MODELS = [
+    LlmModel(known_name="Claude3.7", aws_model_id="eu.anthropic.claude-3-7-sonnet-20250219-v1:0", 
+             aws_region="eu-central-1", langchain_ready=True, provider_name="AWS",
+             price_per_1000_input_tokens=0.003, price_per_1000_output_tokens=0.015,
+             delay_time=60),
     LlmModel(known_name="Claude3.5", aws_model_id="eu.anthropic.claude-3-5-sonnet-20240620-v1:0", 
              aws_region="eu-central-1", langchain_ready=True, provider_name="AWS",
              price_per_1000_input_tokens=0.003, price_per_1000_output_tokens=0.015),
@@ -30,7 +34,7 @@ AVAILABLE_MODELS = [
     LlmModel(known_name="titan_premier", aws_model_id="amazon.titan-text-premier-v1:0", 
              aws_region="us-east-1", langchain_ready=False, provider_name="AWS",
              price_per_1000_input_tokens=0.0005, price_per_1000_output_tokens=0.0015, 
-             delay_time=20, exclude_files=["torch/nn/functional.py"]),
+             delay_time=60, exclude_files=["torch/nn/functional.py"]),
     LlmModel(known_name="Llama3.3", aws_model_id="us.meta.llama3-3-70b-instruct-v1:0", 
              aws_region="us-east-1", langchain_ready=True, provider_name="AWS", delay_time=10,
              price_per_1000_input_tokens=0.00072, price_per_1000_output_tokens=0.00072),
