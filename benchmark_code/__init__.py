@@ -16,5 +16,5 @@ file_date_prefix=f'{project_name}__{file_date_prefix}'
 DEFAULT_TEMPERATURE=0.3
 DEFAULT_TOP_P=0.2
 DEFAULT_TOP_K=10
-DEFAULT_MAX_TOKENS=500
+DEFAULT_MAX_TOKENS=3072 # should go into a specific model configuration
 DEFAULT_TIMEOUT=30

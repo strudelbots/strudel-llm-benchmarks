@@ -28,6 +28,11 @@ class AzureLangchainLlmAccessor(LlmAccessor):
             ("system",self.system_context),
             ("human", user_input),
         ]
+        try:
+            response = self.chat.invoke(messages)
+        except Exception as e:
+            print(f"Error invoking LLM: {e}")
+            raise e
         response = self.chat.invoke(messages)
         llm_response = LlmResponse(message=response.content, 
                                    total_tokens=response.usage_metadata["total_tokens"], 

@@ -5,7 +5,9 @@ from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_
 
 class AWSLangchainLlmAccessor(LlmAccessor):
     # titan express is not supported for langchain
-    supported_models = ['Claude3.5', 'Claude3.7', 'nova-lite-v1', 'Llama3.3', 'nova-pro-v1', 'Llama3.1']
+    supported_models = ['Claude3.5', 'Claude3.7', 'nova-lite-v1', 
+                        'Llama3.3', 'nova-pro-v1', 'Llama3.1', 'mistral-7b',
+                        'mistral-small']
     """
     This class is used to access the AWS Bedrock LLM.
     """
@@ -32,7 +34,11 @@ class AWSLangchainLlmAccessor(LlmAccessor):
             ("system",self.system_context),
             ("human", user_input),
         ]
-        response = self.chat.invoke(messages)
+        try:
+            response = self.chat.invoke(messages)
+        except Exception as e:
+            print(f"Error invoking LLM: {e}")
+            raise e
         llm_response = LlmResponse(message=response.content, 
                                    total_tokens=response.usage_metadata["total_tokens"], 
                                    model=self.model)
