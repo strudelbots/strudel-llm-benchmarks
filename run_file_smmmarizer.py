@@ -6,7 +6,7 @@ from random import randint
 from time import sleep
 from math import floor
 from benchmark_code import REPO_DIRECTORY, OUT_FILES_DIRECTORY, file_date_prefix
-from benchmark_code.file_smmmarizer import FileSummarizer
+from benchmark_code.file_summarizer import FileSummarizer
 from benchmark_code.s3_accessor import store_results_for_model
 from benchmark_code.utils import clean_outputs_dir
 from benchmark_code.llm_model import AVAILABLE_MODELS, LlmModel
