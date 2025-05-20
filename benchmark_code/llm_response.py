@@ -7,7 +7,7 @@ from dataclasses_json import dataclass_json
 @dataclass_json
 @dataclass(slots=True)
 class LlmResponse():
-    message: str
+    file_summary: str
     total_tokens: int
     model: LlmModel
     latency: float = -1.0

@@ -74,7 +74,7 @@ class AWSBoto3TitanLlmAccessor(AWSBoto3Accessor):
         if finish_reason is not None:
             raise Exception(f"Text generation error. Error is {finish_reason}")
         total_tokens = response_body['results'][0]['tokenCount']
-        llm_response = LlmResponse(message=response_body["results"][0]['outputText'], 
+        llm_response = LlmResponse(file_summary=response_body["results"][0]['outputText'], 
                                    total_tokens=total_tokens, 
                                    model=self.model)
         return llm_response

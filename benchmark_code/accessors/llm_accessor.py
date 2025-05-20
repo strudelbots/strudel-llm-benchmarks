@@ -21,7 +21,7 @@ class LlmAccessor:
             end_time = datetime.datetime.now()
             latency = end_time - start_time
             print(f'request Latency: {latency}, total tokens: {response.total_tokens}, '
-                  f'response length: {len(response.message)}')
+                  f'response length: {len(response.file_summary)}')
             response.latency = latency.total_seconds()
             return response
 
