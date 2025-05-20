@@ -17042,6 +17042,27 @@
                 "exclude_files": []
             },
             "latency": 1.27862
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": 28,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file defines a class `ROCmTemplateBuffer`, inheriting from `TemplateBuffer`, designed for handling buffer-related functionality specifically for ROCm (Radeon Open Compute) computing. It includes attributes for managing global workspace memory and associating it with a ROCm-specific template object. Additionally, it provides a method `get_workspace_size()` to retrieve the global memory workspace size required by the template.",
+            "total_tokens": 367,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 7.009172
         }
     },
     "/torch/_inductor/runtime/triton_compat.py": {
@@ -17359,6 +17380,27 @@
                 "exclude_files": []
             },
             "latency": 1.760855
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": 142,
+            "project_name": "pytorch",
+            "file_summary": "This Python file serves as a compatibility layer for Triton, handling conditional imports and fallbacks based on Triton's availability, thus providing definitions to prevent runtime issues if Triton isn't installed. It appropriately configures relevant Triton functionalities like math libraries, error exceptions, GPU architecture detection, and warp size based on the available backend (CUDA/HIP). The objective is to maintain compatibility and stability of the larger codebase relying on Triton within diverse runtime environments.",
+            "total_tokens": 1046,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 9.09946
         }
     },
     "/torch/export/_trace.py": {
@@ -17655,6 +17697,27 @@
                 "exclude_files": []
             },
             "latency": 8.020181
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": 2209,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file implements PyTorch Dynamo's tracing mechanisms for exporting PyTorch modules and functions into a symbolic Intermediate Representation (IR). It handles tracing of computational graphs, performing graph transformations, enforcing export constraints, managing fake tensor contexts, and converting traced modules into exportable formats. It supports various specialized modes (such as strict or non-strict, pre-dispatch or AOT dispatch) and generates metadata-rich, serialized export artifacts and signatures suitable for runtime execution or later compilation.",
+            "total_tokens": 18571,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 28.320727
         }
     },
     "/torch/_inductor/virtualized.py": {
@@ -17972,6 +18035,27 @@
                 "exclude_files": []
             },
             "latency": 2.306543
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": 412,
+            "project_name": "pytorch",
+            "file_summary": "This file provides a mechanism for creating \"virtualized globals\"\u2014variables or handlers whose values are dynamically scoped and thread-local\u2014to allow flexible patching of implementations at runtime within PyTorch's Inductor compiler backend. It defines the `Virtualized` class to manage global variables through thread-local storage and supplies various contexts (`ops`, `graph`, `kernel`, etc.) accessible via the `V` singleton to switch between different runtime implementations. Additionally, it includes helpers like `OpsValue` and `OpsWrapper` to simplify operator handling and support intuitive syntax for mathematical expressions.",
+            "total_tokens": 3512,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 13.25273
         }
     },
     "/torch/_prims/rng_prims.py": {
@@ -18289,6 +18373,27 @@
                 "exclude_files": []
             },
             "latency": 5.032265
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": 390,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file primarily defines and registers PyTorch primitives for handling random number generation (RNG) on various backends (CUDA, CPU, HPU, XPU), specifically utilizing the Philox-based stateless RNG algorithm. It offers mechanisms to execute functions with controlled RNG states, retrieve and restore RNG states, as well as a \"graph-safe\" variant specialized for CUDA backend. Overall, its role is enabling deterministic and stateless handling of RNG operations within PyTorch, supporting traceability and reproducibility.",
+            "total_tokens": 3690,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 12.612486
         }
     },
     "/torchgen/gen_vmap_plumbing.py": {
@@ -18606,6 +18711,27 @@
                 "exclude_files": []
             },
             "latency": 6.194867
+        },
+        "gpt-4.5": {
+            "file_name": "/torchgen/gen_vmap_plumbing.py",
+            "number_of_lines": 276,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file defines code generation utilities for creating vmap plumbing C++ templates for PyTorch's dispatcher system, specifically tailored for handling batched tensor operations. It inspects function schemas, unpacks tensor and optional tensor arguments, generates conditional logic for unbatched scenarios, wraps/unwraps batched tensors, and handles different schema types such as in-place function calls. Ultimately, it generates C++ functions to support vectorized batch processing within the PyTorch dispatcher system.",
+            "total_tokens": 2531,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 13.231002
         }
     },
     "/torch/distributed/_tools/sac_estimator.py": {
@@ -18923,6 +19049,978 @@
                 "exclude_files": []
             },
             "latency": 8.011576
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/distributed/_tools/sac_estimator.py",
+            "number_of_lines": 963,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file implements a Selective Activation Checkpointing (SAC) estimation tool for PyTorch modules, designed to optimize the trade-off between computational memory usage and recomputation runtime. It performs detailed operation-level analysis and provides a greedy estimation approach to decide which activations to store and which to recompute during neural network training. This system supports visualization and quantification of memory-runtime tradeoffs through piecewise-linear fitting and provides module-level detailed statistics.",
+            "total_tokens": 9872,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 18.379591
+        }
+    },
+    "/torch/onnx/operators.py": {
+        "gpt-4o": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The file `operators.py` provides utility functions for operations that assist in exporting PyTorch models via ONNX, specifically focusing on dynamic size operations to ensure traceability. It includes two key functions: `shape_as_tensor`, which extracts the shape of a tensor as a tensor, and `reshape_from_tensor_shape`, which reshapes a tensor dynamically based on a target shape. Both functions are kept for backward compatibility as they are now implemented directly in ATen.",
+            "total_tokens": 457,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 3.296443
+        },
+        "Llama3.1": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"operators.py\" file is to provide operators for exporting models via ONNX, specifically for handling dynamic size operations. The file contains two functions: `shape_as_tensor` and `reshape_from_tensor_shape`, which are used to get the shape of a tensor as a tensor and reshape a tensor to a given shape, respectively. These functions are kept for backward-compatibility, as they are now implemented directly in ATen.",
+            "total_tokens": 458,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 5.665142
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The `operators.py` file provides backward-compatible operators, such as `shape_as_tensor` and `reshape_from_tensor_shape`, to facilitate exporting models via ONNX by making dynamic size operations traceable. These operators are now implemented directly in ATen, but the file is maintained for compatibility purposes.",
+            "total_tokens": 451,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 2.019123
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"operators.py\" file is to provide a set of functions for exporting models via onnx, specifically focusing on making dynamic size operations traceable. The file includes functions like `shape_as_tensor` to get the shape of a tensor as a tensor and `reshape_from_tensor_shape` to reshape a tensor to a given shape, all kept for backward-compatibility even though similar functions are now implemented directly in ATen. The file emphasizes the importance of these functions in ensuring traceability during model export.",
+            "total_tokens": 467,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 3.964909
+        },
+        "gpt-4": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The Python file \"operators.py\" is designed to facilitate the export of models through ONNX by making dynamic size operations traceable. It consists primarily of two functions: `shape_as_tensor`, which retrieves the shape of a tensor as a tensor itself, and `reshape_from_tensor_shape`, used to reshape a tensor to a given shape for traceability in model exporting. The file is also maintained for backward-compatibility purposes with some functionalities now being directly implemented in ATen.",
+            "total_tokens": 457,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 6.321315
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The file defines two operators, shape_as_tensor and reshape_from_tensor_shape, which make tensor shape operations traceable for ONNX export by delegating to internal PyTorch (ATen) implementations. These functions enable dynamic size operations to be captured in model export workflows, particularly useful for exporting PyTorch models to ONNX format. The file is maintained for backward compatibility, as the actual functionality is now directly provided by PyTorch core.",
+            "total_tokens": 452,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 5.04433
+        },
+        "mistral-small": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": " The main functionality of the file \"operators.py\" is to provide operators that aid in exporting models via ONNX. The two primary operators are `shape_as_tensor` and `reshape_from_tensor_shape`, which are used to make all dynamic size operations traceable. These functions are kept for backward-compatibility as they have been implemented directly in ATen.",
+            "total_tokens": 532,
+            "model": {
+                "known_name": "mistral-small",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-small-2402-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.001,
+                "price_per_1000_output_tokens": 0.003,
+                "exclude_files": []
+            },
+            "latency": 2.136143
+        },
+        "Claude3.7": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The file \"operators.py\" provides compatibility functions for ONNX model export, specifically maintaining backward compatibility for shape manipulation operations that have since been implemented directly in ATen. It defines two main functions: `shape_as_tensor` which gets a tensor's shape as a tensor, and `reshape_from_tensor_shape` which reshapes a tensor according to a shape tensor, both of which are now simply wrappers around native PyTorch implementations.",
+            "total_tokens": 529,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.031604
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The Python file provides operators specifically to help export models via ONNX by making dynamic tensor-size operations traceable, wrapping two core functionalities (`shape_as_tensor` and `reshape_from_tensor_shape`). These operators are now directly implemented in PyTorch's ATen backend, so the functions in this file are maintained solely for backward compatibility. Essentially, the file defines legacy wrappers for PyTorch internal utilities that manage tensor shapes when exporting dynamic models.",
+            "total_tokens": 452,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 8.48261
+        },
+        "mistral-7b": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": " This Python file, named \"operators.py,\" contains two functions, `shape_as_tensor` and `reshape_from_tensor_shape`, which are used to make dynamic size operations traceable when exporting PyTorch models to Open Neural Network Exchange (ONNX) format. These functions were previously implemented in this file but have since been moved to PyTorch's ATen library. The file is kept for backward-compatibility purposes.",
+            "total_tokens": 552,
+            "model": {
+                "known_name": "mistral-7b",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-7b-instruct-v0:2",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0002,
+                "exclude_files": []
+            },
+            "latency": 2.609746
+        },
+        "titan_premier": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The file \"operators.py\" is a Python file that contains two functions: \"shape_as_tensor\" and \"reshape_from_tensor_shape\". The \"shape_as_tensor\" function takes a tensor as input and returns a tensor of shape [len(x.shape)] containing the size of each dimension of x. The \"reshape_from_tensor_shape\" function reshapes a tensor to the given shape, which is useful for making dynamic size operations traceable when exporting models via ONNX. The file is kept for backward-compatibility, as these functions are now implemented directly in ATen.",
+            "total_tokens": 129,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 7.802581
+        },
+        "Llama3.3": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the `operators.py` file is to provide operators that aid in exporting models via ONNX, specifically making dynamic size operations traceable. The file contains two key functions: `shape_as_tensor` and `reshape_from_tensor_shape`, which are used to get the shape of a tensor as a tensor and reshape a tensor to a given shape, respectively. Although these functions are now implemented directly in ATen, this file is maintained for backward-compatibility purposes.",
+            "total_tokens": 464,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 1.31987
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "This file defines two functions, `shape_as_tensor` and `reshape_from_tensor_shape`, which are aliases for internal PyTorch operations. These functions were originally created to help make dynamic tensor shape operations traceable for ONNX export. The file is now primarily kept for backward compatibility as the core functionality is implemented directly in PyTorch.",
+            "total_tokens": 904,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 8.340036
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"operators.py\" file is to provide backward-compatible operators for exporting models using ONNX, specifically for converting tensor shapes to tensors and reshaping tensors from tensor shapes. These functions, `shape_as_tensor` and `reshape_from_tensor_shape`, are retained for compatibility even though their implementations have been integrated into ATen.",
+            "total_tokens": 462,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 2.011175
+        },
+        "Claude3.5": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The file \"operators.py\" primarily serves as a compatibility layer for ONNX model export operations in PyTorch. It defines two key functions, 'shape_as_tensor' and 'reshape_from_tensor_shape', which are now directly implemented in ATen but are kept here for backward compatibility. The file aims to make dynamic size operations traceable when exporting models via ONNX.",
+            "total_tokens": 520,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 5.388524
+        }
+    },
+    "/torch/distributed/optim/apply_optimizer_in_backward.py": {
+        "titan_premier": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the file \"apply_optimizer_in_backward.py\" is to apply an optimizer to a set of parameters during the backward pass of the autograd engine. It allows for the optimization process to occur earlier in the computation graph, potentially reducing memory usage and improving performance. The file includes functions to apply the optimizer to parameters, retrieve the optimizers applied to a module's parameters, and register hooks to run the optimizer after the gradient for a parameter is accumulated. The file also uses weak references to store relevant metadata for the Tensor/Parameter, allowing for efficient memory management.",
+            "total_tokens": 126,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 166.227036
+        },
+        "gpt-4": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The Python script `apply_optimizer_in_backward.py` implements functionality to apply optimizers directly in the backward pass of a neural network module using PyTorch. It allows specifying different optimizers for different parameters right after their respective gradients are accumulated during backward propagation. The script also includes utilities for managing optimizer states and hooks, ensuring that optimizers are applied once per gradient accumulation, thus potentially optimizing the update process in deep learning training routines.",
+            "total_tokens": 1312,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 4.952679
+        },
+        "Llama3.1": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of this file is to provide a way to apply an optimizer to a PyTorch model's parameters during the backward pass, allowing the optimizer to update the parameters immediately after the gradients have been accumulated. This is achieved through the `_apply_optimizer_in_backward` function, which takes an optimizer class, a list of parameters, and optimizer keyword arguments as input. The file also provides a `_get_in_backward_optimizers` function to retrieve the list of in-backward optimizers applied to a model's parameters.",
+            "total_tokens": 1337,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 4.118837
+        },
+        "Claude3.5": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"apply_optimizer_in_backward.py\" file is to implement a mechanism for applying optimizers during the backward pass of a neural network. It provides a function `_apply_optimizer_in_backward` that allows users to specify different optimizers for different parameters, which are then automatically applied after the gradients are computed during backpropagation. Additionally, the file includes a utility function `_get_in_backward_optimizers` to retrieve the list of optimizers applied to a module's parameters using this technique.",
+            "total_tokens": 1654,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.931855
+        },
+        "gpt-4o": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The file defines a mechanism for applying optimizers during the backward pass in PyTorch, allowing optimizers to act directly on parameters after their gradients are calculated. It provides functions to register optimizers and hooks on parameters (`_apply_optimizer_in_backward`) and retrieve a list of such optimizers from a given module (`_get_in_backward_optimizers`). This approach modifies the typical training workflow by automating the application of optimization steps within the backward pass itself.",
+            "total_tokens": 1318,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 3.526714
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file defines a mechanism to apply an optimizer directly during the backward gradient computation phase for PyTorch parameters, enabling automatic optimization immediately after gradient accumulation. By registering autograd hooks, optimizers execute their updates right as gradients become ready, after which gradients are cleared automatically. It includes helper functions for associating specific optimizer instances to each parameter, tracking these associations via weak references, and retrieving optimizers for modules as needed.",
+            "total_tokens": 1312,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 8.820504
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the file \"apply_optimizer_in_backward.py\" is to apply specified optimizers to given parameters during the backward pass in PyTorch, allowing for optimizers to be executed immediately after gradients are accumulated. It provides a mechanism to register hooks that trigger optimizer steps and retrieves the optimizers applied in this manner. The file utilizes weak references to manage metadata associated with tensors and parameters without affecting their lifetime.",
+            "total_tokens": 1556,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 1.29235
+        },
+        "mistral-small": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": " The main functionality of the file \"apply_optimizer_in_backward.py\" is to apply an optimizer to specific parameters in a PyTorch model during the backward pass. This is done using the `_apply_optimizer_in_backward` function, which registers a hook that runs the optimizer after the gradient for the specified parameter is accumulated. The file also provides a function `_get_in_backward_optimizers` to retrieve the in-backward optimizers applied to a model's parameters.",
+            "total_tokens": 1729,
+            "model": {
+                "known_name": "mistral-small",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-small-2402-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.001,
+                "price_per_1000_output_tokens": 0.003,
+                "exclude_files": []
+            },
+            "latency": 1.986453
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"apply_optimizer_in_backward.py\" file is to provide a function called \"_apply_optimizer_in_backward\" that applies a specified optimizer to parameters during the backward pass in PyTorch. The function takes input parameters such as the optimizer class, parameters to apply the optimizer to, optimizer arguments, and a flag to register a hook to run the optimizer after gradient accumulation. Additionally, the file includes a helper function \"_get_in_backward_optimizers\" to retrieve a list of optimizers applied to a given module's parameters for specific use cases like checkpointing.",
+            "total_tokens": 1341,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 2.919349
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of this file is to enable the application of optimizer steps directly during the backward pass in PyTorch, by registering hooks on parameters so their optimizers are applied immediately after their gradients are accumulated. It provides a function to set up this mechanism per-parameter with different optimizers and configurations, which is useful for advanced training patterns or distributed training. Additionally, the file includes a method to retrieve the list of these in-backward optimizers associated with a given module.",
+            "total_tokens": 1322,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 3.46413
+        },
+        "Claude3.7": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "This file implements functionality for applying optimizers during the backward pass in PyTorch, allowing parameter updates to occur immediately after gradients are computed without requiring a separate optimizer step call. It provides the `_apply_optimizer_in_backward` function which registers hooks on parameters to trigger optimization when gradients are ready, and includes a helper function `_get_in_backward_optimizers` to retrieve all optimizers applied to a module's parameters.",
+            "total_tokens": 1631,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 4.307516
+        },
+        "Llama3.3": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the given Python file is to apply an optimizer to a set of parameters in a PyTorch model during the backward pass, allowing for per-parameter optimization. The `_apply_optimizer_in_backward` function takes an optimizer class, parameters, and optimizer keyword arguments, and applies the optimizer to each parameter after the gradient has been accumulated. This allows for custom optimization strategies, such as applying different optimizers to different parts of the model, and is useful for techniques like checkpointing and distributed training.",
+            "total_tokens": 1333,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 1.092634
+        },
+        "mistral-7b": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": " The given Python file, \"apply\\_optimizer\\_in\\_backward.py\", defines a function `_apply_optimizer_in_backward` that applies an optimizer to a PyTorch model's parameters during the backward pass. The optimizer is registered as a hook on the parameter's autograd function, ensuring it is applied after the gradient has been accumulated. This allows for multiple optimizers to be applied to different parameters within a single PyTorch model.",
+            "total_tokens": 1722,
+            "model": {
+                "known_name": "mistral-7b",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-7b-instruct-v0:2",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0002,
+                "exclude_files": []
+            },
+            "latency": 1.261026
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "This Python file provides functionality to apply PyTorch optimizers to specific parameters during the backward pass, rather than after the entire backward computation. It registers hooks on parameter gradient accumulation functions to trigger the optimizer step once the gradient is computed for that parameter. This allows for fine-grained control over parameter updates, potentially using different optimizers or settings for different parameters within a model.",
+            "total_tokens": 1769,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 5.640592
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "This Python file defines a utility function `_apply_optimizer_in_backward` for applying an optimizer to PyTorch model parameters during the backward pass of the autograd computation graph. It allows specifying different optimizers for different parameters and ensures that the optimizers are executed after gradients are accumulated but before they are used by other optimizers. The file also includes a helper function `_get_in_backward_optimizers` to retrieve the optimizers applied to a given model's parameters.",
+            "total_tokens": 1568,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 0.929548
+        }
+    },
+    "/torch/onnx/_internal/exporter/_flags.py": {
+        "mistral-7b": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": " This Python file, named \"_flags.py\", defines an internal flag for ONNX export and provides a decorator function `set_onnx_exporting_flag` to set and reset the flag. When a function is decorated with this flag, it will be executed only when ONNX export is enabled.",
+            "total_tokens": 374,
+            "model": {
+                "known_name": "mistral-7b",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-7b-instruct-v0:2",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0002,
+                "exclude_files": []
+            },
+            "latency": 0.954266
+        },
+        "Claude3.7": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "This file provides functionality for tracking whether ONNX export is in progress through a global flag `_is_onnx_exporting`. It defines a decorator `set_onnx_exporting_flag` that temporarily sets this flag to True during the execution of the decorated function and ensures it's reset to False afterward, even if exceptions occur. The module is designed to help other parts of the codebase determine if they're being executed during an ONNX export process.",
+            "total_tokens": 404,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 3.360393
+        },
+        "gpt-4o": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The file `_flags.py` provides functionality to manage an internal flag (`_is_onnx_exporting`) that indicates whether an ONNX export operation is ongoing. It includes a decorator function `set_onnx_exporting_flag` that temporarily sets this flag to `True` while executing a wrapped function and resets it to `False afterwards, even if an exception occurs. This mechanism is useful for tracking the export state during ONNX-related operations.",
+            "total_tokens": 347,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": []
+            },
+            "latency": 2.443967
+        },
+        "gpt-4.1": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The file defines and manages an internal flag _is_onnx_exporting, which indicates whether ONNX export is currently in progress. It provides a decorator set_onnx_exporting_flag that temporarily sets this flag to True during the execution of a wrapped function and reliably resets it to False afterward, even if an exception is raised. This mechanism is intended for internal use to control behavior specific to ONNX export operations.",
+            "total_tokens": 341,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": []
+            },
+            "latency": 2.883622
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The file `_flags.py` defines internal flags and utilities specifically for ONNX export operations. It includes a global flag `_is_onnx_exporting` to indicate whether ONNX exporting is currently active, and a decorator `set_onnx_exporting_flag` to set this flag during the execution of decorated functions, ensuring it is reset afterward.",
+            "total_tokens": 346,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": []
+            },
+            "latency": 0.932959
+        },
+        "gpt-4": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The Python file \"_flags.py\" primarily handles the state of an internal flag (`_is_onnx_exporting`) used for controlling whether an ONNX export is ongoing. It includes a decorator `set_onnx_exporting_flag` that, when applied to a function, sets this flag to True before executing the function and resets it to False afterwards, even if an exception occurs. This functionality aids in maintaining and adjusting the environment state specifically during the ONNX export processes.\n",
+            "total_tokens": 345,
+            "model": {
+                "known_name": "gpt-4",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.01,
+                "price_per_1000_output_tokens": 0.03,
+                "exclude_files": []
+            },
+            "latency": 6.209977
+        },
+        "mistral-small": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": " The main functionality of the file \"_flags.py\" is to manage an internal flag for ONNX export. It defines a global variable `_is_onnx_exporting` which is set to True when the decorated function is called using the `set_onnx_exporting_flag` decorator, and then reset to False after the function execution. This flag can be used to conditionally execute certain code paths during ONNX export.",
+            "total_tokens": 398,
+            "model": {
+                "known_name": "mistral-small",
+                "provider_name": "AWS",
+                "aws_model_id": "mistral.mistral-small-2402-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 65,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.001,
+                "price_per_1000_output_tokens": 0.003,
+                "exclude_files": []
+            },
+            "latency": 1.749047
+        },
+        "titan_premier": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the _flags.py file is to manage an internal flag for ONNX export. The file contains a global variable _is_onnx_exporting, which is initially set to False. The file also includes a decorator function, set_onnx_exporting_flag, that can be used to wrap other functions. When a function is wrapped with this decorator, the _is_onnx_exporting flag is set to True before the function is called and then reset to False after the function completes, regardless of whether an exception occurs. This decorator can be used to temporarily enable ONNX export mode for specific functions.",
+            "total_tokens": 141,
+            "model": {
+                "known_name": "titan_premier",
+                "provider_name": "AWS",
+                "aws_model_id": "amazon.titan-text-premier-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": false,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 915.828038
+        },
+        "nova-lite-v1": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the `_flags.py` file is to provide a mechanism for setting a global flag indicating whether the ONNX export process is currently active. This is achieved through a decorator, `set_onnx_exporting_flag`, which temporarily sets the `_is_onnx_exporting` flag to `True` during the execution of the decorated function and ensures it is reset to `False` afterward, regardless of whether an exception occurs. This allows functions to behave differently when called within the context of an ONNX export.",
+            "total_tokens": 382,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": []
+            },
+            "latency": 0.78536
+        },
+        "Llama3.1": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of this Python file is to manage an internal flag `_is_onnx_exporting` that tracks whether the system is currently exporting to ONNX format. The file provides a decorator `set_onnx_exporting_flag` that sets this flag to `True` when a decorated function is called and resets it to `False` when the function finishes executing, even if an exception occurs. This allows other parts of the system to check the state of this flag to determine if they should behave differently during ONNX export.",
+            "total_tokens": 362,
+            "model": {
+                "known_name": "Llama3.1",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0009,
+                "price_per_1000_output_tokens": 0.0009,
+                "exclude_files": []
+            },
+            "latency": 4.028727
+        },
+        "gpt-4.5": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python file defines internal functionality to manage a global flag `_is_onnx_exporting`, indicating if an ONNX export is currently happening. It provides the decorator `set_onnx_exporting_flag` that sets this flag to `True` before a function runs and resets it to `False` afterward, even if exceptions occur. This mechanism allows the codebase to track ONNX export operations consistently and safely.",
+            "total_tokens": 342,
+            "model": {
+                "known_name": "gpt-4.5",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.5-preview",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.075,
+                "price_per_1000_output_tokens": 0.15,
+                "exclude_files": []
+            },
+            "latency": 7.139382
+        },
+        "gpt-3.5-turbo": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the \"_flags.py\" file is to provide internal flags for controlling the ONNX export process. It defines a function \"set_onnx_exporting_flag\" which wraps another function and sets a global flag \"_is_onnx_exporting\" to True during the execution of the wrapped function, resetting it back to False after the function execution, ensuring it is always reset even if an exception occurs.",
+            "total_tokens": 333,
+            "model": {
+                "known_name": "gpt-3.5-turbo",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-35-turbo",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0005,
+                "price_per_1000_output_tokens": 0.0015,
+                "exclude_files": []
+            },
+            "latency": 2.323177
+        },
+        "Claude3.5": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The \"_flags.py\" file defines internal flags for ONNX export in Python. It primarily provides a decorator function `set_onnx_exporting_flag` that sets a global flag `_is_onnx_exporting` to True during the execution of the decorated function and resets it to False afterward, ensuring the flag is reset even if an exception occurs. This functionality is likely used to control behavior specific to ONNX export operations within a larger codebase.",
+            "total_tokens": 406,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": []
+            },
+            "latency": 2.829713
+        },
+        "gemini-2.5-flash": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "This Python file defines an internal global flag `_is_onnx_exporting` used to indicate whether code is currently running within an ONNX export process. It provides a decorator `set_onnx_exporting_flag` that temporarily sets this flag to `True` for the duration of the decorated function's execution. The flag is automatically reset to `False` afterwards, even if errors occur.",
+            "total_tokens": 748,
+            "model": {
+                "known_name": "gemini-2.5-flash",
+                "provider_name": "GOOGLE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 15,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00015,
+                "price_per_1000_output_tokens": 0.0006,
+                "exclude_files": []
+            },
+            "latency": 4.635208
+        },
+        "Llama3.3": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the `_flags.py` file is to manage an internal flag `_is_onnx_exporting` that tracks whether the system is currently exporting to ONNX format. The `set_onnx_exporting_flag` function is a decorator that sets this flag to `True` when a decorated function is called and resets it to `False` after the function execution is complete, even if an exception occurs. This allows other parts of the system to check the state of this flag and adjust their behavior accordingly during ONNX export.",
+            "total_tokens": 364,
+            "model": {
+                "known_name": "Llama3.3",
+                "provider_name": "AWS",
+                "aws_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00072,
+                "price_per_1000_output_tokens": 0.00072,
+                "exclude_files": []
+            },
+            "latency": 0.989212
         }
     }
 }

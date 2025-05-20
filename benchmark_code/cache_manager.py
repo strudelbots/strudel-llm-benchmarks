@@ -8,7 +8,6 @@ from benchmark_code.db_entry import SingleModelDBEntry, SingleFileDBEntry
 from benchmark_code.llm_response import LlmResponse
 from benchmark_code.llm_model import LlmModel
 
-
 class CacheManager:
     hash_pattern = re.compile(r'^[a-f0-9]{64}\.json$')
     
@@ -80,8 +79,10 @@ class CacheManager:
                                      summary['model']['delay_time'], summary['model']['langchain_ready'], 
                                      summary['model']['price_per_1000_input_tokens'], 
                                      summary['model']['price_per_1000_output_tokens'])
-                llm_result = LlmResponse(summary['message'], summary['total_tokens'], llm_model, summary['latency'])
-                number_of_lines = -1
+                llm_result = LlmResponse(summary['file_summary'], summary['total_tokens'], llm_model, summary['latency'])
+                with open(file, 'r') as f:
+                    file_content = f.read()
+                number_of_lines = len(file_content.split('\n'))
                 model_key = llm_model.known_name
                 if model_key in single_file_entries.data.get(key, {}):
                     raise ValueError(f"Model {model_key} already exists in {key}")
