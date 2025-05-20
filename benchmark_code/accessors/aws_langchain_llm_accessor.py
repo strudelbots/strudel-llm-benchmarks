@@ -39,7 +39,7 @@ class AWSLangchainLlmAccessor(LlmAccessor):
         except Exception as e:
             print(f"Error invoking LLM: {e}")
             raise e
-        llm_response = LlmResponse(message=response.content, 
+        llm_response = LlmResponse(file_summary=response.content, 
                                    total_tokens=response.usage_metadata["total_tokens"], 
                                    model=self.model)
         return llm_response

@@ -31,7 +31,7 @@ class GoogleLangchainLlmAccessor(LlmAccessor):
         response = self.chat.invoke(messages)
         if response.response_metadata.get("finish_reason") != "STOP":
             raise ValueError("Length exceeded")
-        llm_response = LlmResponse(message=response.content, 
+        llm_response = LlmResponse(file_summary=response.content, 
                                    total_tokens=response.usage_metadata["total_tokens"], 
                                    model=self.model)
         return llm_response

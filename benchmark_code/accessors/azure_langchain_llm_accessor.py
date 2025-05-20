@@ -34,7 +34,7 @@ class AzureLangchainLlmAccessor(LlmAccessor):
             print(f"Error invoking LLM: {e}")
             raise e
         response = self.chat.invoke(messages)
-        llm_response = LlmResponse(message=response.content, 
+        llm_response = LlmResponse(file_summary=response.content, 
                                    total_tokens=response.usage_metadata["total_tokens"], 
                                    model=self.model)
         return llm_response
