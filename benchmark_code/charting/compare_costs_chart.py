@@ -1,12 +1,13 @@
-from chart_generator import ChartGenerator
-import json
 import os
-from benchmark_code import project_name
 from collections import defaultdict
-from benchmark_code.llm_model import AVAILABLE_MODELS
 from math import floor
-from benchmark_code.utils import get_db
 
+from benchmark_code.llm_model import AVAILABLE_MODELS
+from benchmark_code.utils import get_db
+from chart_generator import ChartGenerator
+from benchmark_code import project_name
+
+debug = False
 supported_models = [x.known_name for x in AVAILABLE_MODELS]
 def default_model_stats():
     return {
@@ -51,23 +52,24 @@ def _calculate_metric_per_model(model_stats):
         stats["total_output_cost"] = stats["single_output_token_cost"] * stats["total_output_tokens"]
         stats["total_cost"] = stats["total_input_cost"] + stats["total_output_cost"]
         stats["avg_file_cost"] = stats["total_cost"] / len(stats["tokens_used"])
-        print(f"--------------------------------")
-        print(f"{model_name=}")
-        print(f"{stats['total_input_tokens']=}")
-        print(f"{stats['total_output_tokens']=}")
-        print(f"{stats['total_input_cost']=}")
-        print(f"{stats['total_output_cost']=}")
-        print(f"{stats['total_cost']=}")
-        print(f"{stats['avg_file_cost']=}")
-        print(f"{stats['single_input_token_cost']=:.10f}")
-        print(f"{stats['single_output_token_cost']=:.10f}")
+        if debug:
+            print(f"--------------------------------")
+            print(f"{model_name=}")
+            print(f"{stats['total_input_tokens']=}")
+            print(f"{stats['total_output_tokens']=}")
+            print(f"{stats['total_input_cost']=}")
+            print(f"{stats['total_output_cost']=}")
+            print(f"{stats['total_cost']=}")
+            print(f"{stats['avg_file_cost']=}")
+            print(f"{stats['single_input_token_cost']=:.10f}")
+            print(f"{stats['single_output_token_cost']=:.10f}")
 
 def _avg_tokens_per_file(model_stats):
     chart_data = []
     for model_name, stats in model_stats.items():
         n_files = len(stats['tokens_used'])
         avg_tokens = sum(stats['tokens_used']) / n_files
-        print(f"{model_name=} {n_files=} {avg_tokens=}")
+        #print(f"{model_name=} {n_files=} {avg_tokens=}")
         chart_data.append((model_name, avg_tokens))
     chart_data.sort(key=lambda x: x[0])
     chart_generator = ChartGenerator()

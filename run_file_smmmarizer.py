@@ -6,7 +6,7 @@ from random import randint
 from time import sleep
 from math import floor
 from benchmark_code import REPO_DIRECTORY, OUT_FILES_DIRECTORY, file_date_prefix
-from benchmark_code.file_smmmarizer import FileSummarizer
+from benchmark_code.file_summarizer import FileSummarizer
 from benchmark_code.s3_accessor import store_results_for_model
 from benchmark_code.utils import clean_outputs_dir
 from benchmark_code.llm_model import AVAILABLE_MODELS, LlmModel
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 3.2 # Controls of the percentage of files that would be summarized.
+    sample_factor = 3.3 # Controls of the percentage of files that would be summarized.
     random.seed(25) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
