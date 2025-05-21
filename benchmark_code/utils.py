@@ -16,7 +16,7 @@ def get_db():
         db = json.load(f)
     return db
 
-def update_results_db():
+def validate_results_db():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'r') as f:
         db = json.load(f)
@@ -25,21 +25,22 @@ def update_results_db():
         for index_2, (key_2, value_2) in enumerate(value.items()):
             print(f'    {index_2}: {key_2}')
             assert 'number_of_lines' in value_2
+            if 'file_summary' not in value_2:
+                assert 'message' in value_2
+                db[key][key_2]['file_summary'] = value_2['message']
+                assert value_2['file_summary'] != ''
             full_path = os.path.join(REPO_DIRECTORY, key.removeprefix('/'))
             with open(full_path, 'r') as text_file:
+                current_lines = value_2['number_of_lines']
                 python_string = text_file.read()
                 number_of_lines = len(python_string.split('\n'))
-                current_lines= db[key][key_2]['number_of_lines']
-                if current_lines != number_of_lines:
-                    assert current_lines == -1
-                    db[key][key_2]['number_of_lines'] = number_of_lines
-                else:
-                    assert current_lines == number_of_lines
-    with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
-        json.dump(db, f, indent=4)
+                assert current_lines == number_of_lines
+
+    #with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
+    #    json.dump(db, f, indent=4)
 
         
     #with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
     #    json.dump(db, f)
 if __name__ == "__main__":
-    update_results_db()
+    validate_results_db()
