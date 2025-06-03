@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List
 from dataclasses_json import dataclass_json
-
+from benchmark_code import DEFAULT_MAX_TOKENS
 @dataclass_json
 @dataclass
 class LlmModel():
@@ -16,6 +16,7 @@ class LlmModel():
     price_per_1000_input_tokens: float = 0.0
     price_per_1000_output_tokens: float = 0.0
     exclude_files: List[str] = field(default_factory=list)
+    max_tokens: int = DEFAULT_MAX_TOKENS
 
 AVAILABLE_MODELS = [
     LlmModel(known_name="Claude3.7", aws_model_id="eu.anthropic.claude-3-7-sonnet-20250219-v1:0", 
@@ -81,6 +82,23 @@ AVAILABLE_MODELS = [
              price_per_1000_output_tokens=0.003, 
              exclude_files=["torch/nn/functional.py"], 
              delay_time=65),
+    LlmModel(known_name="deepseek-r1", azure_deployment_name="", 
+             aws_model_id="us.deepseek.r1-v1:0",
+             aws_region="us-east-1", langchain_ready=False, provider_name="AWS",
+             price_per_1000_input_tokens=0.00135, 
+             price_per_1000_output_tokens=0.0054, 
+             exclude_files=[], 
+             max_tokens=512,
+             delay_time=15),
+    LlmModel(known_name="cohere-v1", azure_deployment_name="", 
+             aws_model_id="cohere.command-r-v1:0",
+             aws_region="us-east-1", langchain_ready=True, provider_name="AWS",
+             price_per_1000_input_tokens=0.0015, 
+             price_per_1000_output_tokens=0.002, 
+             exclude_files=[], 
+             max_tokens=512,
+             delay_time=60),
+
 ]
 
 
