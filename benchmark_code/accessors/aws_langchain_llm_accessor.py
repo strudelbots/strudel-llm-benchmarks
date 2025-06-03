@@ -1,13 +1,14 @@
 from langchain_aws import ChatBedrock
 from benchmark_code.llm_response import LlmResponse
 from benchmark_code.accessors.llm_accessor import LlmAccessor
+from langchain_aws import ChatBedrockConverse
 from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_P, DEFAULT_TOP_K
 
 class AWSLangchainLlmAccessor(LlmAccessor):
     # titan express is not supported for langchain
     supported_models = ['Claude3.5', 'Claude3.7', 'nova-lite-v1', 
                         'Llama3.3', 'nova-pro-v1', 'Llama3.1', 'mistral-7b',
-                        'mistral-small']
+                        'mistral-small', 'cohere-v1']
     """
     This class is used to access the AWS Bedrock LLM.
     """
@@ -21,12 +22,23 @@ class AWSLangchainLlmAccessor(LlmAccessor):
         if model.known_name in [ "Llama3.3", "Llama3.1"]:
             kwargs = {"top_p": DEFAULT_TOP_P}
 
-        self.chat = ChatBedrock(
-            credentials_profile_name="bedrock_admin", region_name=model.aws_region, model_id=model.aws_model_id,
-            temperature=DEFAULT_TEMPERATURE,
-            max_tokens=DEFAULT_MAX_TOKENS,
-            model_kwargs=kwargs
-            )
+        if model.known_name == "cohere-v1":
+            self.chat = ChatBedrockConverse(
+                credentials_profile_name="bedrock_admin", region_name=model.aws_region, 
+                model_id=model.aws_model_id,
+                temperature=DEFAULT_TEMPERATURE,
+                max_tokens=DEFAULT_MAX_TOKENS,
+                top_p=DEFAULT_TOP_P,
+                #model_kwargs=kwargs
+                )
+
+        else:
+            self.chat = ChatBedrock(
+                credentials_profile_name="bedrock_admin", region_name=model.aws_region, model_id=model.aws_model_id,
+                temperature=DEFAULT_TEMPERATURE,
+                max_tokens=DEFAULT_MAX_TOKENS,
+                model_kwargs=kwargs
+                )
             
 
     def _invoke_llm(self, user_input):

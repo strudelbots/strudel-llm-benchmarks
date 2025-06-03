@@ -35,8 +35,9 @@ def _is_fatal_error(e, model):
     if model.known_name == 'titan_premier':
         if 'expected maxLength: 150000' in str(e):
             return False
-    if model.known_name == 'Llama3.1':
+    if model.known_name in  ['Llama3.1', "cohere-v1"]:
         if 'Too many tokens,' in str(e):
+            sleep(model.delay_time*1.5)
             return False
     if model.known_name == 'gpt-3.5-turbo':
         if "This model's maximum context length is 16385" in str(e):
@@ -61,7 +62,9 @@ def get_models():
               'gemini-2.5-flash',
               'Claude3.7',
               'mistral-7b', # consitently get valdation error
-              'mistral-small' # consitently get valdation error
+              'mistral-small', # consitently get valdation error
+              #'deepseek-r1' # could not make it work
+              'cohere-v1'
               ]
     avaliable_models = [model.known_name for model in AVAILABLE_MODELS]
     for model in run_on:

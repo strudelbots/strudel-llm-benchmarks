@@ -327,6 +327,28 @@
             },
             "latency": 9.123943,
             "file_summary": " This Python file is a part of PyTorch's Autograd Optimization and Tracing (AOT) module. It contains various functions and classes used for automatic differentiation, functionalization, and compilation of PyTorch tensors and functions. The main functionality of the file can be summarized as follows:\n\n1. The file imports necessary modules and libraries for autograd, including torch, torch.nn, and various utility functions.\n2. It defines several constants, variables, and functions for handling input data, metadata mutations, and outputs aliasing inputs or intermediates.\n3. It contains the `aot_function` function, which is used to trace and compile a given PyTorch function or module using PyTorch's dispatch mechanism. This function takes the function or module, forward and backward compilers, a partitioner, and optional decompositions as arguments. It returns a compiled version of the function or module.\n4. It also contains the `aot_module` function, which is a wrapper around `aot_function` that is used to trace and compile PyTorch modules. This function takes the module, input arguments, and optional arguments as arguments and returns a compiled version of the module.\n5. The file also includes several helper functions and classes for handling various aspects of autograd, such as input and output processing, metadata collection, and view and mutation handling.\n\nOverall, the main functionality of the file is to provide a way to trace, compile, and functionalize PyTorch functions and modules for automatic differentiation and optimization."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_functorch/aot_autograd.py",
+            "number_of_lines": 1703,
+            "project_name": "pytorch",
+            "file_summary": "The code defines several functions for compiling PyTorch models using Ahead-of-Time (AOT) Autograd. The main functionality is the ability to trace and compile models into optimized functions or modules, with options for compiling both forward and backward passes. This process involves flattening the input arguments, creating dispatcher functions, and compiling them using provided compiler functions. The compiled functions aim to improve the performance of the models while retaining the eager behavior.",
+            "total_tokens": 17839,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.488042
         }
     },
     "/torch/fx/graph.py": {
@@ -637,6 +659,28 @@
             },
             "latency": 7.007855,
             "file_summary": " This Python file defines a class named `Graph` which represents an intermediate representation (IR) of a Python function. The main functionality of the file can be summarized as follows:\n\n1. The `Graph` class is used to represent an IR of a Python function. It consists of a list of nodes, each representing a call site or other syntactic constructs in the function.\n2. The class provides methods to create new nodes in the graph, such as `create_node` for creating a new node with a given operation, target, arguments, and keywords.\n3. The class also provides methods to manipulate the graph, such as `inserting_before` and `inserting_after`, which allow you to set the insertion point for new nodes in the graph.\n4. The `python_code` method generates Python code from the `Graph` representation.\n5. The file also includes various utility functions and classes, such as `_PyTreeCodeGen` for handling PyTree information, `_FindNodesLookupTable` for fast queries, and various decorators and utilities for code generation and formatting.\n\nOverall, the main functionality of the file is to provide a way to represent and manipulate the IR of a Python function, and to generate Python code from that IR."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/fx/graph.py",
+            "number_of_lines": 1989,
+            "project_name": "pytorch",
+            "file_summary": "The given python file defines a Graph class and its functionalities. The Graph class represents a computational graph and has methods to manipulate the graph, such as adding, copying, and removing nodes. It also has methods to generate Python code from the graph and vice versa. The file also defines helper functions for code generation and handling the nodes in the graph.",
+            "total_tokens": 18407,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.27983
         }
     },
     "/tools/linter/adapters/workflow_consistency_linter.py": {
@@ -967,6 +1011,28 @@
             },
             "latency": 1.193878,
             "file_summary": " The given Python file, named \"workflow\\_consistency\\_linter.py\", is designed to check for consistency of jobs between different GitHub workflows. It loads YAML files specified as arguments, extracts jobs with the same sync-tag, and ensures that the code for each job matches the baseline job with the same sync-tag. If any inconsistency is found, an error message is printed to the console."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/linter/adapters/workflow_consistency_linter.py",
+            "number_of_lines": 134,
+            "project_name": "pytorch",
+            "file_summary": "The Python script analyzes GitHub workflow files (with the YAML format) to check the consistency of jobs with a specific 'sync-tag'. It compares the jobs' content, ignoring some fields like 'if' and 'with['test-matrix']', and ensures they match a baseline job definition. Any inconsistencies are reported as errors using the LintMessage class and JSON output.",
+            "total_tokens": 1131,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.113629
         }
     },
     "/torch/fx/experimental/migrate_gradual_types/constraint.py": {
@@ -1298,6 +1364,28 @@
             },
             "latency": 4.802781,
             "file_summary": " The given Python file defines a set of classes and functions for representing and manipulating constraints related to tensors and their dimensions. These constraints include binary operations, greatest upper bounds, can reshape, index select, transpose, and getting item from a tensor. The constraints are represented as instances of various subclasses of the Constraint class, such as BinaryConstraint, TGreatestUpperBound, CanReshape, IndexSelect, and Transpose. The file also includes helper functions for checking if a constraint is an algebraic expression or a boolean expression."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/fx/experimental/migrate_gradual_types/constraint.py",
+            "number_of_lines": 644,
+            "project_name": "pytorch",
+            "file_summary": "The Python script defines several classes representing different constraint types, such as conjunctions, disjunctions, binary constraints, and tensor constraints, along with helper functions for creating and evaluating these constraints. These constraints seem to be focused on describing relationships between tensors and their dimensions. The script also defines variable classes like TVar, DVar, and BVar for representing tensor, dimension, and boolean variables.",
+            "total_tokens": 4343,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.728353
         }
     },
     "/torch/nn/modules/rnn.py": {
@@ -1608,6 +1696,28 @@
             },
             "latency": 7.711636,
             "file_summary": " This Python file defines several classes for recurrent neural networks (RNNs) using PyTorch. The main classes are `RNNBase`, `RNN`, `LSTM`, and `GRU`, which correspond to base RNN, vanilla RNN, Long Short-Term Memory (LSTM), and Gated Recurrent Unit (GRU) networks, respectively. The file also includes a `RNNCellBase` class, which is a base class for defining RNN cells.\n\nThe `RNNBase` class is a base class for RNN modules, providing common functionality such as initialization and utility methods for parameter storage management. It does not implement the forward method.\n\nThe `RNN`, `LSTM`, and `GRU` classes inherit from `RNNBase` and define the forward pass for their respective RNN architectures. The `RNN` class implements a simple Elman RNN with tanh or ReLU non-linearity. The `LSTM` and `GRU` classes implement long short-term memory and gated recurrent unit networks, respectively, with their specific update rules.\n\nThe file also includes helper functions for applying permutations to tensors and deprecated functions that are being replaced by the `index_select` function. Additionally, it defines some constants and properties for the RNN classes."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/modules/rnn.py",
+            "number_of_lines": 1826,
+            "project_name": "pytorch",
+            "file_summary": "The given python file defines several classes of Recurrent Neural Networks (RNN) layers and cells such as RNN, LSTM, GRU, RNNCell, LSTMCell and GRUCell. These classes allow users to construct deep learning models with recurrent connections.",
+            "total_tokens": 19729,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.182031
         }
     },
     "/torch/nn/utils/parametrizations.py": {
@@ -1938,6 +2048,28 @@
             },
             "latency": 2.688132,
             "file_summary": " The given Python file defines functions for applying orthogonal, weight normal, and spectral norm transformations to the weights of neural networks. These transformations help in stabilizing the training of discriminators in Generative Adversarial Networks (GANs) by reducing the Lipschitz constant of the model. The file includes classes and functions for computing orthogonal matrices using different methods like matrix exponentiation, Cayley map, and Householder reflection, as well as functions for weight normalization and spectral normalization. The functions are registered as parametrizations for PyTorch modules to be applied to the specified weight parameters."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/utils/parametrizations.py",
+            "number_of_lines": 629,
+            "project_name": "pytorch",
+            "file_summary": "The code defines three functions, orthogonal, weight_norm, and spectral_norm, which add constraints to the parameters of a PyTorch module. These constraints help stabilize the training process. orthogonal applies an orthogonal or unitary parametrization to a matrix or batch of matrices, weight_norm decouples the magnitude of a weight tensor from its direction, and spectral_norm applies spectral normalization to a parameter, which helps reduce the Lipschitz constant of the model.",
+            "total_tokens": 6864,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.992194
         }
     },
     "/torch/_inductor/fx_passes/decompose_mem_bound_mm.py": {
@@ -2268,6 +2400,28 @@
             },
             "latency": 1.301499,
             "file_summary": " This Python file is a part of a deep learning framework, specifically for Torch, and it defines functions for decomposing batched matrix multiplication (BMM) and matrix multiplication (MM) operations based on their input shapes and sizes. The main functionality of the file includes defining functions for checking if the operations should be decomposed based on their input shapes and device, and registering graph patterns for BMM, addmm, and MM operations to replace them with decomposed versions if certain conditions are met."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/fx_passes/decompose_mem_bound_mm.py",
+            "number_of_lines": 161,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named decompose_mem_bound_mm.py, focuses on optimizing memory-bound matrix operations in PyTorch. It defines functions to check if certain matrix multiplications should be decomposed and replaced with more memory-efficient alternatives. The script patterns matrix multiplication operations using torch.fx and replaces them with decomposed implementations when specific conditions are met, logging the transformations.",
+            "total_tokens": 1908,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.28408
         }
     },
     "/torch/autograd/profiler.py": {
@@ -2598,6 +2752,28 @@
             },
             "latency": 3.938856,
             "file_summary": " The main functionality of the given Python file is to provide profiling capabilities for PyTorch autograd operations. It includes context managers for CPU, ITT, and NVTX profiling, as well as functions for recording functions, emitting ITT and NVTX ranges, and loading NVprof traces. The file also includes a KinetoStepTracker class for managing step counts for different requesters and triggering kineto steps when necessary."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/autograd/profiler.py",
+            "number_of_lines": 1209,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named profiler.py, is a module that offers several profiling tools for analyzing the performance of PyTorch operations and functions. It defines classes and functions that enable users to measure and examine the execution time, memory usage, and other metrics of PyTorch code blocks and functions. The primary purpose is to help developers optimize their models and identify performance bottlenecks.",
+            "total_tokens": 11722,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.500569
         }
     },
     "/torch/distributed/tensor/parallel/fsdp.py": {
@@ -2928,6 +3104,28 @@
             },
             "latency": 4.465875,
             "file_summary": " This Python file is a part of PyTorch's Fully Sharded Data Parallel (FSDP) implementation. It provides functions to handle and manipulate ShardedTensors and DTensors, which are specialized tensor types for distributed deep learning training using FSDP. The main functionality of the file includes:\n\n1. Defining helper functions to extract tensor information and create ShardMetadata and ShardedTensorMetadata.\n2. Implementing functions to chunk tensors and DTensors for distributed processing.\n3. Creating an extension class `DTensorExtensions` for handling FSDP-specific tensor operations, such as flattening and unflattening."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/tensor/parallel/fsdp.py",
+            "number_of_lines": 391,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, fsdp.py, is part of the PyTorch library and extends the functionality of distributed training. It defines functions for managing and transforming sharded tensors, which are tensors distributed across multiple devices or nodes. The script enables operations like chunking tensors, converting tensors to a sharded format, and gathering sharded tensors from different devices. Additionally, it introduces the DTensorExtensions class for handling tensor flattening and unflattening, as well as providing methods for chunking and gathering tensors in distributed settings.",
+            "total_tokens": 3819,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.940518
         }
     },
     "/tools/stats/upload_utilization_stats/upload_utilization_stats.py": {
@@ -3258,6 +3456,28 @@
             },
             "latency": 2.010047,
             "file_summary": " This Python script is designed to process utilization logs, generate segments based on detected Python commands, convert the log data into a database model, and upload the data to an S3 bucket. The script uses the `argparse` library to accept command-line arguments and the `pandas` library for data processing. The main functionality is encapsulated in the `UploadUtilizationData` class, which handles downloading log data from an S3 bucket, converting it to log models, generating segments, converting to database models, and uploading the data back to an S3 bucket."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/stats/upload_utilization_stats/upload_utilization_stats.py",
+            "number_of_lines": 444,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, upload_utilization_stats.py, is designed to process utilization statistics data for CI workflows. It converts the data from log files to a database model and uploads the converted data to an S3 bucket. The script also includes functionality for segment generation, error handling, and argument parsing for workflow and job details.",
+            "total_tokens": 3921,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.470854
         }
     },
     "/torch/_inductor/cpp_builder.py": {
@@ -3588,6 +3808,28 @@
             },
             "latency": 5.797559,
             "file_summary": " The main functionality of the given Python file is to build C++ shared libraries or modules using various compilers (gcc, clang, Intel Compiler, etc.) on both Windows and Linux platforms. The file provides functions to search for and initialize the appropriate compiler, check if required libraries and dependencies are available, and build the C++ code using the specified build options. The build options include compiler flags, include directories, libraries, and other parameters. The file also supports precompiled headers and automatic generation of precompiled header files. Additionally, it provides functions to save the build commands to CMake files for easier integration with CMake projects."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/cpp_builder.py",
+            "number_of_lines": 1752,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, `cpp_builder.py`, is a module designed for cross-platform C++ code compilation. It defines several classes for managing C++ build options and offers methods to compile C++ source code, producing object files, shared libraries, or Python module extensions. The script supports different compilers and platforms and can be used to create Facebook Code (FBCode) builds.",
+            "total_tokens": 17262,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.787817
         }
     },
     "/torch/distributed/fsdp/_dynamo_utils.py": {
@@ -3918,6 +4160,28 @@
             },
             "latency": 3.31279,
             "file_summary": " This Python file, \"_dynamo\\_utils.py\", defines a function `_annotate_modules_for_dynamo` that annotates submodules in a given PyTorch `nn.Module` object, except those in a given set of ignored modules. It sets flags on these submodules to indicate that they are managed by PyTorch's Fully Sharded Data Parallel (FSDP) and saves the `use_orig_params` setting passed to the FSDP constructor. This is done to enable Dynamo, a deep learning compiler, to treat the wrapped modules inside FSDP as unspecialized and capture the module code more functionally, allowing for overlapping of communication and computation during backward propagation."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/fsdp/_dynamo_utils.py",
+            "number_of_lines": 44,
+            "project_name": "pytorch",
+            "file_summary": "The `_dynamo_utils.py` file contains a function called `_annotate_modules_for_dynamo` which is used to annotate submodules of a given `nn.Module` to indicate they are managed by FSDP and to save the `use_orig_params` setting. This is used by Dynamo, a tool that traces and optimizes PyTorch code, to handle modules wrapped by PyTorch's Fully Sharded Data Parallelism (FSDP) mechanism.",
+            "total_tokens": 745,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 8.553057
         }
     },
     "/torch/distributions/studentT.py": {
@@ -4248,6 +4512,28 @@
             },
             "latency": 1.106544,
             "file_summary": " The given Python file defines a custom distribution class named \"StudentT\" based on the Student's t-distribution using PyTorch. This class allows users to create instances of the distribution with specified degrees of freedom, mean, and scale. The main functionality of the file is to implement the Student's t-distribution with properties like mean, mode, and variance, and methods such as sampling and log probability calculation."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributions/studentT.py",
+            "number_of_lines": 121,
+            "project_name": "pytorch",
+            "file_summary": "The Python script defines a class called StudentT which represents a Student's t-distribution in the realm of statistics. It has methods to sample from the distribution, calculate various properties like mean, mode, and variance, and also provides utilities to work with the batch of distributions. The distribution is parameterized by degree of freedom, mean, and scale.",
+            "total_tokens": 1341,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.441128
         }
     },
     "/torch/distributed/rpc/functions.py": {
@@ -4578,6 +4864,28 @@
             },
             "latency": 1.313282,
             "file_summary": " This Python file defines a decorator named `async_execution` that can be used to indicate that a function can run asynchronously on the RPC callee in PyTorch. The decorator returns a wrapper function that, when applied to a function, allows the function to return a `Future` object, which can be processed as a callback on the callee side. The main functionality of the file is to enable asynchronous execution of functions in PyTorch RPC calls."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/rpc/functions.py",
+            "number_of_lines": 170,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python code defines a decorator called async_execution which allows a function's execution to run asynchronously on the RPC callee. It is designed to work with functions that return a Future object, enabling the function to pause and resume execution for certain operations. The decorator ensures that the callee processes the Future object returned by the function and sends the value back as the RPC response.",
+            "total_tokens": 1978,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.228361
         }
     },
     "/torch/jit/_dataclass_impls.py": {
@@ -4909,6 +5217,28 @@
             },
             "latency": 1.456935,
             "file_summary": " This Python file is a part of PyTorch library and provides functions for synthesizing magic methods for JIT-compiled dataclasses. It defines various helper functions to generate the implementation of special methods like `__init__`, `__repr__`, `__hash__`, `__eq__`, `__ne__`, `__lt__`, `__le__`, `__gt__`, and `__ge__` based on the defined fields in the dataclass. The generated methods handle assignment, comparison, and initialization of the dataclass instances."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/jit/_dataclass_impls.py",
+            "number_of_lines": 191,
+            "project_name": "pytorch",
+            "file_summary": ": Sure! The provided Python script appears to be focused on synthesizing magic methods for JIT-compiled dataclasses in PyTorch. It defines functions to create ParsedDef instances, which are likely used in the TorchScript JIT compilation process. These functions generate the implementations of special methods like __init__, __repr__, and various comparison methods.",
+            "total_tokens": 1844,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.141503
         }
     },
     "/tools/linter/adapters/shellcheck_linter.py": {
@@ -5239,6 +5569,28 @@
             },
             "latency": 1.33592,
             "file_summary": " The main functionality of the file is to implement a Python script named \"shellcheck\\_linter.py\" which serves as a runner for the Shellcheck linter tool. It accepts one or more filenames as arguments, checks their Shell script syntax using Shellcheck, and outputs the linting results in JSON format. If Shellcheck is not installed, the script will print an error message and exit."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/linter/adapters/shellcheck_linter.py",
+            "number_of_lines": 121,
+            "project_name": "pytorch",
+            "file_summary": "The Python script 'shellcheck_linter.py' appears to be a linter for shell scripts. It uses the 'shellcheck' command-line tool to analyze shell script files and outputs JSON-formatted messages containing information about any linting issues found. The script appears to be designed to facilitate running shellcheck and handle the output in a structured manner.",
+            "total_tokens": 893,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.120184
         }
     },
     "/torch/distributed/optim/post_localSGD_optimizer.py": {
@@ -5570,6 +5922,28 @@
             },
             "latency": 1.149648,
             "file_summary": " The given Python file defines a custom optimizer named `PostLocalSGDOptimizer` that wraps an arbitrary `torch.optim.Optimizer` and implements post-local SGD algorithm. After a warm-up stage, it averages parameters periodically after the local optimizer is applied using a provided `averagers.ModelAverager` instance."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/optim/post_localSGD_optimizer.py",
+            "number_of_lines": 111,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a PostLocalSGDOptimizer class that wraps any torch.optim.Optimizer to perform post-local Stochastic Gradient Descent (SGD) optimization. It adds functionality to run local optimization steps and then periodically average the parameters using a provided averager instance. This approach is designed for distributed training and includes methods for handling optimizer and averager states.",
+            "total_tokens": 1303,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.096501
         }
     },
     "/torchgen/operator_versions/gen_mobile_upgraders.py": {
@@ -5900,6 +6274,28 @@
             },
             "latency": 1.572122,
             "file_summary": " The given Python file, named \"gen\\_mobile\\_upgraders.py\", generates C++ code for PyTorch mobile upgraders. It defines various classes and templates to construct and register upgraders for PyTorch operators based on their instruction lists, constants, types, and operators. The main functionality involves reading upgrader data, constructing C++ code templates, and writing the generated code to a file."
+        },
+        "cohere-v1": {
+            "file_name": "/torchgen/operator_versions/gen_mobile_upgraders.py",
+            "number_of_lines": 390,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, gen_mobile_upgraders.py, is responsible for generating C++ source code for mobile upgrader functionality in PyTorch. It processes upgrader information, sorts it, and writes it into a designated C++ file, creating a mapping of operator names to their respective upgraders. The generated C++ file includes functions to upgrade mobile bytecode, improving the compatibility of PyTorch mobile operations.",
+            "total_tokens": 3678,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.643719
         }
     },
     "/torch/nn/functional.py": {
@@ -6146,6 +6542,28 @@
             },
             "latency": 14.365204,
             "file_summary": "The file \"functional.py\" is a core component of PyTorch's neural network functionality, providing implementations of various neural network operations as functional interfaces. It contains implementations for convolution operations, pooling functions, activation functions, loss functions, attention mechanisms, and other essential neural network building blocks. The file serves as the backbone for PyTorch's nn.functional module, allowing users to apply neural network operations directly to tensors without instantiating module objects."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/functional.py",
+            "number_of_lines": 6423,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a wide range of functions for various neural network layers and operations, including convolutions, pooling, activations, normalizations, losses, upsampling, and attention mechanisms. These functions enable the construction and training of complex neural networks.",
+            "total_tokens": 65944,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 11.658706
         }
     },
     "/benchmarks/dynamo/runner.py": {
@@ -6476,6 +6894,28 @@
             },
             "latency": 4.310613,
             "file_summary": " The main functionality of the given Python file is to provide a script for running and analyzing benchmarks using PyTorch Dynamo. The script supports both training and inference modes, and it generates commands for different compilers, runs them, and parses the results. The results are then used to generate CSV files, graphs, and comments for GitHub issues. The script also supports options for generating only the commands, visualizing logs, or updating the GitHub dashboard. The file also includes functions for handling command-line arguments, generating dropdown comments, and archiving logs."
+        },
+        "cohere-v1": {
+            "file_name": "/benchmarks/dynamo/runner.py",
+            "number_of_lines": 1546,
+            "project_name": "pytorch",
+            "file_summary": "The given Python script, runner.py, is a wrapper script that facilitates benchmarking and performance analysis for different suites, devices, data types, and compilers. It generates commands for running benchmarks, parses the results, and generates visual summaries in the form of CSV files and graphs. Additionally, it archives the results and provides functionality to detect and comment on regressions on a GitHub issue.",
+            "total_tokens": 14040,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.863896
         }
     },
     "/benchmarks/transformer/sdpa.py": {
@@ -6806,6 +7246,28 @@
             },
             "latency": 1.660322,
             "file_summary": " This Python file is for benchmarking the scaled dot product attention (SDPA) function in PyTorch using the SDPA kernel from the TorchINDUCTOR library. The main functionality includes defining helper functions for benchmarking PyTorch functions, creating experiment configurations, running single experiments, and printing or writing the results to a CSV file. The script generates various experiment configurations based on batch sizes, number of heads, sequence lengths, embedding dimensions, data types, and causality, and then runs each experiment to measure the forward and backward pass times and calculate TFLOPS."
+        },
+        "cohere-v1": {
+            "file_name": "/benchmarks/transformer/sdpa.py",
+            "number_of_lines": 296,
+            "project_name": "pytorch",
+            "file_summary": "The Python script 'sdpa.py' is focused on benchmarking the performance of scaled dot product attention, a key component in transformer models. It runs experiments with various configurations, measuring forward and backward pass times and TFLOPS, and presents the results in a tabular format. The script also has the ability to write these results to a CSV file for further analysis.",
+            "total_tokens": 2584,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.239675
         }
     },
     "/tools/code_coverage/package/oss/init.py": {
@@ -7137,6 +7599,28 @@
             },
             "latency": 1.199338,
             "file_summary": " This Python file, named \"init.py\", is responsible for initializing and parsing command-line arguments for running tests. It imports necessary modules and defines functions for creating folders, parsing arguments, and getting test lists. The main functionality includes creating folders if they don't exist, adding and parsing command-line arguments, cleaning up previous results, and returning the options, test list, and interested folders."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/code_coverage/package/oss/init.py",
+            "number_of_lines": 169,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, init.py, is responsible for initializing and configuring the testing environment. It sets up the necessary folders, parses command-line arguments, and prepares the test lists for both C++ and Python tests. Additionally, it exports some useful information about the testing environment, such as the PyTorch folder path and compiler type.",
+            "total_tokens": 1596,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.220344
         }
     },
     "/functorch/notebooks/_src/plot_ensembling.py": {
@@ -7467,6 +7951,28 @@
             },
             "latency": 1.117956,
             "file_summary": " The main functionality of the file is to demonstrate how to use model ensembling and vectorization with PyTorch's vmap function. The script creates an ensemble of SimpleCNN models, generates some dummy data, and shows how to obtain predictions using both a for-loop and vectorization with vmap. The vmap function is used to speed up the ensemble prediction process by eliminating the need for a for-loop."
+        },
+        "cohere-v1": {
+            "file_name": "/functorch/notebooks/_src/plot_ensembling.py",
+            "number_of_lines": 124,
+            "project_name": "pytorch",
+            "file_summary": ": The code demonstrates model ensembling using PyTorch, combining predictions from multiple instances of a simple CNN model. It showcases two methods for generating predictions: using different minibatches for each model and applying the same minibatch to all models. The code also explains how to utilize the vmap function from the functorch library to vectorize and optimize the ensembling process.",
+            "total_tokens": 1530,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.184995
         }
     },
     "/torch/_functorch/_activation_checkpointing/knapsack.py": {
@@ -7797,6 +8303,28 @@
             },
             "latency": 3.059847,
             "file_summary": " The given Python file, named \"knapsack.py\", contains three functions for solving the Knapsack problem with different algorithms: greedy, integer linear programming (ILP), and dynamic programming (DP). The main functionality of each function is as follows:\n\n1. `greedy_knapsack`: This function implements the greedy algorithm for the Knapsack problem, where items are selected based on the ratio of runtime to memory in descending order until the maximum memory limit is reached.\n\n2. `ilp_knapsack`: This function uses Integer Linear Programming (ILP) to find the optimal solution for the Knapsack problem. It imports the required libraries and sets up the constraints and objective function to find the items that can be saved and those that need to be recomputed.\n\n3. `dp_knapsack`: This function implements the dynamic programming (DP) algorithm for the Knapsack problem. It quantizes the memory and runtimes, initializes the DP table, and updates it iteratively to find the maximum runtime that can be achieved within the given memory constraint. The function then backtracks to find the items included in the knapsack."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_functorch/_activation_checkpointing/knapsack.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The code implements three different algorithms for the knapsack problem: a greedy algorithm, an integer linear programming (ILP) approach using SciPy, and a pseudopolynomial dynamic programming (DP) algorithm using PyTorch. It finds the optimal selection of items to maximize runtime or minimize recomputation within a given memory budget.",
+            "total_tokens": 1318,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.466271
         }
     },
     "/torch/_functorch/pytree_hacks.py": {
@@ -8127,6 +8655,28 @@
             },
             "latency": 1.310805,
             "file_summary": " The Python file \"pytree\\_hacks.py\" is a deprecated module from the Torch library, which includes two functions: \"tree\\_map\\_\" and \"treespec\\_pprint\". These functions are used for recursively applying a function to all the leaves of a nested data structure and pretty-printing the tree structure, respectively. However, the use of this module is discouraged, and users are advised to use the equivalent functions in the \"torch.utils._pytree\" module instead."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_functorch/pytree_hacks.py",
+            "number_of_lines": 24,
+            "project_name": "pytorch",
+            "file_summary": "The file pytree_hacks.py imports functions from torch.utils._pytree and re-exports them with a deprecation warning, advising users to use torch.utils._pytree directly instead. These functions, tree_map_ and treespec_pprint, are part of the module's interface and are related to mapping operations and tree specifications.",
+            "total_tokens": 348,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.095286
         }
     },
     "/torch/distributed/elastic/agent/server/health_check_server.py": {
@@ -8457,6 +9007,28 @@
             },
             "latency": 3.109397,
             "file_summary": " The given Python file, named \"health_check_server.py\", defines a class named \"HealthCheckServer\" that acts as an interface for a health check monitoring server. Users can create an instance of this class by providing a callback function, a port number, and a timeout value. The main functionality of the file is to create and manage a health check server object, although the provided code does not actually start or stop any server, as indicated by the \"start\" and \"stop\" methods' empty implementations."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/elastic/agent/server/health_check_server.py",
+            "number_of_lines": 66,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script defines a HealthCheckServer class and a create_healthcheck_server function. The class represents a health check monitoring server with an unsupported start method and a stop method. The function creates an instance of HealthCheckServer with the specified alive_callback, port, and timeout arguments. The main functionality seems to be related to health checking and server management.",
+            "total_tokens": 561,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.447164
         }
     },
     "/torch/distributed/algorithms/model_averaging/utils.py": {
@@ -8787,6 +9359,28 @@
             },
             "latency": 1.751336,
             "file_summary": " The given Python file, named \"utils.py\", defines functions for averaging parameters of a PyTorch model or optimizer across multiple processes using distributed computing. The \"average\\_parameters\" function takes an iterator of PyTorch parameters and a process group, averages the parameters by flattening them into a contiguous buffer, and then synchronizes the allreduce operation to ensure consistency among processes. The \"get\\_params\\_to\\_average\" function filters out the parameters that do not contain any gradients. The \"average\\_parameters\\_or\\_parameter\\_groups\" function is a wrapper that calls \"average\\_parameters\" with either the model parameters or optimizer parameter groups."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/algorithms/model_averaging/utils.py",
+            "number_of_lines": 94,
+            "project_name": "pytorch",
+            "file_summary": "The Python script performs distributed training parameter averaging. It averages the parameters of a model or optimizer's parameter groups across multiple processes and supports different parameter types. The averaging function synchronizes parameters efficiently using torch.distributed and considers different data types, ensuring proper handling.",
+            "total_tokens": 921,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.957509
         }
     },
     "/torch/_inductor/autotune_process.py": {
@@ -9117,6 +9711,28 @@
             },
             "latency": 3.490656,
             "file_summary": " The given Python file defines classes and functions for benchmarking various types of kernels, including GPU and CPU kernels written in CUDA, Cpp, and Triton. The main functionality of the file is to launch and interact with a benchmarking subprocess, which runs the benchmarking logic in a separate process. The subprocess receives work items from the main process, executes the benchmark, and returns the results back to the main process. The file also includes utilities for managing the subprocess pool, handling different device types, and serializing objects for communication between processes."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/autotune_process.py",
+            "number_of_lines": 896,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, autotune_process.py, is a module for automated kernel tuning. It defines classes for managing benchmarking subprocesses, such as TuningProcess and TuningProcessPool, which allow for parallel kernel benchmarking across devices. Additionally, it contains classes for requesting benchmarks, like TritonBenchmarkRequest and CUDABenchmarkRequest, which facilitate the benchmarking of Triton kernels and CUDA kernels, respectively, by creating functions for kernel execution. The script also includes utility functions for obtaining tuning process pools and performing benchmarks in separate processes.",
+            "total_tokens": 7543,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.497892
         }
     },
     "/torch/_inductor/codegen/rocm/rocm_benchmark_request.py": {
@@ -9447,6 +10063,28 @@
             },
             "latency": 4.381631,
             "file_summary": " This Python file defines a class named `ROCmBenchmarkRequest` that is used for benchmarking ROCm (Radeon Open Compute) kernels in PyTorch. The main functionality of the file includes:\n\n1. Defining the `ROCmBenchmarkRequest` class that inherits from `GPUDeviceBenchmarkMixin` and `BenchmarkRequest`. This class is responsible for managing the kernel name, input and output tensor metadata, extra arguments, source code, and workspace size for ROCm benchmarking.\n2. Implementing methods such as `precompile()`, `make_run_fn()`, `update_workspace_size()`, `ensure_dll_loaded()`, and `cleanup_run_fn()` to handle precompilation, creating a run function, updating workspace size, loading the DLL, and cleaning up the run function, respectively.\n3. Utilizing the `ROCmCodeCache` to write, compile, and load the source code from the cache as needed."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_benchmark_request.py",
+            "number_of_lines": 147,
+            "project_name": "pytorch",
+            "file_summary": "The python script defines a class ROCmBenchmarkRequest that facilitates the benchmarking of kernels on ROCm devices. It prepares the necessary artifacts for kernel execution, including precompiling the kernel, and provides a method to create a runnable function for the kernel with a specific workspace size. Additionally, it handles the loading and cleanup of the kernel DLL.",
+            "total_tokens": 1548,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.358161
         }
     },
     "/torch/_higher_order_ops/invoke_subgraph.py": {
@@ -9777,6 +10415,28 @@
             },
             "latency": 4.256182,
             "file_summary": " The given Python file is a part of PyTorch implementation, specifically for the InvokeSubgraph higher-order operator (HOP). The main functionality of the file can be summarized as follows:\n\n1. The file defines the InvokeSubgraphHOP class, which is a custom higher-order operator that handles the invocation of a subgraph with a given identifier and operands.\n2. The file also includes functions for creating and tracing the forward and backward graphs of the subgraph, as well as functions for registering and caching the subgraph in different modes.\n3. The file also includes the InvokeSubgraphAutogradOp class, which is an autograd function op that stashes the backward graph in the context while running forward.\n\nIn summary, the main functionality of the file is to define and implement the InvokeSubgraph higher-order operator, which is used to invoke a subgraph with a given identifier and operands, and to trace the forward and backward graphs of the subgraph for autograd purposes."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_higher_order_ops/invoke_subgraph.py",
+            "number_of_lines": 354,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named invoke_subgraph.py, defines a higher-order operator (HOP) called InvokeSubgraphHOP and its corresponding functions for invoking a subgraph in a neural network. This file enables compiling and reusing the subgraph, which is a portion of a larger graph, to optimize the network's performance. It also includes autograd functionality for automatic differentiation.",
+            "total_tokens": 3418,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 12.699837
         }
     },
     "/tools/code_coverage/package/oss/utils.py": {
@@ -10108,6 +10768,28 @@
             },
             "latency": 1.215177,
             "file_summary": " This Python file, named \"utils.py\", provides utility functions for obtaining the paths to various folders and files related to a project, including binary folders, shared libraries, and Python scripts. It also includes functions for detecting the compiler type and cleaning up generated files. The main functionality is to support the execution of tests for a project by locating and running the appropriate binary files or scripts."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/code_coverage/package/oss/utils.py",
+            "number_of_lines": 97,
+            "project_name": "pytorch",
+            "file_summary": "The Python script provides several utility functions for managing test binaries and shared libraries in a PyTorch development environment. It helps with tasks like retrieving binary folders, detecting compiler types, running Python tests, and cleaning up GCDA files. Additionally, it offers functions to get shared library paths and LLVM tool paths, aiding in test execution and code coverage analysis.",
+            "total_tokens": 1086,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.044797
         }
     },
     "/benchmarks/inference/server.py": {
@@ -10438,6 +11120,28 @@
             },
             "latency": 2.390819,
             "file_summary": " This Python file contains the implementation of two processes, FrontendWorker and BackendWorker, for measuring the performance of a deep learning model using multiple threads and GPU utilization. The FrontendWorker sends requests to the BackendWorker, measures the latency and throughput of those requests, and records GPU utilization. The BackendWorker receives tensors from the request queue, performs computation, and returns the results back to the response queue. The main functionality of the file is to test and measure the performance of a deep learning model using multiple threads and GPU utilization."
+        },
+        "cohere-v1": {
+            "file_name": "/benchmarks/inference/server.py",
+            "number_of_lines": 399,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script appears to be a performance testing framework for a GPU-based deep learning model. It employs two worker processes, a frontend worker responsible for sending data requests and measuring metrics like throughput and latency, and a backend worker that processes the requests, performs computations using the model, and returns responses. The script also collects metrics like GPU utilization and execution times, and eventually saves the results in a CSV file.",
+            "total_tokens": 3407,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.611011
         }
     },
     "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py": {
@@ -10768,6 +11472,28 @@
             },
             "latency": 1.424413,
             "file_summary": " The Python file \"cache\\_debug\\_microbenchmarks.py\" defines a function \"huge\\_graph\" that uses symbolic tracing with PyTorch FX to create a large graph, and then measures the time it takes to iterate over the graph's debug lines using the FxGraphHashDetails class from PyTorch's code cache module. The main functionality of the script is to perform microbenchmarks on the debug lines of the large graph for better cache debugging."
+        },
+        "cohere-v1": {
+            "file_name": "/benchmarks/dynamo/microbenchmarks/cache_debug_microbenchmarks.py",
+            "number_of_lines": 33,
+            "project_name": "pytorch",
+            "file_summary": "The Python script cache_debug_microbenchmarks.py benchmarks the performance of iterating over a large number of FX nodes in a graph by creating a synthetic huge graph and measuring the time it takes to execute it. The script calculates and prints the time in seconds to iterate over all the nodes and provides the performance in terms of nodes/second. This is achieved by utilizing the torch.fx and timeit modules.",
+            "total_tokens": 366,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.218102
         }
     },
     "/torch/distributions/independent.py": {
@@ -11098,6 +11824,28 @@
             },
             "latency": 1.126793,
             "file_summary": " The given Python file defines a custom distribution named \"Independent\" that reinterprets some batch dimensions of a base distribution as event dimensions. This allows changing the shape of the result of methods like \"log\\_prob\" and is useful for creating diagonal distributions with the same shape as multivariate distributions. The Independent distribution takes a base distribution and a number of batch dimensions to reinterpret as event dimensions as arguments."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributions/independent.py",
+            "number_of_lines": 130,
+            "project_name": "pytorch",
+            "file_summary": "The Python script defines a class called Independent that's inherited from the Distribution class. It's main functionality is to reinterpret some of the batch dimensions of a given distribution object as event dimensions, essentially altering the shape of the distribution's log probability. This is useful for tasks like changing the shape of multivariate distributions to make them interchangeable with other shapes.",
+            "total_tokens": 1361,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 30,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.079486
         }
     },
     "/torch/_export/db/examples/specialized_attribute.py": {
@@ -11428,6 +12176,28 @@
             },
             "latency": 1.416515,
             "file_summary": " The given Python file, \"specialized_attribute.py\", defines a custom PyTorch module named `SpecializedAttribute` where its attributes are represented by an Enum class `Animal`. The main functionality of this file is to create a PyTorch model with a specialized attribute (represented by the Enum class `Animal.COW`) that affects the forward pass behavior of the model. If the specialized attribute is set to `Animal.COW`, the forward pass will perform a squaring operation with an additional constant value. Otherwise, a `ValueError` is raised."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_export/db/examples/specialized_attribute.py",
+            "number_of_lines": 27,
+            "project_name": "pytorch",
+            "file_summary": "The Python script defines an enumerated type Animal with one attribute COW, and a class SpecializedAttribute which inherits from torch.nn.Module. The SpecializedAttribute class has two attributes a and b, and an x parameter in its constructor. The forward method defines the computation performed by the class, squaring x and adding a bias b if a equals COW, otherwise throwing an error.",
+            "total_tokens": 317,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.131671
         }
     },
     "/torch/fx/passes/backends/cudagraphs.py": {
@@ -11759,6 +12529,28 @@
             },
             "latency": 1.383342,
             "file_summary": " The given Python file, named \"cudagraphs.py\", defines a custom OperatorSupport class named `CudaGraphsSupport` for the Torch FX framework. This class is used to check if a given node in a Torch FX graph can be executed under CUDA. The `partition_cudagraphs` function takes an FX graph and its inputs as arguments and partitions the graph into sub-GraphModules that can be validly run under CUDA graphs by checking if all operations in the subgraph involve only CUDA tensors."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/fx/passes/backends/cudagraphs.py",
+            "number_of_lines": 62,
+            "project_name": "pytorch",
+            "file_summary": "The Python script cudagraphs.py is designed to partition a Torch FX graph into sub-GraphModules that can run under CUDA graphs. It utilizes the CapabilityBasedPartitioner class and a custom OperatorSupport class to determine which nodes are supported. The partition_cudagraphs function performs the graph partitioning based on CUDA capability and returns the fused graph.",
+            "total_tokens": 689,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.029425
         }
     },
     "/torch/distributed/elastic/multiprocessing/subprocess_handler/handlers.py": {
@@ -12089,6 +12881,28 @@
             },
             "latency": 1.762431,
             "file_summary": " This Python file, named \"handlers.py\", exports a function `get_subprocess_handler` that creates and returns an instance of `SubprocessHandler`. The `SubprocessHandler` is a class imported from `torch.distributed.elastic.multiprocessing.subprocess_handler.subprocess_handler` module. The function takes as arguments an entrypoint, a tuple of arguments, a dictionary of environment variables, and strings for standard output and error streams. It initializes a new `SubprocessHandler` object with these arguments and returns it. The main functionality of this file is to provide a way to spawn new subprocesses with customized configurations for distributed processing using Torch's elastic multiprocessing."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/elastic/multiprocessing/subprocess_handler/handlers.py",
+            "number_of_lines": 31,
+            "project_name": "pytorch",
+            "file_summary": "The handlers.py file appears to be a module that provides a function called get_subprocess_handler, which returns an instance of SubprocessHandler, taking several arguments such as entrypoint, args, env, stdout, stderr, and local_rank_id. This function likely facilitates the creation of subprocesses with specified configurations.",
+            "total_tokens": 347,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.972949
         }
     },
     "/torch/_inductor/autoheuristic/autoheuristic.py": {
@@ -12419,6 +13233,28 @@
             },
             "latency": 1.562306,
             "file_summary": " The given Python file, named \"autoheuristic.py\", is a part of the PyTorch AutoHeuristic framework. It defines a class named `AutoHeuristic` that allows collecting data and learning a heuristic for making choices based on given context. The framework supports collecting feedback for each choice using a `LocalFeedback` function and saving the collected data to a file. The file also includes classes for handling inconsistent metadata and exceptions, as well as a subclass `AutoHeuristicSelectAlgorithm` for kernel choice selection."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/autoheuristic/autoheuristic.py",
+            "number_of_lines": 316,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a framework called AutoHeuristic for collecting data, learning heuristics, and generating code for decision-making. It provides classes for managing feedback, choosing options based on learned heuristics, and selecting algorithms. The main purpose is to enable autotuning and kernel selection, with support for GPU-specific heuristics, while storing data for training is also implemented.",
+            "total_tokens": 2923,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.339607
         }
     },
     "/torch/nn/modules/instancenorm.py": {
@@ -12749,6 +13585,28 @@
             },
             "latency": 2.499907,
             "file_summary": " This Python file defines a set of Instance Normalization layers for PyTorch, including 1D, 2D, and 3D versions. These layers apply normalization over each channel separately for each object in a mini-batch, as described in the paper \"Instance Normalization: The Missing Ingredient for Fast Stylization\". The normalization is performed using learnable parameters if `affine` is set to True, and the mean and standard deviation are calculated per-dimension for each object in the mini-batch. The layers support lazy initialization of the `num_features` argument, and they track running statistics by default."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/modules/instancenorm.py",
+            "number_of_lines": 472,
+            "project_name": "pytorch",
+            "file_summary": "The code defines several instance normalization classes for PyTorch: InstanceNorm1d, LazyInstanceNorm1d, InstanceNorm2d, LazyInstanceNorm2d, InstanceNorm3d, and LazyInstanceNorm3d. These classes apply instance normalization to inputs of different dimensions, either lazily initializing or explicitly specifying the number of features.",
+            "total_tokens": 5324,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.744566
         }
     },
     "/tools/linter/adapters/flake8_linter.py": {
@@ -13079,6 +13937,28 @@
             },
             "latency": 1.226978,
             "file_summary": " This Python file is a script for running Flake8, a Python linter, with custom configurations and severity mappings. It allows users to specify a list of filenames to lint, as well as optional arguments for Flake8 plugins path, severity mappings, and number of retries for timed-out commands. The script also provides verbose logging and handles errors and timeouts gracefully."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/linter/adapters/flake8_linter.py",
+            "number_of_lines": 372,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named flake8_linter.py, is a wrapper for the Flake8 tool, enhancing it with features like customizable severity levels for code issues, support for plugins, and a JSON output format. It allows users to specify custom severity mappings for specific issue codes and provides an option to retry timed-out Flake8 commands.\n\nThe script defines various regular expressions and functions to process the output of the Flake8 command and structure it into structured JSON messages, which are then printed to the console.",
+            "total_tokens": 3686,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.761865
         }
     },
     "/torch/_functorch/benchmark_utils.py": {
@@ -13409,6 +14289,28 @@
             },
             "latency": 1.889123,
             "file_summary": " The main functionality of the file \"benchmark\\_utils.py\" is to provide functions for benchmarking GPU utilization and the percentage of time spent on matrix multiplication (mm) and convolution operations during the execution of a given Python function using PyTorch profiler. The file includes functions to dump chrome traces, extract and process GPU events, and compute GPU utilization and mm-conv utilization from the chrome traces."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_functorch/benchmark_utils.py",
+            "number_of_lines": 232,
+            "project_name": "pytorch",
+            "file_summary": "The Python script provides utilities for benchmarking and analyzing GPU utilization while executing functions. It helps measure the time spent on GPU computations, including matmul and convolution operations, and exports the profiling data to a Chrome trace file. The key functions enable dumping Chrome traces, extracting relevant events, and computing GPU utilization metrics.",
+            "total_tokens": 1848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.061243
         }
     },
     "/torch/xpu/_utils.py": {
@@ -13739,6 +14641,28 @@
             },
             "latency": 1.151513,
             "file_summary": " This Python file, named \"_utils.py\", defines a custom function named \"_get_device_index\". The main functionality of this file is to provide a utility function for handling device indices in PyTorch. The function takes a device argument, which can be an integer, a string representing a device type, or a PyTorch device object. It returns the device index based on the given device argument, with support for XPU and CPU devices."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/xpu/_utils.py",
+            "number_of_lines": 40,
+            "project_name": "pytorch",
+            "file_summary": "The _utils.py file defines a function _get_device_index which retrieves the device index from various input types such as integers, strings, or torch.device objects. It primarily helps with device management, ensuring the correct device index is obtained for further computations. Additionally, it has some torch utility functions imported, although they are not shown in the provided code snippet.",
+            "total_tokens": 588,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.139536
         }
     },
     "/functorch/examples/ensembling/parallel_train.py": {
@@ -14069,6 +14993,28 @@
             },
             "latency": 1.181265,
             "file_summary": " The main functionality of the file is to demonstrate the use of eager-mode vmap in PyTorch to parallelize training over multiple models. The script defines a two-layer MLP classifier, generates data for training, and implements a training step function using PyTorch's functional API and vmap. The goal is to achieve similar results as in the JAX tutorial by Will Whitney, which is cited in the file."
+        },
+        "cohere-v1": {
+            "file_name": "/functorch/examples/ensembling/parallel_train.py",
+            "number_of_lines": 152,
+            "project_name": "pytorch",
+            "file_summary": "The code demonstrates parallel training of multiple instances of a two-layer MLPClassifier model on CPU or GPU. It uses the torch library to define the models, a custom loss function, and a training step function. The models are trained in parallel using the vmap function, and the process is repeated with different initializations and data subsets.",
+            "total_tokens": 1618,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.10231
         }
     },
     "/tools/gen_vulkan_spv.py": {
@@ -14400,6 +15346,28 @@
             },
             "latency": 2.058383,
             "file_summary": " The given Python file, 'gen_vulkan_spv.py', is a script for generating SPIR-V shader binaries and associated C++ header and source files from GLSL source files. It uses the GLSLC compiler to convert GLSL code to SPIR-V, and then generates C++ code to register the shaders with the Vulkan Shader Registry. The script takes command-line arguments to specify the paths to GLSL source files, the GLSLC compiler path, the temporary directory for storing intermediate files, and the output directory for storing the generated C++ files."
+        },
+        "cohere-v1": {
+            "file_name": "/tools/gen_vulkan_spv.py",
+            "number_of_lines": 773,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, gen_vulkan_spv.py, is a tool for generating Vulkan SPIR-V shaders. It takes GLSL shader files and associated YAML configuration files as input, processes them, and generates SPIR-V binary files and C++ header/source files for Vulkan shader registration. The tool also extracts shader information like tile sizes and descriptor layouts, helping with shader registration and dispatch in the Vulkan API.",
+            "total_tokens": 6935,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.992126
         }
     },
     "/torch/_lazy/device_context.py": {
@@ -14743,6 +15711,28 @@
             },
             "latency": 1.001338,
             "file_summary": " The given Python file defines a class named `DeviceContext` which serves as a context manager for managing torch devices. The `get_device_context` function is used to get or create a device context instance based on the given device name. The file also uses threading and a lock to ensure thread safety when accessing the `_CONTEXTS` dictionary."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_lazy/device_context.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a DeviceContext class and a get_device_context function. It maintains a dictionary of device contexts, ensuring only one context is created per device. The function returns an existing context or creates a new one if it doesn't exist.",
+            "total_tokens": 326,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.854451
         }
     },
     "/torch/utils/benchmark/op_fuzzers/spectral.py": {
@@ -15086,6 +16076,28 @@
             },
             "latency": 1.682677,
             "file_summary": " The given Python file, named \"spectral.py\", is a script for creating a custom fuzzer named `SpectralOpFuzzer` using PyTorch's benchmarking library. The main functionality of the file is to generate random tensors with specific shapes and sizes, focusing on regular sizes that factorize into multiples of prime factors 2, 3, and 5. These regular sizes are important for Fast Fourier Transform (FFT) implementations and are given special attention. The fuzzer also sets various parameters such as dimensionality, steps, and data types for the generated tensors."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/utils/benchmark/op_fuzzers/spectral.py",
+            "number_of_lines": 95,
+            "project_name": "pytorch",
+            "file_summary": "The spectral.py file defines a SpectralOpFuzzer class that inherits from the benchmark.Fuzzer class. This class has an initializer that takes several parameters related to dimensionality and tensor properties, including a seed, data type, and CUDA usage. The file also contains helper functions for generating regular sizes and setting up fuzzing parameters.",
+            "total_tokens": 1063,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.070578
         }
     },
     "/torch/distributed/tensor/_sharding_prop.py": {
@@ -15429,6 +16441,28 @@
             },
             "latency": 1.621265,
             "file_summary": " This Python file defines a class named `ShardingPropagator` which is used for propagating sharding information in PyTorch. The main functionality of the file is to register sharding propagation rules and strategies for PyTorch operators, and propagate sharding information based on the given operator schema. The sharding information includes output sharding and potential input redistribution. The file also includes helper functions for computing local shapes and strides, and wrapping output specs with tensor metadata."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/tensor/_sharding_prop.py",
+            "number_of_lines": 531,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a ShardingPropagator class that propagates the sharding strategy for torch operators. It has methods to register sharding propagation rules and strategies, and a propagate method to determine the output sharding based on the operator's input specifications. The class uses local caching to optimize repeated sharding calculations for the same operator.",
+            "total_tokens": 5033,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.681355
         }
     },
     "/torch/nn/quantizable/modules/activation.py": {
@@ -15772,6 +16806,28 @@
             },
             "latency": 1.663978,
             "file_summary": " The given Python file, named \"activation.py\", is part of a migration process to the `torch/ao/nn/quantizable` module. It currently imports the MultiheadAttention function from the \"activation\" submodule within the \"quantizable\" module of PyTorch's Automatic Optimizer (TorchAutograd). This file is used to manage and maintain compatibility with existing functionality while new entries or features are being added to the appropriate files under `torch/ao/nn/quantizable/modules`."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/quantizable/modules/activation.py",
+            "number_of_lines": 11,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the activation.py file is to provide quantizable modules, specifically implementing a MultiheadAttention class. It appears to be part of a larger codebase migration, directing new entries to a different location. The file maintains import statements while the migration is in progress.",
+            "total_tokens": 258,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.845072
         }
     },
     "/torch/_export/db/examples/class_method.py": {
@@ -16115,6 +17171,28 @@
             },
             "latency": 1.352418,
             "file_summary": " The given Python file defines a custom PyTorch neural network class named `ClassMethod`. This class contains a class method `method` that takes an input `x` and returns the result of applying the method three times, once for each occurrence of `self.method(x)`, `self.__class__.method(x)`, and `type(self).method(x)`. The main functionality of the file is to demonstrate the use of class methods in PyTorch and their inlining during tracing."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_export/db/examples/class_method.py",
+            "number_of_lines": 23,
+            "project_name": "pytorch",
+            "file_summary": "The code defines a class called ClassMethod that inherits from torch.nn.Module and has a method called method which is a class method. This class also has a forward method that takes input x, processes it using a Linear layer and applies the class method on the output. The example code at the end instantiates the ClassMethod model and prepares it for inference.",
+            "total_tokens": 315,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.132707
         }
     },
     "/scripts/export/update_schema.py": {
@@ -16458,6 +17536,28 @@
             },
             "latency": 1.223007,
             "file_summary": " The main functionality of the file \"update\\_schema.py\" is to validate and update the schema files of the PyTorch library using user-provided arguments. It checks the schema version and treespec version against the latest commit, and if the versions are outdated, it raises an error. If the schema file does not exist, the user can force the update using the \"--force-unsafe\" flag. The updated schema files are then written to the specified directory."
+        },
+        "cohere-v1": {
+            "file_name": "/scripts/export/update_schema.py",
+            "number_of_lines": 91,
+            "project_name": "pytorch",
+            "file_summary": "The Python script, named update_schema.py, is responsible for updating schema versions in PyTorch. It validates schema and treespec versions, and if there's an issue, it either raises an error or suggests a solution. The script also has an option to force unsafe writing over existing schema files.",
+            "total_tokens": 1080,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.002126
         }
     },
     "/torch/profiler/_pattern_matcher.py": {
@@ -16801,6 +17901,28 @@
             },
             "latency": 2.683402,
             "file_summary": " The given Python file defines a class called `Pattern` which serves as a base class for various patterns to identify potential performance issues in PyTorch code. These patterns include \"Extra CUDA Copy Pattern\", \"For Loop Indexing Pattern\", \"FP32 MatMul Pattern\", \"Optimizer Single Tensor Pattern\", \"Synchronized DataLoader Pattern\", \"Grad Not Set To None Pattern\", and \"Conv2dBiasFollowedByBatchNorm2dPattern\". Each pattern subclasses the `Pattern` class and implements methods to match specific PyTorch events based on their names and input shapes. The matched events are reported with a message describing the issue and a suggested solution. Additionally, the file provides helper functions for source code location and input shapes/dtypes of events. The `report_all_anti_patterns` function is used to report all matched events and their corresponding issues."
+        },
+        "cohere-v1": {
+            "file_name": "/torch/profiler/_pattern_matcher.py",
+            "number_of_lines": 663,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named _pattern_matcher.py, is a tool for analyzing PyTorch code performance. It defines a set of patterns to identify anti-patterns in the code and provides recommendations to optimize them. The script traverses the event tree of a PyTorch profiler output, matches events against predefined patterns, and suggests improvements for performance enhancements.",
+            "total_tokens": 6326,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.781081
         }
     },
     "/torch/distributed/checkpoint/logging_handlers.py": {
@@ -17420,6 +18542,28 @@
                 "exclude_files": []
             },
             "latency": 7.009172
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/codegen/rocm/rocm_template_buffer.py",
+            "number_of_lines": 28,
+            "project_name": "pytorch",
+            "file_summary": "The python file defines a class called ROCmTemplateBuffer which appears to be related to buffer management and template rendering in the context of ROCm (Rapid Operating System Development for Heterogeneous Systems). It has methods to initialize the class instance and retrieve the required workspace size. The class likely serves as an intermediary to interact with graphics processing unit (GPU) buffers and templates.",
+            "total_tokens": 379,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.071557
         }
     },
     "/torch/_inductor/runtime/triton_compat.py": {
@@ -17773,6 +18917,28 @@
                 "exclude_files": []
             },
             "latency": 9.09946
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/runtime/triton_compat.py",
+            "number_of_lines": 142,
+            "project_name": "pytorch",
+            "file_summary": "The Triton Compatibility module ensures compatibility between PyTorch and the Triton library. It provides a bridge between the two frameworks, enabling the use of Triton's functionality within PyTorch. The module handles import errors and enables key features such as autotuning and GPU support while also offering workarounds for torch.autograd.profiler.",
+            "total_tokens": 1043,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.963724
         }
     },
     "/torch/export/_trace.py": {
@@ -18104,6 +19270,28 @@
                 "exclude_files": []
             },
             "latency": 28.320727
+        },
+        "cohere-v1": {
+            "file_name": "/torch/export/_trace.py",
+            "number_of_lines": 2209,
+            "project_name": "pytorch",
+            "file_summary": "The given Python file defines a function called _export which is used to trace either an nn.Module's forward function or a callable with PyTorch operations inside to produce a ExportedProgram object. The ExportedProgram contains a traced method along with some additional metadata used for verification and specialized execution. The main functionality of the file is to provide a way to perform AOT (ahead-of-time) compilation of PyTorch models.",
+            "total_tokens": 21711,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.090422
         }
     },
     "/torch/_inductor/virtualized.py": {
@@ -18457,6 +19645,28 @@
                 "exclude_files": []
             },
             "latency": 13.25273
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_inductor/virtualized.py",
+            "number_of_lines": 412,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, named virtualized.py, creates a mechanism for managing global variables across threads. It uses thread-local storage to implement dynamic scoping, allowing these variables to be accessed and modified within specific contexts. The global variables serve different purposes, such as passing implicit arguments, maintaining compilation-specific state, and supporting alternate interpretations of define-by-run IR.",
+            "total_tokens": 3725,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.676194
         }
     },
     "/torch/_prims/rng_prims.py": {
@@ -18810,6 +20020,28 @@
                 "exclude_files": []
             },
             "latency": 12.612486
+        },
+        "cohere-v1": {
+            "file_name": "/torch/_prims/rng_prims.py",
+            "number_of_lines": 390,
+            "project_name": "pytorch",
+            "file_summary": "The code defines functions to register custom random number generation (RNG) primitives in PyTorch. These functions allow for the registration of RNG operators with different device types, including CPU, CUDA, and custom backends like HPU and XPU. The RNG operators are used for generating random values in a stateless manner, and the code also provides higher-order operators to manage and restore RNG states for deterministic execution.",
+            "total_tokens": 4445,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 7.558784
         }
     },
     "/torchgen/gen_vmap_plumbing.py": {
@@ -19163,6 +20395,28 @@
                 "exclude_files": []
             },
             "latency": 13.231002
+        },
+        "cohere-v1": {
+            "file_name": "/torchgen/gen_vmap_plumbing.py",
+            "number_of_lines": 276,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script, gen_vmap_plumbing.py, is responsible for generating plumbing code for function dispatch in the context of vmap batching in PyTorch. It defines functions to unwrap tensor inputs, generate case statements for handling different batching scenarios, and ultimately produces template function definitions that handle the batching logic for various native functions. The generated code facilitates the efficient application of functions to batched inputs.",
+            "total_tokens": 3015,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.296372
         }
     },
     "/torch/distributed/_tools/sac_estimator.py": {
@@ -19516,6 +20770,28 @@
                 "exclude_files": []
             },
             "latency": 18.379591
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/_tools/sac_estimator.py",
+            "number_of_lines": 963,
+            "project_name": "pytorch",
+            "file_summary": "The code is a Python script that provides a context manager called SACEstimator for estimating the memory and recomputation time trade-offs of functions or torch.nn.Module for Selective Activation Checkpointing (SAC). It analyzes PyTorch operations and modules to gather statistics and construct a trade-off graph for activation checkpointing. The script supports two estimation modes: operator-level-benchmark and operator-level-cost-model, allowing users to choose how runtimes are estimated.",
+            "total_tokens": 11262,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.744333
         }
     },
     "/torch/onnx/operators.py": {
@@ -19833,6 +21109,28 @@
                 "exclude_files": []
             },
             "latency": 5.388524
+        },
+        "cohere-v1": {
+            "file_name": "/torch/onnx/operators.py",
+            "number_of_lines": 48,
+            "project_name": "pytorch",
+            "file_summary": "The operators.py file defines two functions, shape_as_tensor and reshape_from_tensor_shape, which are used for ONNX model export. These functions help in making dynamic size operations traceable and are implemented for backward compatibility. They are part of the torch library and are used to manipulate the shape of tensors.",
+            "total_tokens": 477,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.341549
         }
     },
     "/torch/distributed/optim/apply_optimizer_in_backward.py": {
@@ -20150,6 +21448,28 @@
                 "exclude_files": []
             },
             "latency": 0.929548
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/optim/apply_optimizer_in_backward.py",
+            "number_of_lines": 122,
+            "project_name": "pytorch",
+            "file_summary": "The Python script applies one or more optimizers to specific parameters of a model. It uses a weak dictionary to store meta-data for tensors and parameters, and defines functions to manage and execute these optimizers during the backward pass. The optimizers are applied after gradients are accumulated, and the function `_apply_optimizer_in_backward` registers hooks to fire the optimizers accordingly.",
+            "total_tokens": 1478,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.188565
         }
     },
     "/torch/onnx/_internal/exporter/_flags.py": {
@@ -20467,6 +21787,28 @@
                 "exclude_files": []
             },
             "latency": 0.989212
+        },
+        "cohere-v1": {
+            "file_name": "/torch/onnx/_internal/exporter/_flags.py",
+            "number_of_lines": 26,
+            "project_name": "pytorch",
+            "file_summary": "The _flags.py file manages a global flag called _is_onnx_exporting, which is used to control the behavior of ONNX exporting. It defines a decorator set_onnx_exporting_flag that modifies the behavior of the decorated function, setting the flag to True during its execution and ensuring it resets to False afterward. This mechanism appears to be part of a larger system for enabling or tracking ONNX export functionality.",
+            "total_tokens": 346,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.193559
         }
     },
     "/torch/nn/quantized/_reference/modules/utils.py": {
@@ -20784,6 +22126,28 @@
                 "exclude_files": []
             },
             "latency": 2.817237
+        },
+        "cohere-v1": {
+            "file_name": "/torch/nn/quantized/_reference/modules/utils.py",
+            "number_of_lines": 19,
+            "project_name": "pytorch",
+            "file_summary": "The Python script named utils.py contains functions related to quantized reference modules used in neural networks. It appears to be in the process of migration and maintains compatibility by importing relevant functions from another module. The main functionality seems to be focused on quantizing and managing weights for neural network modules.",
+            "total_tokens": 314,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.995471
         }
     },
     "/torch/distributed/fsdp/_exec_order_utils.py": {
@@ -21101,6 +22465,28 @@
                 "exclude_files": []
             },
             "latency": 1.671892
+        },
+        "cohere-v1": {
+            "file_name": "/torch/distributed/fsdp/_exec_order_utils.py",
+            "number_of_lines": 365,
+            "project_name": "pytorch",
+            "file_summary": "The code defines classes to manage the execution order of distributed training, enabling forward prefetching and backward prefetching. It tracks parameter handles, validates execution order across ranks, and issues warnings for order deviations. The classes provide methods to record pre-forward and post-forward orders, check order consistency, and advance the internal state for each iteration.",
+            "total_tokens": 3813,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.64493
         }
     },
     "/torchgen/dest/lazy_ir.py": {
@@ -21418,6 +22804,28 @@
                 "exclude_files": []
             },
             "latency": 6.240872
+        },
+        "cohere-v1": {
+            "file_name": "/torchgen/dest/lazy_ir.py",
+            "number_of_lines": 708,
+            "project_name": "pytorch",
+            "file_summary": "The provided Python script appears to be a code generator for creating Lazy IR nodes. It uses templates and various heuristics to generate C++ code for classes representing lazy tensor operations, which delay the actual computation until they are evaluated. The code is customized based on the function schema, input arguments, and output requirements.",
+            "total_tokens": 7730,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.994511
         }
     }
 }
