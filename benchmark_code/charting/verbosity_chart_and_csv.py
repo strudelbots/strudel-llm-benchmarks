@@ -58,14 +58,14 @@ def _avg_words_per_summary(model_stats):
     chart_data.sort(key=lambda x: x[0])
     chart_generator = ChartGenerator()
     chart_generator.generate_bar_chart(chart_data,f"/tmp/{project_name}_avg_words_per_summary.png", 
-                            "Average Words per Summary", "Model Name", "Words (avg)")
+                            "Average Words per File Summary (Avg)", "Model Name", "Words (Avg)")
     
 def _avg_words_per_file_line(model_stats):
     chart_data = [(x[0], x[1]["avg_words_per_file_line"]) for x in model_stats.items()]
     chart_data.sort(key=lambda x: x[0])
     chart_generator = ChartGenerator()
     chart_generator.generate_bar_chart(chart_data,f"/tmp/{project_name}_avg_words_per_file_line.png", 
-                        "Average Words per File Line", "Model Name", "Words (avg)")
+                        "Words per Line of Code (Avg)", "Model Name", "Words (Avg)")
 
 def _max_words_per_file_line(model_stats):
     chart_data = [(x[0], x[1]["max_words_per_file_line"]) for x in model_stats.items()]

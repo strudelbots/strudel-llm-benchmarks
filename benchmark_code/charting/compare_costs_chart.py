@@ -7,7 +7,7 @@ from benchmark_code.utils import get_db
 from chart_generator import ChartGenerator
 from benchmark_code import project_name
 
-debug = False
+debug = True
 supported_models = [x.known_name for x in AVAILABLE_MODELS]
 def default_model_stats():
     return {
@@ -77,9 +77,10 @@ def _avg_tokens_per_file(model_stats):
                                        "Avg. Tokens Per File", "Model Name", "Tokens", annotation=0)
 
 def _avg_cost_per_file(model_stats):
-    chart_data = [(x[0], x[1]["avg_file_cost"]) for x in model_stats.items()]
+    chart_data = [(x[0][:12], x[1]["avg_file_cost"]) for x in model_stats.items()]
+    
     chart_data.sort(key=lambda x: x[0])
-    chart_generator = ChartGenerator()
+    chart_generator = ChartGenerator(x_ticks_rotation=60)
     chart_generator.generate_bar_chart(chart_data,f"/tmp/{project_name}_costs_chart.png", 
                             "Average Summarization Cost per File", "Model Name", "Cost $")
 
