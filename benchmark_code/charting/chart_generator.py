@@ -9,7 +9,7 @@ import pandas as pd
 class ChartGenerator():
 
     def __init__(self, default_ticks_font_size=12, default_axis_labels_font_size=18,
-                 x_ticks_rotation=45):
+                 x_ticks_rotation=45, add_annotations=True):
         self.fig_width = 10
         self.fig_height = 7
         self.default_ticks_font_size = default_ticks_font_size
@@ -19,6 +19,7 @@ class ChartGenerator():
         self.default_subtitle_font_size = 18
         self.default_annotation_font_size = 10
         self.x_ticks_rotation = x_ticks_rotation
+        self.add_annotations = add_annotations
         self.fig_formet = "png"
     
 
@@ -50,16 +51,42 @@ class ChartGenerator():
         for bar in bars:
             height = bar.get_height()
             annotation_str = f'{height:.{annotation}f}'
-            ax.annotate(annotation_str,
-                        xy=(bar.get_x() + bar.get_width() / 2, height),
-                        xytext=(0, 2),  # 3 points vertical offset
-                        textcoords="offset points",
-                        ha='center', va='bottom',
-                        fontsize=self.default_annotation_font_size)
+            if self.add_annotations:
+                ax.annotate(annotation_str,
+                            xy=(bar.get_x() + bar.get_width() / 2, height),
+                            xytext=(0, 2),  # 3 points vertical offset
+                            textcoords="offset points",
+                            ha='center', va='bottom',
+                            fontsize=self.default_annotation_font_size)
 
 
         plt.tight_layout()
         print(f"**  Saving chart to {fig_file}")
         plt.savefig(fig_file)
         plt.close()
+
+    def create_scatter_plot(self, x, y, labels, filename, xlabel, ylabel, title):
+        """
+        Creates and saves a scatter plot with labels for each data point.
+
+        Parameters:
+        - x: list of x-coordinates
+        - y: list of y-coordinates
+        - labels: list of labels for each point
+        - filename: output file name (default: 'scatter_plot.png')
+        """
+        plt.figure(figsize=(8, 6))
+        plt.scatter(x, y, color='blue')
+
+        # Add labels to each point
+        for i in range(len(x)):
+            plt.text(x[i] + 0.1, y[i] + 0, labels[i], fontsize=8)
+
+        # Add title and axis labels
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+
+        # Save the figure to a file
+        plt.savefig(filename, dpi=300)
 
