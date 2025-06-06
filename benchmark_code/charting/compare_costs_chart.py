@@ -6,9 +6,9 @@ from benchmark_code.llm_model import AVAILABLE_MODELS
 from benchmark_code.utils import get_db
 from chart_generator import ChartGenerator
 from benchmark_code import project_name
-
+exclude_models = []
 debug = True
-supported_models = [x.known_name for x in AVAILABLE_MODELS]
+supported_models = [x.known_name for x in AVAILABLE_MODELS if x.known_name not in exclude_models]
 def default_model_stats():
     return {
         "tokens_used": [],
@@ -27,8 +27,10 @@ def get_model_stats(model_data):
     model_stats = defaultdict(default_model_stats)
     for file_name, file_data in model_data.items():
         for model_name, m_data in file_data.items():
-            if not model_name in supported_models:
+            if not model_name in supported_models and model_name not in exclude_models:
                 raise ValueError(f"{model_name=}  is not supported")
+            if model_name in exclude_models:
+                continue
             model_stats[model_name]["tokens_used"].append(m_data["total_tokens"])
             if model_stats[model_name]["single_input_token_cost"] == None:
                 model_stats[model_name]["single_input_token_cost"] = m_data['model']["price_per_1000_input_tokens"] / 1000
@@ -43,7 +45,8 @@ def get_model_stats(model_data):
 
 def _calculate_metric_per_model(model_stats):
     for model_name, stats in model_stats.items():
-        assert model_name in supported_models
+        if model_name in exclude_models:
+            assert False, f"{model_name=} is excluded"
         if stats["single_input_token_cost"] == None or stats["single_output_token_cost"] == None:
             raise ValueError(f"{model_name=} has no valid cost data")
         stats["total_input_tokens"] = floor(sum(stats["tokens_used"]) * 0.9)
@@ -63,10 +66,18 @@ def _calculate_metric_per_model(model_stats):
             print(f"{stats['avg_file_cost']=}")
             print(f"{stats['single_input_token_cost']=:.10f}")
             print(f"{stats['single_output_token_cost']=:.10f}")
-
+    for model_name in exclude_models:
+        model_stats[model_name]["total_input_tokens"] = 0
+        model_stats[model_name]["total_output_tokens"] = 0
+        model_stats[model_name]["total_input_cost"] = 0
+        model_stats[model_name]["total_output_cost"] = 0
+        model_stats[model_name]["total_cost"] = 0
+        model_stats[model_name]["avg_file_cost"] = 0
 def _avg_tokens_per_file(model_stats):
     chart_data = []
     for model_name, stats in model_stats.items():
+        if model_name in exclude_models:
+            continue
         n_files = len(stats['tokens_used'])
         avg_tokens = sum(stats['tokens_used']) / n_files
         #print(f"{model_name=} {n_files=} {avg_tokens=}")

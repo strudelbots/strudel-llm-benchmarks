@@ -35,12 +35,27 @@ def validate_results_db():
                 python_string = text_file.read()
                 number_of_lines = len(python_string.split('\n'))
                 assert current_lines == number_of_lines
+def clean_message_field():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'r') as f:
+        db = json.load(f)
+    message_count = 0
+    file_summary_count = 0
+    for index, (key, value) in enumerate(db.items()):
+        #print(f'{index}: {key}')
+        for index_2, (key_2, value_2) in enumerate(value.items()):
+            #print(f'    {index_2}: {key_2}')
+            if 'message'  in value_2:
+                assert 'file_summary' in value_2
+                message_count += 1
+                del value_2['message']
+            if 'file_summary' in value_2:
+                file_summary_count += 1
+    print(f'message_count: {message_count}')
+    print(f'file_summary_count: {file_summary_count}')
+    with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
+        json.dump(db, f, indent=4)
 
-    #with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
-    #    json.dump(db, f, indent=4)
 
-        
-    #with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
-    #    json.dump(db, f)
 if __name__ == "__main__":
-    validate_results_db()
+    clean_message_field()
