@@ -1,3 +1,4 @@
+import uuid
 from dataclasses import dataclass, field
 from typing import List
 from benchmark_code.llm_model import LlmModel
@@ -11,6 +12,7 @@ class LlmResponse():
     total_tokens: int
     model: LlmModel
     latency: float = -1.0
+    uuid: str = field(default_factory=lambda: str(uuid.uuid4()))
 
 @dataclass_json
 @dataclass
