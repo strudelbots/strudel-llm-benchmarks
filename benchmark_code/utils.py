@@ -1,5 +1,6 @@
 import os
 import json
+import uuid
 from benchmark_code import OUT_FILES_DIRECTORY, project_name, REPO_DIRECTORY
 
 
@@ -56,6 +57,16 @@ def clean_message_field():
     with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
         json.dump(db, f, indent=4)
 
+def add_uuids_to_db():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'r') as f:
+        db = json.load(f)
+    for db_entry in db.values():
+        for summary in db_entry.values():
+            assert 'uuid' not in summary
+            summary['uuid'] = str(uuid.uuid4())
+    with open(os.path.join(current_dir, f'../results/{project_name}_DB.json'), 'w') as f:
+        json.dump(db, f, indent=4)
 
 if __name__ == "__main__":
-    clean_message_field()
+    add_uuids_to_db()
