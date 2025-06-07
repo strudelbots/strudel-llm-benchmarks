@@ -1,9 +1,19 @@
 import os
+import json
+from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 from benchmark_code import OUT_FILES_DIRECTORY, OUT_FILES_DIRECTORY_CACHE
 from benchmark_code.utils import get_db
 from benchmark_code.accessors.embedding_accessor_langchain_HF import EmbeddingAccessorLangchainHF
-import json
 from datetime import datetime
+
+@dataclass_json
+@dataclass
+class EmbeddingData():
+    uuid: str
+    embeddings: list[list[float]]
+    model_name: str
+
 
 class EmbeddingGenerator():
     def __init__(self, embedding_model_name):
@@ -16,7 +26,12 @@ class EmbeddingGenerator():
         self._out_file = f'{OUT_FILES_DIRECTORY}/embeddings_{self.embedding_model_name}_{today}.json'
         if not os.path.exists(self._cache_directory):
             os.makedirs(self._cache_directory)
-    
+        self._embeddings_db = None
+
+    def build_db(self):
+        embeddings_db  = self._generate_embeddings(write_to_file=False)
+        self._embeddings_db = embeddings_db
+
     def _get_embedding(self, summary):
         uuid = summary['uuid']
         summary_file_name = f'{self.cache_directory}/{uuid}_{self.embedding_model_name}_{self.today}.json'
@@ -29,7 +44,7 @@ class EmbeddingGenerator():
         else:
             with open(summary_file_name, 'r') as f:
                 return json.load(f)
-    def generate_embeddings(self):
+    def _generate_embeddings(self, write_to_file=True):
         today = datetime.now().strftime("%Y-%m-%d")
         embeddings_db = {}
         for file_name, file_data in self.db.items():
@@ -37,9 +52,18 @@ class EmbeddingGenerator():
             for model, summary in file_data.items():
                 uuid = summary['uuid']
                 embeddings = self._get_embedding(summary)
-                embeddings_db[uuid] = embeddings
-        with open(self.out_file, 'w') as f:
-            json.dump(embeddings_db, f, indent=4)
+                embeddings_db[uuid] = EmbeddingData(uuid=uuid, 
+                                                    embeddings=embeddings, model_name=model)
+        if write_to_file:
+            with open(self.out_file, 'w') as f:
+                json.dump(embeddings_db, f, indent=4)
+        return embeddings_db
+
+    def get_embedding(self, uuid):
+        embedding = self._embeddings_db.get(uuid)
+        assert len(embedding.embeddings) == 1
+        assert len(embedding.embeddings[0]) == 768
+        return embedding
 
     @property
     def out_file(self):
