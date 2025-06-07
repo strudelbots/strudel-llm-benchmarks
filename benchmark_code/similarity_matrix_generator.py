@@ -19,7 +19,7 @@ class SimilarityMatrix():
 
 
 class SimilarityMatrixGenerator():
-    def __init__(self, embedding_db):
+    def __init__(self, embedding_db, exclude_models=[]):
         today = datetime.now().strftime("%Y-%m-%d")
         self.today = today
         self.db = get_db()
@@ -29,6 +29,8 @@ class SimilarityMatrixGenerator():
         if not os.path.exists(self._cache_directory):
             os.makedirs(self._cache_directory)
         self._similarity_matrix_db = {}
+        self.exclude_models = exclude_models
+
     def build_db(self, write_to_file=True):
         self.generate_similarity_matrix()
         if write_to_file:
@@ -50,14 +52,17 @@ class SimilarityMatrixGenerator():
 
     def _get_similarity_matrix(self, embeddings):
         self.__validate_embeddings(embeddings)
+        embeddings.sort(key=lambda x: x.model_name)
+        embeddings = [embedding for embedding in embeddings if embedding.model_name not in self.exclude_models]
         labels = [embedding.model_name for embedding in embeddings]
-        embeddings = [embedding.embeddings[0] for embedding in embeddings]
-        similarity_matrix = cosine_similarity(embeddings)
+        pure_embeddings = [embedding.embeddings[0] for embedding in embeddings]
+        similarity_matrix = cosine_similarity(pure_embeddings)
         assert similarity_matrix.shape == (len(embeddings), len(embeddings))
         similarity_df = pd.DataFrame(similarity_matrix, index=labels, columns=labels)
         return similarity_df
 
     def __validate_embeddings(self, embeddings):
+        assert isinstance(embeddings, list)
         assert len(embeddings) >= 12, f'Expected 12 embeddings, got {len(embeddings)}'
         for embedding in embeddings:
             assert isinstance(embedding, EmbeddingData)
@@ -109,15 +114,18 @@ class SimilarityMatrixGenerator():
 if __name__ == '__main__':
     embedding_db = EmbeddingGenerator('all-mpnet-base-v2')
     embedding_db.build_db()
-    similarity_matrix_generator = SimilarityMatrixGenerator(embedding_db) 
+    similarity_matrix_generator = SimilarityMatrixGenerator(embedding_db,
+                                                            exclude_models=['mistral-small', 
+                                                                            'titan_premier']) 
     print("--------------------------------")                                                        
     print(f'Cache directory for similarity matrix: {similarity_matrix_generator.cache_directory}')
     print(f'Output file for similarity matrix: {similarity_matrix_generator.out_file}')
     print("--------------------------------")                                                        
     similarity_matrix_generator.build_db(write_to_file=False)
     data_frames = similarity_matrix_generator.get_dataframes()
+    assert len(data_frames) >= 65
     chart_generator = ChartGenerator()
     for file_name, similarity_df in data_frames.items():
         base_name = os.path.basename(file_name)
-        base_name = base_name.replace('.json', '')
+        base_name = base_name.replace('.py', '')
         chart_generator.create_heat_map(similarity_df, f'/tmp/{base_name}.png')
