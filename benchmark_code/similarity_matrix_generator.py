@@ -4,7 +4,6 @@ import pandas as pd
 import random
 import numpy as np
 from datetime import datetime
-from charting.chart_generator import ChartGenerator
 from dataclasses import dataclass
 from sklearn.metrics.pairwise import cosine_similarity
 from benchmark_code import OUT_FILES_DIRECTORY, OUT_FILES_DIRECTORY_CACHE
@@ -142,41 +141,3 @@ class SimilarityMatrixGenerator():
         assert len(files) == len(set(files))
         assert len(models) == len(set(models))  
         return [x[0] for x in embedding_uuids]
-
-def get_upper_triangle_average(similarity_df):
-    mat = similarity_df.values
-    # Mask to get upper triangle excluding diagonal
-    upper_vals = mat[np.triu_indices_from(mat, k=1)]
-    return np.mean(upper_vals)
-
-if __name__ == '__main__':
-    embedding_db = EmbeddingGenerator('all-mpnet-base-v2')
-    embedding_db.build_db()
-    similarity_matrix_generator = SimilarityMatrixGenerator(embedding_db,
-                                                            exclude_models=['mistral-small', 
-                                                                            'titan_premier']) 
-    print("--------------------------------")                                                        
-    print(f'Cache directory for similarity matrix: {similarity_matrix_generator.cache_directory}')
-    print(f'Output file for similarity matrix: {similarity_matrix_generator.out_file}')
-    print("--------------------------------")                                                        
-    similarity_matrix_generator.build_db(write_to_file=False)
-    chart_generator = ChartGenerator()
-    upper_triangle_average = 1.0
-    while upper_triangle_average > 0.28:
-        random_similarity_matrix = similarity_matrix_generator.get_random_similarity_matrix()
-        upper_triangle_average = get_upper_triangle_average(random_similarity_matrix)
-        print(f'Upper triangle average: {upper_triangle_average:.2f}')
-    title = f'Random files similarity matrix (average: {upper_triangle_average:.2f})'
-    chart_generator.create_heat_map(random_similarity_matrix, 
-                                    f'/tmp/random_similarity_matrix.png',
-                                    title)
-    assert random_similarity_matrix is not None
-    data_frames = similarity_matrix_generator.get_dataframes()
-    assert len(data_frames) >= 65
-    for file_name, similarity_df in data_frames.items():
-        base_name = os.path.basename(file_name)
-        base_name = base_name.replace('.py', '')
-        average = get_upper_triangle_average(similarity_df)
-        print(f'{base_name}.py similarity matrix (average: {average:.2f})')
-        title = f'{base_name}.py similarity matrix (average: {average:.2f})'
-        chart_generator.create_heat_map(similarity_df, f'/tmp/{base_name}_{average:.2f}.png', title)
