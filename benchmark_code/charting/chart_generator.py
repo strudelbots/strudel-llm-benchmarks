@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 import pandas as pd
-
+import seaborn as sns
 
 class ChartGenerator():
 
@@ -86,7 +86,15 @@ class ChartGenerator():
         plt.title(title)
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
-
         # Save the figure to a file
         plt.savefig(filename, dpi=300)
 
+    def create_heat_map(self, s_m, fig_file):    # Create a heatmap
+        plt.figure(figsize=(10, 8)) 
+        sns.heatmap(s_m['similarity_matrix'], annot=True, 
+                    xticklabels= s_m['labels'], yticklabels= s_m['labels'],
+                    cmap='jet', center=0)
+        plt.title('Similarity Matrix Heatmap')
+        plt.tight_layout()
+        plt.savefig(fig_file)
+        plt.close()

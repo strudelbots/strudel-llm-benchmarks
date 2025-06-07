@@ -1,9 +1,19 @@
 import os
+import json
+from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 from benchmark_code import OUT_FILES_DIRECTORY, OUT_FILES_DIRECTORY_CACHE
 from benchmark_code.utils import get_db
 from benchmark_code.accessors.embedding_accessor_langchain_HF import EmbeddingAccessorLangchainHF
-import json
 from datetime import datetime
+
+@dataclass_json
+@dataclass
+class EmbeddingData():
+    uuid: str
+    embeddings: list[list[float]]
+    model_name: str
+
 
 class EmbeddingGenerator():
     def __init__(self, embedding_model_name):
@@ -42,7 +52,8 @@ class EmbeddingGenerator():
             for model, summary in file_data.items():
                 uuid = summary['uuid']
                 embeddings = self._get_embedding(summary)
-                embeddings_db[uuid] = embeddings
+                embeddings_db[uuid] = EmbeddingData(uuid=uuid, 
+                                                    embeddings=embeddings, model_name=model)
         if write_to_file:
             with open(self.out_file, 'w') as f:
                 json.dump(embeddings_db, f, indent=4)
@@ -50,9 +61,9 @@ class EmbeddingGenerator():
 
     def get_embedding(self, uuid):
         embedding = self._embeddings_db.get(uuid)
-        assert len(embedding) == 1
-        assert len(embedding[0]) == 768
-        return embedding[0]
+        assert len(embedding.embeddings) == 1
+        assert len(embedding.embeddings[0]) == 768
+        return embedding
 
     @property
     def out_file(self):
