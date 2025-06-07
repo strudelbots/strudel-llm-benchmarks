@@ -19,7 +19,8 @@ class AWSBoto3Accessor(LlmAccessor):
             {"role": "user", "content": [{"text": user_input}]},
         ]
 
-        inf_params = {"maxTokens": DEFAULT_MAX_TOKENS, "topP":DEFAULT_TOP_P, "temperature": DEFAULT_TEMPERATURE}
+        inf_params = {"maxTokens": DEFAULT_MAX_TOKENS, 
+                      "topP":DEFAULT_TOP_P, "temperature": DEFAULT_TEMPERATURE}
 
         additionalModelRequestFields = {
             "inferenceConfig": {
