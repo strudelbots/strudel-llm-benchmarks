@@ -20,10 +20,11 @@ Here's a proofread and polished version of your contribution guidelines, with co
 
 
 ### How It Works
-The main script (`run_file_summarizer.py`) selects files from a repository and submits them to your chosen LLM(s) for analysis.
+The main script (`generate_file_summaries.py`) selects files from a repository and submits them to your chosen LLM(s) for analysis.
 
 To run the script, ensure all required environment variables are set (refer to `__init__.py` in the `benchmark_code` directory for details). You may also need to update some hardcoded access points to integrate your models. Additionally, a caching mechanism is implemented to avoid redundant LLM calls. When you run the script again on the same files, no LLM calls are made. 
 
+One can also use to generate embedding for each summary. See `generate_embedding_from_db.py` 
 ### Example: *Core Functionality* Summarized by Three Models for a Single PyTorch File
 
 File: `/torch/distributed/checkpoint/logging_handlers.py`:  
