@@ -123,9 +123,6 @@ class CacheManager:
         summaries_per_file = self._collect_summaries_per_target_file()
         single_file_entries = self._collect_single_file_entries(summaries_per_file)
         db_dict_format = single_file_entries.to_db_dict()
-        #str_json = json.dumps(db_dict_format, indent=4)
-        #with open('/tmp/single_file_entries.json', 'w') as f:
-        #    f.write(str_json)
         self._update_db(db_dict_format, dry_run)
 if __name__ == "__main__":
     cache_manager = CacheManager(db_file_path='./results/pytorch_DB.json')

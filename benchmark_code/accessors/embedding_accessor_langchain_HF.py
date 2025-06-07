@@ -5,6 +5,8 @@ class EmbeddingAccessorLangchainHF(EmbeddingAccessor):
     def __init__(self, model_name="all-mpnet-base-v2"):
         self.model_name = model_name
         self.embeddings_model = HuggingFaceEmbeddings(model_name=self.model_name)
+        if model_name != 'all-mpnet-base-v2':
+            raise ValueError(f'{model_name} is not supported')
     
     def get_embeddings(self, text:str) -> list[float]:
         embeddings = self.embeddings_model.embed_documents([text])
