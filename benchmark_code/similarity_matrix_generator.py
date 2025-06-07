@@ -1,6 +1,8 @@
 import os
 import json
 import pandas as pd
+import random
+import numpy as np
 from datetime import datetime
 from charting.chart_generator import ChartGenerator
 from dataclasses import dataclass
@@ -111,6 +113,42 @@ class SimilarityMatrixGenerator():
     def cache_directory(self, value):
         self._cache_directory = value
 
+    def get_random_similarity_matrix(self):
+        uuids = self._get_random_uuids_for_different_files()
+        embeddings = self._get_embeddings_for_uuids('random_files', uuids)
+        result =  self._get_similarity_matrix(embeddings)
+        return result
+
+    def _get_random_uuids_for_different_files(self):
+        files = list(self.db.keys())
+        random.shuffle(files)
+        models_in_matrix = []
+        embedding_uuids = []
+        while len(embedding_uuids) < 14:
+            file_name = files.pop()
+            file_entry = self.db[file_name]
+            models = list(file_entry.keys())            
+            for model in models:
+                if models_in_matrix.count(model) == 0:
+                    models_in_matrix.append(model) 
+                    uuid = file_entry[model]['uuid']
+                    if embedding_uuids.count(uuid) == 0:
+                        models_in_matrix.append(model)
+                        embedding_uuids.append((uuid, file_name, model))
+                        break
+        files = [embedding_uuid[1] for embedding_uuid in embedding_uuids]
+        models = [embedding_uuid[2] for embedding_uuid in embedding_uuids]
+        assert len(files) == len(models)
+        assert len(files) == len(set(files))
+        assert len(models) == len(set(models))  
+        return [x[0] for x in embedding_uuids]
+
+def get_upper_triangle_average(similarity_df):
+    mat = similarity_df.values
+    # Mask to get upper triangle excluding diagonal
+    upper_vals = mat[np.triu_indices_from(mat, k=1)]
+    return np.mean(upper_vals)
+
 if __name__ == '__main__':
     embedding_db = EmbeddingGenerator('all-mpnet-base-v2')
     embedding_db.build_db()
@@ -122,10 +160,23 @@ if __name__ == '__main__':
     print(f'Output file for similarity matrix: {similarity_matrix_generator.out_file}')
     print("--------------------------------")                                                        
     similarity_matrix_generator.build_db(write_to_file=False)
+    chart_generator = ChartGenerator()
+    upper_triangle_average = 1.0
+    while upper_triangle_average > 0.28:
+        random_similarity_matrix = similarity_matrix_generator.get_random_similarity_matrix()
+        upper_triangle_average = get_upper_triangle_average(random_similarity_matrix)
+        print(f'Upper triangle average: {upper_triangle_average:.2f}')
+    title = f'Random files similarity matrix (average: {upper_triangle_average:.2f})'
+    chart_generator.create_heat_map(random_similarity_matrix, 
+                                    f'/tmp/random_similarity_matrix.png',
+                                    title)
+    assert random_similarity_matrix is not None
     data_frames = similarity_matrix_generator.get_dataframes()
     assert len(data_frames) >= 65
-    chart_generator = ChartGenerator()
     for file_name, similarity_df in data_frames.items():
         base_name = os.path.basename(file_name)
         base_name = base_name.replace('.py', '')
-        chart_generator.create_heat_map(similarity_df, f'/tmp/{base_name}.png')
+        average = get_upper_triangle_average(similarity_df)
+        print(f'{base_name}.py similarity matrix (average: {average:.2f})')
+        title = f'{base_name}.py similarity matrix (average: {average:.2f})'
+        chart_generator.create_heat_map(similarity_df, f'/tmp/{base_name}_{average:.2f}.png', title)

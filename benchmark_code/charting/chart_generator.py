@@ -89,11 +89,14 @@ class ChartGenerator():
         # Save the figure to a file
         plt.savefig(filename, dpi=300)
 
-    def create_heat_map(self, similarity_df, fig_file):    # Create a heatmap
-        plt.figure(figsize=(10, 10))
+    def create_heat_map(self, similarity_df, fig_file, title):    # Create a heatmap
+        plt.figure(figsize=(12, 12))
         mask = np.tril(np.ones(similarity_df.shape), k=-1).astype(bool)
-        sns.heatmap(similarity_df, annot=True, cmap='jet', fmt=".2f", mask=mask)
-        plt.title('Similarity Matrix Heatmap')
-        plt.tight_layout()
+        ax = sns.heatmap(similarity_df, annot=True, cmap='jet', fmt=".2f", mask=mask,
+                    vmin=0, vmax=1)
+        ax.set_xticklabels(ax.get_xticklabels(), fontsize=self.default_ticks_font_size+7, rotation=45, ha='right')
+        ax.set_yticklabels(ax.get_yticklabels(), fontsize=self.default_ticks_font_size+7, rotation=0)
+        plt.title(title, fontsize=20)
+        plt.tight_layout(rect=[0, 0, 0.95, 0.95]) 
         plt.savefig(fig_file)
         plt.close()
