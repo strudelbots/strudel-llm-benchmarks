@@ -2,6 +2,7 @@ import os
 import json
 import pandas as pd
 from datetime import datetime
+from charting.chart_generator import ChartGenerator
 from dataclasses import dataclass
 from sklearn.metrics.pairwise import cosine_similarity
 from benchmark_code import OUT_FILES_DIRECTORY, OUT_FILES_DIRECTORY_CACHE
@@ -37,6 +38,7 @@ class SimilarityMatrixGenerator():
         for file_name, file_data in self.db.items():
             self._similarity_matrix_for_file(file_name)
         return
+
     def _similarity_matrix_for_file(self, file_name):
         uuids = self._get_uuids_for_file(file_name)
         embeddings = self._get_embeddings_for_uuids(file_name, uuids)
@@ -81,6 +83,12 @@ class SimilarityMatrixGenerator():
             uuids.append(summary['uuid'])
         return uuids
 
+    def get_dataframes(self):
+        dataframes = {}
+        for file_name, similarity_matrix in self._similarity_matrix_db.items():
+            dataframes[file_name] = pd.DataFrame(similarity_matrix['similarity_matrix'])
+        return dataframes
+
 
     @property
     def out_file(self):
@@ -106,5 +114,10 @@ if __name__ == '__main__':
     print(f'Cache directory for similarity matrix: {similarity_matrix_generator.cache_directory}')
     print(f'Output file for similarity matrix: {similarity_matrix_generator.out_file}')
     print("--------------------------------")                                                        
-    #similarity_matrix_generator.generate_similarity_matrix()
-    similarity_matrix_generator.build_db()
+    similarity_matrix_generator.build_db(write_to_file=False)
+    data_frames = similarity_matrix_generator.get_dataframes()
+    chart_generator = ChartGenerator()
+    for file_name, similarity_df in data_frames.items():
+        base_name = os.path.basename(file_name)
+        base_name = base_name.replace('.json', '')
+        chart_generator.create_heat_map(similarity_df, f'/tmp/{base_name}.png')
