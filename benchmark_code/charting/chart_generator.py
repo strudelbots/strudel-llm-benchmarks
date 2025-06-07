@@ -66,26 +66,24 @@ class ChartGenerator():
         plt.close()
 
     def create_scatter_plot(self, x, y, labels, filename, xlabel, ylabel, title):
-        """
-        Creates and saves a scatter plot with labels for each data point.
 
-        Parameters:
-        - x: list of x-coordinates
-        - y: list of y-coordinates
-        - labels: list of labels for each point
-        - filename: output file name (default: 'scatter_plot.png')
-        """
         plt.figure(figsize=(8, 6))
         plt.scatter(x, y, color='blue')
 
         # Add labels to each point
-        for i in range(len(x)):
-            plt.text(x[i] + 0.1, y[i] + 0, labels[i], fontsize=8)
+        position = 1
+        for i in range(len(y)):
+            if labels[i] in ["Llama3.3", "nova-lite-v1"]:
+                yposition = -0.03
+            else:
+                yposition = 0.015
+            plt.text(x[i]-0.3, y[i] + yposition, labels[i], fontsize=self.default_ticks_font_size)
+            position *= -1 
 
         # Add title and axis labels
-        plt.title(title)
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
+        plt.title(title, fontsize=self.default_title_font_size)
+        plt.xlabel(xlabel, fontsize=self.default_axis_labels_font_size)
+        plt.ylabel(ylabel, fontsize=self.default_axis_labels_font_size)
         # Save the figure to a file
         plt.savefig(filename, dpi=300)
 

@@ -60,6 +60,7 @@ def _chart_quality_score(model_stats, exclude_models=[]):
     latencies = [chart_data[x]['quality_score'][1] for x in labels]
     chattiness = [chart_data[x]['quality_score'][0] for x in labels]
     chart_generator = ChartGenerator(x_ticks_rotation=60, add_annotations=True)
+    labels = [x.replace('-turbo', '') for x in chart_data]
     chart_generator.create_scatter_plot(latencies, chattiness, labels, 
                                         f"/tmp/{project_name}_quality_score_chart.png",
                                         "Relative Latency", "Relative Chattiness", 
