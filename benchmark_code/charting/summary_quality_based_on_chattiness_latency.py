@@ -63,8 +63,8 @@ def _chart_quality_score(model_stats, exclude_models=[]):
     labels = [x.replace('-turbo', '') for x in chart_data]
     chart_generator.create_scatter_plot(latencies, chattiness, labels, 
                                         f"/tmp/{project_name}_quality_score_chart.png",
-                                        "Relative Latency", "Relative Chattiness", 
-                                        "Latency vs Chattiness Comparison")
+                                        "Relative Latency", "Relative Conciseness", 
+                                        "Latency vs. Conciseness Comparison")
 if __name__ == "__main__":
     model_stats = defaultdict(dict)
     current_dir = os.path.dirname(os.path.abspath(__file__))
