@@ -3,12 +3,15 @@ from benchmark_code.similarity_matrix_generator import SimilarityMatrixGenerator
 from benchmark_code.charting.chart_generator import ChartGenerator
 from benchmark_code.embedding_generator import EmbeddingGenerator
 from benchmark_code.similatiry_analyzer import SimilarityAnalyzer
+from benchmark_code.llm_model import AVAILABLE_MODELS
 if __name__ == '__main__':
     embedding_db = EmbeddingGenerator('all-mpnet-base-v2')
     embedding_db.build_db()
+    exclude_models = ['titan_premier', 'mistral-small']
+    #exclude_models = [x.known_name for x in AVAILABLE_MODELS if 'gpt' not in x.known_name and \
+    #                  x.known_name != 'nova-pro-v1']
     similarity_matrix_generator = SimilarityMatrixGenerator(embedding_db,
-                                                            exclude_models=['mistral-small', 
-                                                                            'titan_premier']) 
+                                                            exclude_models=exclude_models) 
     print("--------------------------------")                                                        
     print(f'Cache directory for similarity matrix: {similarity_matrix_generator.cache_directory}')
     print(f'Output file for similarity matrix: {similarity_matrix_generator.out_file}')
@@ -25,7 +28,7 @@ if __name__ == '__main__':
     title = f'Random files similarity matrix (average: {upper_triangle_average:.2f})'
     chart_generator.create_heat_map(random_similarity_matrix, 
                                     f'/tmp/random_similarity_matrix.png',
-                                    title)
+                                    title, mask_lower_triangle=False)
     average_similarity_matrix = similarity_analyzer.get_avarage_similary_matrix()
     upper_triangle_average = similarity_analyzer.get_upper_triangle_average(average_similarity_matrix)
     title = f'Average similarity matrix (average: {upper_triangle_average:.2f})'

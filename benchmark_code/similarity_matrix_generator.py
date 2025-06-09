@@ -64,7 +64,6 @@ class SimilarityMatrixGenerator():
 
     def __validate_embeddings(self, embeddings):
         assert isinstance(embeddings, list)
-        assert len(embeddings) >= 12, f'Expected 12 embeddings, got {len(embeddings)}'
         for embedding in embeddings:
             assert isinstance(embedding, EmbeddingData)
             assert len(embedding.embeddings) == 1
@@ -86,7 +85,8 @@ class SimilarityMatrixGenerator():
         summaries = self.db[file_name]
         assert isinstance(summaries, dict)
         for summary in summaries.values():
-            uuids.append(summary['uuid'])
+            if summary['model']['known_name'] not in self.exclude_models:
+                uuids.append(summary['uuid'])
         return uuids
 
     def get_dataframes(self):
