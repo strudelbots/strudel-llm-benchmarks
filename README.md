@@ -8,7 +8,6 @@ We randomly selected 100 Python files from the PyTorch repository and tasked app
 
 Using these summaries (and their associated metadata), we can now begin comparing ROI for code comprehension using practical metrics such as verbosity, latency, cost, perceived accuracy, and information gain. This allows us to assess how these models actually perform—and what that says about their return on investment.
 
-Here's a proofread and polished version of your contribution guidelines, with corrected grammar, improved clarity, and consistent tone:
 
 ## How to Contribute
 
