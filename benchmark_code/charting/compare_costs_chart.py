@@ -9,7 +9,7 @@ from benchmark_code import project_name
 exclude_models = []
 debug = True
 supported_models = [x.known_name for x in AVAILABLE_MODELS if x.known_name not in exclude_models]
-def default_model_stats():
+def default_model_stats_costs():
     return {
         "tokens_used": [],
         "single_input_token_cost": None,
@@ -22,9 +22,9 @@ def default_model_stats():
         
     }
 
-def get_model_stats(model_data):
+def get_model_stats_costs(model_data):
     
-    model_stats = defaultdict(default_model_stats)
+    model_stats = defaultdict(default_model_stats_costs)
     for file_name, file_data in model_data.items():
         for model_name, m_data in file_data.items():
             if not model_name in supported_models and model_name not in exclude_models:
@@ -43,7 +43,7 @@ def get_model_stats(model_data):
     return model_stats
 
 
-def _calculate_metric_per_model(model_stats):
+def _calculate_metric_per_model_costs(model_stats):
     for model_name, stats in model_stats.items():
         if model_name in exclude_models:
             assert False, f"{model_name=} is excluded"
@@ -101,7 +101,7 @@ if __name__ == "__main__":
     model_stats = defaultdict(dict)
     current_dir = os.path.dirname(os.path.abspath(__file__))
     db = get_db()
-    model_stats = get_model_stats(db)
-    _calculate_metric_per_model(model_stats)
+    model_stats = get_model_stats_costs(db)
+    _calculate_metric_per_model_costs(model_stats)
     _avg_cost_per_file(model_stats)
     _avg_tokens_per_file(model_stats)
