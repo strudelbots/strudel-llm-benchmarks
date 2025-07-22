@@ -88,17 +88,21 @@ class ChartGenerator():
         # Save the figure to a file
         plt.savefig(filename, dpi=300)
 
-    def create_heat_map(self, similarity_df, fig_file, title, mask_lower_triangle=True):    # Create a heatmap
-        plt.figure(figsize=(12, 12))
+    def create_heat_map(self, similarity_df, fig_file, title, mask_lower_triangle=True,
+    x_label='', y_label='', v_min=0.75, v_max=1):    # Create a heatmap
+        plt.figure(figsize=(10, 2))
         if mask_lower_triangle:
             mask = np.tril(np.ones(similarity_df.shape), k=-1).astype(bool)
         else:
             mask = None
         ax = sns.heatmap(similarity_df, annot=True, cmap='jet', fmt=".2f", mask=mask,
-                    vmin=0, vmax=1)
-        ax.set_xticklabels(ax.get_xticklabels(), fontsize=self.default_ticks_font_size+7, rotation=45, ha='right')
-        ax.set_yticklabels(ax.get_yticklabels(), fontsize=self.default_ticks_font_size+7, rotation=0)
-        plt.title(title, fontsize=20)
+                    vmin=v_min, vmax=v_max)
+        ax.set_xticklabels(ax.get_xticklabels(), fontsize=self.default_ticks_font_size-3, rotation=45, ha='right')
+        if y_label != '':
+            ax.set_yticklabels(ax.get_yticklabels(), fontsize=self.default_ticks_font_size-3, rotation=0)
+        plt.title(title, fontsize=self.default_title_font_size-6)
+        plt.xlabel(x_label, fontsize=self.default_axis_labels_font_size)
+        #plt.ylabel(y_label, fontsize=self.default_axis_labels_font_size)
         plt.tight_layout(rect=[0, 0, 0.95, 0.95]) 
         plt.savefig(fig_file)
         plt.close()

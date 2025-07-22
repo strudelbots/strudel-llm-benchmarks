@@ -41,4 +41,6 @@ def generate_embedding_for_single_file_results(results_json_file):
 
 if __name__ == "__main__":
     #generate_embeddings_for_DB_json()
-    generate_embedding_for_single_file_results('pytorch__torch_cuda_graphs.json')
+    files = ['pytorch__torch_cuda_graphs.json', 'pytorch__torch_onnx__internal_exporter__tensors.json']
+    for file in files:
+        generate_embedding_for_single_file_results(file)

@@ -18,7 +18,6 @@ class SimilarityMatrix():
     similarity_matrix: dict
     embedding_data: list[EmbeddingData]
 
-
 class SimilarityMatrixGenerator():
     def __init__(self, embedding_db, exclude_models=[]):
         today = datetime.now().strftime("%Y-%m-%d")
@@ -31,7 +30,7 @@ class SimilarityMatrixGenerator():
             os.makedirs(self._cache_directory)
         self._similarity_matrix_db = {}
         self.exclude_models = exclude_models
-
+        
     def build_db(self, write_to_file=True):
         self.generate_similarity_matrix()
         if write_to_file:
