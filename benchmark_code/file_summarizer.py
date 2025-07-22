@@ -2,7 +2,7 @@ import json
 import os
 import shutil
 import hashlib
-from benchmark_code import OUT_FILES_DIRECTORY, file_date_prefix
+from benchmark_code import OUT_FILES_DIRECTORY, file_date_prefix, project_name
 from benchmark_code.llm_factory import get_llm_accessor
 from benchmark_code.llm_response import FileSummary
 from benchmark_code.llm_model import LlmModel
@@ -17,10 +17,12 @@ class FileSummarizer:
                       "{'file_name': 'example name', 'file_content': 'example content'}")
     with open('./results/pytorch_DB.json', 'r') as file:
         file_data = json.load(file)
-    def __init__(self, model: LlmModel):
+    
+    def __init__(self, model: LlmModel, use_file_cache=True):
         self.model = model
         self.llm_accessor = get_llm_accessor(self.system_context, model)
         self.file_prefix = file_date_prefix+"single__"
+        self.use_file_cache = use_file_cache
 
     def summarize_file(self, full_path):
         output_file_name, hased_name = self._get_out_file_name(full_path, self.llm_accessor.model.known_name)
@@ -36,6 +38,37 @@ class FileSummarizer:
         file_summary = FileSummary(llm_response, full_path, len(file_text.split('\n')))
         self._save_response_in_file(file_summary, output_file_name, hased_name)
 
+    def summarize_file_multi_repeat(self, full_path, repeat_count=1):
+        file_name = os.path.basename(full_path)
+        file_data = self._get_single_file_db(full_path)        
+        file_text = self._get_file_text(filename=full_path)
+        for index in range(repeat_count):
+            print(f'{full_path} is being summarized by model: {self.llm_accessor.model.known_name} for the {index} time')
+            llm_input = '{' + f'"file_name": "{file_name}", "file_content": "{file_text}"' + '}'
+            llm_response = self.llm_accessor._get_llm_response(llm_input)
+            file_summary = FileSummary(llm_response, full_path, len(file_text.split('\n')))
+            file_data.append(file_summary.to_dict())
+        self._save_single_file_db(full_path, file_data)
+
+    def _save_single_file_db(self, full_path, file_data):
+        db_file = self._get_single_file_db_name(full_path)
+        with open(db_file, 'w') as file:
+            json.dump(file_data, file, indent=4)
+
+    
+    def _get_single_file_db(self, full_path):
+        db_file = self._get_single_file_db_name(full_path)
+        if os.path.exists(db_file):
+            with open(db_file, 'r') as file:
+                file_data = json.load(file)
+            return file_data
+        return []
+
+    def _get_single_file_db_name(self, full_path):
+        file_key = full_path.removeprefix(REPO_DIRECTORY).replace('/', '_').replace('.py', '')
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        db_file = os.path.join(current_dir, '../results', f'{project_name}_{file_key}.json')
+        return db_file
 
 
     def _get_file_text(self, filename):
