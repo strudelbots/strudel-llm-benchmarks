@@ -23468,5 +23468,53 @@
             "latency": 1.994511,
             "uuid": "b1152842-1e3f-4be0-84e2-8405b90237db"
         }
+    },
+    "/torch/onnx/_internal/exporter/_tensors.py": {
+        "nova-lite-v1": {
+            "file_name": "/torch/onnx/_internal/exporter/_tensors.py",
+            "number_of_lines": 96,
+            "project_name": "pytorch",
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.067002,
+            "uuid": "af115977-0508-4eff-836d-35627ccdb323"
+        },
+        "nova-pro-v1": {
+            "file_name": "/torch/onnx/_internal/exporter/_tensors.py",
+            "number_of_lines": 96,
+            "project_name": "pytorch",
+            "file_summary": "The main functionality of the `_tensors.py` file is to define a `SymbolicTensor` class, which is a subclass of `ir.Value` that supports various Python operators by leveraging ONNX operations. This class enables tensor operations to be expressed using standard Python arithmetic and comparison operators.",
+            "total_tokens": 861,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.105155,
+            "uuid": "f490b1a2-83c1-44a2-bcec-3706cf527108"
+        }
     }
 }

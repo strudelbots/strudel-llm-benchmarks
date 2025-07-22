@@ -1,0 +1,90 @@
+import glob
+import random
+from random import randint
+from time import sleep
+from math import floor
+from benchmark_code import REPO_DIRECTORY, OUT_FILES_DIRECTORY, file_date_prefix
+from benchmark_code.file_summarizer import FileSummarizer
+from benchmark_code.accessors.s3_accessor import store_results_for_model
+from benchmark_code.utils import clean_outputs_dir
+from benchmark_code.llm_model import AVAILABLE_MODELS, LlmModel
+
+
+
+def _generate_file_summaries_for_model(model: LlmModel,python_files, repeat_count=1):
+    index =0
+    summarizer = FileSummarizer(model)
+    
+    for _, file in enumerate(python_files):
+        if any(elem in file for elem in file_keywords_to_skip):
+            continue
+        if any(elem in file for elem in model.exclude_files):
+            continue
+        index += 1
+        #print(f'{index}. Generate summary for {file=}, {model.known_name=}, ')
+        try:
+            summarizer.summarize_file_multi_repeat(file, repeat_count)
+        except Exception as e:
+            print(f'*******      Failed to summarize file: {file}, {model.known_name=},  \n{e}')
+            if _is_fatal_error(e, model):
+                raise e
+
+def _is_fatal_error(e, model):
+    if model.known_name == 'titan_premier':
+        if 'expected maxLength: 150000' in str(e):
+            return False
+    if model.known_name in  ['Llama3.1', "cohere-v1"]:
+        if 'Too many tokens,' in str(e):
+            sleep(model.delay_time*1.5)
+            return False
+    if model.known_name == 'gpt-3.5-turbo':
+        if "This model's maximum context length is 16385" in str(e):
+            return False
+    return True
+
+
+
+def get_models():
+    run_on = [#'nova-lite-v1',
+              #'Claude3.5',
+              #'Llama3.3',
+              #'titan_premier',
+              #'nova-pro-v1',
+              #'Llama3.1',
+              #'gpt-3.5-turbo',
+              #'gpt-4o',
+              #'gpt-4',
+              #'gpt-4.5',
+              #'gpt-4.1',
+              #'gemini-2.5',
+              #'gemini-2.5-flash',
+              'Claude3.7',
+              #'mistral-7b', # consitently get valdation error
+              #'mistral-small', # consitently get valdation error
+              #'deepseek-r1' # could not make it work
+              'cohere-v1'
+              ]
+    avaliable_models = [model.known_name for model in AVAILABLE_MODELS]
+    for model in run_on:
+        if model not in avaliable_models:
+            raise ValueError(f'{model} is not available in the models list.' 
+                             f'Please check the model name.')
+    models = [model for model in AVAILABLE_MODELS if model.known_name in run_on]
+    return models
+
+if __name__ == "__main__":
+    clean_outputs_dir()
+    # Skip files that their full-path contains one of the following.
+    file_keywords_to_skip = [ '__init__.py', 'test']
+    models = get_models()
+    sample_factor = 0.2 # Controls of the percentage of files that would be summarized.
+    random.seed(82) # This ensures we will get the same files to analyze for each model.
+    python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
+    python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))
+    for model in models:
+        try:
+            print(f'**********  Generating summaries for {model.known_name} **********')
+            _generate_file_summaries_for_model(model,python_files, repeat_count=10)
+        except Exception as e:
+            print(f'*******      Failed to generate summaries for {model.known_name} \n{e}')
+

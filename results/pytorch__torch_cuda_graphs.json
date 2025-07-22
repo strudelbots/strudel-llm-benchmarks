@@ -1,0 +1,2752 @@
+[
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions and classes for creating CUDA graphs, managing graph memory, and generating graphed versions of callables (functions or neural network modules) for use in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph and a function for creating graphed versions of callables.",
+            "total_tokens": 5929,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.398974,
+            "uuid": "0c3ce1f8-f33d-47e0-9b5e-d28ec77dedb3"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions and classes for creating CUDA graphs, managing graph memory pools, and generating graphed versions of callables (functions or modules) for use in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph object.",
+            "total_tokens": 5918,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.136945,
+            "uuid": "e033b740-34c8-4ff1-aed1-a8b879f2132e"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions and classes for creating CUDA graphs, managing graph memory pools, and generating graphed versions of callables (functions or neural network modules) for use in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph and a function for creating graphed versions of callables, which can be used as drop-in replacements in training loops.",
+            "total_tokens": 5943,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.275019,
+            "uuid": "90042ae9-eab0-445a-a788-981f5be01131"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The \"graphs.py\" file provides functionality for capturing and replaying CUDA work in graphs, enabling optimizations for GPU computations in PyTorch. It includes classes and functions for creating CUDA graphs, capturing CUDA operations within a graph, and replaying the captured operations. Additionally, it offers a context manager for capturing CUDA work into a graph and a function for creating graphed versions of callables (functions or neural network modules) for use in autograd-enabled training loops.",
+            "total_tokens": 5919,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.181399,
+            "uuid": "32ef137d-ace6-467f-af73-8b006bf4dbec"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions and classes for creating CUDA graphs, managing graph memory pools, and generating graphed versions of callables (functions or neural network modules) for use in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph and a function for creating graphed versions of callables.",
+            "total_tokens": 5930,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.198825,
+            "uuid": "304c8d8f-f324-4efd-bf4c-58593161324d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions for checking if a CUDA stream is currently capturing a graph, obtaining a graph pool handle, and creating CUDA graph objects. The file also includes a context manager for capturing CUDA work into a graph and a function for creating graphed versions of callables (functions or neural network modules) that can be used in autograd-enabled training loops.",
+            "total_tokens": 5936,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.406863,
+            "uuid": "eabdf395-b005-4747-8c82-f35aff23a797"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models by reducing the overhead of CUDA API calls. This is achieved through the `CUDAGraph` class and the `graph` context manager, which allow for the creation and manipulation of CUDA graphs. Additionally, the file includes the `make_graphed_callables` function, which generates graphed versions of callables (functions or neural network modules) for use in autograd-enabled training loops.",
+            "total_tokens": 5943,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.093196,
+            "uuid": "334a949f-1dbc-4a41-8185-b3543a245646"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The \"graphs.py\" file provides functionality for capturing and replaying CUDA work in graphs, enabling optimizations for GPU computations in PyTorch. It includes functions and classes to create and manage CUDA graphs, check if a stream is currently capturing a graph, and generate graphed versions of callables for use in autograd-enabled training loops. The main focus is on facilitating efficient GPU memory management and execution through graph-based techniques.",
+            "total_tokens": 5909,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.038678,
+            "uuid": "9a80ceb5-9a2c-4571-98bb-86fe04abdd72"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize the execution of deep learning models. This includes functions and classes for creating CUDA graphs, managing graph memory pools, and generating graphed versions of callables (functions or modules) for use in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph object.",
+            "total_tokens": 5918,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.152461,
+            "uuid": "393b3f18-bf88-4b11-95e1-20fa18d760a1"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide tools for capturing and replaying CUDA work in the form of graphs, which can be used to optimize performance in deep learning workflows. This includes functions to check if a CUDA stream is currently capturing a graph, to create and manage CUDA graphs, and to create graphed versions of callables (functions or neural network modules) that can be used in autograd-enabled training loops. The file also includes a context manager for capturing CUDA work into a graph for later replay.",
+            "total_tokens": 5932,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.094068,
+            "uuid": "bd697a62-b3c7-437e-a0ca-8021170240d1"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `graphs.py` is a Python module for managing and utilizing CUDA Graphs in PyTorch, providing functionality to capture, replay, and debug CUDA work efficiently. It includes features such as the `CUDAGraph` class for wrapping CUDA graphs and the `graph` context manager for capturing CUDA work within memory pools. Additionally, it introduces methods like `make_graphed_callables` to optimize callable computations (e.g., model or function) by creating reusable graphed versions that integrate seamlessly with PyTorch's autograd mechanics.",
+            "total_tokens": 4952,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.977926,
+            "uuid": "d8b1905e-47d3-4756-aa51-02dcc5c6e069"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines functionality for managing CUDA Graphs in PyTorch. It provides classes and functions for capturing, replaying, and manipulating CUDA work on streams, enabling efficient execution workflows. Key components include the `CUDAGraph` wrapper, the `graph` context manager, and utilities like `make_graphed_callables` for converting Python callables into optimized CUDA graphs.",
+            "total_tokens": 4919,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.67057,
+            "uuid": "dbeb17a8-9430-4b3b-8029-0ed363766ad3"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The primary functionality of the `graphs.py` file is to provide tools and classes for managing CUDA graphs in PyTorch, enabling efficient capture and replay of GPU operations. It includes utilities like `is_current_stream_capturing()` for checking stream capturing status, `graph_pool_handle()` for handling memory pools, and components like the `CUDAGraph` class for wrapping and controlling CUDA graphs. Additionally, it offers advanced APIs such as `make_graphed_callables` to transform PyTorch modules or functions into versions that utilize CUDA graphs to optimize forward and backward execution.",
+            "total_tokens": 4958,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.355613,
+            "uuid": "e92673b6-6134-4f3a-8cc9-81a18ca9d4cb"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This Python file, `graphs.py`, provides functionality for managing CUDA graphs in PyTorch, enabling efficient GPU execution and memory sharing during graph captures and replays. It includes utility functions to check CUDA stream capture state, manage graph memory pools, and define a `CUDAGraph` wrapper class for capturing, replaying, and debugging CUDA work. Additionally, it offers APIs like `make_graphed_callables` to convert PyTorch modules or functions into callable objects that utilize CUDA graphs for optimized computation in autograd-enabled workflows.",
+            "total_tokens": 4950,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.950808,
+            "uuid": "95684c59-5553-494c-8294-48d8aaafa713"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file provides a Python interface for working with CUDA graphs using PyTorch, focusing on capturing, replaying, and managing CUDA work to optimize GPU performance. It includes wrapper classes like `CUDAGraph` and `graph` for managing the capture and replay of CUDA operations, handles memory sharing via graph pools, and enables creating graphed callables that integrate seamlessly with autograd during training. The functionality supports advanced features such as debugging, memory pooling, and restrictions like lack of support for higher-order differentiation.",
+            "total_tokens": 4949,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.974044,
+            "uuid": "bd458acc-d0d7-4ce1-9dd0-f0298c023341"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file provides Python wrappers and APIs to facilitate CUDA Graphs functionality in PyTorch, enabling efficient capture and replay of CUDA operations for performance optimization. It includes a `CUDAGraph` class with methods for capturing, replaying, and managing CUDA Graphs alongside a context manager `graph` for capturing CUDA work, and provides tools to convert callable functions or modules into graph-optimized versions using `make_graphed_callables`. The file also defines utility functions like `is_current_stream_capturing` and `graph_pool_handle` for interacting with the CUDA Graph's capture state and memory pool handles.",
+            "total_tokens": 4969,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.42133,
+            "uuid": "5e99d738-8145-4c17-9078-c0f1a6813e77"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file provides functionality for managing CUDA graphs in PyTorch. It includes classes and functions like `CUDAGraph`, `graph`, and `make_graphed_callables` to enable efficient capture and replay of CUDA operations, aiding memory optimization and execution during graph-based computations. Additionally, it includes mechanisms for managing memory pools, debugging graphs, and handling callable functions or modules in autograd and CUDA workflows.",
+            "total_tokens": 4929,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.303696,
+            "uuid": "630a5ad6-7952-49a3-8923-3aeec27d0365"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python file `graphs.py` provides tools for efficiently capturing, managing, and replaying CUDA operations for GPU-accelerated computation using PyTorch. It implements the functionality for CUDA graph-based workflows by defining wrappers like `CUDAGraph`, a context manager `graph`, and a helper function `make_graphed_callables` to create reusable and memory-optimized CUDA computational graphs. The file also includes utilities for memory pooling during graph capturing and methods for debugging, with support for managing input-output dependencies and stream-specific configurations in CUDA workflows.",
+            "total_tokens": 4952,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.140385,
+            "uuid": "8b8dafd2-4293-417b-859e-3bfb1d135cda"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file, `graphs.py`, is part of a PyTorch utilities suite for working with CUDA graphs. Its primary functionality includes wrapping CUDA graph-related operations, providing tools for capturing, replaying, and managing the memory pools of CUDA graphs, and enabling optimizations for efficient GPU computation. Additionally, it includes APIs for transforming callables (functions or models) into graphed versions for accelerated execution on CUDA-enabled devices.",
+            "total_tokens": 4928,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.780453,
+            "uuid": "1217927b-844a-438e-8f74-21327ef270d8"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide implementations for working with CUDA graphs in PyTorch, enabling efficient capture, replay, and memory management of CUDA operations. It defines classes, functions, and utilities such as `CUDAGraph`, `graph`, and `make_graphed_callables` to facilitate CUDA graph capture, automatic differentiation, and memory sharing across graph captures, all wrapped with Python shims for easier integration and documentation. The file also includes safety checks, debugging features, and supports advanced scenarios like training with mixed precision or using multiple callables with shared memory pools.",
+            "total_tokens": 4964,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.25414,
+            "uuid": "6167914d-81f3-4a92-b479-4628861e5a53"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related utilities and classes for PyTorch. It includes the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work into a graph object, and a function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution using CUDA graphs.",
+            "total_tokens": 6151,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.235475,
+            "uuid": "ae48bb25-82d7-43d8-8627-882eff1c3c11"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph support for PyTorch. It defines classes and functions for capturing, managing, and replaying CUDA operations as graphs, which can improve performance by reducing CPU overhead. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or nn.Modules for efficient execution in autograd-enabled training loops.",
+            "total_tokens": 6161,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.551899,
+            "uuid": "05cf1b67-99b1-4a4c-a64e-76c89c5ad3d0"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution in CUDA-enabled PyTorch applications.",
+            "total_tokens": 6162,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.000202,
+            "uuid": "5851d04f-adcb-47fc-903f-2af0ca8de573"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, which can be used to optimize and speed up repetitive CUDA operations. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or PyTorch modules for efficient execution on CUDA devices.",
+            "total_tokens": 6167,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.203559,
+            "uuid": "bf28ce91-e862-4f7e-8825-31ba8437c3ec"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph support for PyTorch. It defines classes and functions for capturing, managing, and replaying CUDA operations as graphs, which can improve performance by reducing CPU overhead. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or nn.Modules for efficient execution in autograd-enabled training loops.",
+            "total_tokens": 6161,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.198286,
+            "uuid": "a99c45d2-0051-4511-b512-76d7dd672331"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable functions or nn.Modules. This file is essential for optimizing CUDA operations in PyTorch by allowing users to capture and replay complex sequences of CUDA operations as graphs.",
+            "total_tokens": 6176,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.982364,
+            "uuid": "9a24a846-05a2-4733-8584-aabf5828c7cb"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, which can be used to optimize and speed up repetitive CUDA operations. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or PyTorch modules for efficient execution in autograd-enabled training loops.",
+            "total_tokens": 6170,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.365903,
+            "uuid": "1ad70211-363d-44b1-9a25-12d10ff21bea"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related utilities and classes for PyTorch. It includes the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work into a CUDAGraph object, and a function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution. The file also contains various helper functions and utilities for managing CUDA graph memory and capturing CUDA operations.",
+            "total_tokens": 6171,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.985582,
+            "uuid": "34363f29-55a8-488a-848b-5e98f80d8db4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, which can be used to optimize and speed up repetitive CUDA operations. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or PyTorch modules for efficient execution on CUDA devices.",
+            "total_tokens": 6167,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.270654,
+            "uuid": "986062cd-b463-4460-a9a5-1956358b10f4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related utilities and classes for PyTorch. It includes the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work into a graph object, and a function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution using CUDA graphs.",
+            "total_tokens": 6151,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.936913,
+            "uuid": "92de057b-75ec-43ec-a76f-2bdd0ec1f631"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file primarily adds utility classes and functions for working with CUDA graphs in PyTorch, enabling efficient capture and replay of computations on the GPU. It provides mechanisms for memory pool management, capturing streams, and graph creation through classes like `CUDAGraph` and context managers like `graph`. Additionally, it includes advanced functionality to convert callable objects, such as PyTorch modules, into CUDA-accelerated \"graphed\" versions for improved performance during forward and backward passes.",
+            "total_tokens": 4942,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.026799,
+            "uuid": "cd5bc2f6-b5c6-4a91-b7cf-7dd4e2f2001f"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file provides functionality for managing and utilizing CUDA graphs in PyTorch, including capturing, replaying, and memory management for optimized execution of GPU workflows. It defines utilities, classes, and helper functions like `make_graphed_callables`, `CUDAGraph`, and `graph` to facilitate graph-based execution for both individual functions and neural network modules. Additionally, it includes a context manager for capturing CUDA operations and custom autograd functions for improved performance in forward and backward passes of CUDA workloads.",
+            "total_tokens": 4947,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.747849,
+            "uuid": "2f36043c-d645-4144-8ba2-1e591015e21f"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file, `graphs.py`, primarily defines utilities and classes for managing CUDA graph capture and replay functionality in PyTorch. It includes capabilities such as checking capture status, representing graph memory pools, and creating CUDA graphs for high-performance operations. Additionally, it provides mechanisms to transform callables (e.g., functions or neural network modules) into versions optimized for execution using CUDA graphs.",
+            "total_tokens": 4920,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.239173,
+            "uuid": "6271c845-07ac-448f-a49f-95325fc7431d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file provides functionality related to CUDA Graphs in PyTorch, enabling efficient capture and replay of computation graphs for GPU execution. It defines a `CUDAGraph` class to manage CUDA graph operations such as capturing, replaying, and debugging, along with utility functions like `graph_pool_handle` and `is_current_stream_capturing`. Additionally, the file includes advanced utilities like the `graph` context manager for capturing CUDA work and `make_graphed_callables` for creating optimized, graphed versions of callable functions, including support for autograd compatibility.",
+            "total_tokens": 4961,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.116745,
+            "uuid": "f35a4152-e2cf-4ca4-bdde-350cf1a17625"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides a Python interface for working with CUDA graphs using PyTorch. It includes classes and functions such as `CUDAGraph`, `graph`, and `make_graphed_callables` to assist in capturing and replaying CUDA operations, optimizing memory management, and enabling efficient graph-based computation for deep learning workflows. Key utilities include support for context managers, debugging, and creating graphed versions of callable functions or modules for improved GPU performance.",
+            "total_tokens": 4933,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.382238,
+            "uuid": "b354639e-98e2-4e61-be07-ba72caeac820"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file introduces Python utilities and abstractions around CUDA graph functionality, enabling efficient capture and replay of CUDA operations on GPU streams for accelerating workloads. It defines classes and functions such as `CUDAGraph`, `graph`, and `make_graphed_callables`, allowing controlled memory management and encapsulating CUDA workflows. Additionally, it includes mechanisms for debugging and customizing CUDA graph behavior through adjustable stream modes and memory pooling.",
+            "total_tokens": 4930,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.90141,
+            "uuid": "aa7c882a-f06f-4add-9fa8-caf4eddc96e3"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided file, `graphs.py`, defines utilities and classes related to CUDA graph functionality in PyTorch. It includes mechanisms for capturing, replaying, and managing CUDA work efficiently using graphs, while supporting memory pool handling and integration with PyTorch's autograd system for training workflows. Additionally, it offers APIs to transform callables (functions or neural network modules) into graphed versions for optimized execution.",
+            "total_tokens": 4923,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.553772,
+            "uuid": "78d28382-f625-4274-9be2-8ecaa3a5a8d7"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided file, `graphs.py`, is a module intended for CUDA graph management using PyTorch, offering functionality to capture and replay CUDA work for improved performance during GPU computations. It introduces classes like `CUDAGraph` and `graph`, and functions like `make_graphed_callables`, which allow users to record CUDA operations, reuse memory pools effectively, and perform operations such as forward and backward passes as CUDA graphs. This module is explicitly aimed at optimizing and facilitating workflows requiring CUDA graphs, while including safeguards for beta features subject to changes in future releases.",
+            "total_tokens": 4956,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.785102,
+            "uuid": "3a372c3b-ab60-4751-bcee-b80d123e399d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `graphs.py` file defines utilities for working with CUDA graphs in PyTorch, providing abstractions for capturing, replaying, and managing GPU operations to optimize performance. It introduces the `CUDAGraph` class and a corresponding `graph` context manager, enabling efficient memory management and functional chaining during CUDA execution. Additionally, it includes the `make_graphed_callables` utility for transforming functions or modules into CUDA graph-compatible versions while supporting autograd for forward and backward computations.",
+            "total_tokens": 4941,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.461003,
+            "uuid": "ae3370bb-1b1b-48c1-88d3-bfbd817bb41a"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides utility functions and classes for working with CUDA graphs in PyTorch, enabling efficient GPU computation through the capture and replay of CUDA operations. It includes a context manager (`graph`) for capturing CUDA streams, a wrapper class (`CUDAGraph`) for managing individual CUDA graphs, and a utility function (`make_graphed_callables`) for converting Python functions or PyTorch modules into graphed versions with optimized forward and backward passes. These tools facilitate CUDA memory management, debugging, and performance tuning within PyTorch workflows.",
+            "total_tokens": 4948,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.954929,
+            "uuid": "dba470f9-e23d-44cf-b3ef-8376e8aca1c0"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related utilities and classes for PyTorch. It includes the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work into a graph object, and a function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution using CUDA graphs.",
+            "total_tokens": 6151,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.95846,
+            "uuid": "d602bc32-f047-42fe-8d44-045ae3948077"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related functionality for PyTorch. It defines classes and functions for capturing, managing, and replaying CUDA operations as graphs, which can improve performance by reducing CPU overhead. The file also includes a `make_graphed_callables` function that converts PyTorch modules or functions into graphed versions for more efficient execution.",
+            "total_tokens": 6153,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.068483,
+            "uuid": "22a5c008-1f61-437f-8348-3c604d6236bb"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, which can be used to optimize and speed up repetitive CUDA operations. The file also includes a `make_graphed_callables` function that allows for creating graphed versions of callable functions or PyTorch modules, enabling efficient execution of their forward and backward passes as CUDA graphs.",
+            "total_tokens": 6173,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.599043,
+            "uuid": "48cf4c01-e278-49b3-b12f-68357a059d32"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph support for PyTorch. It defines classes and functions for capturing, managing, and replaying CUDA operations as graphs, which can improve performance by reducing CPU overhead. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or nn.Modules for efficient execution in autograd-enabled training loops.",
+            "total_tokens": 6161,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.831728,
+            "uuid": "e97dd09e-5224-4b4d-a4d7-89dc1d776391"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable functions or nn.Modules. This file is crucial for enabling efficient execution of CUDA operations by capturing and replaying sequences of CUDA work as graphs.",
+            "total_tokens": 6171,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.267741,
+            "uuid": "3678282c-186b-4559-92fb-f1bf656d099d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph-related utilities and classes for PyTorch. It includes the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work into a graph object, and a function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution using CUDA graphs.",
+            "total_tokens": 6151,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.168565,
+            "uuid": "bd9b1dd5-fc3c-4ff9-aabe-beff3ba9e6ae"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable objects (functions or nn.Modules) for optimized execution on CUDA devices.",
+            "total_tokens": 6157,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.373346,
+            "uuid": "81d70c9f-51a8-4242-83bf-ede92564bfe1"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide CUDA graph support for PyTorch. It defines classes and functions for capturing, managing, and replaying CUDA operations as graphs, which can improve performance by reducing CPU overhead. The file also includes a `make_graphed_callables` function that allows users to create graphed versions of callable functions or nn.Modules for efficient execution in autograd-enabled training loops.",
+            "total_tokens": 6161,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.033525,
+            "uuid": "baa9b67a-f778-4244-9ed5-53f66e3c2593"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable functions or nn.Modules for optimized execution on CUDA devices.",
+            "total_tokens": 6154,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.215457,
+            "uuid": "d9ee3e3e-88f0-4997-93b0-6e7318c58671"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"graphs.py\" file is to provide a Python implementation for CUDA graph capture and replay in PyTorch. It defines classes and functions for creating, managing, and executing CUDA graphs, including the CUDAGraph class, a context manager for graph capture, and a utility function to create graphed versions of callable functions or nn.Modules for optimized execution on CUDA devices.",
+            "total_tokens": 6154,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.148558,
+            "uuid": "6b7b4d00-d9bb-483e-96f8-c6c038ace5a2"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides a set of APIs and helper classes for working with CUDA Graphs in PyTorch, enabling the capture, replay, and management of GPU computation graphs for performance optimization. It defines wrappers and context managers for capturing and replaying CUDA operations, manages graph memory pools, and includes the make_graphed_callables function, which transforms functions or modules into graph-captured, autograd-compatible callables. The module also ensures safe and correct use of CUDA graphs by providing checks and guidance for users, particularly regarding PyTorch autograd, module hooks, and CUDA stream capture modes.",
+            "total_tokens": 4960,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 9.279786,
+            "uuid": "0ae5bd54-9d4e-4843-9986-edc7591b9d85"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides Python interfaces for working with CUDA graphs in PyTorch, including capturing, replaying, and managing CUDA computational graphs to improve performance and memory efficiency. It defines wrappers and utilities such as CUDAGraph (enabling capture and replay of GPU kernels), context managers for graph capture, and a high-level function (make_graphed_callables) to automatically convert functions or modules into callable objects that execute via CUDA graphs with autograd support. In addition, it ensures proper memory sharing and error handling between captured graphs and exposes low-level mechanisms to check and manage the CUDA graph memory pool.",
+            "total_tokens": 4963,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.005085,
+            "uuid": "cac13a4a-0f3a-41f4-a54d-4d1daeeffc90"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides Python interfaces and utilities for capturing, managing, and replaying CUDA computation graphs in PyTorch using the CUDA Graphs API. It defines classes and functions such as CUDAGraph, graph (a context manager), and make_graphed_callables, allowing users to capture CUDA work, share memory pools, and create optimized, replayable versions of callables (including neural network modules) for efficient execution and integration with autograd. It also handles compatibility with PyTorch builds lacking CUDA Graphs support, and includes detailed safety checks and documentation for safe usage in various CUDA and autograd contexts.",
+            "total_tokens": 4965,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.522251,
+            "uuid": "94a87bcd-c6da-4125-941e-af2c51307058"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The \"graphs.py\" file provides utilities for capturing and replaying CUDA operations using CUDA Graphs in PyTorch. It defines classes and functions such as CUDAGraph, graph (a context manager), and make_graphed_callables, enabling users to capture sequences of CUDA operations for efficient re-execution, particularly in training loops, with support for autograd and memory pool management. The module ensures compatibility, documents constraints and requirements, and includes shims and error handling for smooth integration with PyTorch's CUDA back-end.",
+            "total_tokens": 4949,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.079031,
+            "uuid": "a06edcd9-172d-40ac-9925-4f583b0615b6"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file implements Python interfaces and utilities for managing CUDA Graphs in PyTorch, including capturing, replaying, and memory pool management for sequences of CUDA operations on GPUs. It provides high-level constructs such as the CUDAGraph wrapper class, a graph context-manager for easy capture, and a make_graphed_callables utility to automatically create graphed, autograd-capable callables or modules for optimized execution. These tools enable efficient memory reuse, faster execution, and integration with PyTorch's autograd by leveraging CUDA Graph capture and replay functionality in user code.",
+            "total_tokens": 4957,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.631124,
+            "uuid": "e1564ccf-c213-4338-9400-acccdc5ae03f"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides utilities and context managers for capturing, managing, and replaying CUDA graphs using PyTorch, primarily through the CUDAGraph class and associated context managers and factory functions. It enables efficient GPU execution by capturing CUDA workloads as graphs for later replay, creates suitable memory pools for graph captures, and exposes an API (make_graphed_callables) to transform functions or modules into CUDA-graph-backed versions that integrate with PyTorch's autograd. The file also includes validation and preparatory steps to facilitate use with PyTorch modules, ensuring correct handling of inputs, outputs, streaming, and backward passes for both individual and multiple callables.",
+            "total_tokens": 4973,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.267355,
+            "uuid": "4344cd27-02ff-418c-800d-f094a94bcb9f"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides high-level Python interfaces for managing and utilizing CUDA Graphs in PyTorch, including functions and classes to capture, record, and replay sequences of CUDA operations to optimize the execution of deep learning workloads. It implements a wrapper class (CUDAGraph), a context manager (graph), and a utility (make_graphed_callables) to enable capturing and replaying both forward and backward passes of user-defined functions and modules as CUDA graphs, supporting advanced memory management and reduced CUDA launch overhead. The functionality is intended for users seeking low-level GPU performance optimizations, with comprehensive safeguards and constraints to ensure integration with the PyTorch autograd system.",
+            "total_tokens": 4974,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.146155,
+            "uuid": "bd71f7e7-fae5-4c88-9248-daa7bfefd66f"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides utilities and context managers for capturing, manipulating, and replaying sequences of CUDA operations using CUDA Graphs in PyTorch, primarily to accelerate and optimize GPU workloads. It defines wrapper classes and functions for CUDA graph capture management, including forward and backward graphing of custom callables or modules, memory pool handling, and safe argument requirements. The main functionalities include checking if CUDA capture is active, managing CUDA graph resources, enabling graph-based execution for callables or modules, and ensuring compatibility with autograd and module state constraints.",
+            "total_tokens": 4949,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.021108,
+            "uuid": "338d39b6-a317-4d3e-8381-2f96c5c5cd16"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides Python bindings and utilities for managing CUDA Graphs within PyTorch, facilitating the capture and replay of sequences of CUDA operations to optimize GPU workloads. The core functionality includes classes and functions for capturing CUDA operations into graphs (via context managers and the CUDAGraph class), managing graph memory pools, and converting functions or PyTorch modules into \"graphed callables\" that run their forward and backward passes in pre-captured, high-performance CUDA graphs. It also defines strict constraints and handling to ensure correctness and compatibility during graph capture and replay, especially in the context of autograd and module usage.",
+            "total_tokens": 4969,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.972647,
+            "uuid": "02430855-7f52-4dd5-ac1e-0dfa7f663441"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides a Python interface for working with CUDA graphs in PyTorch, enabling performance improvements by capturing and replaying sequences of CUDA operations as graphs on the GPU. It defines Python classes and helper functions to manage CUDA graph creation, memory pools, and to wrap callables (functions or nn.Modules) so their forward and backward passes are efficiently executed as CUDA graphs with proper autograd support. The API includes context managers and beta features for advanced memory management and debugging, and enforces a set of usage constraints to guarantee correct and performant graph capture and replay.",
+            "total_tokens": 4954,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.191588,
+            "uuid": "9402f4be-09da-44d0-af73-46d3aa51f229"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying GPU operations for improved performance. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA operations, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as optimized graphs.",
+            "total_tokens": 6150,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.201415,
+            "uuid": "24f0202d-4385-430a-aa3d-6543e1cbff12"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.954844,
+            "uuid": "32ba7efa-9d7b-422c-846a-33ba3230def4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.145436,
+            "uuid": "1bf6deb5-10fd-4011-af8e-08d1108b9f65"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file implements CUDA graph functionality for PyTorch, providing tools to capture and replay CUDA operations as graphs for improved performance. It defines the CUDAGraph class, a context manager for graph capture, and the make_graphed_callables function which converts PyTorch functions or modules into versions that execute their CUDA operations as optimized graphs. The implementation includes memory management utilities and autograd integration to support both forward and backward passes in training workflows.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.510239,
+            "uuid": "bb470c19-bcc3-4229-892a-ddb73db21a7b"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.107401,
+            "uuid": "90b2dac1-816e-4fb7-90d7-cf803aa170b3"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.168712,
+            "uuid": "c50be3e7-1ee4-4b80-b103-71e965af282b"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.748267,
+            "uuid": "cc177a44-afc9-4a13-9971-a453408fa9b4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.034336,
+            "uuid": "2d1f0896-c720-41cf-903a-1477f28549a1"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for graph capture, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6150,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.044355,
+            "uuid": "01bb7afa-5b26-4ac2-89af-cdb6ef7d218d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.211511,
+            "uuid": "fa82b9c5-ab57-4ff0-ba33-fe03f04f0923"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file implements high-level utilities for working with CUDA Graphs in PyTorch, including context managers and function wrappers that enable efficient capture, replay, and management of GPU execution graphs. It defines Python shims and wrapper classes around core CUDA Graph objects, provides context management for capturing CUDA work, and includes a function (make_graphed_callables) that transforms functions or modules into optimized, graph-captured callables for accelerated training loops with autograd support. The file also carefully manages resources, handles memory pooling for captured graphs, and enforces preconditions to ensure correctness and compatibility when graphed callables are used.",
+            "total_tokens": 4967,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.991161,
+            "uuid": "c8eb1204-598b-4872-a245-2c599c6e40ab"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The \"graphs.py\" file provides Python interfaces and shims to facilitate working with CUDA Graphs in PyTorch, enabling efficient graph capture and replay of CUDA operations for performance gains. It defines classes, context managers, and utility functions for capturing and replaying CUDA workloads, managing graph memory pools, and wrapping functions or modules into autograd-compatible, graph-replayable callables. The code ensures compatibility with PyTorch's C++ backend and handles edge cases, offering detailed control over graph capture modes and memory sharing between graphs.",
+            "total_tokens": 4948,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.081174,
+            "uuid": "5eb21290-8cc6-4d14-9f96-498b12b40a1d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides utilities for capturing, manipulating, and replaying CUDA computation graphs using PyTorch\u2019s CUDA Graphs API. It defines Python shims and wrappers for lower-level CUDA graph primitives, context-managing graph capture regions, and includes the key function make_graphed_callables, which takes Python functions or nn.Module objects and returns automatically CUDA-graphed and autograd-integrated versions of them for efficient repeated execution. The file is focused on enabling advanced memory management and optimization workflows for CUDA workloads in PyTorch, particularly targeting expert users seeking to maximize GPU performance.",
+            "total_tokens": 4957,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.125501,
+            "uuid": "e91480b5-b091-468f-8d0b-b010e17a997b"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides Python wrappers and utilities for working with CUDA Graphs in PyTorch, enabling the capture, replay, and management of CUDA operations for performance optimization. It defines high-level interfaces such as CUDAGraph and a context-manager graph for capturing CUDA work, as well as the function make_graphed_callables for converting functions or modules into CUDA-graphed versions suitable for efficient repeated execution and integrated autograd support. The module also handles compatibility when CUDA Graph functionality is unavailable, and includes detailed safety and usage checks for proper integration into user workflows.",
+            "total_tokens": 4955,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.073245,
+            "uuid": "a780feb9-a3b9-4059-b409-862ffd1526e9"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides an interface for capturing and managing CUDA computation graphs in PyTorch, enabling efficient replays of GPU workloads via the torch.cuda.CUDAGraph abstraction. It defines classes and functions to check stream capture status, manage CUDA graph memory pools, facilitate context-managed graph capture, and to \"graph\" arbitrary PyTorch modules or functions (including their forward and backward passes) for performance-critical workloads. The core is the make_graphed_callables function, which takes callables (functions or nn.Module instances) and returns CUDA-graphed versions suitable for reproducible and optimized training and inference cycles.",
+            "total_tokens": 4964,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.281385,
+            "uuid": "461ae33e-ffbc-4e63-bfcb-e2a6c03d638e"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides a set of Python classes and functions to facilitate the use and management of CUDA Graphs within PyTorch, exposing high-level interfaces to capture, replay, and manage CUDA graph executions for performance optimization. It defines shims and wrappers for CUDA graph concepts, including a context manager for capturing operations into a CUDAGraph, tools for managing memory pools, and a utility function make_graphed_callables for converting regular callables or modules into CUDA-graphed callables suitable for fast replay in training loops with autograd support. The code includes thorough integration with PyTorch's autograd and CUDA APIs, and adds safety checks and flexible options, making CUDA Graphs accessible and easy to use for PyTorch users.",
+            "total_tokens": 4989,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.680054,
+            "uuid": "dbd9e248-170c-451b-b64c-0208d579be3c"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file implements Python bindings and utility functions for managing and utilizing CUDA Graphs in PyTorch, enabling efficient recording and replaying of sequences of CUDA operations to optimize execution on CUDA devices. It provides abstractions like the CUDAGraph wrapper, a context manager for capturing CUDA work, and utilities for creating \"graphed callables\"\u2014special functions or modules whose forward and backward passes are efficiently encapsulated as CUDA graphs. The file ensures safer memory management for graph captures and supports integration with autograd, while enforcing various constraints and offering experimental (beta) APIs for advanced users aiming for high-performance, graph-based CUDA execution.",
+            "total_tokens": 4969,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.039371,
+            "uuid": "a4d1066d-cc42-40bf-b445-87f2204407de"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides high-level Python interfaces for CUDA graph capture and replay in PyTorch, enabling users to capture CUDA operations into reusable graphs for efficient execution, primarily on NVIDIA GPUs. It defines a CUDAGraph class to manage graph operations, a context-manager class graph for capturing work, and a utility function make_graphed_callables that converts callables or torch.nn.Modules into CUDA-graphed, autograd-compatible versions. The implementation includes mechanisms for graph memory pooling, error-checking, and compatibility with PyTorch\u2019s autograd and module system, targeting advanced use-cases such as training loop acceleration and memory optimization.",
+            "total_tokens": 4968,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.114301,
+            "uuid": "b6b0174d-2182-493d-8a1e-0d384bcdacb4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides Python interfaces for working with CUDA Graphs in PyTorch, enabling advanced memory and execution optimizations on CUDA devices. It defines classes and utility functions for capturing, managing, and replaying CUDA computational graphs, including context managers and mechanisms to \"graph\" existing functions or modules for efficient repeated execution. The main functionality centers around capturing CUDA workloads into reusable graphs and making them compatible with PyTorch's autograd for both forward and backward passes, facilitating performance improvement and memory management for deep learning workloads.",
+            "total_tokens": 4944,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.865623,
+            "uuid": "2b533338-ac03-43f8-bde3-0ee3faca008a"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file graphs.py provides Python wrappers and utilities for capturing and replaying CUDA computational graphs using PyTorch, enabling efficient execution and memory management of predefined GPU workloads. It defines mechanisms to inspect CUDA stream capture status, manage graph memory pools, build and control CUDAGraph objects, and offers context managers and functions to graph and wrap user callables\u2014including nn.Module instances\u2014for use in graph-based, autograd-enabled training loops. This facilitates advanced CUDA optimization workflows such as capturing both forward and backward passes for training, with safeguards and detailed beta-level API documentation.",
+            "total_tokens": 4954,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.472159,
+            "uuid": "7003431a-1616-48df-87f2-eacfd894820b"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.998379,
+            "uuid": "0f843eac-4c3c-438f-9307-6761f35da6cb"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions related to CUDA graph capture and replay. It allows for capturing CUDA work and creating graphed versions of callables, which can be later replayed for improved performance. The script also provides a context manager for managing CUDA graph capture and offers functions to retrieve information about CUDA graphs.",
+            "total_tokens": 5579,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.669319,
+            "uuid": "abf4f763-65a3-4058-8a15-1ca5d5d351df"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.92645,
+            "uuid": "0e5b4360-b7ff-4248-9ea9-0a4f8e8ba7c7"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 2.053918,
+            "uuid": "c934585d-feda-4b4e-be9d-0c6c77e615f2"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.947953,
+            "uuid": "4537e712-8f47-4c50-9317-3f986fdbe30d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.949884,
+            "uuid": "9b894783-3e1d-45ca-ad4e-5dde5f85d090"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.955276,
+            "uuid": "ffb91ad0-a050-4d65-a113-3f17b7b97d98"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.951533,
+            "uuid": "0d2ae5e8-e2ca-47f8-bf1d-92b2636b1738"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.928367,
+            "uuid": "6e3c3079-dff4-486a-9d9e-e2553c6ca878"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions that allow capturing CUDA work into graphs and replaying them for improved performance. It also provides a way to create graphed versions of callables, including PyTorch modules, which run their forward and backward passes as CUDA graphs. These graphed callables are designed to be drop-in replacements for their source callables in a training loop.\n\nThe main functionality of the file is to optimize the performance of CUDA operations by utilizing CUDA graphs to capture and replay operations, as well as providing a way to create specialized graphed versions of functions or modules.",
+            "total_tokens": 5634,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 2.41379,
+            "uuid": "cf7addd2-900b-4ae5-ae51-3c7041c6685a"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.197987,
+            "uuid": "4dc920fd-0024-4f06-80ca-7089c11cd028"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class, a context manager for graph capture, and utility functions like make_graphed_callables that convert regular PyTorch functions or modules into graphed versions that execute their CUDA operations as optimized graphs. The implementation includes memory management features, forward/backward pass handling for autograd compatibility, and various helper functions for working with CUDA graph captures.",
+            "total_tokens": 6181,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.266571,
+            "uuid": "120e15db-c64a-4d21-9303-8691c3eda64b"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for graph capture, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6150,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 5.189773,
+            "uuid": "fd1bcf64-b837-4abf-a7eb-f07c2ea496b1"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.148917,
+            "uuid": "7499ebe6-6c8f-444b-9712-399ad3fe94a0"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.171647,
+            "uuid": "a467e5b7-b1c6-48b5-97ac-e74db7cb2d9c"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for graph capture, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6150,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.086367,
+            "uuid": "ae2d7a54-9119-4795-931a-cefb8793218a"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.307027,
+            "uuid": "10f88851-49c1-4338-91ae-e3b8008ad620"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.998685,
+            "uuid": "df6d6d71-99c6-426e-8b1f-78b1b329da92"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"graphs.py\" provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance during both forward and backward passes.",
+            "total_tokens": 6163,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.481544,
+            "uuid": "d5d38d37-8872-4819-a7cb-b718e049a7a3"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file provides functionality for working with CUDA graphs in PyTorch, which allow capturing and replaying CUDA operations for performance optimization. It defines the CUDAGraph class for wrapping CUDA graphs, a context manager for capturing CUDA work, and the make_graphed_callables function that converts PyTorch functions or modules into versions that execute their CUDA operations as graphs for improved performance.",
+            "total_tokens": 6152,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.296536,
+            "uuid": "cd7182bb-ce71-4520-90e7-5e875fb247b4"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.91138,
+            "uuid": "6a7f90e1-a3f8-455c-bb84-65a45921aeef"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.878326,
+            "uuid": "00f2d483-92e3-4e91-ac4c-dcda6f963b3d"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.902388,
+            "uuid": "c05a302e-9b4c-43cd-a790-7495ff063e5c"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.874471,
+            "uuid": "9de09f27-aac2-4cc1-8c14-d34671dcc132"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions related to CUDA graph capture and replay. It allows for capturing CUDA work and creating graphed versions of callables, which can be later replayed for improved performance. The script also provides a context manager for managing CUDA graph capture and offers functions to retrieve information about CUDA graphs.",
+            "total_tokens": 5579,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.636959,
+            "uuid": "13b578ee-690e-4605-be53-c547a0b93015"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.880361,
+            "uuid": "90751df8-16f1-482f-84f8-8b4087d92c91"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.907452,
+            "uuid": "4abf7f21-46a3-408c-9d61-8ca7feadf90e"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.895752,
+            "uuid": "44c5c6b0-1007-4b7e-8aaf-e0faf690c641"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions to work with CUDA graphs, which are used to capture and replay CUDA work for later use. The key functionality includes capturing CUDA operations into graphs, providing a context manager for graph capture, and creating graphed versions of callables (functions or nn.Modules) that run CUDA work from the graph during forward and backward passes. This allows for more efficient CUDA operation execution and gradient computation.",
+            "total_tokens": 5601,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.911097,
+            "uuid": "72440ca2-82ac-49f1-ac70-ea3c7ac3c0ed"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python script defines a set of functions related to CUDA graph capture and replay. It allows for capturing CUDA work and creating graphed versions of callables, which can be later replayed for improved performance. The script also provides a context manager for managing CUDA graph capture and offers functions to retrieve information about CUDA graphs.",
+            "total_tokens": 5579,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.640281,
+            "uuid": "41262f00-cce9-47a6-95a8-f323a54f66dc"
+        },
+        "file_name": "/home/shai/pytorch/torch/cuda/graphs.py",
+        "number_of_lines": 491,
+        "project_name": "pytorch"
+    }
+]

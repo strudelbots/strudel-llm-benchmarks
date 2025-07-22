@@ -1,0 +1,3577 @@
+[
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.879546,
+            "uuid": "1c4d2d1a-b435-4754-9114-816177e8a51b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports Python operators such as addition, multiplication, and comparison operators by delegating the operations to the ONNX operator set. The primary functionality of this file is to enable the use of Python operators with tensors in an ONNX-compatible manner.",
+            "total_tokens": 887,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.429125,
+            "uuid": "725ad0bd-2e1b-4a26-81f6-f9ece47c14fb"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, that supports various Python operators by mapping them to corresponding ONNX operations. This allows symbolic tensors to be used in a more intuitive and Pythonic way within the ONNX ecosystem. The class initializes tensors with specific attributes and implements methods to handle arithmetic, comparison, and logical operations.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.254294,
+            "uuid": "cf5a7305-4e1c-417b-a24b-972145ee2059"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.185973,
+            "uuid": "f7bc9e08-641b-4e9c-ac57-11427b39c2a7"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that extends `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators, translating these operations into corresponding ONNX operations. The primary purpose of this file is to facilitate the use of symbolic tensors with operator overloading in the context of ONNX scripting.",
+            "total_tokens": 887,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.839171,
+            "uuid": "989b5ebf-1cab-426c-8466-02b5a8972b79"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a subclass `SymbolicTensor` of `ir.Value` from the `onnxscript` library, which extends support for Python operators such as addition, multiplication, and comparison. This subclass allows for the creation and manipulation of symbolic tensors with various arithmetic and comparison operations, leveraging the ONNX operator set for computations. The file focuses on implementing the necessary methods to enable these operations within the context of symbolic tensors.",
+            "total_tokens": 895,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.845932,
+            "uuid": "482dd30e-893a-483e-b685-47375a1ad010"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.828247,
+            "uuid": "ecf5549c-cc1f-47b3-a1c8-2bca1b0561aa"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators, translating these operations into corresponding ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX computational graph.",
+            "total_tokens": 883,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.793585,
+            "uuid": "09b20302-ca91-4f9c-b435-0f479ed068d8"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators, translating these operations into corresponding ONNX operations. The primary functionality is to facilitate the creation and manipulation of symbolic tensors using Python's operator overloading.",
+            "total_tokens": 885,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.71787,
+            "uuid": "41f3f95d-aba6-40f2-ad74-edfd1927384e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.765275,
+            "uuid": "61837b58-fb32-4aaf-b7e9-9157b756d28a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.761379,
+            "uuid": "dce5fd54-30a8-47e3-87e7-319f82689b93"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.7781,
+            "uuid": "d21cfa5b-4815-41fb-a15d-74f169c56eef"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.715651,
+            "uuid": "61f70395-b773-4fb8-ae6e-3fa59e810397"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.105341,
+            "uuid": "cd968dee-4e10-4409-bcd3-40cbee644b0a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with the ONNX Script framework to enable symbolic tensor operations, allowing tensors to be manipulated using standard Python arithmetic and comparison operators. The class initializes tensors with specific attributes and implements methods to overload these operators, mapping them to corresponding ONNX operations.",
+            "total_tokens": 887,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.197434,
+            "uuid": "61520008-529a-46ef-94c0-924fb6ffdb22"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.903081,
+            "uuid": "461cc807-e840-44be-b7f1-e4af3b8d6c73"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.888136,
+            "uuid": "8db5712f-8b2e-48fb-9a5b-f8dbd4103f32"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with the ONNX (Open Neural Network Exchange) framework to perform operations like arithmetic, comparison, and logical operations on tensors. The class facilitates symbolic computation by mapping Python operators to corresponding ONNX operations.",
+            "total_tokens": 877,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.341181,
+            "uuid": "f7572236-4bb5-4840-b930-52e503197e8a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to handle various arithmetic, comparison, and logical operations on tensors. The class initializes with optional parameters like name, shape, type, and constant value, and implements methods to overload standard Python operators.",
+            "total_tokens": 880,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.351133,
+            "uuid": "dee91be2-70b2-409c-ad14-e30dc1f5da3d"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform tensor computations and comparisons. The class facilitates tensor manipulations through operator overloading, enabling intuitive arithmetic and comparison operations.",
+            "total_tokens": 864,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.911309,
+            "uuid": "0ab96b34-817f-4642-9344-14f2fff95ba2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, which is a subclass of `ir.Value` designed to support Python operators. It integrates with the ONNX (Open Neural Network Exchange) framework to enable symbolic tensor operations, allowing tensors to be manipulated using standard Python arithmetic and comparison operators. The class initializes with various attributes and implements methods to overload these operators, interfacing with the ONNX operation set to perform the corresponding operations.",
+            "total_tokens": 895,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.27938,
+            "uuid": "57d5f9ae-4c5b-431f-812d-4cd6d233dca1"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.181537,
+            "uuid": "11c22353-87b7-435a-9a5a-3a4bd16c8e70"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.221039,
+            "uuid": "919a1ea7-96cb-435f-9268-42006d29f4b4"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.211889,
+            "uuid": "43cc2ea3-825b-4f36-a8df-b95889b73652"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators, translating these operations into corresponding ONNX operations. The primary purpose of this file is to facilitate the creation and manipulation of symbolic tensors using Python's operator syntax, which are then converted into ONNX operations.",
+            "total_tokens": 896,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.886362,
+            "uuid": "746d1b44-f474-4061-9060-1e011929d051"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.713456,
+            "uuid": "f7b1239f-9991-4904-a912-75d1b2ef7294"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.70445,
+            "uuid": "76354b0a-b1c2-4fd5-8930-54c55ab417d8"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.846492,
+            "uuid": "a208eb5b-3775-479a-8360-4494acc257a7"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class extends the functionality of tensors by supporting various Python operators, such as arithmetic, comparison, and bitwise operations, through the use of ONNX operators. The class initializes with an opset and various tensor attributes, and implements methods to handle operator overloading for the supported operations.",
+            "total_tokens": 895,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.087735,
+            "uuid": "14ab634f-8023-4285-91a7-467853dde8fd"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.796153,
+            "uuid": "d1626410-d472-4089-a6c1-42b396adeed5"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.782748,
+            "uuid": "020c6a77-1d71-4a20-84be-43bd5d861c70"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operations. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.639909,
+            "uuid": "bfe0e230-7243-4aca-b1f3-2319c58dafe7"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that is a subclass of `ir.Value` from the `onnxscript` library. This class supports various Python operators such as addition, subtraction, multiplication, and comparison operators by delegating the operations to the appropriate ONNX operators. The class aims to facilitate the creation and manipulation of symbolic tensors in an ONNX environment.",
+            "total_tokens": 884,
+            "model": {
+                "known_name": "nova-lite-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-lite-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 7.8e-05,
+                "price_per_1000_output_tokens": 0.000312,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.730162,
+            "uuid": "829583f1-ec2c-4fc3-88f9-ec4e071c0a23"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with the ONNX (Open Neural Network Exchange) framework to perform operations like arithmetic, comparison, and logical operations on tensors. The class facilitates symbolic computation by mapping Python operators to corresponding ONNX operations.",
+            "total_tokens": 877,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.57994,
+            "uuid": "88302d47-f449-4ae8-926c-7b0a3d19440f"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with ONNX operations to perform tensor computations and comparisons. The class facilitates tensor manipulations through operator overloading, enabling intuitive arithmetic and comparison operations.",
+            "total_tokens": 865,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.27985,
+            "uuid": "e1f2227f-7a69-45e7-99eb-801d5e7dd7ec"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with ONNX operations to perform tensor computations and comparisons. The class facilitates tensor manipulations through operator overloading, enabling intuitive arithmetic and comparison operations.",
+            "total_tokens": 865,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.094429,
+            "uuid": "fc436a5e-3886-4538-aecc-6671866fa52d"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value` that extends support for Python operators. It integrates with ONNX operations to enable tensor manipulations using standard Python arithmetic and comparison operators. The class initializes tensors with optional attributes like name, shape, type, and constant value, and implements methods to overload various operators.",
+            "total_tokens": 880,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.023087,
+            "uuid": "3e2d0e0b-54a0-4409-9529-09723d165cd5"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for various Python operators. It integrates with the ONNX Script framework to enable symbolic tensor operations, allowing tensors to be manipulated using standard Python arithmetic and comparison operators. The class initializes tensors with specific attributes and implements methods to handle different operator overloads.",
+            "total_tokens": 881,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.156307,
+            "uuid": "2b9fe0c1-a981-4801-a7a2-25eeea4fc549"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload standard Python operators like addition, multiplication, and comparison, mapping them to corresponding ONNX operations.",
+            "total_tokens": 875,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 1.178864,
+            "uuid": "73458c5f-d734-485a-b115-ed229b8b9a9b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value`, which extends support for Python operators. It integrates with ONNX operations to perform various mathematical and logical operations on tensors. The class includes methods to overload common Python operators, enabling intuitive tensor manipulations.",
+            "total_tokens": 866,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.927605,
+            "uuid": "99316e01-6454-49a0-a715-a42fced9d6a5"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that supports various Python operators. This class is designed to integrate with the ONNX (Open Neural Network Exchange) framework, allowing tensor operations to be expressed using standard Python arithmetic and comparison operators. The class overrides several special methods to map these operators to corresponding ONNX operations.",
+            "total_tokens": 883,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.990056,
+            "uuid": "dc232649-7877-464e-b9d4-248fbdafcd6f"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, which is a subclass of `ir.Value` designed to support Python operators for symbolic tensor operations using the ONNX (Open Neural Network Exchange) framework. It overrides various arithmetic, comparison, and logical operators to generate corresponding ONNX operations, facilitating the creation of symbolic tensor expressions.",
+            "total_tokens": 875,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 0.903693,
+            "uuid": "4b5755d6-5800-4f94-8b24-8bc53460421e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, a subclass of `ir.Value` that extends support for Python operators. It integrates with ONNX operations to enable tensor manipulations using standard Python arithmetic and comparison operators. The class initializes tensors with specified attributes and implements methods to overload operators for tensor computations.",
+            "total_tokens": 871,
+            "model": {
+                "known_name": "nova-pro-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.amazon.nova-pro-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.00105,
+                "price_per_1000_output_tokens": 0.0042,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 9.196589,
+            "uuid": "135b5a16-8085-4166-8a16-c551bd65c03c"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The Python file defines the `SymbolicTensor` class, which is a subclass of `ir.Value` enhanced to support Python operators for symbolic computation. This class includes operator overloading methods to implement mathematical and comparison operations (e.g., addition, subtraction, multiplication, etc.) using operations provided by the `onnxscript` library. It serves as a symbolic representation of tensors with support for operator manipulation, likely for use in the context of ONNX modeling or similar computational graph workflows.",
+            "total_tokens": 820,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.157208,
+            "uuid": "3131906b-cc67-4668-97ad-fc4bd37c8879"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that provides symbolic tensor manipulation by overriding standard Python operators (e.g., `+`, `-`, `*`, `/`, `@`, etc.) and delegating these operations to ONNX Script's operator set (`opset`). This class facilitates mathematical and logical operations on symbolic tensors while supporting features like rank retrieval and optional attributes for ONNX integration. It is intended for use in frameworks or workflows that leverage symbolic computation and operator overloading for ONNX-based model definitions.",
+            "total_tokens": 842,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.934107,
+            "uuid": "5288607d-2615-45f3-881c-23db213858ca"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines the `SymbolicTensor` class, which is a subclass of `ir.Value` and represents a tensor entity that supports standard Python operators. This class integrates operator overloading methods (e.g., `__add__`, `__mul__`, `__sub__`) to enable symbolic computation by mapping Python operations to ONNX-script graph operations. It leverages the `onnxscript` library to facilitate symbolic modeling of mathematical operations for deep learning or computational graph construction.",
+            "total_tokens": 822,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.963396,
+            "uuid": "8a144255-8b81-4e59-95eb-3f191c06d3ff"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a class called `SymbolicTensor`, which is a subclass of `ir.Value` and represents a symbolic tensor with additional Python operator support. It integrates with ONNX scripting by leveraging an `opset` object to perform operator overloading for mathematical and logical operations (e.g., addition, subtraction, multiplication, etc.). The main purpose of this class is to enable tensor operations to be expressed symbolically, making it possible to define and manipulate computations programmatically.",
+            "total_tokens": 823,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.450443,
+            "uuid": "ab311a51-8b0e-4d7a-b0c8-f8a6fe6c9641"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines a `SymbolicTensor` class, a subclass of `ir.Value`, that extends its functionality to support various Python operators for symbolic tensor manipulation like addition, subtraction, multiplication, and others, by utilizing operations from the `onnxscript` library's Opset. Each operator is overridden to perform the corresponding tensor operation, often leveraging ONNX's semantics like `Add`, `Mul`, `MatMul`, and others. The class is designed to enable intuitive and symbolic mathematical operations with tensors for use in ONNX-compatible workflows.",
+            "total_tokens": 833,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.529256,
+            "uuid": "0e12b70d-73e5-48a2-b996-7f7053fd25c9"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines a `SymbolicTensor` class as a subclass of `ir.Value`, enhancing it to support various Python operators such as addition, subtraction, multiplication, and comparison by leveraging an ONNX (Open Neural Network Exchange) runtime-based `Opset`. This allows symbolic manipulation of tensors, enabling mathematical operations and logical comparisons that can be used in computational graph construction. The class encapsulates tensor attributes like rank, shape, and data type, while deferring specific operation implementations to the ONNX runtime.",
+            "total_tokens": 826,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.632665,
+            "uuid": "bd40de94-1ce6-456c-a542-9acbb1cede78"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines the `SymbolicTensor` class, which is a subclass of `ir.Value` designed to support Python operators for symbolic tensor operations used in the ONNX (Open Neural Network Exchange) scripting environment. This class overrides various Python operators (e.g., addition, multiplication, comparison) by utilizing ONNX operators, enabling seamless manipulation of symbolic tensors in mathematical and logical operations. It also integrates metadata like tensor shape and data type and provides access to ONNX computation graphs through the associated `opset`.",
+            "total_tokens": 830,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.091518,
+            "uuid": "8e923043-6b0b-4fe9-8711-4d9011dfbf0a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that supports Python operators such as addition, subtraction, multiplication, and more. It integrates with the `onnxscript` library to perform symbolic computations through operator overloading, using operations from the `Opset` provided during initialization. This class is tailored for constructing and manipulating symbolic tensor expressions, commonly used in machine learning and computational graph scenarios.",
+            "total_tokens": 816,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.713149,
+            "uuid": "d3308e1b-97a5-4156-ad95-9b95a554e3a4"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that enhances tensor objects with Python operator overloading to facilitate symbolic operations. It supports mathematical and logical operations (e.g., addition, subtraction, multiplication, comparison) using the ONNX (Open Neural Network Exchange) `opset` for constructing models symbolically. This class is intended for use in scenarios where tensors are manipulated in an ONNX-compatible symbolic computation graph.",
+            "total_tokens": 818,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.527085,
+            "uuid": "ef84c59d-1168-4bad-bf6d-76e2f692538e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that integrates with `onnxscript` and supports Python operators such as addition, subtraction, multiplication, and comparison by leveraging an `opset` operations set. This class extends the behavior of tensors while maintaining symbolic computation, enabling algebraic manipulations for machine learning and ONNX graph definitions. The operator methods map Python operations to corresponding ONNX ops, allowing symbolic processing of tensor computations.",
+            "total_tokens": 825,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.155554,
+            "uuid": "e448bb56-709f-43b6-b7c9-0fcddf62e1b6"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Python-like manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 6.055377,
+            "uuid": "dd63573c-2ec6-40fc-9517-591e817069c1"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations from the provided opset. The SymbolicTensor class allows for more intuitive and Python-like manipulation of tensor objects within the ONNX script framework.",
+            "total_tokens": 994,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.62636,
+            "uuid": "74cabf97-3551-4ca7-b54b-beaff3be5726"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX script framework.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.93678,
+            "uuid": "3602660c-4c30-4f77-8eda-5e4beeb4602a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Python-like manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.835009,
+            "uuid": "111ede01-2e74-4f6b-8eae-256f52453249"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and matrix multiplication) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX script framework.",
+            "total_tokens": 989,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.937017,
+            "uuid": "122b866c-ba6e-464a-a595-f207c8b79647"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overloading various magic methods, allowing for intuitive mathematical operations on tensor objects. The SymbolicTensor class also provides access to ONNX operations through its associated opset, enabling seamless integration with the ONNX ecosystem.",
+            "total_tokens": 984,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.73365,
+            "uuid": "dec4eeeb-b042-41f4-afbf-5bfe7c13a288"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations from the provided opset. This allows for more intuitive and Python-like manipulation of tensor objects within the ONNX script framework.",
+            "total_tokens": 987,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.990893,
+            "uuid": "e9d9c99d-2b13-454d-8745-ec262312a4ed"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.754642,
+            "uuid": "24754cea-2475-497a-b064-ea3257261184"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overloading various magic methods, allowing for intuitive mathematical operations on tensor objects. The SymbolicTensor class also provides access to ONNX operations through its associated opset, enabling seamless integration with ONNX-based computations.",
+            "total_tokens": 986,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.965571,
+            "uuid": "101d1b35-79e3-4165-89f5-1b318b6bc247"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using ONNX operations. The class allows for seamless integration of tensor operations within the ONNX framework, enabling users to write more intuitive and Python-like code when working with ONNX tensors.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.734702,
+            "uuid": "e07378a4-4cf8-4ce8-bfa9-46f955b644ea"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` and introduces support for Python operators like addition, subtraction, multiplication, and comparison. It leverages an `Opset` object to perform the underlying operations by mapping Python operators to ONNX symbolic functions, such as `Add`, `Sub`, `Mul`, and others. This provides a way to represent tensor computations symbolically for use in ONNX-based machine learning workflows.",
+            "total_tokens": 822,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.40484,
+            "uuid": "522031ac-e092-4c5e-9759-c7bde0225b4a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a class `SymbolicTensor` which is a subclass of `ir.Value` and provides support for Python operators for symbolic tensor operations using ONNX (Open Neural Network Exchange) scripting. It overrides various standard Python operator methods (e.g., `__add__`, `__mul__`, `__sub__`) to enable element-wise, matrix, and logical operations, and leverages the ONNX Script Opset to create computational graphs for these operations. This class appears to be designed to facilitate operations within a symbolic computation framework or model graph representation in ONNX.",
+            "total_tokens": 844,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.783311,
+            "uuid": "ea9491b4-fd0a-4a8c-a372-466d623e8567"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines a `SymbolicTensor` class that extends the `ir.Value` class and integrates Python operator overloading to support various arithmetic and logical operations using ONNX operators. These operations, including addition, subtraction, matrix multiplication, and comparisons, are implemented by delegating to the operator set (`opset`) provided during initialization. This design allows `SymbolicTensor` instances to behave like symbolic tensors in computational graph modeling, commonly used in frameworks like ONNX for deep learning and neural network computations.",
+            "total_tokens": 826,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.598971,
+            "uuid": "8d6b9b6a-a4f4-4a2b-805c-9d395dc6b533"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines the `SymbolicTensor` class, a subclass of `ir.Value`, which enhances tensor functionality by supporting Python operators such as addition, subtraction, multiplication, matrix multiplication, logical comparisons, and more. These operations are implemented by leveraging an `opset` (likely related to ONNX operations) to perform computations symbolically rather than directly. This class appears to serve as an abstraction for symbolic computation on tensors, possibly aimed at facilitating operations in machine learning frameworks or models.",
+            "total_tokens": 825,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.9261,
+            "uuid": "4de680be-6101-4097-83a2-0478c0599b03"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value`. This class enables symbolic tensors to support various Python operators (e.g., addition, subtraction, multiplication, comparison) by overriding their corresponding special methods and mapping these operations to methods provided by the `onnxscript.values.Opset`. The functionality facilitates symbolic computation using ONNX (Open Neural Network Exchange) operators while maintaining Pythonic syntax for tensor operations.",
+            "total_tokens": 818,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.475601,
+            "uuid": "aeebbcdb-334e-4f53-a3a5-9dfd914bcf18"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The provided Python file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` with built-in support for various Python operators. It overrides operator methods (`__add__`, `__mul__`, `__sub__`, etc.) to perform tensor-based operations using an ONNX `opset`, enabling symbolic computation. This class is particularly tailored for usage in constructing ONNX models, supporting mathematical operations symbolically on tensors.",
+            "total_tokens": 813,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.318725,
+            "uuid": "77775e65-c6da-46d9-b655-d6684e13d399"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file `_tensors.py` defines a `SymbolicTensor` class, which is a subclass of `ir.Value` and is designed to represent symbolic tensors by supporting various Python operators through method overriding. These operator methods use an associated `opset` object to perform symbolic computations that mimic standard mathematical and comparison operations. The implementation is likely intended for use in computational graph construction or symbolic manipulation frameworks, such as ONNX.",
+            "total_tokens": 808,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.427329,
+            "uuid": "fcc4593f-25ba-4500-88e4-3b13b5e31cb7"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that allows symbolic tensor computations by overriding Python operators such as addition, multiplication, and comparisons. The class integrates with an `onnxscript.values.Opset` to translate these operators into corresponding ONNX operations for symbolic graph construction. This facilitates operations for defining computation graphs programmatically in a symbolic manner.",
+            "total_tokens": 808,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.523899,
+            "uuid": "dea92a40-5b29-4805-837e-c0014b97e869"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This Python file defines the `SymbolicTensor` class, which is a subclass of `ir.Value` designed to represent symbolic tensors while supporting Python operators. The class integrates operator overloading for a variety of mathematical and comparison operations (e.g., addition, subtraction, multiplication, etc.), leveraging a specified `opset` to perform these operations symbolically using ONNX functionalities. Additionally, it includes properties like `rank`, and the design implies potential use cases in computational graph building or symbolic computation.",
+            "total_tokens": 822,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.924233,
+            "uuid": "599b2b81-7560-4aef-b267-dc773152fbf6"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class, which is a subclass of `ir.Value` that integrates Python operator overloading for symbolic tensor operations using an ONNX-compatible `opset`. This class supports various mathematical and logical operations (e.g., addition, multiplication, comparison) while interacting seamlessly with the ONNX framework. Its purpose is to provide a user-friendly abstraction layer for manipulating and representing symbolic tensors in a computation graph.",
+            "total_tokens": 815,
+            "model": {
+                "known_name": "gpt-4o",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4o",
+                "azure_region": "eastus",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0025,
+                "price_per_1000_output_tokens": 0.01,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.445526,
+            "uuid": "50937579-a71a-40aa-8570-e3f1c9647182"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overriding various magic methods, allowing for intuitive mathematical operations on tensor objects. The SymbolicTensor class also provides integration with an ONNX opset, enabling the translation of Python operations into corresponding ONNX operations.",
+            "total_tokens": 983,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.067305,
+            "uuid": "c3c45945-dae7-49db-855a-3208b9de2edd"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overloading various magic methods, allowing for intuitive mathematical operations on tensor objects. The SymbolicTensor class also provides access to ONNX operations through its associated opset, enabling seamless integration with the ONNX ecosystem.",
+            "total_tokens": 984,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.677477,
+            "uuid": "25a7357c-aa56-4610-bb9e-80caea6e4be2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX script framework.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.942784,
+            "uuid": "4b1cb557-9f64-46d3-b5dc-0a679994e4f6"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 987,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.510836,
+            "uuid": "6eec0355-0062-4ee6-b73d-99edeb0cd6c3"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overriding various magic methods (__add__, __mul__, __sub__, etc.) to map them to corresponding operations in the provided opset. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor-like objects within the context of the onnxscript library.",
+            "total_tokens": 991,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.355207,
+            "uuid": "beb1fd41-dac5-49ab-97a8-76d9d6cc1236"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overloading various magic methods, allowing for intuitive mathematical operations on tensors using standard Python syntax. The class also provides integration with an ONNX opset for performing these operations.",
+            "total_tokens": 971,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.719902,
+            "uuid": "3f5fa1f9-84b6-437e-9689-30e027559409"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and matrix multiplication) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.614153,
+            "uuid": "9fa76262-2b9d-4f32-9cfc-6718149be807"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class supports Python operators by overriding various magic methods, allowing for intuitive mathematical operations on tensor objects. The SymbolicTensor class also provides access to ONNX operations through its associated opset, enabling seamless integration with the ONNX ecosystem.",
+            "total_tokens": 984,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.099434,
+            "uuid": "81926d0a-f7fa-46d0-a027-8e6d94131b16"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Pythonic manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.67932,
+            "uuid": "f5513068-06c0-4dc3-a3d4-7dc097ef509a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The main functionality of the \"_tensors.py\" file is to define a SymbolicTensor class, which is a subclass of ir.Value. This class extends the functionality of ir.Value by implementing various Python operators (such as arithmetic, comparison, and logical operations) using corresponding ONNX operations. The SymbolicTensor class allows for more intuitive and Python-like manipulation of tensor objects within the ONNX ecosystem.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.5",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 20,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.835571,
+            "uuid": "500a7faf-90ca-471b-93bd-e3d544f83b0a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, a subclass of ir.Value, that represents a symbolic tensor value and supports Python's arithmetic and comparison operators by mapping them to corresponding ONNX (Open Neural Network Exchange) operations. It enables users to perform mathematical operations on tensors in a symbolic way, constructing computation graphs with familiar Python syntax. This is accomplished by delegating operator overloads (like +, -, *, @, <, etc.) to methods from an ONNX opset, seamlessly integrating with the ONNX script ecosystem.",
+            "total_tokens": 828,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.498447,
+            "uuid": "9fba0152-137f-46e0-8e97-1f89eb9e08b0"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that subclasses ir.Value and provides support for various Python operators (such as +, -, *, @, /, <, >, etc.) by mapping them to corresponding ONNX operator functions from a given opset. This enables SymbolicTensor objects to participate in symbolic computation with seamless operator overloading, making ONNX script-based code more Pythonic and expressive. Additionally, the class manages tensor properties (such as rank and dtype), and is designed to integrate tightly with the ONNXScript IR system for building computational graphs.",
+            "total_tokens": 835,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.553705,
+            "uuid": "2b6b9447-28ef-439c-bf6d-1d0d355fc440"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines the SymbolicTensor class, which is a subclass of ir.Value that adds support for Python arithmetic and comparison operators by mapping them to ONNX operator calls (such as Add, Mul, Sub, etc.) via an associated opset. It enables symbolic tensor manipulation in Python, allowing expressions involving tensors to be compiled into ONNX operations. The class also exposes tensor metadata such as rank and is designed for use within the ONNXScript framework for constructing ONNX models programmatically.",
+            "total_tokens": 821,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.989243,
+            "uuid": "faf07ac3-73b0-48e9-aade-0f8c6088ef73"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value, designed to support standard Python operators for symbolic tensor expressions within the ONNX Script framework. It overrides Python's arithmetic and comparison operators to generate symbolic computation graphs using ONNX operations from a specified opset. This allows users to write tensor algebra in Pythonic syntax and have it translated into ONNX operator calls for further processing or export.",
+            "total_tokens": 806,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.103124,
+            "uuid": "49db8724-63d9-439f-9a85-9ba8ff9dc8e2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines the SymbolicTensor class, a subclass of ir.Value, which enables symbolic tensor objects to support standard Python operators (such as +, -, *, /, @, **, <, <=, >, >=, !=) by mapping them to corresponding ONNX operator set (opset) methods. The class allows these symbolic tensors to behave naturally with Python's arithmetic and comparison operators, facilitating their integration into Pythonic code while building ONNX computation graphs. Additionally, it provides metadata access like rank and defers some TODOs such as indexing.",
+            "total_tokens": 835,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.008591,
+            "uuid": "7dfafadb-bba7-44f9-b209-9956dfab9bd4"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, a subclass of ir.Value, which enables Python operator overloading to express symbolic tensor operations by mapping standard Python operators (such as +, -, *, /, etc.) to ONNX opset functions. This allows for intuitive mathematical expressions when constructing computational graphs in ONNX Script. The SymbolicTensor class preserves shape, type, and constant value information while supporting additional tensor-specific behaviors.",
+            "total_tokens": 808,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.256374,
+            "uuid": "8184a558-7988-43be-852f-a35fbd8e42ca"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent tensors that support Python arithmetic and comparison operators in a symbolic computation context. It maps standard Python operators (such as +, -, *, /, **, @, and comparison operators) to their corresponding ONNX operations via the provided opset, facilitating intuitive and expressive model construction in ONNX Script. The class also provides tensor-specific properties (like rank) and is meant to make working with symbolic tensors in ONNX models more Pythonic and user-friendly.",
+            "total_tokens": 832,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.532156,
+            "uuid": "6059b836-2f46-43da-921d-64b8178f8ce8"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent symbolic tensors in ONNXScript. The class enhances ir.Value with Python operator overloading, enabling intuitive mathematical and logical operations (such as addition, multiplication, comparison, etc.) that internally map to corresponding ONNX operations via an opset. This allows users to write mathematical expressions with tensor objects in a natural Pythonic syntax, with operations being captured symbolically for further processing or code generation.",
+            "total_tokens": 820,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.52641,
+            "uuid": "d87bfb7a-cecb-4de0-8ed0-a69b0d623c1c"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines a SymbolicTensor class that extends ir.Value to represent symbolic tensors which support standard Python arithmetic, logical, and comparison operators. It overloads various special methods (like __add__, __mul__, __sub__, etc.) to map Python operators to corresponding ONNX operations via a provided opset, enabling intuitive mathematical expressions for symbolic computation in ONNXScript. The class facilitates treating symbolic tensors similarly to NumPy arrays in Python code, with operations building ONNX computation graphs rather than performing immediate computation.",
+            "total_tokens": 825,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.464377,
+            "uuid": "0b5e7ee0-7657-4275-9e07-815d00f3517b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent symbolic tensors that support Python's standard arithmetic and comparison operators. By overriding operator magic methods (such as __add__, __mul__, __lt__, etc.), SymbolicTensor translates these Python operations into corresponding ONNX opset function calls, enabling intuitive symbolic computation with ONNX graphs in Python. This allows users to write mathematical expressions involving SymbolicTensor objects using familiar Python syntax, while internally constructing ONNX graph operations.",
+            "total_tokens": 825,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.22122,
+            "uuid": "c2dc5cad-6554-4719-b1fd-f8e5241c7186"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write expressions with tensors using familiar Python syntax.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.328438,
+            "uuid": "cee0e821-553e-447f-a24c-a195502385b1"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.054341,
+            "uuid": "1c1fb1cc-28f4-46cb-adba-81be91529e3e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide Python operator overloading for tensor operations in ONNX Script. It implements various dunder methods like `__add__`, `__mul__`, and `__lt__` that map Python operators to corresponding ONNX operations, allowing users to write expressions with symbolic tensors using familiar Python syntax.",
+            "total_tokens": 987,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.168057,
+            "uuid": "d3bc1857-7be9-4003-bc29-7d07f0f44c1d"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide Python operator overloading for tensor operations in ONNX Script. It implements various dunder methods like `__add__`, `__mul__`, and `__lt__` that map Python operators to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 990,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.392775,
+            "uuid": "9f627ddb-f362-469c-8a14-7c7fb651998b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.014057,
+            "uuid": "e20d0d14-efaf-4076-9e30-3f879bc88838"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.737931,
+            "uuid": "396d9e01-5d76-4b65-a0d3-f8449d971f16"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.163292,
+            "uuid": "20ea3975-b2ab-40e9-bf01-1ebfbcab20bc"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.627185,
+            "uuid": "8977d8cc-e4c1-4a33-b1fc-951297db368a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to support Python operators for tensor operations in the ONNX Script framework. It overrides common Python operators (like +, -, *, /, <, >, etc.) to map them to corresponding ONNX operations, allowing users to write Python-style expressions that get translated to ONNX operations.",
+            "total_tokens": 987,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.392582,
+            "uuid": "2abd3a2e-0c2b-4631-aca6-9bb5844eba80"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to enable Python operator overloading for tensor operations. It implements various magic methods like `__add__`, `__mul__`, and comparison operators that map Python syntax to corresponding operations from an ONNX opset, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 983,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.612547,
+            "uuid": "dadfe05b-136d-43de-bf96-0f69855cb4f4"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that extends ir.Value to represent tensors supporting standard Python operators (such as +, -, *, /, ==, !=, etc.) by mapping them to the corresponding ONNX opset operations. This allows symbolic tensor computation in Python code with operator overloading, making expressions involving SymbolicTensor objects seamlessly translate to ONNX graph construction. The class also provides tensor metadata properties like rank, facilitating manipulation and introspection of symbolic ONNX values within the onnxscript framework.",
+            "total_tokens": 824,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.538868,
+            "uuid": "9fd31903-3cc4-42a1-ba29-d37b32dec9f0"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that extends ir.Value to represent tensors with symbolic shapes and types, specifically supporting integration with the ONNX Script IR. This class overloads standard Python arithmetic, logical, and comparison operators (such as +, -, *, /, <, ==, etc.) to generate operations from the specified ONNX opset, enabling intuitive symbolic computation. Its main purpose is to allow users to write ONNX computation graphs using familiar Python syntax, while managing the symbolic reasoning and type information internally.",
+            "total_tokens": 826,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.058887,
+            "uuid": "c0823f6f-59b6-4d9c-bec5-c1941e4057f7"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent symbolic tensors with support for various Python arithmetic and comparison operators. By overriding special methods (such as __add__, __mul__, __matmul__, etc.), it allows SymbolicTensor instances to be manipulated using standard Python syntax, internally mapping these operations to corresponding operator functions from a specified ONNX opset. This functionality enables users to write intuitive, NumPy-like code that generates ONNX computation graphs symbolically.",
+            "total_tokens": 824,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.91064,
+            "uuid": "0ebc27f6-b697-4dd6-9e83-e05ab109b10c"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines SymbolicTensor, a subclass of ir.Value, that extends its functionality to support Python operators such as addition, multiplication, division, comparison, and more, by mapping these operations to corresponding ONNX opset functions. This allows symbolic tensor objects to be manipulated in Python expressions in a way that constructs computation graphs using ONNX operations behind the scenes. The core purpose of the file is to facilitate intuitive and expressive symbolic computation for ONNX models in Python.",
+            "total_tokens": 816,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.478728,
+            "uuid": "d9ce33c6-676f-41ad-b895-84000c88a985"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent tensors that support common Python arithmetic and comparison operators. By overriding operator methods (such as __add__, __mul__, __pow__, etc.), this class seamlessly maps Python operations to corresponding ONNX operator calls from a specified opset. This enables symbolic manipulation and composition of ONNX computational graphs using natural Python expressions.",
+            "total_tokens": 804,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.68293,
+            "uuid": "cf135f16-5bbd-4ddd-a925-e152ede88528"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value that adds support for Python arithmetic and comparison operators (such as +, -, *, /, **, <, >, etc.) by delegating to ONNX opset operations. This enables symbolic tensor expressions in Python code to be mapped seamlessly to ONNX operations, facilitating construction of computational graphs in ONNXScript. The code thus provides a key interface for writing tensor expressions with native Python syntax within the ONNXScript ecosystem.",
+            "total_tokens": 824,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.95596,
+            "uuid": "882eb708-a9c8-4569-9b93-cb1694d349a3"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines the SymbolicTensor class, which extends ir.Value to represent ONNX symbolic tensors that also support Python operator overloading for mathematical, comparison, and logical operations. The class implements methods such as __add__, __mul__, __sub__, and others by mapping Python operators to corresponding ONNX opset methods, allowing intuitive mathematical expressions with symbolic tensors. This design enables seamless construction and manipulation of ONNX graphs using natural Python syntax.",
+            "total_tokens": 811,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.173017,
+            "uuid": "426a1fbb-8a56-4e02-96ad-57ecb1f10fb5"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "This file defines a SymbolicTensor class, which is a subclass of ir.Value designed to represent symbolic tensors in ONNX Script, enabling operator overloading for Python mathematical and comparison operators. By mapping Python operators like +, *, @, and comparison operators to ONNX operations via the given opset, it allows users to write expressive, operator-based code that constructs ONNX computation graphs symbolically. The class thus facilitates writing high-level, Pythonic code for defining ONNX models while managing tensor metadata such as shape, type, and name.",
+            "total_tokens": 831,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.34848,
+            "uuid": "56dc4f2b-7c87-4253-9126-68a6becfbcb3"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value that overloads core Python arithmetic and comparison operators to map to ONNX operator set (opset) functions. This design allows SymbolicTensor objects to participate in Python expressions (such as +, -, *, /, @, <, >, etc.), automatically constructing ONNX computation graphs. The class is intended to facilitate symbolic manipulation of tensors for ONNX model construction using intuitive Python syntax.",
+            "total_tokens": 817,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.350518,
+            "uuid": "3b0f6876-af54-4e2e-852d-8363c50b6a85"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class, which is a subclass of ir.Value tailored for integration with the ONNX Script framework. SymbolicTensor adds support for Python's standard operators (such as +, -, *, /, @, comparison operators, etc.) by mapping them to corresponding ONNX operations using an opset. This enables symbolic computation and operator overloading for ONNX intermediate representation tensors in Python code.",
+            "total_tokens": 806,
+            "model": {
+                "known_name": "gpt-4.1",
+                "provider_name": "AZURE",
+                "aws_model_id": "",
+                "aws_region": "",
+                "azure_deployment_name": "gpt-4.1",
+                "azure_region": "eastus2",
+                "delay_time": 3,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.002,
+                "price_per_1000_output_tokens": 0.008,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.936994,
+            "uuid": "31a7d01a-5d39-4a9f-aad4-0fbbb78177d8"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional properties like rank calculation. It also implements various operators such as mod, add, mul, and comparison operators, using the provided opset. Additionally, it has a rank property and some operators for indexing and manipulation are planned to be implemented.",
+            "total_tokens": 840,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 2.635364,
+            "uuid": "e305c428-a8cc-43f6-9775-11730bd86a09"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file _tensors.py defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor manipulation, including arithmetic operations and rank determination. It utilizes the onnxscript library and incorporates type checking with mypy.\n\nIs there anything else I can help you with?",
+            "total_tokens": 831,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.014862,
+            "uuid": "097caf71-02f2-4bb9-be18-043deefe247a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.232458,
+            "uuid": "fe7477ad-f556-451e-bc59-58676586b457"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.172701,
+            "uuid": "4cde2b62-890e-4b13-8a5d-6d6aab3ab1c4"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that inherits from ir.Value, enabling support for Python operators. This class represents a tensor with additional properties like rank and provides implementations for various operators such as arithmetic, comparison, and matrix multiplication. The __init__ method takes parameters like opset, name, shape, type, and const_value to initialize a SymbolicTensor instance.",
+            "total_tokens": 843,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.196007,
+            "uuid": "d4e4a899-de11-46ee-80e5-435e9797e703"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.233566,
+            "uuid": "51691035-1468-4aa1-b687-214631523eda"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.236224,
+            "uuid": "44dbe7ac-d033-4fd8-87fd-59d52b34285b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional properties like rank calculation. It also implements various operators such as mod, add, mul, and comparison operators, using the provided opset. Additionally, it has a rank property and some operators for indexing and manipulation are planned to be implemented.",
+            "total_tokens": 840,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.091196,
+            "uuid": "de1ffff2-a158-4005-8e7a-2283dfde3f67"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and adding ONNX operations support. It has an init function and overrides several operators to perform corresponding ONNX operations using the provided opset. Additionally, it has properties like rank and methods for indexing and accessing shape information.",
+            "total_tokens": 830,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.079571,
+            "uuid": "7ef70950-11c9-430d-8414-e3f31ce44501"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.174976,
+            "uuid": "69512a74-1626-4acc-a81a-c3a14f30ac10"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.992451,
+            "uuid": "fecbe4cb-431a-4dea-944c-96ce8098df69"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write Python-like expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.282149,
+            "uuid": "dd70f5d2-9200-4e4c-ae26-70461dd72924"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write expressions with tensors using familiar Python syntax.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.320745,
+            "uuid": "7334e7cb-1f46-4406-89f9-1584720214f2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to support Python operators for tensor operations in ONNXScript. It overrides common Python operators (like +, -, *, /, <, >, etc.) to map them to corresponding ONNX operations, allowing users to write Python-style expressions that get translated to ONNX operations.",
+            "total_tokens": 984,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.576878,
+            "uuid": "c72e4832-b207-4f20-9397-28e2b364c30e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.606296,
+            "uuid": "3a91dba7-59c9-40da-83ac-45c428fa804e"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to enable Python operator overloading for tensor operations. It implements various magic methods like `__add__`, `__mul__`, and comparison operators that map Python syntax to corresponding operations from an ONNX opset, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 983,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 2.890339,
+            "uuid": "e57c1b4f-648b-4a9d-ab29-84ffd64fa92b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The `_tensors.py` file defines a `SymbolicTensor` class that subclasses `ir.Value` to provide support for Python operators in the ONNX Script framework. It overrides various Python magic methods (like `__add__`, `__mul__`, `__lt__`, etc.) to map standard Python operations to corresponding ONNX operations, allowing users to write natural Python expressions that get translated to ONNX operations.",
+            "total_tokens": 992,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.34628,
+            "uuid": "6b37ff7d-1518-4d56-8d06-6c80510fba4b"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to support Python operators for tensor operations in the ONNX Script framework. It overrides common Python operators (like +, -, *, /, <, >, etc.) to map them to corresponding ONNX operations, enabling a more intuitive Python-like syntax when working with ONNX tensors.",
+            "total_tokens": 988,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.511056,
+            "uuid": "72165f8a-09b4-4f38-82b9-d14b04259fc2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to support Python operators for tensor operations in ONNX Script. It overrides common Python operators (like +, -, *, /, <, >, etc.) to map them to corresponding ONNX operations, allowing users to write Python-style expressions that get translated to ONNX operations.",
+            "total_tokens": 985,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 3.663048,
+            "uuid": "cbddb019-3788-41ad-8720-8c9652c66488"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file \"_tensors.py\" defines a `SymbolicTensor` class that subclasses `ir.Value` to support Python operators for tensor operations in ONNX Script. It overrides common Python operators (like +, -, *, /, <, >, etc.) to map them to corresponding ONNX operations, allowing users to write Python-style expressions that get translated to ONNX operations.",
+            "total_tokens": 985,
+            "model": {
+                "known_name": "Claude3.7",
+                "provider_name": "AWS",
+                "aws_model_id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "aws_region": "eu-central-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.003,
+                "price_per_1000_output_tokens": 0.015,
+                "exclude_files": [],
+                "max_tokens": 3072
+            },
+            "latency": 4.20554,
+            "uuid": "f83c05c2-94d3-4da0-8467-195e876e492a"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 2.001037,
+            "uuid": "0d269e5f-076a-4cc2-8c06-b9dcf5f03f70"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.202391,
+            "uuid": "be073cac-589f-4b57-a2a4-af1428e2fec2"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional properties like rank calculation. It also implements various operators such as mod, add, mul, and comparison operators, using the provided opset. Additionally, it has a rank property and some operators for indexing and manipulation are planned to be implemented.",
+            "total_tokens": 840,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.115512,
+            "uuid": "700037e3-bb20-4cfa-91c3-a0a399dbcf48"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.178043,
+            "uuid": "24048ca9-5d6f-4b2f-b605-a58545a11f2f"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators like addition, multiplication, and comparison. It also supports modulation and power operations on tensor objects. The class has a rank property and various methods for mathematical operations.",
+            "total_tokens": 818,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 0.873303,
+            "uuid": "b98b9aaf-3bec-41df-9a31-5560a1302524"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The file _tensors.py defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators like addition, multiplication, and comparison operators while also having methods to interact with an ONNX opset object. This class is designed to work with tensor-like objects in the ONNX IR format.",
+            "total_tokens": 830,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.020204,
+            "uuid": "f43ff6f9-535a-4b37-9ef6-3aabb265c9cc"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.177521,
+            "uuid": "6930d5d3-7f42-4ee4-95cb-ae753c6097cd"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional properties like rank calculation. It also implements various operators such as mod, add, mul, and comparison operators, using the provided opset. Additionally, it has a rank property and some operators for indexing and manipulation are planned to be implemented.",
+            "total_tokens": 840,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.071449,
+            "uuid": "2d2b9ce1-22a2-46a5-94dd-0984e942fdfa"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional properties like rank calculation. It also implements various operators such as mod, add, mul, and comparison operators, using the provided opset. Additionally, it has a rank property and some operators for indexing and manipulation are planned to be implemented.",
+            "total_tokens": 840,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.081874,
+            "uuid": "c6e350d0-94b0-4870-b3fc-0a44b3cfc47f"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    },
+    {
+        "llm_result": {
+            "file_summary": "The _tensors.py file defines a SymbolicTensor class that inherits from ir.Value, enabling Python operators and additional methods for tensor operations. It utilizes the onnxscript library and incorporates features like rank calculation, comparison operators, and mathematical functions. The class constructor accepts various arguments such as opset, name, shape, type, and const_value, while also providing access to these properties.",
+            "total_tokens": 848,
+            "model": {
+                "known_name": "cohere-v1",
+                "provider_name": "AWS",
+                "aws_model_id": "cohere.command-r-v1:0",
+                "aws_region": "us-east-1",
+                "azure_deployment_name": "",
+                "azure_region": "",
+                "delay_time": 60,
+                "langchain_ready": true,
+                "price_per_1000_input_tokens": 0.0015,
+                "price_per_1000_output_tokens": 0.002,
+                "exclude_files": [],
+                "max_tokens": 512
+            },
+            "latency": 1.169173,
+            "uuid": "f2476641-4a09-4800-b12c-6fac7382a3dc"
+        },
+        "file_name": "/home/shai/pytorch/torch/onnx/_internal/exporter/_tensors.py",
+        "number_of_lines": 96,
+        "project_name": "pytorch"
+    }
+]
