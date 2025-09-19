@@ -52,17 +52,17 @@ def get_models():
               #'nova-pro-v1',
               #'Llama3.1',
               #'gpt-3.5-turbo',
-              #'gpt-4o',
+              'gpt-4o',
               #'gpt-4',
               #'gpt-4.5',
               #'gpt-4.1',
               #'gemini-2.5',
               #'gemini-2.5-flash',
-              'Claude3.7',
+              #'Claude3.7',
               #'mistral-7b', # consitently get valdation error
               #'mistral-small', # consitently get valdation error
               #'deepseek-r1' # could not make it work
-              'cohere-v1'
+              #'cohere-v1'
               ]
     avaliable_models = [model.known_name for model in AVAILABLE_MODELS]
     for model in run_on:
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     # Skip files that their full-path contains one of the following.
     file_keywords_to_skip = [ '__init__.py', 'test']
     models = get_models()
-    sample_factor = 0.2 # Controls of the percentage of files that would be summarized.
+    sample_factor = 0.1 # Controls of the percentage of files that would be summarized.
     random.seed(82) # This ensures we will get the same files to analyze for each model.
     python_files = glob.glob(f'{REPO_DIRECTORY}/**/*.py', recursive=True)
     python_files = random.sample(python_files, floor(len(python_files)*sample_factor/100.0))

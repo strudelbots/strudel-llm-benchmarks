@@ -4,6 +4,7 @@ from benchmark_code.accessors.llm_accessor import LlmAccessor
 from benchmark_code import DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_P, DEFAULT_TOP_K
 from langchain_azure_ai.chat_models import AzureAIChatCompletionsModel
 
+# secrets are defined in the launch.json file
 AZURE_LLM_KEY = os.getenv("AZURE_LLM_FOUNDRY_KEY")
 if not AZURE_LLM_KEY:
     raise ValueError("AZURE_LLM_KEY environment variable not set")
